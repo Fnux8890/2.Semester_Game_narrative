@@ -46,7 +46,7 @@ a:hover {
   #menu-btn {
     position: fixed;
     top: 3%;
-    left: 17%;
+    left: 190px;
     transform: translate(-50%,-50%);
     background-color: #100901;
     color: #fff;

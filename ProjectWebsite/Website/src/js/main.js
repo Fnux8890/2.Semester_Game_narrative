@@ -10,7 +10,7 @@ $(() => {
     $(".my-container").toggleClass("active-cont");
     $("#menu-btn").css({
       'transition': '0.4s',
-      "left": state ? '5%' : '17%'
+      "left": state ? '40px' : '190px'
     })
     state = !state;
   });

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GameSystems.Dialogue.Runtime;
+using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.Graphs;
@@ -17,6 +18,8 @@ namespace GameSystems.Dialogue.Editor
         
         private List<Edge> Edges => _targetGraphView.edges.ToList();
         private List<DialogueNode> Nodes => _targetGraphView.nodes.ToList().Cast<DialogueNode>().ToList();
+        private List<Group> CommentBlocks =>
+            _targetGraphView.graphElements.ToList().Where(x => x is Group).Cast<Group>().ToList();
         
         public static GraphSaveUtility GetInstance(DialogueGraphView targetGraphView)
         {
@@ -31,7 +34,8 @@ namespace GameSystems.Dialogue.Editor
             var dialogueContainer = ScriptableObject.CreateInstance<DialogueContainer>();
             if (!SaveNodes(dialogueContainer)){return;}
 
-            saveExposedPropeties(dialogueContainer);
+            SaveExposedProprieties(dialogueContainer);
+            SaveCommentBlocks(dialogueContainer);
 
             if (!AssetDatabase.IsValidFolder("Assets/Resources"))
             {
@@ -46,7 +50,23 @@ namespace GameSystems.Dialogue.Editor
             AssetDatabase.SaveAssets();
         }
 
-        private void saveExposedPropeties(DialogueContainer dialogueContainer)
+        private void SaveCommentBlocks(DialogueContainer dialogueContainer)
+        {
+            foreach (var block in CommentBlocks)
+            {
+                var nodes = block.containedElements.Where(x => x is DialogueNode).Cast<DialogueNode>().Select(x => x.GUID)
+                    .ToList();
+
+                dialogueContainer.CommentBlockData.Add(new CommentBlockData
+                {
+                    ChildNodes = nodes,
+                    Title = block.title,
+                    Position = block.GetPosition().position
+                });
+            }
+        }
+
+        private void SaveExposedProprieties(DialogueContainer dialogueContainer)
         {
             dialogueContainer.ExposedProperties.AddRange(_targetGraphView.ExposedProperties);
         }
@@ -96,6 +116,7 @@ namespace GameSystems.Dialogue.Editor
             CreateNodes();
             ConnectNodes();
             CreateExposedProperties();
+            GenerateCommentBlocks();
         }
 
         private void CreateExposedProperties()
@@ -165,5 +186,21 @@ namespace GameSystems.Dialogue.Editor
             tempEdge?.output.Connect(tempEdge);
             _targetGraphView.Add(tempEdge);
         }
+        
+        private void GenerateCommentBlocks()
+        {
+            foreach (var commentBlock in CommentBlocks)
+            {
+                _targetGraphView.RemoveElement(commentBlock);
+            }
+
+            foreach (var commentBlockData in _containerCash.CommentBlockData)
+            {
+                var block = _targetGraphView.CreateCommentBlock(new Rect(commentBlockData.Position, _targetGraphView.DefaultCommentBlockSize),
+                    commentBlockData);
+                block.AddElements(Nodes.Where(x=>commentBlockData.ChildNodes.Contains(x.GUID)));
+            }
+        }
+        
     }
 }

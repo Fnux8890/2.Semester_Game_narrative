@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using GameSystems.Dialogue;
-using GameSystems.Dialogue.Editor;
 using GameSystems.Dialogue.Runtime;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
@@ -11,7 +6,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace DialogueSystem
+namespace GameSystems.Dialogue.Editor
 {
     public class DialogueGraph : EditorWindow
     {
@@ -55,20 +50,17 @@ namespace DialogueSystem
                 ((BlackboardField) element).text = newValue;
 
             };
-            blackboard.SetPosition(new Rect(10,30,200,300));
+            blackboard.SetPosition(new Rect(10,30,300,200));
             _graphView.Blackboard = blackboard;
-            
-            
+            _graphView.Add(blackboard);
+
         }
 
         private void GenerateMiniMap()
         {
-            var miniMap = new MiniMap
-            {
-                anchored = true,
-            };
+            var miniMap = new MiniMap {anchored = true};
             var cords = _graphView.contentViewContainer.WorldToLocal(new Vector2(this.maxSize.x - 10, 30));
-            miniMap.SetPosition(new Rect( cords.x , cords.y ,200,140));
+            miniMap.SetPosition(new Rect(cords.x, cords.y, 200, 140));
             _graphView.Add(miniMap);
         }
 

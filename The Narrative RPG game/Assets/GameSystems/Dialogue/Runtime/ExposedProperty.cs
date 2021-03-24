@@ -1,6 +1,8 @@
+using System;
+
 namespace GameSystems.Dialogue.Runtime
 {
-    [System.Serializable]
+    [Serializable]
     public class ExposedProperty
     {
         public string PropertyName = "New String";

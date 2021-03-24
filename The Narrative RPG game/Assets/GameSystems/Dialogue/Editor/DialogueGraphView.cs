@@ -1,18 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using GameSystems.Dialogue.Editor;
 using GameSystems.Dialogue.Runtime;
+using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace GameSystems.Dialogue
+namespace GameSystems.Dialogue.Editor
 {
     public class DialogueGraphView : GraphView
     {
         public readonly Vector2 DefaultNodeSize = new Vector2(150,200);
+        public readonly Vector2 DefaultCommentBlockSize = new Vector2(300, 200);
 
         private NodeSearchWindow _searchWindow;
 
@@ -41,6 +42,20 @@ namespace GameSystems.Dialogue
             _searchWindow = ScriptableObject.CreateInstance<NodeSearchWindow>();
             _searchWindow.Init(editorWindow,this);
             nodeCreationRequest = context => SearchWindow.Open(new SearchWindowContext(context.screenMousePosition),_searchWindow);
+        }
+        
+        public Group CreateCommentBlock(Rect rect, CommentBlockData commentBlockData = null)
+        {
+            if(commentBlockData==null)
+                commentBlockData = new CommentBlockData();
+            var group = new Group
+            {
+                autoUpdateGeometry = true,
+                title = commentBlockData.Title
+            };
+            AddElement(group);
+            group.SetPosition(rect);
+            return group;
         }
 
         public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
@@ -135,8 +150,8 @@ namespace GameSystems.Dialogue
         {
             var generatedPort = GeneratePort(dialogueNode,Direction.Output);
 
-            var oldLebel = generatedPort.contentContainer.Q<Label>("type");
-            generatedPort.contentContainer.Remove(oldLebel);
+            var oldLabel = generatedPort.contentContainer.Q<Label>("type");
+            generatedPort.contentContainer.Remove(oldLabel);
             
             var outputPortCount = dialogueNode.outputContainer.Query("connector").ToList().Count;
 

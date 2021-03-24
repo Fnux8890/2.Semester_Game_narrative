@@ -39,20 +39,18 @@ namespace GameSystems.Dialogue.Editor
             return tree;
         }
 
-        public bool OnSelectEntry(SearchTreeEntry SearchTreeEntry, SearchWindowContext context)
+        public bool OnSelectEntry(SearchTreeEntry searchTreeEntry, SearchWindowContext context)
         {
             var worldMousePosition = _window.rootVisualElement.
                 ChangeCoordinatesTo(_window.rootVisualElement.parent, context.screenMousePosition - _window.position.position);
             var localMousePosition = _graphView.contentContainer.WorldToLocal(worldMousePosition);
-            switch (SearchTreeEntry.userData)
+            switch (searchTreeEntry.userData)
             {
                 case DialogueNode dialogueNode:
                     _graphView.CreateNode("Dialogue node", localMousePosition);
                     return true;
-                    break;
                 default:
                     return false;
-                    break;
             }
         }
     }

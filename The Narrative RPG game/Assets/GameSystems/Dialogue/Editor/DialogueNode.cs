@@ -1,6 +1,6 @@
 using UnityEditor.Experimental.GraphView;
 
-namespace GameSystems.Dialogue
+namespace GameSystems.Dialogue.Editor
 {
     public class DialogueNode : Node
     {

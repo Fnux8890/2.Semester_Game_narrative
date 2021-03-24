@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GameSystems.Dialogue;
 using GameSystems.Dialogue.Editor;
+using GameSystems.Dialogue.Runtime;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
@@ -30,6 +32,32 @@ namespace DialogueSystem
             ConstructGraphView();
             GenerateToolbar();
             GenerateMiniMap();
+            GenerateBlackboard();
+        }
+
+        private void GenerateBlackboard()
+        {
+            var blackboard = new Blackboard(_graphView);
+            blackboard.Add(new BlackboardSection{title = "Exposed properties"});
+            blackboard.addItemRequested = _blackboard => { _graphView.AddPropertyToBlackboard(new ExposedProperty());};
+            blackboard.editTextRequested = (blackboard1, element, newValue) =>
+            {
+                var oldPropertyName = ((BlackboardField) element).text;
+                if (_graphView.ExposedProperties.Any(x => x.PropertyName == newValue))
+                {
+                    EditorUtility.DisplayDialog("ERROR", "This property name already exists, please chose another one!",
+                        "OK");
+                    return;
+                }
+
+                var propertyIndex = _graphView.ExposedProperties.FindIndex(x => x.PropertyName == oldPropertyName);
+                _graphView.ExposedProperties[propertyIndex].PropertyName = newValue;
+                ((BlackboardField) element).text = newValue;
+
+            };
+            blackboard.SetPosition(new Rect(10,30,200,300));
+            _graphView.Blackboard = blackboard;
+            
             
         }
 
@@ -39,7 +67,8 @@ namespace DialogueSystem
             {
                 anchored = true,
             };
-            miniMap.SetPosition(new Rect( 10 , 30 ,200,140));
+            var cords = _graphView.contentViewContainer.WorldToLocal(new Vector2(this.maxSize.x - 10, 30));
+            miniMap.SetPosition(new Rect( cords.x , cords.y ,200,140));
             _graphView.Add(miniMap);
         }
 

@@ -28,9 +28,33 @@ namespace GameSystems.Dialogue.Editor
 
         public void SaveGraph(string fileName)
         {
-            if (!Edges.Any()) return;
-
             var dialogueContainer = ScriptableObject.CreateInstance<DialogueContainer>();
+            if (!SaveNodes(dialogueContainer)){return;}
+
+            saveExposedPropeties(dialogueContainer);
+
+            if (!AssetDatabase.IsValidFolder("Assets/Resources"))
+            {
+                AssetDatabase.CreateFolder("Assets", "Resources");
+            }
+            if (!AssetDatabase.IsValidFolder("Assets/Resources/DialogueGraphData"))
+            {
+                AssetDatabase.CreateFolder("Assets/Resources", "DialogueGraphData");
+            }
+            
+            AssetDatabase.CreateAsset(dialogueContainer, $"Assets/Resources/DialogueGraphData/{fileName}.asset");
+            AssetDatabase.SaveAssets();
+        }
+
+        private void saveExposedPropeties(DialogueContainer dialogueContainer)
+        {
+            dialogueContainer.ExposedProperties.AddRange(_targetGraphView.ExposedProperties);
+        }
+
+        private bool SaveNodes(DialogueContainer dialogueContainer)
+        {
+            if (!Edges.Any()) return false;
+            
 
             var connectedPorts = Edges.Where(x => x.input.node!=null).ToArray();
             for (int i = 0; i < connectedPorts.Length; i++)
@@ -56,18 +80,7 @@ namespace GameSystems.Dialogue.Editor
                 });
             }
 
-            if (!AssetDatabase.IsValidFolder("Assets/Resources"))
-            {
-                AssetDatabase.CreateFolder("Assets", "Resources");
-            }
-            if (!AssetDatabase.IsValidFolder("Assets/Resources/DialogueGraphData"))
-            {
-                AssetDatabase.CreateFolder("Assets/Resources", "DialogueGraphData");
-            }
-            
-            AssetDatabase.CreateAsset(dialogueContainer, $"Assets/Resources/DialogueGraphData/{fileName}.asset");
-            AssetDatabase.SaveAssets();
-
+            return true;
         }
         
         public void LoadGraph(string fileName)
@@ -82,9 +95,18 @@ namespace GameSystems.Dialogue.Editor
             ClearGraph();
             CreateNodes();
             ConnectNodes();
-
+            CreateExposedProperties();
         }
-        
+
+        private void CreateExposedProperties()
+        {
+            _targetGraphView.ClearBlackboardAndExpressedProperties();
+            foreach (var exposedProperty in _containerCash.ExposedProperties)
+            {
+                _targetGraphView.AddPropertyToBlackboard(exposedProperty);
+            }
+        }
+
         private void ClearGraph()
         {
             Nodes.Find(x => x.EntryPoint).GUID = _containerCash.NodeLinks[0].BaseNodeGUID;

@@ -6,9 +6,10 @@ public abstract class Character : MonoBehaviour
 {
 
     //fields
+    string Name;
     int level;
     int baseAttack;
-    int baseDeffence;
+    int baseDefence;
     int hp;
     int maxHp;
     int id;
@@ -16,6 +17,21 @@ public abstract class Character : MonoBehaviour
     public string name { get; }
 
     public List<Actions> Actions { get; }
+
+    public int HP { get => hp; }
+
+    public Character(string name, int level, int baseAttack,
+            int baseDefence, int hp, 
+            List<Actions> actions)
+    {
+        this.level = level;
+        this.baseAttack = baseAttack;
+        this.baseDefence = baseDefence;
+        this.Name = name;
+        this.hp = hp;
+        this.maxHp = hp;
+        this.Actions = actions;
+    }
 
 
 

@@ -1,29 +1,31 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Reflection;
 using Systems.Dialogue;
 using Systems.Dialogue.Dialogue_Json_Classes;
+using Newtonsoft.Json;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
     public TextAsset json;
-    private Dialogue[] dialogueArray;
+    private Dialogue[] _dialogueArray;
     private Dialogue _dialogue;
     void Start()
     {
-        dialogueArray = JsonHelper.getJsonArray<Dialogue>(json.text);
-        _dialogue = dialogueArray[0];
+        -_dialogueArray = JsonConvert.DeserializeObject
+        _dialogueArray = JsonHelper.getJsonArray<Dialogue>(json.text);
+        _dialogue = _dialogueArray[0];
     }
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.H))
         {
-            for (int i = 0; i < _dialogue.nodes.Capacity; ++i)
+            Type type = typeof(Dialogue);
+            PropertyInfo[] paramsArray = type.GetProperties();
+            foreach (var node in _dialogue.nodes)
             {
-                if (_dialogue.nodes[i].text.ENG == null) continue;
-                Debug.Log(_dialogue.nodes[i].text.ENG);
+                Debug.Log(node.Character.Count.ToString());
             }
         }
     }

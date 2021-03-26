@@ -12,20 +12,21 @@ public class DialogueManager : MonoBehaviour
     private Dialogue _dialogue;
     void Start()
     {
-        -_dialogueArray = JsonConvert.DeserializeObject
+        //_dialogueArray = JsonConvert.DeserializeObject<Dialogue>(json.text);
         _dialogueArray = JsonHelper.getJsonArray<Dialogue>(json.text);
         _dialogue = _dialogueArray[0];
+
     }
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.H))
         {
-            Type type = typeof(Dialogue);
-            PropertyInfo[] paramsArray = type.GetProperties();
+            //Type type = typeof(Dialogue);
+            //PropertyInfo[] paramsArray = type.GetProperties();
             foreach (var node in _dialogue.nodes)
             {
-                Debug.Log(node.Character.Count.ToString());
+                Debug.Log(node.NodeName);
             }
         }
     }

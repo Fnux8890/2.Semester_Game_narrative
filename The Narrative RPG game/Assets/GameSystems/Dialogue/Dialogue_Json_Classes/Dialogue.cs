@@ -48,7 +48,7 @@ namespace Systems.Dialogue.Dialogue_Json_Classes
         private string filename;
         private bool is_box;
         private int next;
-        public string node_name;
+        private string node_name;
         private string node_type;
         private string object_path;
         private int[] offset;

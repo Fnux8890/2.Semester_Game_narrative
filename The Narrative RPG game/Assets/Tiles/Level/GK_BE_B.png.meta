@@ -1,0 +1,2412 @@
+fileFormatVersion: 2
+guid: 474564f4413bd0b4ba5878b2ee894cb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1008568323699794910
+    second: GK_BE_B_0
+  - first:
+      213: 4348988678351439681
+    second: GK_BE_B_1
+  - first:
+      213: 386690901218031180
+    second: GK_BE_B_2
+  - first:
+      213: -251087149840584258
+    second: GK_BE_B_3
+  - first:
+      213: -1549995560108556191
+    second: GK_BE_B_4
+  - first:
+      213: 3501851957305179183
+    second: GK_BE_B_5
+  - first:
+      213: 8226473283404733667
+    second: GK_BE_B_6
+  - first:
+      213: 7010800393798499195
+    second: GK_BE_B_7
+  - first:
+      213: -9057133641621767770
+    second: GK_BE_B_8
+  - first:
+      213: -1786672429991684590
+    second: GK_BE_B_9
+  - first:
+      213: -6672378778905591103
+    second: GK_BE_B_10
+  - first:
+      213: 8213192812489326684
+    second: GK_BE_B_11
+  - first:
+      213: 7475704272066073444
+    second: GK_BE_B_12
+  - first:
+      213: 1660207682425553046
+    second: GK_BE_B_13
+  - first:
+      213: -206770056858075670
+    second: GK_BE_B_14
+  - first:
+      213: 3516201493722626978
+    second: GK_BE_B_15
+  - first:
+      213: -330744016340728694
+    second: GK_BE_B_16
+  - first:
+      213: -4433478889608961270
+    second: GK_BE_B_17
+  - first:
+      213: -6890092668997205633
+    second: GK_BE_B_18
+  - first:
+      213: 4555889503057680017
+    second: GK_BE_B_19
+  - first:
+      213: 9187170233442931420
+    second: GK_BE_B_20
+  - first:
+      213: -4332135332272036400
+    second: GK_BE_B_21
+  - first:
+      213: 8070922010712564467
+    second: GK_BE_B_22
+  - first:
+      213: -3224306767853221450
+    second: GK_BE_B_23
+  - first:
+      213: 3894101980608040381
+    second: GK_BE_B_24
+  - first:
+      213: -4807498649832469341
+    second: GK_BE_B_25
+  - first:
+      213: 125600516520253926
+    second: GK_BE_B_26
+  - first:
+      213: 456772038475398998
+    second: GK_BE_B_27
+  - first:
+      213: -4907448542718262861
+    second: GK_BE_B_28
+  - first:
+      213: -1013607651456981921
+    second: GK_BE_B_29
+  - first:
+      213: 1208994952534260401
+    second: GK_BE_B_30
+  - first:
+      213: -2953048669031815017
+    second: GK_BE_B_31
+  - first:
+      213: 8739039435825700088
+    second: GK_BE_B_32
+  - first:
+      213: -7215320745751760572
+    second: GK_BE_B_33
+  - first:
+      213: 5194149315587571482
+    second: GK_BE_B_34
+  - first:
+      213: 3558725851814788613
+    second: GK_BE_B_35
+  - first:
+      213: -7042560980436250308
+    second: GK_BE_B_36
+  - first:
+      213: 5688861688920051969
+    second: GK_BE_B_37
+  - first:
+      213: 4066318146256396400
+    second: GK_BE_B_38
+  - first:
+      213: -5571283721529969721
+    second: GK_BE_B_39
+  - first:
+      213: -8706385097861866215
+    second: GK_BE_B_40
+  - first:
+      213: -7972761925483497386
+    second: GK_BE_B_41
+  - first:
+      213: -4709511520430939
+    second: GK_BE_B_42
+  - first:
+      213: 5168023028978646808
+    second: GK_BE_B_43
+  - first:
+      213: -4077969808244041951
+    second: GK_BE_B_44
+  - first:
+      213: 2883523699057907599
+    second: GK_BE_B_45
+  - first:
+      213: -5423450470312074186
+    second: GK_BE_B_46
+  - first:
+      213: 2569284592715153912
+    second: GK_BE_B_47
+  - first:
+      213: -7390168972975336311
+    second: GK_BE_B_48
+  - first:
+      213: -6740667301478074857
+    second: GK_BE_B_49
+  - first:
+      213: 278812261902751651
+    second: GK_BE_B_50
+  - first:
+      213: -2763484315150461574
+    second: GK_BE_B_51
+  - first:
+      213: -8871447624032195510
+    second: GK_BE_B_52
+  - first:
+      213: -3869430294289034922
+    second: GK_BE_B_53
+  - first:
+      213: -3602293571285996690
+    second: GK_BE_B_54
+  - first:
+      213: 8371682471030682544
+    second: GK_BE_B_55
+  - first:
+      213: -1411555610775018897
+    second: GK_BE_B_56
+  - first:
+      213: -5374932156912058295
+    second: GK_BE_B_57
+  - first:
+      213: 5795263379686928706
+    second: GK_BE_B_58
+  - first:
+      213: -9157621077793118744
+    second: GK_BE_B_59
+  - first:
+      213: 8709835628911273371
+    second: GK_BE_B_60
+  - first:
+      213: 6414329531304239569
+    second: GK_BE_B_61
+  - first:
+      213: 8407983916005155175
+    second: GK_BE_B_62
+  - first:
+      213: 8414783850548582339
+    second: GK_BE_B_63
+  - first:
+      213: -8435293587921843662
+    second: GK_BE_B_64
+  - first:
+      213: -6861614209835477149
+    second: GK_BE_B_65
+  - first:
+      213: -4904025904166621066
+    second: GK_BE_B_66
+  - first:
+      213: -5258427365851681354
+    second: GK_BE_B_67
+  - first:
+      213: -6921836384944901365
+    second: GK_BE_B_68
+  - first:
+      213: -3196387361590098190
+    second: GK_BE_B_69
+  - first:
+      213: 1792725117519654061
+    second: GK_BE_B_70
+  - first:
+      213: 3949018421336299686
+    second: GK_BE_B_71
+  - first:
+      213: -2129034694278497279
+    second: GK_BE_B_72
+  - first:
+      213: -3750191654957611581
+    second: GK_BE_B_73
+  - first:
+      213: 3346588208529366412
+    second: GK_BE_B_74
+  - first:
+      213: -104240036725567550
+    second: GK_BE_B_75
+  - first:
+      213: 6950590161712298721
+    second: GK_BE_B_76
+  - first:
+      213: 8684081830175806577
+    second: GK_BE_B_77
+  - first:
+      213: 981214818108587262
+    second: GK_BE_B_78
+  - first:
+      213: -4327441805063302980
+    second: GK_BE_B_79
+  - first:
+      213: -5255538008311916286
+    second: GK_BE_B_80
+  - first:
+      213: -4589854543138888628
+    second: GK_BE_B_81
+  - first:
+      213: 1588367713912536392
+    second: GK_BE_B_82
+  - first:
+      213: 7001051094361075688
+    second: GK_BE_B_83
+  - first:
+      213: 4300116727151537490
+    second: GK_BE_B_84
+  - first:
+      213: -5235718652386128681
+    second: GK_BE_B_85
+  - first:
+      213: 7757606262604786452
+    second: GK_BE_B_86
+  - first:
+      213: -839626833859999743
+    second: GK_BE_B_87
+  - first:
+      213: -7821255437740939384
+    second: GK_BE_B_88
+  - first:
+      213: -6188011061896629631
+    second: GK_BE_B_89
+  - first:
+      213: 6253527432885111196
+    second: GK_BE_B_90
+  - first:
+      213: 2235344270513777882
+    second: GK_BE_B_91
+  - first:
+      213: -1712753690304882648
+    second: GK_BE_B_92
+  - first:
+      213: 5626533036721670917
+    second: GK_BE_B_93
+  - first:
+      213: -2870490668551029250
+    second: GK_BE_B_94
+  - first:
+      213: 7985925181972469494
+    second: GK_BE_B_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GK_BE_B_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 622
+        width: 96
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed366d9fb872ffd00800000000000000
+      internalID: 1008568323699794910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 720
+        width: 136
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14745593926ba5c30800000000000000
+      internalID: 4348988678351439681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_2
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 672
+        width: 46
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46f9fc635dcd5500800000000000000
+      internalID: 386690901218031180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_3
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 672
+        width: 46
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1361a4195f38cf0800000000000000
+      internalID: -251087149840584258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 95
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1600c44104f4d7ae0800000000000000
+      internalID: -1549995560108556191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c7e233dc3199030800000000000000
+      internalID: 3501851957305179183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 45
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec94939ddd4a2270800000000000000
+      internalID: 8226473283404733667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 576
+        width: 142
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b378730dd5b4160800000000000000
+      internalID: 7010800393798499195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_8
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 48
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9f4ef80f89e4280800000000000000
+      internalID: -9057133641621767770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2169c5024e67437e0800000000000000
+      internalID: -1786672429991684590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_10
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 384
+        width: 122
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24a743ad2f663a0800000000000000
+      internalID: -6672378778905591103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 384
+        width: 122
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50c73cf85f1bf170800000000000000
+      internalID: 8213192812489326684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 288
+        width: 78
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4635e5e6d690fb760800000000000000
+      internalID: 7475704272066073444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_13
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 288
+        width: 78
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690895c471e3a0710800000000000000
+      internalID: 1660207682425553046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed79c29ab7612df0800000000000000
+      internalID: -206770056858075670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 288
+        width: 123
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abf80001ae0cc030800000000000000
+      internalID: 3516201493722626978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_16
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 123
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84cc6ac116f86bf0800000000000000
+      internalID: -330744016340728694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 250
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a032aa1807e1972c0800000000000000
+      internalID: -4433478889608961270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 267
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7106ea09397160a0800000000000000
+      internalID: -6890092668997205633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_19
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 255
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1961fa96d55c93f30800000000000000
+      internalID: 4555889503057680017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 243
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2986fc6a26f7f70800000000000000
+      internalID: 9187170233442931420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 243
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5a1013ed921e3c0800000000000000
+      internalID: -4332135332272036400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_22
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 243
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f26762aecca10070800000000000000
+      internalID: 8070922010712564467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 201
+        width: 29
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b98837e316f043d0800000000000000
+      internalID: -3224306767853221450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_24
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 197
+        width: 31
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd89499e11aa0630800000000000000
+      internalID: 3894101980608040381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_25
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 240
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acc09ef275584db0800000000000000
+      internalID: -4807498649832469341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_26
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 250
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e99bca11093eb100800000000000000
+      internalID: 125600516520253926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 288
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f38a8bfb7c65600800000000000000
+      internalID: 456772038475398998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_28
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 230
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b105c91d8d35ebb0800000000000000
+      internalID: -4907448542718262861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_29
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 243
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54e9491631fee1f0800000000000000
+      internalID: -1013607651456981921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 241
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba7b09f08637c010800000000000000
+      internalID: 1208994952534260401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_31
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 241
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982be5a1e9a407d0800000000000000
+      internalID: -2953048669031815017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_32
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 241
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc5582c01e474970800000000000000
+      internalID: 8739039435825700088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_33
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 199
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b5f892080edb90800000000000000
+      internalID: -7215320745751760572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_34
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 211
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f7fe16843551840800000000000000
+      internalID: 5194149315587571482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_35
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 201
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e7b6aae42236130800000000000000
+      internalID: 3558725851814788613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_36
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 149
+        width: 31
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c311214f91cc34e90800000000000000
+      internalID: -7042560980436250308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_37
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 192
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1019860b095e2fe40800000000000000
+      internalID: 5688861688920051969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_38
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 192
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070665b4fc67e6830800000000000000
+      internalID: 4066318146256396400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_39
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 152
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c33a4329f2dea2b0800000000000000
+      internalID: -5571283721529969721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 151
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d5034c1e4bc2780800000000000000
+      internalID: -8706385097861866215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 152
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658fbc0354f0b5190800000000000000
+      internalID: -7972761925483497386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_42
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 122
+        width: 57
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a452c669b44feff0800000000000000
+      internalID: -4709511520430939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_43
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 158
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f7f41409188b740800000000000000
+      internalID: 5168023028978646808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 288
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12798deb0142867c0800000000000000
+      internalID: -4077969808244041951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_45
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 164
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8754c7d685540820800000000000000
+      internalID: 2883523699057907599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_46
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 157
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634af1c28880cb4b0800000000000000
+      internalID: -5423450470312074186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_47
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 158
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1cba379bee7a320800000000000000
+      internalID: 2569284592715153912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_48
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 105
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98411bf4978d07990800000000000000
+      internalID: -7390168972975336311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_49
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 132
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716fe4a8dc65472a0800000000000000
+      internalID: -6740667301478074857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_50
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 128
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a79cb5664a8ed300800000000000000
+      internalID: 278812261902751651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_51
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 103
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75d71d28a126a9d0800000000000000
+      internalID: -2763484315150461574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_52
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 104
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ce31e836942e480800000000000000
+      internalID: -8871447624032195510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_53
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 117
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65154c106a50d4ac0800000000000000
+      internalID: -3869430294289034922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_54
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 122
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b23da2515120ec0800000000000000
+      internalID: -3602293571285996690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_55
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 110
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3f5223ad03e2470800000000000000
+      internalID: 8371682471030682544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_56
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 114
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62ab0796a5296ce0800000000000000
+      internalID: -1411555610775018897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_57
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 28
+        width: 31
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940ce6f4ea76865b0800000000000000
+      internalID: -5374932156912058295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_58
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 103
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241b116d659ec6050800000000000000
+      internalID: 5795263379686928706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_59
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 102
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5e28e162899e080800000000000000
+      internalID: -9157621077793118744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_60
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 102
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b952c499b5d8fd870800000000000000
+      internalID: 8709835628911273371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_61
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 107
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1efa169b6440950800000000000000
+      internalID: 6414329531304239569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_62
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 96
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7616faef2d82fa470800000000000000
+      internalID: 8407983916005155175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_63
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 98
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c754a1245157c470800000000000000
+      internalID: 8414783850548582339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_64
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 50
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ac9c38c21dfea80800000000000000
+      internalID: -8435293587921843662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_65
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 13
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367dbf40b36a6c0a0800000000000000
+      internalID: -6861614209835477149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_66
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 57
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670b5dc3c6661fbb0800000000000000
+      internalID: -4904025904166621066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_67
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 57
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bda73dcb205607b0800000000000000
+      internalID: -5258427365851681354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_68
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 63
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b033cf93b72b0ff90800000000000000
+      internalID: -6921836384944901365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_69
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 57
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6cfdb31a624a3d0800000000000000
+      internalID: -3196387361590098190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_70
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 181
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daceda10ff901e810800000000000000
+      internalID: 1792725117519654061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_71
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 51
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a85937d45bbdc630800000000000000
+      internalID: 3949018421336299686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_72
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 32
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c3c05c9362472e0800000000000000
+      internalID: -2129034694278497279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_73
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 32
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c50e962f84a4fbc0800000000000000
+      internalID: -3750191654957611581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_74
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 28
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d57e2ae38717e20800000000000000
+      internalID: 3346588208529366412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_75
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 55
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf49972d3aad8ef0800000000000000
+      internalID: -104240036725567550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_76
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 48
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eabf202de4757060800000000000000
+      internalID: 6950590161712298721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_77
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 54
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1749d001a6e048870800000000000000
+      internalID: 8684081830175806577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_78
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 9
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc36b9ada9fd9d00800000000000000
+      internalID: 981214818108587262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_79
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 9
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0d6072b96d1f3c0800000000000000
+      internalID: -4327441805063302980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_80
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 9
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2091107c6049017b0800000000000000
+      internalID: -5255538008311916286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_81
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 15
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c446e717c9f8d40c0800000000000000
+      internalID: -4589854543138888628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_82
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84db47035040b0610800000000000000
+      internalID: 1588367713912536392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 529
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef60cd80eab82160800000000000000
+      internalID: 7001051094361075688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_84
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 529
+        width: 95
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d259e51651dab30800000000000000
+      internalID: 4300116727151537490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_85
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 529
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc43ac20adf657b0800000000000000
+      internalID: -5235718652386128681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_86
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 480
+        width: 62
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b67e55bcd88ab60800000000000000
+      internalID: 7757606262604786452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_87
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 481
+        width: 44
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10883e7d7db0954f0800000000000000
+      internalID: -839626833859999743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_88
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 481
+        width: 44
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887ebdf3e91557390800000000000000
+      internalID: -7821255437740939384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_89
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 433
+        width: 48
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182b67589b4cf1aa0800000000000000
+      internalID: -6188011061896629631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_90
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 433
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99074e411ef8c650800000000000000
+      internalID: 6253527432885111196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_91
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 433
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcadaa45c9850f10800000000000000
+      internalID: 2235344270513777882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 433
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82853add7931b38e0800000000000000
+      internalID: -1712753690304882648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_93
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 433
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b8bca7cf5751e40800000000000000
+      internalID: 5626533036721670917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_94
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 433
+        width: 46
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd31f902f7f928d0800000000000000
+      internalID: -2870490668551029250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_BE_B_95
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 433
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6d05a44a4b3de60800000000000000
+      internalID: 7985925181972469494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 07d76851d059fa14d8bb576034790c6a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

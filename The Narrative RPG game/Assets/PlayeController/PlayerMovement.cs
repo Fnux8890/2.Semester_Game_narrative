@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator Move(Transform entity)
+    private IEnumerator Move(Transform entity)
     {
         isMoving = true;
         startPos = entity.position;

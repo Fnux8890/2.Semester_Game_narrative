@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -115,9 +116,7 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
                 }
                 if (next != null && int.TryParse(next,out next_index))
                 {
-                    //Debug.Log($"{next_index} == {6061566}? {next_index == 6061566}");
                     return next_index;
-                    //2399617
                 }
 
                 return 0;
@@ -161,7 +160,9 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
     [Serializable]
     public class Branches
     {
-        public List<string> branches;
+        public List<string> branchesString;
+
+        public List<int> BranchesInt => branchesString?.ConvertAll(int.Parse);
     }
     
     

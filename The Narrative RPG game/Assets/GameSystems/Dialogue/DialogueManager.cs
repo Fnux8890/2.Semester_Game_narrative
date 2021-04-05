@@ -20,15 +20,12 @@ namespace GameSystems.Dialogue
         private Dialogue_Json_Classes.Dialogue _dialogue;
         [SerializeField] public GameObject dialogueBox;
         private SpeakerUI _speakerUI;
-        private DialogueGraph _digraph;
-        private List<Node> _digraphSorted;
-        private int index = 0;
+        private int _index = 0;
 
         private void Start()
         {
             DialogueSetup();
             _speakerUI = dialogueBox.GetComponent<SpeakerUI>();
-            _digraph = new DialogueGraph();
 
             // used for testing
             //var jsonFrom = JsonUtility.ToJson(_dialogue);
@@ -46,14 +43,9 @@ namespace GameSystems.Dialogue
                 .OrderBy(x => x.NodeIndex).ToList();
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            var item = sorted.Find(x=> x.NextIndex == 6061566);
+            var item = sorted.Find(x=> x.branches.branchesString != null && x.branches.BranchesInt.Contains(6061566));
             sw.Stop();
-            foreach (var node in _dialogue.nodes.Where(x => x.branches.branches != null && x.branches.branches.Count > 0))
-            {
-                Debug.Log(_dialogue.nodes.IndexOf(node));
-                node.branches.branches.ForEach(Debug.Log);
-            }
-            //Debug.Log($"Time elapsed {sw.Elapsed} | {item.NodeIndex}");
+            Debug.Log(string.Join(" | ", item.NodeIndex));
         }
         
         private void Update()
@@ -61,12 +53,12 @@ namespace GameSystems.Dialogue
             
             if (Input.GetKeyUp(KeyCode.H))
             {
-                while (_dialogue.nodes[index].Text == null)
+                while (_dialogue.nodes[_index].Text == null)
                 {
-                    index++;
+                    _index++;
                 }
-                _speakerUI.dialogue.text = _dialogue.nodes[index].NodeIndex.ToString();
-                index++;
+                _speakerUI.dialogue.text = _dialogue.nodes[_index].NodeIndex.ToString();
+                _index++;
             }
         }
         
@@ -130,7 +122,7 @@ namespace GameSystems.Dialogue
 
                         if (indexFrom.Count == indexTo.Count)
                         {
-                            _dialogue.nodes[nodeNumber].branches.branches = indexFrom.Select((t, i) => insideObject.Substring(t, indexTo[i] - 1 - t).Trim(':', ' ', '\"')).ToList();
+                            _dialogue.nodes[nodeNumber-1].branches.branchesString = indexFrom.Select((t, i) => insideObject.Substring(t, indexTo[i] - 1 - t).Trim(':', ' ', '\"')).ToList();
                         }
                     }
                 }
@@ -152,7 +144,7 @@ namespace GameSystems.Dialogue
             string characterStuff;
             var insideArray = false;
             var insideNode = false;
-            var characterArrayList = new ArrayList();
+            ArrayList characterArrayList = new ArrayList();
             var file =
                 new System.IO.StreamReader(AssetDatabase.GetAssetPath(json));
             while ((characterStuff = file.ReadLine()) != null)

@@ -1,14 +1,14 @@
 using System;
 using UnityEngine;
 
-namespace Systems.Dialogue
+namespace GameSystems.Dialogue
 {
     public static class JsonHelper
     {
-        public static T[] getJsonArray<T>(string json)
+        public static T[] GETJsonArray<T>(string json)
         {
-            string newJson = "{ \"array\": " + json + "}";
-            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>> (newJson);
+            var newJson = "{ \"array\": " + json + "}";
+            var wrapper = JsonUtility.FromJson<Wrapper<T>> (newJson);
             return wrapper.array;
         }
  

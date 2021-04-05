@@ -14,7 +14,7 @@ public abstract class Character : MonoBehaviour
     int maxHp;
     int id;
 
-    public string name { get; }
+    public string CharacterName { get; }
 
     public List<Actions> Actions { get; }
 
@@ -27,7 +27,7 @@ public abstract class Character : MonoBehaviour
         this.level = level;
         this.baseAttack = baseAttack;
         this.baseDefence = baseDefence;
-        this.Name = name;
+        this.CharacterName = name;
         this.hp = hp;
         this.maxHp = hp;
         this.Actions = actions;

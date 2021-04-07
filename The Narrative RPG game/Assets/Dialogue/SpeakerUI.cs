@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Dialogue.Scriptable_objects;
 using UnityEngine;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
@@ -13,8 +12,7 @@ namespace Dialogue
         private Image _image;
         private Text _characterName;
         private Text _dialogue;
-        public Test dialogueObject;
-        
+
         public string CharacterName
         {
             get => _characterName.text;
@@ -33,7 +31,6 @@ namespace Dialogue
             _image = InstanceOfType <Image> (componentList);
             _characterName = InstanceOfType <Text> (componentList, "Name");
             _dialogue = InstanceOfType <Text> (componentList, "Dialogue");
-            if (dialogueObject.TestText != null) _dialogue.text = dialogueObject.TestText;
         }
 
         private T InstanceOfType<T>(List<Component> list)

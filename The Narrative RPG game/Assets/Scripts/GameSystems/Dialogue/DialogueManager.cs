@@ -296,7 +296,7 @@ namespace GameSystems.Dialogue
             var insideArray = false;
             var insideNode = false;
             var file = new StreamReader(filePath);
-            ArrayList characterArrayList = new ArrayList();
+            var characterArrayList = new ArrayList();
             while ((readLine = file.ReadLine()) != null)
             {
                 if (readLine.Contains("nodes")) insideNode = true;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,14 +16,40 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
         public string[] language;
         public List<Node> nodes;
         public string selected_language;
-        public Variables variables;
+        public Variables Variables;
     }
 
     [Serializable]
     public class Variables
     {
-        public AlreadyMet already_met;
-        public SeenFireworks seen_fireworks;
+        public Dictionary<string ,Variable> variables;
+    }
+
+    public class Variable
+    {
+        private int _type;
+        private dynamic _valueData;
+
+        public dynamic VariableData
+        {
+            get => _valueData != null ? _valueData : null;
+            private set => _valueData = value;
+        }
+
+        public Variable(int type, dynamic value)
+        {
+            _type = type;
+            switch (value)
+            {
+                case string _ when _type == 0:
+                case int _ when _type == 1:
+                case bool _ when _type == 2:
+                    VariableData = value;
+                    break;
+                default: VariableData = null;
+                    break;
+            }
+        }
     }
 
     [Serializable]
@@ -122,7 +149,6 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
                 return 0;
             }
         }
-        
     }
 
     public class NodeCompare : IComparer<Node>

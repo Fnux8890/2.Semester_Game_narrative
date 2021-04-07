@@ -1,2 +1,0 @@
-/Users/bruger/Documents/Github/2.Semester_Game_narrative/The Narrative RPG game/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
-/Users/bruger/Documents/Github/2.Semester_Game_narrative/The Narrative RPG game/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

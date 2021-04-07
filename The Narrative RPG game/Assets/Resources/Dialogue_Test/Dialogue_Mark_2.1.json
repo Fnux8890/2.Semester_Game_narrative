@@ -435,6 +435,10 @@
       "already_met": {
         "type": 2,
         "value": false
+      },
+      "hogusBogus": {
+        "type": 2,
+        "value": true
       }
     }
   }

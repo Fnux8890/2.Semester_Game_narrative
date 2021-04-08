@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
 
+    public Animator animator;
+
     private void Awake()
     {
         _playerActionControls = new PlayerActionControls();
@@ -41,5 +43,9 @@ public class PlayerController : MonoBehaviour
         currentPosition.x += movementInputHorizontal * moveSpeed * Time.deltaTime;
         currentPosition.y += movementInputVertical * moveSpeed * Time.deltaTime;
         transform.position = currentPosition;
+        // Animate player
+        animator.SetFloat("Horizontal", movementInputHorizontal);
+        animator.SetFloat("Vertical", movementInputVertical);
+        animator.SetFloat("Speed", moveSpeed);
     }
 }

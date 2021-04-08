@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using GameSystems.Dialogue;
 using UnityEngine;
 
 namespace PlayerController
@@ -7,6 +8,9 @@ namespace PlayerController
     public class PlayerMovement : MonoBehaviour
     {
         private bool _isMoving;
+        private DialogueManager _dialogueManager;
+        public TextAsset json;
+        
 
         [SerializeField]
         private float walkSpeed = 3f;
@@ -17,7 +21,34 @@ namespace PlayerController
         void Update()
         {
             MovePlayer();
-            
+            if (Input.GetKeyUp("y") && _dialogueManager == null)
+            {
+
+                try
+                {
+                    _dialogueManager = new DialogueManager(json);
+                }
+                finally
+                {
+                    Debug.Log("Dialogue loaded");
+                }
+                
+            }
+            if (Input.GetKeyUp("u") && _dialogueManager != null)
+            {
+                try
+                {
+                    _dialogueManager = null;
+                }
+                finally
+                {
+                    Debug.Log($"Dialogue disposed {_dialogueManager?.Equals(null)}");   
+                }
+            }
+            if (Input.GetKeyUp("h") && _dialogueManager != null)
+            {
+                Debug.Log(_dialogueManager.Dialogue.nodes[2].Text);
+            }
         }
         
 

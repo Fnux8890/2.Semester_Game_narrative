@@ -11,27 +11,26 @@ using UnityEngine;
 
 namespace GameSystems.Dialogue
 {
-    public class DialogueManager : MonoBehaviour
+    public class DialogueManager
     {
-        [SerializeField] private TextAsset json;
-        [SerializeField] public GameObject dialogueBox;
-        private Dialogue_Json_Classes.Dialogue _dialogue;
-        private SpeakerUI _speakerUI;
+        private TextAsset json;
 
-        private void Start()
+        public Dialogue_Json_Classes.Dialogue Dialogue { get; private set; }
+
+        public DialogueManager(TextAsset json)
         {
+            this.json = json;
             DialogueSetup();
-
-            _speakerUI = dialogueBox.GetComponent<SpeakerUI>();
         }
+        
 
         private async void DialogueSetup()
         {
             var dialogueArray = JsonHelper.GETJsonArray<Dialogue_Json_Classes.Dialogue>(json.text);
-            _dialogue = dialogueArray[0];
+            Dialogue = dialogueArray[0];
             var filePath = AssetDatabase.GetAssetPath(json);
             await GETInconsistentlyDataAsync(filePath);
-            var sorted = _dialogue.nodes
+            var sorted = Dialogue.nodes
                 .OrderBy(x => x.NodeIndex).ToList();
         }
         
@@ -50,10 +49,10 @@ namespace GameSystems.Dialogue
 
         private void GETVariablesAsync(string filePath)
         {
-            if (_dialogue == null) return;
+            if (Dialogue == null) return;
             string readLine;
             var insideVariables = false;
-            _dialogue.Variables.variables = new Dictionary<string, Variable>();
+            Dialogue.Variables.variables = new Dictionary<string, Variable>();
             var file = new StreamReader(filePath);
             var insideCount = 0;
             var numberOfObjects = 0;
@@ -106,7 +105,7 @@ namespace GameSystems.Dialogue
                             switch (type)
                             {
                                 case 0:
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(variableKey, new Variable(type,
                                             insideObject
                                                 .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
@@ -116,14 +115,14 @@ namespace GameSystems.Dialogue
                                     int.TryParse(insideObject
                                         .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
                                         .Trim(' ', '\"', ',', '}'), out var valueInt);
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(variableKey, new Variable(type, valueInt));
                                     break;
                                 case 2:
                                     bool.TryParse(insideObject
                                         .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
                                         .Trim(' ', '\"', ',', '}'), out var valueBool);
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(variableKey, new Variable(type, valueBool));
                                     break;
                             }
@@ -169,7 +168,7 @@ namespace GameSystems.Dialogue
                             switch (types[numberOfObjects])
                             {
                                 case 0:
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(keys[numberOfObjects], new Variable(types[numberOfObjects],
                                             readLine
                                                 .Substring(readLine.IndexOf(":", StringComparison.Ordinal),
@@ -183,7 +182,7 @@ namespace GameSystems.Dialogue
                                             readLine.Length - readLine
                                                 .IndexOf(":", StringComparison.Ordinal))
                                         .Trim(' ', '\"', ',', '}'), out var valueInt);
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(keys[numberOfObjects], new Variable(types[numberOfObjects], valueInt));
                                     break;
                                 case 2:
@@ -193,7 +192,7 @@ namespace GameSystems.Dialogue
                                                 .IndexOf(":", StringComparison.Ordinal))
                                         .Trim(' ', '\"', ',', '}', ':');
                                     bool.TryParse(stringToBool, out var valueBool);
-                                    _dialogue.Variables.variables
+                                    Dialogue.Variables.variables
                                         .Add(keys[numberOfObjects], new Variable(types[numberOfObjects], valueBool));
                                     break;
                             }
@@ -209,7 +208,7 @@ namespace GameSystems.Dialogue
         {
             #region SeachFileForBranches
 
-            if (_dialogue == null)
+            if (Dialogue == null)
             {
                 return;
             }
@@ -270,7 +269,7 @@ namespace GameSystems.Dialogue
 
                         if (indexFrom.Count == indexTo.Count)
                         {
-                            _dialogue.nodes[nodeNumber - 1].branches.branchesString = indexFrom.Select(
+                            Dialogue.nodes[nodeNumber - 1].branches.branchesString = indexFrom.Select(
                                 (t, i) => insideObject.Substring(t, indexTo[i] - 1 - t)
                                     .Trim(':', ' ', '\"')).ToList();
                         }
@@ -287,7 +286,7 @@ namespace GameSystems.Dialogue
         {
             #region SeachFileForCharacters
 
-            if (_dialogue == null)
+            if (Dialogue == null)
             {
                 return;
             }
@@ -369,7 +368,7 @@ namespace GameSystems.Dialogue
                 }
             }
 
-            foreach (var node in _dialogue.nodes.Where(node => node.text.ENG != null))
+            foreach (var node in Dialogue.nodes.Where(node => node.text.ENG != null))
             {
                 node.character = charterName.Dequeue();
                 node.characterIndex = charterIndex.Dequeue();
@@ -377,5 +376,7 @@ namespace GameSystems.Dialogue
 
             #endregion
         }
+
+        
     }
 }

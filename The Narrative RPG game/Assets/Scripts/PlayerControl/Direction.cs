@@ -1,4 +1,4 @@
-namespace PlayerController
+namespace PlayerControl
 {
     enum Direction
     {

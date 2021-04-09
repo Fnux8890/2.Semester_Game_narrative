@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using Utilities;
 using Image = UnityEngine.UI.Image;
 
 namespace Dialogue
@@ -28,25 +29,11 @@ namespace Dialogue
         private void Start()
         {
             var componentList = GetComponentsInChildren<Component>().ToList();
-            _image = InstanceOfType <Image> (componentList);
-            _characterName = InstanceOfType <Text> (componentList, "Name");
-            _dialogue = InstanceOfType <Text> (componentList, "Dialogue");
+            _image = CustomUtils.InstanceOfType <Image> (componentList);
+            _characterName = CustomUtils.InstanceOfType <Text> (componentList, "Name");
+            _dialogue = CustomUtils.InstanceOfType <Text> (componentList, "Dialogue");
         }
-
-        private T InstanceOfType<T>(List<Component> list)
-        {
-            var result =  list.Find(component => 
-                component.GetType() == typeof(T));
-            var resultOfType = (T) Convert.ChangeType(result, typeof(T));
-            return resultOfType;
-        } 
-        private T InstanceOfType<T>(List<Component> list, string search)
-        {
-            var result = list.Find(component => 
-                component.GetType() == typeof(T) && component.name == search);
-            var resultOfType = (T) Convert.ChangeType(result, typeof(T));
-            return resultOfType;
-        } 
+        
         
 
         

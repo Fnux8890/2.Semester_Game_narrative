@@ -2,21 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCharacter : Character
+
+[CreateAssetMenu(fileName = "New Enemy", menuName = "enemy")]
+public class EnemyCharacter : ScriptableObject
 {
-    //fields
-    Sprite EnemySprite;
+    public new string name;
     
-    
-    void AttackRand()
+    public Sprite EnemySprite;
+    public int attack;
+    public int defense;
+    public int maxHealth;
+    public int HP;
+
+
+   void AttackRand()
     {
-        //Chooses a random target for the attack
+    
     }
 
-    void ChooseRandSkill()
+   void Dodge()
     {
-        //Chooses a random skill from the list
+
     }
 
+    void Heal()
+    {
+
+    }
+
+    void giveXP()
+    {
+
+    }
 
 }

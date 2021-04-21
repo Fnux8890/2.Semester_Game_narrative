@@ -2,17 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCharacter : MonoBehaviour
+[CreateAssetMenu(fileName = "New Player", menuName = "player")]
+public class PlayerCharacter : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public new string name;
+
+    public Sprite PlayerSprite;
+    public int attack;
+    public int defense;
+    public int maxHealth;
+    public int HP;
+    public int lvl;
+
+    void Attack()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void Dodge()
     {
-        
+
     }
+
+    void Heal()
+    {
+
+    }
+
+    void Run()
+    {
+
+    }
+
 }

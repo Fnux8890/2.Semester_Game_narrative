@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     private float moveSpeed;
 
     public Animator animator;
+    
+    Vector2 movementRead;
+    private Vector2 currentPosition;
+
+    private Rigidbody2D rb;
 
     private void Awake()
     {
@@ -30,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        rb = transform.GetComponent<Rigidbody2D>();
     }
     
     void Update()
@@ -38,14 +43,18 @@ public class PlayerController : MonoBehaviour
         // read movement value
         float movementInputHorizontal = _playerActionControls.Land.MoveHorizontal.ReadValue<float>();
         float movementInputVertical = _playerActionControls.Land.MoveVertical.ReadValue<float>();
-        // Move the player
-        Vector3 currentPosition = transform.position;
-        currentPosition.x += movementInputHorizontal * moveSpeed * Time.deltaTime;
-        currentPosition.y += movementInputVertical * moveSpeed * Time.deltaTime;
-        transform.position = currentPosition;
+
+        currentPosition.x = movementInputHorizontal;
+        currentPosition.y = movementInputVertical;
+
         // Animate player
         animator.SetFloat("Horizontal", movementInputHorizontal);
         animator.SetFloat("Vertical", movementInputVertical);
-        animator.SetFloat("Speed", moveSpeed);
+        animator.SetFloat("Speed", currentPosition.sqrMagnitude);
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + currentPosition * (moveSpeed * Time.deltaTime));
     }
 }

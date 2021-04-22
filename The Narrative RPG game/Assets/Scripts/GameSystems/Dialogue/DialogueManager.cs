@@ -13,22 +13,22 @@ namespace GameSystems.Dialogue
 {
     public class DialogueManager
     {
-        private TextAsset json;
+        private TextAsset _json;
 
         public Dialogue_Json_Classes.Dialogue Dialogue { get; private set; }
 
         public DialogueManager(TextAsset json)
         {
-            this.json = json;
+            _json = json;
             DialogueSetup();
         }
         
 
         private async void DialogueSetup()
         {
-            var dialogueArray = JsonHelper.GETJsonArray<Dialogue_Json_Classes.Dialogue>(json.text);
+            var dialogueArray = JsonHelper.GETJsonArray<Dialogue_Json_Classes.Dialogue>(_json.text);
             Dialogue = dialogueArray[0];
-            var filePath = AssetDatabase.GetAssetPath(json);
+            var filePath = AssetDatabase.GetAssetPath(_json);
             await GETInconsistentlyDataAsync(filePath);
             var sorted = Dialogue.nodes
                 .OrderBy(x => x.NodeIndex).ToList();

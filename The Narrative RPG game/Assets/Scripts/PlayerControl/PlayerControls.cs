@@ -6,14 +6,12 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace PlayerControl
+public class @PlayerActionControls : IInputActionCollection, IDisposable
 {
-    public class @PlayerActionControls : IInputActionCollection, IDisposable
+    public InputActionAsset asset { get; }
+    public @PlayerActionControls()
     {
-        public InputActionAsset asset { get; }
-        public @PlayerActionControls()
-        {
-            asset = InputActionAsset.FromJson(@"{
+        asset = InputActionAsset.FromJson(@"{
     ""name"": ""PlayerControls"",
     ""maps"": [
         {
@@ -102,99 +100,98 @@ namespace PlayerControl
         }
     ]
 }");
-            // Land
-            m_Land = asset.FindActionMap("Land", throwIfNotFound: true);
-            m_Land_Movement = m_Land.FindAction("Movement", throwIfNotFound: true);
-        }
-
-        public void Dispose()
-        {
-            UnityEngine.Object.Destroy(asset);
-        }
-
-        public InputBinding? bindingMask
-        {
-            get => asset.bindingMask;
-            set => asset.bindingMask = value;
-        }
-
-        public ReadOnlyArray<InputDevice>? devices
-        {
-            get => asset.devices;
-            set => asset.devices = value;
-        }
-
-        public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
-
-        public bool Contains(InputAction action)
-        {
-            return asset.Contains(action);
-        }
-
-        public IEnumerator<InputAction> GetEnumerator()
-        {
-            return asset.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        public void Enable()
-        {
-            asset.Enable();
-        }
-
-        public void Disable()
-        {
-            asset.Disable();
-        }
-
         // Land
-        private readonly InputActionMap m_Land;
-        private ILandActions m_LandActionsCallbackInterface;
-        private readonly InputAction m_Land_Movement;
-        public struct LandActions
+        m_Land = asset.FindActionMap("Land", throwIfNotFound: true);
+        m_Land_Movement = m_Land.FindAction("Movement", throwIfNotFound: true);
+    }
+
+    public void Dispose()
+    {
+        UnityEngine.Object.Destroy(asset);
+    }
+
+    public InputBinding? bindingMask
+    {
+        get => asset.bindingMask;
+        set => asset.bindingMask = value;
+    }
+
+    public ReadOnlyArray<InputDevice>? devices
+    {
+        get => asset.devices;
+        set => asset.devices = value;
+    }
+
+    public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
+
+    public bool Contains(InputAction action)
+    {
+        return asset.Contains(action);
+    }
+
+    public IEnumerator<InputAction> GetEnumerator()
+    {
+        return asset.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public void Enable()
+    {
+        asset.Enable();
+    }
+
+    public void Disable()
+    {
+        asset.Disable();
+    }
+
+    // Land
+    private readonly InputActionMap m_Land;
+    private ILandActions m_LandActionsCallbackInterface;
+    private readonly InputAction m_Land_Movement;
+    public struct LandActions
+    {
+        private @PlayerActionControls m_Wrapper;
+        public LandActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Land_Movement;
+        public InputActionMap Get() { return m_Wrapper.m_Land; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LandActions set) { return set.Get(); }
+        public void SetCallbacks(ILandActions instance)
         {
-            private @PlayerActionControls m_Wrapper;
-            public LandActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Movement => m_Wrapper.m_Land_Movement;
-            public InputActionMap Get() { return m_Wrapper.m_Land; }
-            public void Enable() { Get().Enable(); }
-            public void Disable() { Get().Disable(); }
-            public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(LandActions set) { return set.Get(); }
-            public void SetCallbacks(ILandActions instance)
+            if (m_Wrapper.m_LandActionsCallbackInterface != null)
             {
-                if (m_Wrapper.m_LandActionsCallbackInterface != null)
-                {
-                    @Movement.started -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
-                    @Movement.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
-                    @Movement.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
-                }
-                m_Wrapper.m_LandActionsCallbackInterface = instance;
-                if (instance != null)
-                {
-                    @Movement.started += instance.OnMovement;
-                    @Movement.performed += instance.OnMovement;
-                    @Movement.canceled += instance.OnMovement;
-                }
+                @Movement.started -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
+            }
+            m_Wrapper.m_LandActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
             }
         }
-        public LandActions @Land => new LandActions(this);
-        private int m_KeyboardSchemeIndex = -1;
-        public InputControlScheme KeyboardScheme
+    }
+    public LandActions @Land => new LandActions(this);
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
         {
-            get
-            {
-                if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
-                return asset.controlSchemes[m_KeyboardSchemeIndex];
-            }
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
         }
-        public interface ILandActions
-        {
-            void OnMovement(InputAction.CallbackContext context);
-        }
+    }
+    public interface ILandActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
     }
 }

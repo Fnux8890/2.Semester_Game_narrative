@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _playerActionControls = new PlayerActionControls();
+        _playerActionControls.Land.Interact.performed += ctx => Interact();
     }
 
     private void OnEnable()
@@ -40,6 +41,11 @@ public class PlayerController : MonoBehaviour
         Vector2 currentPosition = transform.position;
         currentPosition += movement * (moveSpeed * Time.deltaTime);
         transform.position = currentPosition;
+    }
+
+    private void Interact()
+    {
+        Debug.Log("You interacted with something");
     }
     
     private void LoadJson()

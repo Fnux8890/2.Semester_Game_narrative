@@ -25,6 +25,14 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": ""NormalizeVector2"",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""f1a4f29e-1cf5-4a1a-ba31-2cfc4a09dc19"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": ""NormalizeVector2"",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -82,6 +90,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b464bc96-c39a-4d0c-b346-cc6e88ab62e7"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -103,6 +122,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         // Land
         m_Land = asset.FindActionMap("Land", throwIfNotFound: true);
         m_Land_Movement = m_Land.FindAction("Movement", throwIfNotFound: true);
+        m_Land_Interact = m_Land.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -153,11 +173,13 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Land;
     private ILandActions m_LandActionsCallbackInterface;
     private readonly InputAction m_Land_Movement;
+    private readonly InputAction m_Land_Interact;
     public struct LandActions
     {
         private @PlayerActionControls m_Wrapper;
         public LandActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Land_Movement;
+        public InputAction @Interact => m_Wrapper.m_Land_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Land; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -170,6 +192,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Movement.started -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnMovement;
+                @Interact.started -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_LandActionsCallbackInterface = instance;
             if (instance != null)
@@ -177,6 +202,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -193,5 +221,6 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     public interface ILandActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

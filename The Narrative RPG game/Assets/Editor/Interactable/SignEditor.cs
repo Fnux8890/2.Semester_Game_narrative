@@ -10,15 +10,6 @@ public class SignEditor : Editor
     {
         base.OnInspectorGUI();
         InteractableSignScript signScript = (InteractableSignScript) target;
-
-
-        signScript.enumDirection =
-            (InteractDirection) EditorGUILayout.EnumPopup("Direction", signScript.enumDirection);
-
-
-        if (signScript.bc!=null)
-        {
-            signScript.bc.transform.position = signScript.test.GETDirection(signScript.enumDirection);
-        }
+        
     }
 }

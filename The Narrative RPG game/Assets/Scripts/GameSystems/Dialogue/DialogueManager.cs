@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Dialogue;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using UnityEditor;
 using UnityEngine;
@@ -22,18 +22,32 @@ namespace GameSystems.Dialogue
             _json = json;
             DialogueSetup();
         }
-        
+
+        private string GETFilePathFromAsset(TextAsset asset)
+        {
+            StringBuilder sb = new StringBuilder();
+            string root = Application.dataPath + "/Resources/DialogueDesigner";
+            string[] files = Directory.GetFiles(root, "*.json*", SearchOption.AllDirectories);
+
+            foreach (string file in files)
+            {
+                if (file.Contains("meta")) continue;
+                if (file.Contains(asset.name)) sb.Append(file);
+            }
+            
+            return sb.ToString();
+        }
 
         private async void DialogueSetup()
         {
             var dialogueArray = JsonHelper.GETJsonArray<Dialogue_Json_Classes.Dialogue>(_json.text);
             Dialogue = dialogueArray[0];
-            var filePath = AssetDatabase.GetAssetPath(_json);
+            var filePath = GETFilePathFromAsset(_json);
             await GETInconsistentlyDataAsync(filePath);
             var sorted = Dialogue.nodes
                 .OrderBy(x => x.NodeIndex).ToList();
         }
-        
+
 
         private async Task GETInconsistentlyDataAsync(string filePath)
         {

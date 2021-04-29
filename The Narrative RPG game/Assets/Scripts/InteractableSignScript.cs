@@ -10,6 +10,7 @@ using UnityEngine.Serialization;
 
 [RequireComponent(typeof(ArcCollider2D))]
 [RequireComponent(typeof(BoxCollider2D))]
+
 public class InteractableSignScript : MonoBehaviour
 {
     public CharacterInteractable test;
@@ -19,7 +20,9 @@ public class InteractableSignScript : MonoBehaviour
     private ArcCollider2D _arcCollider2D;
     private BoxCollider2D _boxCollider;
     private SpriteRenderer _spriteRenderer;
+
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,7 @@ public class InteractableSignScript : MonoBehaviour
         _boxCollider = GetComponent<BoxCollider2D>();
         _arcCollider2D = GetComponent<ArcCollider2D>();
         _polygonCollider = GetComponent<PolygonCollider2D>();
+        
         
         
         
@@ -60,13 +64,7 @@ public class InteractableSignScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Entering");
-        }
-    }
+    
 }
 
 

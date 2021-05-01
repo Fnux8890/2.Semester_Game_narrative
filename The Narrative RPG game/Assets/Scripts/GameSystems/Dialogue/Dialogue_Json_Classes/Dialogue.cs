@@ -32,7 +32,7 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
 
         public dynamic VariableData
         {
-            get => _valueData != null ? _valueData : null;
+            get => _valueData ?? null;
             private set => _valueData = value;
         }
 

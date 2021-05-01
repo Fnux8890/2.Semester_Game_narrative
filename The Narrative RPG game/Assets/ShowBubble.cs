@@ -13,7 +13,7 @@ public class ShowBubble : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
-        Collider2D signCollider = gameObject.GetComponentInParent()
+        Collider2D signCollider = gameObject.GetComponentInParent<Collider2D>();
     }
     
     private void OnTriggerEnter2D(Collider2D other)

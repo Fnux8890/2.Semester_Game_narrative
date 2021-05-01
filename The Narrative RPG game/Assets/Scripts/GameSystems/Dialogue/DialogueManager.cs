@@ -26,7 +26,7 @@ namespace GameSystems.Dialogue
         private string GETFilePathFromAsset(TextAsset asset)
         {
             StringBuilder sb = new StringBuilder();
-            string root = Application.dataPath + "/Resources/DialogueDesigner";
+            string root = Application.dataPath + @"\Resources\DialogueDesigner";
             string[] files = Directory.GetFiles(root, "*.json*", SearchOption.AllDirectories);
 
             foreach (string file in files)
@@ -46,6 +46,7 @@ namespace GameSystems.Dialogue
             await GETInconsistentlyDataAsync(filePath);
             var sorted = Dialogue.nodes
                 .OrderBy(x => x.NodeIndex).ToList();
+            
         }
 
 

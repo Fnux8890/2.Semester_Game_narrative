@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 using UnityEngine;
+using Formatting = System.Xml.Formatting;
 
 namespace Utilities
 {
@@ -20,6 +24,41 @@ namespace Utilities
                 component.GetType() == typeof(T) && component.name == search);
             var resultOfType = (T) Convert.ChangeType(result, typeof(T));
             return resultOfType;
+        }
+
+
+        public static void PrettifyJson(TextAsset json)
+        {
+            var filePath = GETDialogueFilePathFromAsset(json);
+            var obj = JsonConvert.DeserializeObject(json.ToString());
+            var content = JsonConvert.SerializeObject(obj, (Newtonsoft.Json.Formatting) Formatting.Indented);
+            
+            File.WriteAllText(filePath, content);
+
+        }
+
+        public static string GETDialogueFilePathFromAsset(TextAsset asset)
+        {
+            var sb = new StringBuilder();
+            
+#if UNITY_EDITOR_OSX || UNITY_EDITOR_LINUX || UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
+            var root = Application.dataPath + "/Resources/DialogueDesigner";
+#else
+            var root = Application.dataPath + "\Resources\DialogueDesigner";
+#endif
+            var files = Directory.GetFiles(root, "*.json*", SearchOption.AllDirectories);
+
+            foreach (var file in files)
+            {
+                if (file.Contains("meta")) continue;
+                var fileName = file.
+                    Substring(file.LastIndexOf("/", StringComparison.Ordinal) + 1,
+                        file.IndexOf(".json", StringComparison.Ordinal) 
+                        - file.LastIndexOf("/", StringComparison.Ordinal) - 1);
+                if (fileName.Equals(asset.name)) sb.Append(file);
+            }
+            
+            return sb.ToString();
         }
     }
 }

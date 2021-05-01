@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,33 +54,6 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
     }
 
     [Serializable]
-    public class AlreadyMet
-    {
-        public int type;
-        public bool value;
-    }
-
-    [Serializable]
-    public class SeenFireworks
-    {
-        public int type;
-        public bool value;
-    }
-
-
-    [Serializable]
-    public class DialogueOld
-    {
-        public string[] characters;
-        public Connections[] connections;
-        public string editor_version;
-        public string file_name;
-        public string[] languages;
-        public Node[] nodes;
-        public string selected_language;
-    }
-
-    [Serializable]
     public class Connections
     {
         public string from;
@@ -96,7 +70,7 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
 
         public string character;
         public int characterIndex;
-        public Branches branches;
+        public Dictionary<string,string> branches;
         public Choices[] choices;
         public int chance_1;
         public int chance_2;
@@ -149,6 +123,61 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
                 return 0;
             }
         }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+        // character;
+        // characterIndex;
+        // branches;
+        // choices;
+        // chance_1;
+        // chance_2;
+        // filename;
+        // is_box;
+        // next;
+        // next_index;
+        // node_name;
+        // node_index;
+        // node_type;
+        // object_path;
+        // offset;
+        // time;
+        // slide_camera;
+        // speaker_type;
+        // text;
+        var fields = GetType().GetFields();
+        foreach (var field in fields)
+        {
+            if (field.GetValue(this) == null) continue;
+            if (field.FieldType.IsArray && field.FieldType.FullName.EndsWith("[]"))
+            {
+                var arrayData = (int[]) field.GetValue(this);
+                sb.Append($"{field.Name}: {string.Join(" | ", arrayData)}\n");
+                continue;
+            }
+
+            if (field.FieldType.IsClass && field.FieldType != typeof(string))
+            {
+                var objSb = new StringBuilder();
+                var ObjectData = field.GetValue(this);
+                var ObjectFields = ObjectData.GetType().GetFields();
+                foreach (var of in ObjectFields)
+                {
+                    if (of.GetValue(ObjectData)== null) continue;
+                    if (of.FieldType.IsGenericType)
+                    {
+                        var ofList = (List<string>) of.GetValue(ObjectData);
+                    }
+                    
+                }
+                //Debug.Log($"{ObjectFields[0].Name}");
+            }
+            sb.Append($"{field.Name}: {field.GetValue(this)}\n");
+        }
+
+        return sb.ToString();
+        }
     }
 
     public class NodeCompare : IComparer<Node>
@@ -182,14 +211,7 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
         public string FR;
         public string RUS;
     }
-
-    [Serializable]
-    public class Branches
-    {
-        public List<string> branchesString;
-
-        public List<int> BranchesInt => branchesString?.ConvertAll(int.Parse);
-    }
+    
     
     
     

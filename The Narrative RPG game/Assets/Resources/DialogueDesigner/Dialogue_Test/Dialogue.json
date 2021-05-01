@@ -1,65 +1,233 @@
 [
   {
-    "characters": ["Player", "Mark", "Jane"],
+    "characters": [
+      "Player",
+      "Mark",
+      "Jane"
+    ],
     "connections": [
-      { "from": "START", "from_port": 0, "to": "1374898", "to_port": 0 },
-      { "from": "1374898", "from_port": 1, "to": "671063", "to_port": 0 },
-      { "from": "1374898", "from_port": 0, "to": "2399617", "to_port": 0 },
-      { "from": "2399617", "from_port": 0, "to": "6061566", "to_port": 0 },
-      { "from": "2399617", "from_port": 1, "to": "1620009", "to_port": 0 },
-      { "from": "671063", "from_port": 0, "to": "1184004", "to_port": 0 },
-      { "from": "1184004", "from_port": 0, "to": "9416496", "to_port": 0 },
-      { "from": "1184004", "from_port": 1, "to": "1350101", "to_port": 0 },
-      { "from": "1823984", "from_port": 0, "to": "3940134", "to_port": 0 },
-      { "from": "9416496", "from_port": 0, "to": "7342037", "to_port": 0 },
-      { "from": "1350101", "from_port": 0, "to": "7342037", "to_port": 0 },
-      { "from": "7342037", "from_port": 0, "to": "1823984", "to_port": 0 },
-      { "from": "3940134", "from_port": 0, "to": "5060303", "to_port": 0 },
-      { "from": "5060303", "from_port": 0, "to": "3623836", "to_port": 0 },
-      { "from": "3623836", "from_port": 0, "to": "7096929", "to_port": 0 },
-      { "from": "7096929", "from_port": 0, "to": "5985505", "to_port": 0 },
-      { "from": "7096929", "from_port": 1, "to": "6029156", "to_port": 0 },
-      { "from": "5985505", "from_port": 0, "to": "9404279", "to_port": 0 },
-      { "from": "6029156", "from_port": 0, "to": "9404279", "to_port": 0 },
-      { "from": "1628446", "from_port": 0, "to": "7178620", "to_port": 0 },
-      { "from": "7178620", "from_port": 0, "to": "9404279", "to_port": 0 },
-      { "from": "9404279", "from_port": 0, "to": "2147836", "to_port": 0 },
-      { "from": "6221194", "from_port": 1, "to": "1628446", "to_port": 0 },
-      { "from": "2147836", "from_port": 0, "to": "6221194", "to_port": 0 },
-      { "from": "6221194", "from_port": 0, "to": "7178620", "to_port": 0 },
-      { "from": "7178620", "from_port": 1, "to": "4287118", "to_port": 0 },
-      { "from": "4287118", "from_port": 0, "to": "2774956", "to_port": 0 },
-      { "from": "2774956", "from_port": 0, "to": "3539587", "to_port": 0 },
-      { "from": "3539587", "from_port": 0, "to": "8543828", "to_port": 0 }
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "1374898",
+        "to_port": 0
+      },
+      {
+        "from": "1374898",
+        "from_port": 1,
+        "to": "671063",
+        "to_port": 0
+      },
+      {
+        "from": "1374898",
+        "from_port": 0,
+        "to": "2399617",
+        "to_port": 0
+      },
+      {
+        "from": "2399617",
+        "from_port": 0,
+        "to": "6061566",
+        "to_port": 0
+      },
+      {
+        "from": "2399617",
+        "from_port": 1,
+        "to": "1620009",
+        "to_port": 0
+      },
+      {
+        "from": "671063",
+        "from_port": 0,
+        "to": "1184004",
+        "to_port": 0
+      },
+      {
+        "from": "1184004",
+        "from_port": 0,
+        "to": "9416496",
+        "to_port": 0
+      },
+      {
+        "from": "1184004",
+        "from_port": 1,
+        "to": "1350101",
+        "to_port": 0
+      },
+      {
+        "from": "1823984",
+        "from_port": 0,
+        "to": "3940134",
+        "to_port": 0
+      },
+      {
+        "from": "9416496",
+        "from_port": 0,
+        "to": "7342037",
+        "to_port": 0
+      },
+      {
+        "from": "1350101",
+        "from_port": 0,
+        "to": "7342037",
+        "to_port": 0
+      },
+      {
+        "from": "7342037",
+        "from_port": 0,
+        "to": "1823984",
+        "to_port": 0
+      },
+      {
+        "from": "3940134",
+        "from_port": 0,
+        "to": "5060303",
+        "to_port": 0
+      },
+      {
+        "from": "5060303",
+        "from_port": 0,
+        "to": "3623836",
+        "to_port": 0
+      },
+      {
+        "from": "3623836",
+        "from_port": 0,
+        "to": "7096929",
+        "to_port": 0
+      },
+      {
+        "from": "7096929",
+        "from_port": 0,
+        "to": "5985505",
+        "to_port": 0
+      },
+      {
+        "from": "7096929",
+        "from_port": 1,
+        "to": "6029156",
+        "to_port": 0
+      },
+      {
+        "from": "5985505",
+        "from_port": 0,
+        "to": "9404279",
+        "to_port": 0
+      },
+      {
+        "from": "6029156",
+        "from_port": 0,
+        "to": "9404279",
+        "to_port": 0
+      },
+      {
+        "from": "1628446",
+        "from_port": 0,
+        "to": "7178620",
+        "to_port": 0
+      },
+      {
+        "from": "7178620",
+        "from_port": 0,
+        "to": "9404279",
+        "to_port": 0
+      },
+      {
+        "from": "9404279",
+        "from_port": 0,
+        "to": "2147836",
+        "to_port": 0
+      },
+      {
+        "from": "6221194",
+        "from_port": 1,
+        "to": "1628446",
+        "to_port": 0
+      },
+      {
+        "from": "2147836",
+        "from_port": 0,
+        "to": "6221194",
+        "to_port": 0
+      },
+      {
+        "from": "6221194",
+        "from_port": 0,
+        "to": "7178620",
+        "to_port": 0
+      },
+      {
+        "from": "7178620",
+        "from_port": 1,
+        "to": "4287118",
+        "to_port": 0
+      },
+      {
+        "from": "4287118",
+        "from_port": 0,
+        "to": "2774956",
+        "to_port": 0
+      },
+      {
+        "from": "2774956",
+        "from_port": 0,
+        "to": "3539587",
+        "to_port": 0
+      },
+      {
+        "from": "3539587",
+        "from_port": 0,
+        "to": "8543828",
+        "to_port": 0
+      }
     ],
     "editor_version": "2.1",
     "file_name": "Dialogue_Jane_2.1",
-    "languages": ["ENG", "FR", "RUS"],
+    "languages": [
+      "ENG",
+      "FR",
+      "RUS"
+    ],
     "nodes": [
       {
         "filename": "res://Nodes/Start.tscn",
         "next": "1374898",
         "node_name": "START",
         "node_type": "start",
-        "offset": [-720, -40]
+        "offset": [
+          -720,
+          -40
+        ]
       },
       {
-        "branches": { "False": "671063", "True": "2399617" },
+        "branches": {
+          "False": "671063",
+          "True": "2399617"
+        },
         "filename": "res://Nodes/Condition Branch.tscn",
         "node_name": "1374898",
         "node_type": "condition_branch",
-        "offset": [-400, -60],
+        "offset": [
+          -400,
+          -60
+        ],
         "text": "MSG.var(\"already_met\")"
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": null,
         "node_name": "1620009",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [240, 540],
+        "offset": [
+          240,
+          540
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -69,23 +237,35 @@
         }
       },
       {
-        "branches": { "1": "6061566", "2": "1620009" },
+        "branches": {
+          "1": "6061566",
+          "2": "1620009"
+        },
         "chance_1": 95,
         "chance_2": 5,
         "filename": "res://Nodes/Chance Branch.tscn",
         "node_name": "2399617",
         "node_type": "chance_branch",
-        "offset": [-100, 360]
+        "offset": [
+          -100,
+          360
+        ]
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "7342037",
         "node_name": "1350101",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [880, -280],
+        "offset": [
+          880,
+          -280
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -95,14 +275,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": null,
         "node_name": "6061566",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [240, 200],
+        "offset": [
+          240,
+          200
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -112,14 +298,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "1823984",
         "node_name": "7342037",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [1420, -520],
+        "offset": [
+          1420,
+          -520
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -129,22 +321,34 @@
         }
       },
       {
-        "branches": { "False": "1350101", "True": "9416496" },
+        "branches": {
+          "False": "1350101",
+          "True": "9416496"
+        },
         "filename": "res://Nodes/Condition Branch.tscn",
         "node_name": "1184004",
         "node_type": "condition_branch",
-        "offset": [480, -400],
+        "offset": [
+          480,
+          -400
+        ],
         "text": "G.talked_to_mark"
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "7342037",
         "node_name": "9416496",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [880, -640],
+        "offset": [
+          880,
+          -640
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -154,14 +358,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "3940134",
         "node_name": "1823984",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [1860, -520],
+        "offset": [
+          1860,
+          -520
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -171,14 +381,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "5060303",
         "node_name": "3940134",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [2700, -520],
+        "offset": [
+          2700,
+          -520
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -188,14 +404,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "9404279",
         "node_name": "6029156",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [3180, 200],
+        "offset": [
+          3180,
+          200
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -209,18 +431,27 @@
         "next": "2147836",
         "node_name": "9404279",
         "node_type": "execute",
-        "offset": [3700, 100],
+        "offset": [
+          3700,
+          100
+        ],
         "text": "G.show_fireworks()"
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "3623836",
         "node_name": "5060303",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [1420, -60],
+        "offset": [
+          1420,
+          -60
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -230,14 +461,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "7096929",
         "node_name": "3623836",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [2160, -60],
+        "offset": [
+          2160,
+          -60
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -247,14 +484,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "9404279",
         "node_name": "5985505",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [3180, -140],
+        "offset": [
+          3180,
+          -140
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -264,14 +507,20 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "7178620",
         "node_name": "1628446",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [4500, -300],
+        "offset": [
+          4500,
+          -300
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -281,11 +530,17 @@
         }
       },
       {
-        "branches": { "False": "1628446", "True": "7178620" },
+        "branches": {
+          "False": "1628446",
+          "True": "7178620"
+        },
         "filename": "res://Nodes/Condition Branch.tscn",
         "node_name": "6221194",
         "node_type": "condition_branch",
-        "offset": [4140, -240],
+        "offset": [
+          4140,
+          -240
+        ],
         "text": "MSG.var(\"seen_fireworks\")"
       },
       {
@@ -293,18 +548,27 @@
         "next": "6221194",
         "node_name": "2147836",
         "node_type": "wait",
-        "offset": [4040, 20],
+        "offset": [
+          4040,
+          20
+        ],
         "time": 1
       },
       {
-        "character": ["Player", 0],
+        "character": [
+          "Player",
+          0
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
         "next": "2774956",
         "node_name": "4287118",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [5560, 200],
+        "offset": [
+          5560,
+          200
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -318,7 +582,10 @@
         "next": "8543828",
         "node_name": "3539587",
         "node_type": "set_local_variable",
-        "offset": [6500, 200],
+        "offset": [
+          6500,
+          200
+        ],
         "operation_type": null,
         "toggle": false,
         "value": true,
@@ -329,18 +596,27 @@
         "next": null,
         "node_name": "8543828",
         "node_type": "execute",
-        "offset": [6800, 240],
+        "offset": [
+          6800,
+          240
+        ],
         "text": "G.set(\"talked_to_jane\", true)"
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
         "next": "3539587",
         "node_name": "2774956",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [6040, 180],
+        "offset": [
+          6040,
+          180
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -350,14 +626,20 @@
         }
       },
       {
-        "character": ["Player", 0],
+        "character": [
+          "Player",
+          0
+        ],
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
         "next": "1184004",
         "node_name": "671063",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [20, -420],
+        "offset": [
+          20,
+          -420
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -367,7 +649,10 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "choices": [
           {
             "condition": "",
@@ -399,7 +684,10 @@
         "node_name": "7178620",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [5040, 60],
+        "offset": [
+          5040,
+          60
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -409,7 +697,10 @@
         }
       },
       {
-        "character": ["Jane", 2],
+        "character": [
+          "Jane",
+          2
+        ],
         "choices": [
           {
             "condition": "",
@@ -441,7 +732,10 @@
         "node_name": "7096929",
         "node_type": "show_message",
         "object_path": "",
-        "offset": [2700, -80],
+        "offset": [
+          2700,
+          -80
+        ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
@@ -453,8 +747,14 @@
     ],
     "selected_language": "ENG",
     "variables": {
-      "already_met": { "type": 2, "value": false },
-      "seen_fireworks": { "type": 2, "value": false }
+      "already_met": {
+        "type": 2,
+        "value": false
+      },
+      "seen_fireworks": {
+        "type": 2,
+        "value": false
+      }
     }
   }
 ]

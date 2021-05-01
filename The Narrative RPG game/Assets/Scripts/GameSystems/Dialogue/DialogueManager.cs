@@ -1,396 +1,64 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
-using UnityEditor;
+using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
+using TC = GameSystems.Dialogue.TreeCollection.TreeCollection;
 using UnityEngine;
+using Utilities;
 
 namespace GameSystems.Dialogue
 {
     public class DialogueManager
     {
         private TextAsset _json;
-
-        public Dialogue_Json_Classes.Dialogue Dialogue { get; private set; }
-
+        
+        public DialogueClass Dialogue { get; private set; }
+        public Connections[] Connections => Dialogue.connections;
+        public List<Node> Nodes => Dialogue.nodes;
+        
+        public TC Tc {get; private set;}
+        
+        
         public DialogueManager(TextAsset json)
         {
             _json = json;
-            DialogueSetup();
-        }
-
-        private string GETFilePathFromAsset(TextAsset asset)
-        {
-            StringBuilder sb = new StringBuilder();
-            string root = Application.dataPath + "/Resources/DialogueDesigner";
-            string[] files = Directory.GetFiles(root, "*.json*", SearchOption.AllDirectories);
-
-            foreach (string file in files)
-            {
-                if (file.Contains("meta")) continue;
-                if (file.Contains(asset.name)) sb.Append(file);
-            }
+            var df = new DialogueFetcher(_json);
+            Dialogue = df.Dialogue;
+            //Tc = PopulateTree();
             
-            return sb.ToString();
         }
 
-        private async void DialogueSetup()
+        private TC PopulateTree()
         {
-            var dialogueArray = JsonHelper.GETJsonArray<Dialogue_Json_Classes.Dialogue>(_json.text);
-            Dialogue = dialogueArray[0];
-            var filePath = GETFilePathFromAsset(_json);
-            await GETInconsistentlyDataAsync(filePath);
-            var sorted = Dialogue.nodes
-                .OrderBy(x => x.NodeIndex).ToList();
+            var tc = new TC();
+            var rootConnection = Array.Find(Connections, x => x.@from == "START");
+            var rootNode = Nodes.Find(node => node.node_name == rootConnection.@from);
+            Node node;
+            while ((node = InsertRecursive(rootNode)) != null)
+            {
+                tc.Insert(node);
+            }
+            return tc;
         }
 
-
-        private async Task GETInconsistentlyDataAsync(string filePath)
+        private Node InsertRecursive(Node node)
         {
-            var tasks = new List<Task>
+            if (node.next == null && node.branches == null) return null;
+            if (node.next != null)
             {
-                Task.Run(() => GETVariablesAsync(filePath)),
-                Task.Run(() => GETBranchesAsync(filePath)),
-                Task.Run(() => GETCharacterNameAsync(filePath))
-            };
+                InsertRecursive(FindNode(node.next));
+            }
 
-            await Task.WhenAll(tasks);
+            if (node.branches != null)
+            {
+                Debug.Log("SELECT");
+            }
+            return node;
         }
 
-        private void GETVariablesAsync(string filePath)
+        private Node FindNode(string nodeName)
         {
-            if (Dialogue == null) return;
-            string readLine;
-            var insideVariables = false;
-            Dialogue.Variables.variables = new Dictionary<string, Variable>();
-            var file = new StreamReader(filePath);
-            var insideCount = 0;
-            var numberOfObjects = 0;
-            var keys = new List<string>();
-            var types = new List<int>();
-            var values = new ArrayList();
-            while ((readLine = file.ReadLine()) != null)
-            {
-                if (readLine.Contains("variables"))
-                {
-                    insideVariables = true;
-                }
-
-                if (insideVariables)
-                {
-                    if (readLine.Contains("{") && readLine.Contains("}"))
-                    {
-                        var variableKey = readLine.Substring(0, readLine.IndexOf(
-                            ":", StringComparison.Ordinal)).Trim('\"', ' ');
-                        var insideObject = readLine.Substring(
-                            readLine.IndexOf("{", StringComparison.Ordinal),
-                            readLine.IndexOf("}", StringComparison.Ordinal) + 1
-                            - readLine.IndexOf("{", StringComparison.Ordinal));
-                        var indexFrom = new List<int>();
-                        var indexTo = new List<int>();
-                        var index = 0;
-                        while ((index = insideObject.IndexOf(":", index, StringComparison.Ordinal)) != -1)
-                        {
-                            indexFrom.Add(index);
-                            index++;
-                        }
-
-                        index = 0;
-                        while ((index = insideObject.IndexOf(",", index, StringComparison.Ordinal)) != -1)
-                        {
-                            indexTo.Add(index);
-                            index++;
-                        }
-
-                        if (indexFrom.Count > indexTo.Count)
-                        {
-                            var indexToAdd = insideObject.IndexOf("}", StringComparison.Ordinal);
-                            indexTo.Add(indexToAdd);
-                        }
-
-                        if (indexFrom.Count == indexTo.Count)
-                        {
-                            int.TryParse(insideObject
-                                .Substring(indexFrom[0], indexTo[0] - indexFrom[0]).Trim(' ', ':'), out var type);
-                            switch (type)
-                            {
-                                case 0:
-                                    Dialogue.Variables.variables
-                                        .Add(variableKey, new Variable(type,
-                                            insideObject
-                                                .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
-                                                .Trim(' ', '\"', ',', '}')));
-                                    break;
-                                case 1:
-                                    int.TryParse(insideObject
-                                        .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
-                                        .Trim(' ', '\"', ',', '}'), out var valueInt);
-                                    Dialogue.Variables.variables
-                                        .Add(variableKey, new Variable(type, valueInt));
-                                    break;
-                                case 2:
-                                    bool.TryParse(insideObject
-                                        .Substring(indexFrom[1], indexTo[1] - indexFrom[1])
-                                        .Trim(' ', '\"', ',', '}'), out var valueBool);
-                                    Dialogue.Variables.variables
-                                        .Add(variableKey, new Variable(type, valueBool));
-                                    break;
-                            }
-                        }
-
-                        continue;
-                    }
-
-                    if (readLine.Contains("{") && !readLine.Contains("}")) insideCount++;
-                    if (readLine.Contains("}") && !readLine.Contains("{"))
-                    {
-                        insideCount--;
-                        numberOfObjects++;
-                    }
-
-                    if (insideCount == 0)
-                    {
-                        insideVariables = false;
-                    }
-
-
-                    if (insideVariables && readLine.Contains(":") && insideCount > 0 && !readLine.Contains("variables"))
-                    {
-                        if (readLine.Contains("{"))
-                        {
-                            keys.Add(readLine.Substring(0, readLine.IndexOf(
-                                ":", StringComparison.Ordinal)).Trim('\"', ' '));
-                        }
-
-                        if (readLine.Contains("type") && readLine.Contains(","))
-                        {
-                            var stringToInt = readLine
-                                .Substring(readLine.IndexOf(":", StringComparison.Ordinal),
-                                    readLine.IndexOf(",", StringComparison.Ordinal)
-                                    - readLine.IndexOf(":", StringComparison.Ordinal) + 1)
-                                .Trim(' ', ',', ':');
-                            int.TryParse(stringToInt, out int type);
-                            types.Add(type);
-                        }
-
-                        if (readLine.Contains("value"))
-                        {
-                            switch (types[numberOfObjects])
-                            {
-                                case 0:
-                                    Dialogue.Variables.variables
-                                        .Add(keys[numberOfObjects], new Variable(types[numberOfObjects],
-                                            readLine
-                                                .Substring(readLine.IndexOf(":", StringComparison.Ordinal),
-                                                    readLine.Length - readLine
-                                                        .IndexOf(":", StringComparison.Ordinal))
-                                                .Trim(' ', '\"', ',', '}')));
-                                    break;
-                                case 1:
-                                    int.TryParse(readLine
-                                        .Substring(readLine.IndexOf(":", StringComparison.Ordinal),
-                                            readLine.Length - readLine
-                                                .IndexOf(":", StringComparison.Ordinal))
-                                        .Trim(' ', '\"', ',', '}'), out var valueInt);
-                                    Dialogue.Variables.variables
-                                        .Add(keys[numberOfObjects], new Variable(types[numberOfObjects], valueInt));
-                                    break;
-                                case 2:
-                                    var stringToBool = readLine
-                                        .Substring(readLine.IndexOf(":", StringComparison.Ordinal),
-                                            readLine.Length - readLine
-                                                .IndexOf(":", StringComparison.Ordinal))
-                                        .Trim(' ', '\"', ',', '}', ':');
-                                    bool.TryParse(stringToBool, out var valueBool);
-                                    Dialogue.Variables.variables
-                                        .Add(keys[numberOfObjects], new Variable(types[numberOfObjects], valueBool));
-                                    break;
-                            }
-                        }
-                    }
-                }
-            }
-
-            file.Close();
+            return Nodes.Find(x => x.node_name == nodeName);
         }
-
-        private void GETBranchesAsync(string filePath)
-        {
-            #region SeachFileForBranches
-
-            if (Dialogue == null)
-            {
-                return;
-            }
-
-            var file = new StreamReader(filePath);
-            string readLine;
-            var insideNodes = false;
-            var nodeNumber = 0;
-            var insideChoices = false;
-            var insideNode = false;
-            while ((readLine = file.ReadLine()) != null)
-            {
-                if (readLine.Contains("nodes")) insideNodes = true;
-                if (insideNodes)
-                {
-                    if (readLine.Contains("{") && readLine.Trim(' ').Length < 2)
-                    {
-                        insideNode = true;
-                        nodeNumber++;
-                    }
-
-                    if (readLine.Contains("choices") && readLine.Contains("["))
-                    {
-                        insideChoices = true;
-                    }
-
-                    if (readLine.Contains("],") && insideNode)
-                    {
-                        insideChoices = false;
-                    }
-
-                    if (readLine.Contains("},") && !insideChoices)
-                    {
-                        insideNode = false;
-                    }
-
-                    if (readLine.Contains("branches") && readLine.Contains("}"))
-                    {
-                        var insideObject = readLine.Substring(
-                            readLine.IndexOf("{", StringComparison.Ordinal),
-                            readLine.IndexOf("}", StringComparison.Ordinal) + 2
-                            - readLine.IndexOf("{", StringComparison.Ordinal));
-                        var indexFrom = new List<int>();
-                        var indexTo = new List<int>();
-                        var index = 0;
-                        while ((index = insideObject.IndexOf(":", index, StringComparison.Ordinal)) != -1)
-                        {
-                            indexFrom.Add(index);
-                            index++;
-                        }
-
-                        index = 0;
-                        while ((index = insideObject.IndexOf(",", index, StringComparison.Ordinal)) != -1)
-                        {
-                            indexTo.Add(index);
-                            index++;
-                        }
-
-                        if (indexFrom.Count == indexTo.Count)
-                        {
-                            Dialogue.nodes[nodeNumber - 1].branches.branchesString = indexFrom.Select(
-                                (t, i) => insideObject.Substring(t, indexTo[i] - 1 - t)
-                                    .Trim(':', ' ', '\"')).ToList();
-                        }
-                    }
-                }
-            }
-
-            file.Close();
-
-            #endregion
-        }
-
-        private void GETCharacterNameAsync(string filePath)
-        {
-            #region SeachFileForCharacters
-
-            if (Dialogue == null)
-            {
-                return;
-            }
-
-            string readLine;
-            var insideArray = false;
-            var insideNode = false;
-            var file = new StreamReader(filePath);
-            var characterArrayList = new ArrayList();
-            while ((readLine = file.ReadLine()) != null)
-            {
-                if (readLine.Contains("nodes")) insideNode = true;
-                if (insideNode)
-                {
-                    if (insideArray)
-                    {
-                        if (readLine.Contains("]"))
-                        {
-                            insideArray = false;
-                            continue;
-                        }
-
-                        characterArrayList.Add(readLine.Trim(' ', '\"', ','));
-                    }
-
-                    if (readLine.Contains("character") && readLine.Contains("[") &&
-                        !readLine.Contains("]"))
-                    {
-                        insideArray = true;
-                    }
-
-                    if (readLine.Contains("[") && readLine.Contains("]") &&
-                        readLine.Contains("character"))
-                    {
-                        var substringList = readLine.Substring(
-                                readLine.IndexOf("[", StringComparison.Ordinal),
-                                ((readLine.IndexOf("]", StringComparison.Ordinal) + 1)
-                                 - readLine.IndexOf("[", StringComparison.Ordinal)))
-                            .Trim(' ', '\"', '[', ']').Split(',').ToList();
-                        characterArrayList.AddRange(substringList);
-                    }
-                }
-            }
-
-            file.Close();
-
-            #endregion
-
-            #region InsertCharactersToNodes
-
-            var charterName = new Queue<string>();
-            var charterIndex = new Queue<int>();
-            for (int i = 0; i < characterArrayList.Count; ++i)
-            {
-                if (i % 2 == 0)
-                {
-                    try
-                    {
-                        charterName.Enqueue(characterArrayList[i].ToString().Trim('\"'));
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e);
-                        throw;
-                    }
-                }
-                else
-                {
-                    try
-                    {
-                        int.TryParse(characterArrayList[i].ToString(), out var index);
-                        charterIndex.Enqueue(index);
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e);
-                        throw;
-                    }
-                }
-            }
-
-            foreach (var node in Dialogue.nodes.Where(node => node.text.ENG != null))
-            {
-                node.character = charterName.Dequeue();
-                node.characterIndex = charterIndex.Dequeue();
-            }
-
-            #endregion
-        }
-
-        
     }
 }

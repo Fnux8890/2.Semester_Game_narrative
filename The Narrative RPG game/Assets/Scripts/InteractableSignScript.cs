@@ -2,11 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using GameSystems.Dialogue;
+using GameSystems.Dialogue.Dialogue_Json_Classes;
+using GameSystems.Dialogue.TreeCollection;
 using scribble_objects.Characters;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Utilities;
 
 [RequireComponent(typeof(ArcCollider2D))]
 [RequireComponent(typeof(BoxCollider2D))]
@@ -14,11 +18,14 @@ public class InteractableSignScript : MonoBehaviour
 {
     public CharacterInteractable test;
     public TextAsset json;
+
+    private TextAsset _previousJson;
     
     private PolygonCollider2D _polygonCollider;
     private ArcCollider2D _arcCollider2D;
     private BoxCollider2D _boxCollider;
     private SpriteRenderer _spriteRenderer;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -46,10 +53,25 @@ public class InteractableSignScript : MonoBehaviour
         }
         
         DialogueManager dm = new DialogueManager(json);
-
-
+        TreeCollection treeCollection = new TreeCollection();
 
     }
+
+    private void OnValidate()
+    {
+        UpdateJson();
+    }
+
+    public void UpdateJson()
+    {
+        if (_previousJson == null) _previousJson = new TextAsset();
+        if (json.GetType() != typeof(TextAsset))
+            throw new InvalidOperationException("File can only be Text Assets");
+        if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
+        _previousJson = json;
+        CustomUtils.PrettifyJson(json);
+    }
+
 
     // Update is called once per frame
     void Update()

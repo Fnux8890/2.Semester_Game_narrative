@@ -123,7 +123,7 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "I'm still not impressed... You'll have to do more than that.",
+          "ENG": "I'mstillnotimpressed...You'll have to do more than that.",
           "FR": "Ceci est un exemple de texte en français.",
           "RUS": "Это пример текста на русском языке."
         }
@@ -298,9 +298,9 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "That's really cool!",
-          "FR": "Ceci est un exemple de texte en français.",
-          "RUS": "Это пример текста на русском языке."
+          "ENG": "That'sreallycool!",
+          "FR": "Ceciestunexempledetexteenfrançais.",
+          "RUS": "Этопримертекстанарусскомязыке."
         }
       },
       {
@@ -308,7 +308,7 @@
           "Mark",
           1
         ],
-        "filename": "res://Nodes/Show Message.tscn",
+        "filename": "res : //Nodes/ShowMessage.tscn",
         "is_box": false,
         "next": "8757269",
         "node_name": "1509744",
@@ -322,8 +322,8 @@
         "speaker_type": 0,
         "text": {
           "ENG": "Glad you like it!",
-          "FR": "Ceci est un exemple de texte en français.",
-          "RUS": "Это пример текста на русском языке."
+          "FR": "Ceciestunexempledetexteenfrançais.",
+          "RUS": "Этопримертекстанарусскомязыке."
         }
       },
       {
@@ -353,7 +353,7 @@
             }
           }
         ],
-        "filename": "res://Nodes/Show Message.tscn",
+        "filename": "res : //Nodes/ShowMessage.tscn",
         "is_box": true,
         "node_name": "9113526",
         "node_type": "show_message",
@@ -365,9 +365,9 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "Yup, it can be changed with a single click within the editor!",
-          "FR": "Ceci est un exemple de texte en français.",
-          "RUS": "Это пример текста на русском языке."
+          "ENG": "Yup,it can be changed with a single click with in the editor!",
+          "FR": "Ceciestunexempledetexteenfrançais.",
+          "RUS": "Этопримертекстанарусскомязыке."
         }
       },
       {
@@ -375,7 +375,7 @@
           "Mark",
           1
         ],
-        "filename": "res://Nodes/Show Message.tscn",
+        "filename": "res : //Nodes/ShowMessage.tscn",
         "is_box": false,
         "next": "9113526",
         "node_name": "8531541",
@@ -388,9 +388,9 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "I speak using bubbles, but you can switch to boxes at any time. Right, Jane?",
-          "FR": "Ceci est un exemple de texte en français.",
-          "RUS": "Это пример текста на русском языке."
+          "ENG": "I speak using bubbles,but you can switch to boxes at anytime. Right, Jane?",
+          "FR": "Ceciestunexempledetexteenfrançais.",
+          "RUS": "Этопримертекстанарусскомязыке."
         }
       },
       {
@@ -398,7 +398,7 @@
           "Mark",
           1
         ],
-        "filename": "res://Nodes/Show Message.tscn",
+        "filename": "res : //Nodes/ShowMessage.tscn",
         "is_box": false,
         "next": "8531541",
         "node_name": "7164248",

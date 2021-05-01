@@ -1,5 +1,6 @@
 
 using System;
+using Dialogue.Objects;
 using scribble_objects.Characters;
 using UnityEditor;
 using UnityEngine;

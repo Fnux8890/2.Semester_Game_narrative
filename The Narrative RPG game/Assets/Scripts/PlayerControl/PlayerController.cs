@@ -2,6 +2,7 @@ using System;
 using GameSystems.Dialogue;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace PlayerControl
 {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private static readonly int Speed = Animator.StringToHash("Speed");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
+    
 
     private void Awake()
     {
@@ -58,7 +60,7 @@ public class PlayerController : MonoBehaviour
     }
     
 
-    private void Interact()
+    public void Interact()
     {
         Debug.Log("You interacted with something");
     }

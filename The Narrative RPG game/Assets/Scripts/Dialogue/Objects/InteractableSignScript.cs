@@ -22,7 +22,7 @@ namespace Dialogue.Objects
         private ArcCollider2D _arcCollider2D;
         private BoxCollider2D _boxCollider;
         private SpriteRenderer _spriteRenderer;
-        public GameObject _dialogueCanvas;
+        private GameObject _dialogueCanvas;
         
 
     
@@ -34,7 +34,7 @@ namespace Dialogue.Objects
             _boxCollider = GetComponent<BoxCollider2D>();
             _arcCollider2D = GetComponent<ArcCollider2D>();
             _polygonCollider = GetComponent<PolygonCollider2D>();
-            
+            _dialogueCanvas = GameObject.Find("DialogueCanvas");
 
 
             //modify
@@ -47,8 +47,8 @@ namespace Dialogue.Objects
 
             if (_spriteRenderer.sprite.name == "outside_4")
             {
-                _boxCollider.offset = new Vector2((float) -0.009367943, (float) -0.3634593);
-                _boxCollider.size = new Vector2((float) 0.8948994, (float) 0.4104857);
+                _boxCollider.offset = new Vector2((float) 0.001211166, (float) 0.2278429);
+                _boxCollider.size = new Vector2((float) 0.9312592, (float) 0.3999817);
             }
 
         }

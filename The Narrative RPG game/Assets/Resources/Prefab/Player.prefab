@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 426020252}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6612725870273191505}
-  grid: {fileID: 0}
   tilemap: {fileID: 0}
   path:
   - {fileID: -6178569723148703356, guid: 86132537c1a9146438432841cdf9e6b2, type: 3}
@@ -73,7 +72,7 @@ MonoBehaviour:
   - {fileID: 8501653880492602735, guid: 1237a44d07aa0c1488258347e78726eb, type: 3}
   - {fileID: 7377092575363084040, guid: 1237a44d07aa0c1488258347e78726eb, type: 3}
   - {fileID: 7377092575363084040, guid: 1237a44d07aa0c1488258347e78726eb, type: 3}
-  moveSpeed: 5
+  _moveSpeed: 5
 --- !u!50 &1396682891
 Rigidbody2D:
   serializedVersion: 4
@@ -178,7 +177,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027539939, y: 0.21513975}
+  m_Offset: {x: -0.027539939, y: 0.31047195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -189,8 +188,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6920683, y: 0.1848849}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.6920683, y: 0.25330234}
+  m_EdgeRadius: 0.001
 --- !u!114 &426020252
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -72,10 +72,18 @@ namespace Dialogue.Objects
         {
             if (Input.GetKey(KeyCode.E) && PlayerInRange)
             {
-                var topDialogue = _dialogueCanvas.transform.Find("DialogueBox Top");
-                topDialogue.gameObject.SetActive(true);
-                var topDialogueText = topDialogue.transform.Find("Text");
-                topDialogueText.GetComponent<Text>().text = DialogueMananger.Instance.Nodes[0].Text;
+                try
+                {
+                    var topDialogue = _dialogueCanvas.transform.Find("DialogueBox Top");
+                    topDialogue.gameObject.SetActive(true);
+                    var topDialogueText = topDialogue.transform.Find("Text");
+                    topDialogueText.GetComponent<Text>().text = DialogueMananger.Instance.Nodes[0].Text;
+                }
+                catch (Exception e)
+                {
+                    Debug.Log($"{e.Message}");
+                    throw;
+                }
             }
         }
 

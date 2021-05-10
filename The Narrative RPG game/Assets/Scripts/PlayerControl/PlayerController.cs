@@ -2,6 +2,7 @@ using System;
 using GameSystems.Dialogue;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace PlayerControl
 {
@@ -62,7 +63,11 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("You interacted with something");
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        SceneManager.LoadScene("OutsideHerosHome");
+    }
 }
     
 }

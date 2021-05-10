@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/OutsideHerosHome.unity
+- path: Assets/Scenes/OutsideHerosHome/MeetingEnemyCutscene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

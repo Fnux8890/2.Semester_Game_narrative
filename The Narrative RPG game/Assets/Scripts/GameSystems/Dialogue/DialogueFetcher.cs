@@ -22,6 +22,11 @@ namespace GameSystems.Dialogue
 
         public DialogueFetcher(TextAsset json)
         {
+            if (json == null)
+            {
+                Debug.LogError("The file your were trying to load was empty");
+                return;
+            }
             _json = json;
             DialogueSetup();
         }
@@ -42,10 +47,78 @@ namespace GameSystems.Dialogue
             {
                 Task.Run(() => GETVariablesAsync(filePath)),
                 Task.Run(() => GETBranchesAsync(filePath)),
-                Task.Run(() => GETCharacterNameAsync(filePath))
+                Task.Run(() => GETCharacterNameAsync(filePath)),
+                Task.Run(() => GETTextAsync(filePath))
             };
 
             await Task.WhenAll(tasks);
+        }
+
+        private void GETTextAsync(string filePath)
+        {
+            if (Dialogue == null)
+            {
+                return;
+            }
+
+            var file = new StreamReader(filePath);
+            string readLine;
+            var insideNodes = false;
+            var nodeNumber = 0;
+            var insideArray = 0;
+            var insideNodeObject = 0;
+            var lineNum = 0;
+            while ((readLine = file.ReadLine()) != null)
+            {
+                lineNum++;
+                if (readLine.Contains("nodes") && readLine.Contains("["))
+                {
+                    insideNodes = true;
+                    insideArray++;
+                }
+
+                if (insideNodes)
+                {
+                    if (readLine.Contains("[") && !readLine.Contains("]")) insideArray++;
+                    if (readLine.Contains("]") && !readLine.Contains("[")) insideArray--;
+                    if (insideArray == 1 && readLine.Contains("],"))
+                    {
+                        insideNodes = false;
+                    }
+                    if (readLine.Contains("{") && !readLine.Contains("}"))
+                    {
+                        insideNodeObject++;
+                    }
+
+                    if (readLine.Contains("}") && !readLine.Contains("{"))
+                    {
+                        insideNodeObject--;
+                    }
+
+                    if (readLine.Contains("}") && !readLine.Contains("{") &&
+                        insideNodeObject == 0)
+                    {
+                        nodeNumber++;
+                    }
+                }
+                
+                if (readLine.Contains("text") && readLine.Contains("{") && insideNodeObject == 0)
+                {
+                    continue;
+                }
+                
+                if (readLine.Contains("text") && !readLine.Contains("FR") && !readLine.Contains("{"))
+                {
+                    var trimmed = readLine.Trim(' ', '"');
+                    var text = trimmed.Substring(
+                        trimmed.IndexOf(":", StringComparison.Ordinal),
+                        trimmed.LastIndexOf("\"", StringComparison.Ordinal)
+                        - trimmed.IndexOf("\"", StringComparison.Ordinal) 
+                    );
+                    Dialogue.nodes[nodeNumber].text.ENG = text.Trim('\"');
+                }
+            }
+            file.Close();
         }
 
         private void GETVariablesAsync(string filePath)
@@ -368,7 +441,7 @@ namespace GameSystems.Dialogue
                 }
             }
 
-            foreach (var node in Dialogue.nodes.Where(node => node.text.ENG != null))
+            foreach (var node in Dialogue.nodes.Where(node => node.text.ENG != null && node.NodeType == NodeTypes.ShowMessage))
             {
                 node.character = charterName.Dequeue();
                 node.characterIndex = charterIndex.Dequeue();

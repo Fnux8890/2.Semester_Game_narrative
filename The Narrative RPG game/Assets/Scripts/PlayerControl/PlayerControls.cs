@@ -31,7 +31,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""type"": ""Button"",
                     ""id"": ""f1a4f29e-1cf5-4a1a-ba31-2cfc4a09dc19"",
                     ""expectedControlType"": ""Button"",
-                    ""processors"": ""NormalizeVector2"",
+                    ""processors"": """",
                     ""interactions"": ""Press""
                 },
                 {

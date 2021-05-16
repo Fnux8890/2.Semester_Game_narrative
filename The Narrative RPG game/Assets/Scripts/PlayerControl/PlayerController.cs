@@ -1,6 +1,9 @@
 using System;
 using System.Linq;
+using GameSystems.CustomEventSystems.Interaction;
+using GameSystems.CustomEventSystems.Tutorial;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
 namespace PlayerControl
@@ -22,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float _moveSpeed = 5;
     private bool _isSprinting = false;
+    private GameObject _lookingAt;
+    private bool _playerInRange;
     
     //Input system
     private PlayerActionControls _playerActionControls;
@@ -40,22 +45,22 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        _playerActionControls = new PlayerActionControls();
+        _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
         _playerActionControls.Land.Sprint.performed += _ => SprintAction(true, 9);
         _playerActionControls.Land.Sprint.canceled += _ => SprintAction(false, 5);
+        _playerActionControls.Land.Movement.started += ctx => 
+            TutorialHandler.Instance.OnTutorialButtonPressed(ctx);
+        _playerActionControls.Land.Movement.canceled += ctx => 
+            TutorialHandler.Instance.OnTutorialButtonPressed(ctx);
+        _playerActionControls.Land.Interact.started += ctx => 
+            TutorialHandler.Instance.OnTutorialButtonPressed(ctx);
+        _playerActionControls.Land.Interact.canceled += ctx => 
+            TutorialHandler.Instance.OnTutorialButtonPressed(ctx);
+        _playerActionControls.Land.Interact.performed += Interact;
+        InteractionHandler.Instance.LookingAt += LookingAt;
+        
     }
-
     
-
-    private void OnEnable()
-    {
-        _playerActionControls.Enable();
-    }
-
-    private void OnDisable()
-    {
-        _playerActionControls.Disable();
-    }
 
     private void Update()
     {
@@ -106,10 +111,19 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
-    public void Interact()
+    private void LookingAt(GameObject lookingAt, bool inRange)
     {
-        Debug.Log("You interacted with something");
+        _lookingAt = lookingAt;
+        _playerInRange = inRange;
+    }
+    
+    private void Interact(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && _lookingAt != null && _playerInRange)
+        {
+            InteractionHandler.Instance.OnInteract();
+            InteractionHandler.Instance.OnStartDialogue();
+        }
     }
     
     private void SprintAction(bool isSprinting, int speed)

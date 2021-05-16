@@ -31,8 +31,16 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""type"": ""Button"",
                     ""id"": ""f1a4f29e-1cf5-4a1a-ba31-2cfc4a09dc19"",
                     ""expectedControlType"": ""Button"",
-                    ""processors"": ""NormalizeVector2"",
+                    ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""53b9f50c-a698-4da3-b599-e5241ef93b99"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": ""NormalizeVector2"",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -101,6 +109,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""924d1b8e-3d7a-4d97-824b-c7da6e0e9919"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": ""Hold(duration=0.1)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -123,6 +142,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_Land = asset.FindActionMap("Land", throwIfNotFound: true);
         m_Land_Movement = m_Land.FindAction("Movement", throwIfNotFound: true);
         m_Land_Interact = m_Land.FindAction("Interact", throwIfNotFound: true);
+        m_Land_Sprint = m_Land.FindAction("Sprint", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -174,12 +194,14 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private ILandActions m_LandActionsCallbackInterface;
     private readonly InputAction m_Land_Movement;
     private readonly InputAction m_Land_Interact;
+    private readonly InputAction m_Land_Sprint;
     public struct LandActions
     {
         private @PlayerActionControls m_Wrapper;
         public LandActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Land_Movement;
         public InputAction @Interact => m_Wrapper.m_Land_Interact;
+        public InputAction @Sprint => m_Wrapper.m_Land_Sprint;
         public InputActionMap Get() { return m_Wrapper.m_Land; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -195,6 +217,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnInteract;
+                @Sprint.started -= m_Wrapper.m_LandActionsCallbackInterface.OnSprint;
+                @Sprint.performed -= m_Wrapper.m_LandActionsCallbackInterface.OnSprint;
+                @Sprint.canceled -= m_Wrapper.m_LandActionsCallbackInterface.OnSprint;
             }
             m_Wrapper.m_LandActionsCallbackInterface = instance;
             if (instance != null)
@@ -205,6 +230,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Sprint.started += instance.OnSprint;
+                @Sprint.performed += instance.OnSprint;
+                @Sprint.canceled += instance.OnSprint;
             }
         }
     }
@@ -222,5 +250,6 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
 }

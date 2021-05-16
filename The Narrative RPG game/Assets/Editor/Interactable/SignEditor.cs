@@ -1,5 +1,6 @@
 
-using scribble_objects.Characters;
+using System;
+using Dialogue.Objects;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,5 +12,20 @@ public class SignEditor : Editor
         base.OnInspectorGUI();
         InteractableSignScript signScript = (InteractableSignScript) target;
         
+        GUILayout.BeginVertical();
+        GUILayout.BeginHorizontal();
+        GUILayout.Space((Screen.width / 100) * 20 );
+        if (GUILayout.Button(
+            "Update Json",
+            GUILayout.Width((Screen.width / 100) * 30)))
+        {
+            signScript.UpdateJson();
+        }
+        
+        GUILayout.EndHorizontal();
+        GUILayout.EndVertical();
+        
+
     }
+    
 }

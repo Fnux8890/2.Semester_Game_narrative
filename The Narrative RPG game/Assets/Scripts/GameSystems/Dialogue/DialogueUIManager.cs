@@ -14,6 +14,7 @@ namespace GameSystems.Dialogue
     public class DialogueUIManager : Singleton<DialogueUIManager>
     {
         private List<GameObject> _dialogueBoxes = new List<GameObject>();
+        private GameObject PreviousDialogueBox;
 
         private void Awake()
         {
@@ -36,34 +37,52 @@ namespace GameSystems.Dialogue
 
         private IEnumerator HandleBox(Node currentNode, bool isBox, bool hasChoices)
         {
-            if (isBox)
+            if (PreviousDialogueBox != null && isBox)
             {
-                var dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBox Top");
-                dialogueBox.gameObject.SetActive(true);
-                HasDecision(currentNode, hasChoices, dialogueBox, isBox);
-                var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
-                yield return StartCoroutine(TypeWriter(currentNode.Text, dialogue));
+                _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft").gameObject.SetActive(false);
+                _dialogueBoxes.Find(box => box.name == "DialogueBoxRight").gameObject.SetActive(false);
             }
 
-            if (!isBox)
+            if (PreviousDialogueBox != null && PreviousDialogueBox.name == "DialogueBox Top")
             {
-                GameObject dialogueBox;
-                if (currentNode.character == "Player")
-                {
-                    dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
-                    dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                }
-                else
-                {
-                    dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
-                    dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                }
-                dialogueBox.gameObject.SetActive(true);
-                HasDecision(currentNode,hasChoices, dialogueBox, isBox);
-                var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
-                yield return StartCoroutine(TypeWriter(currentNode.Text, dialogue));
+                _dialogueBoxes.Find(box => box.name == "DialogueBox Top").gameObject.SetActive(false);
             }
-            
+
+            switch (isBox)
+            {
+                case true:
+                {
+                    var dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBox Top");
+                    PreviousDialogueBox = dialogueBox;
+                    dialogueBox.gameObject.SetActive(true);
+                    TurnDecisionPanelOff(dialogueBox);
+                    yield return StartCoroutine(TypeWriter(currentNode.Text, dialogueBox, currentNode, hasChoices));
+                    HasDecision(currentNode, hasChoices, dialogueBox, isBox);
+                    //var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
+                    break;
+                }
+                case false:
+                {
+                    GameObject dialogueBox;
+                    if (currentNode.character == "Player")
+                    {
+                        dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
+                        dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                    }
+                    else
+                    {
+                        dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
+                        dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                    }
+                    PreviousDialogueBox = dialogueBox;
+                    dialogueBox.gameObject.SetActive(true);
+                    TurnDecisionPanelOff(dialogueBox);
+                    yield return StartCoroutine(TypeWriter(currentNode.Text, dialogueBox, currentNode, hasChoices));
+                    HasDecision(currentNode,hasChoices, dialogueBox, isBox);
+                    //var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
+                    break;
+                }
+            }
         }
 
         private void HasDecision(Node currentNode,bool hasChoices, GameObject dialogueBox, bool isBox)
@@ -94,8 +113,17 @@ namespace GameSystems.Dialogue
                 }
             }
         }
-        
-        
+
+        private void TurnDecisionPanelOff(GameObject dialogueBox)
+        {
+            if (dialogueBox.transform.Find("Decision Panel") == true)
+            {
+                var decisionPanel = dialogueBox.transform.Find("Decision Panel").gameObject;
+                decisionPanel.gameObject.SetActive(false);
+            }
+        }
+
+
         private void Choice(GameObject currentChild, Node currentNode, bool isBox, GameObject currentParent)
         {
             
@@ -136,17 +164,24 @@ namespace GameSystems.Dialogue
             }
         }
 
-        private IEnumerator TypeWriter(string text, Text textToSet)
+        private IEnumerator TypeWriter(string text, GameObject objectToSet, Node currentNode, bool hasChoices)
         {
+            objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
+            var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
+            PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
             var sb = new StringBuilder();
-            textToSet.text = sb.ToString();
+            textObject.text = sb.ToString();
             foreach (var ch in text.ToCharArray())
             {
-                textToSet.text += ch;
+                textObject.text += ch;
                 yield return new WaitForSeconds(1f/30);
             }
-
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(0.5f);
+            objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
+            if (!hasChoices)
+            {
+                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+            }
         }
         
         

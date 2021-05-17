@@ -453,7 +453,7 @@
         ],
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
-        "is_box": true,
+        "is_box": false,
         "next": "8531541",
         "node_name": "7164248",
         "node_type": "show_message",

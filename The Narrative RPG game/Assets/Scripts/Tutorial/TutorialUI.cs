@@ -26,12 +26,18 @@ namespace Tutorial
         private Dictionary<string, bool> _hasBeenPressed = new Dictionary<string, bool>();
         private string _imgReplace;
 
-        private void Start()
+        // private void Start()
+        // {
+        //     TutorialHandler.Instance.TutorialButtonPressed += ButtonPressed;
+        //     ChildImageComponentsToDictionary();
+        // }
+
+        private void OnEnable()
         {
             TutorialHandler.Instance.TutorialButtonPressed += ButtonPressed;
             ChildImageComponentsToDictionary();
         }
-        
+
 
         private void OnDisable()
         {
@@ -110,11 +116,26 @@ namespace Tutorial
             {
                 var image = childrenImages[index];
                 var parentName = image.gameObject.transform.parent.name;
-                _childImageComponents.Add(parentName, image);
-                _unPressedSprite.Add(parentName, unPressed[index]);
-                _presSprite.Add(parentName, pres[index]);
-                _pressedSprite.Add(parentName, pressed[index]);
-                _hasBeenPressed.Add(parentName, false);
+                if (!_childImageComponents.ContainsKey(parentName))
+                {
+                    _childImageComponents.Add(parentName, image);
+                }
+                if (!_unPressedSprite.ContainsKey(parentName))
+                {
+                    _unPressedSprite.Add(parentName, unPressed[index]);
+                }
+                if (!_presSprite.ContainsKey(parentName))
+                {
+                    _presSprite.Add(parentName, pres[index]);
+                }
+                if (!_pressedSprite.ContainsKey(parentName))
+                {
+                    _pressedSprite.Add(parentName, pressed[index]);
+                }
+                if (!_hasBeenPressed.ContainsKey(parentName))
+                {
+                    _hasBeenPressed.Add(parentName, false);
+                }
             }
         }
 

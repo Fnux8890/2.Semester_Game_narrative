@@ -22,13 +22,23 @@ namespace GameSystems.Dialogue
         private Dictionary<string, Variables> _globalVariables = new Dictionary<string, Variables>();
         private Variables _currentVariable;
         private bool _endNode = false;
+        private bool _isCutscene = false;
 
         private void Start()
         {
             InteractionHandler.Instance.Interact += () => StartCoroutine(ShowDialogue());
             InteractionHandler.Instance.UpdateNode += ChoiceUpdateNode;
+            InteractionHandler.Instance.StartCutscene += StartCutscene;
         }
-        
+
+        private void StartCutscene(TextAsset json)
+        {
+            PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
+            _isCutscene = true;
+            LoadJson(json);
+            StartCoroutine(ShowDialogue());
+        }
+
 
         private void ChoiceUpdateNode(Node newNode)
         {
@@ -94,6 +104,18 @@ namespace GameSystems.Dialogue
             {
                 _currentNode = null;
                 DialogueUIHandler.Instance.OnExitDialogue();
+                if (_isCutscene)
+                {
+                    foreach(var canvas in Resources.FindObjectsOfTypeAll<Canvas>())
+                    {
+                        if (canvas.name == "TutorialCanvas")
+                        {
+                            canvas.gameObject.SetActive(true);
+                            InteractionHandler.Instance.OnEndCutscene();
+                        }
+                    }
+                    PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Enable();
+                }
                 _endNode = false;
             }
         }
@@ -183,18 +205,6 @@ namespace GameSystems.Dialogue
             Dialogue = null;
             _currentNode = null;
             _currentVariable = null;
-        }
-
-        private void PopulateTree()
-        {
-            var rootConnection = Array.Find(Connections, x => x.@from == "START");
-            var rootNode = FindNode(rootConnection.@from);
-        }
-        
-
-        private Node FindNode(string nodeName)
-        {
-            return Nodes.Find(x => x.node_name == nodeName);
         }
     }
 }

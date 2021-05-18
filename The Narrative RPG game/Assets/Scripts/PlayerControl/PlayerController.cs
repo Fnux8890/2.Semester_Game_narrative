@@ -38,8 +38,12 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _grid = GameObject.Find("Grid").GetComponent<Grid>();
-        tilemap = GameObject.Find("Grid").transform.Find("StartingLevelGround").GetComponent<Tilemap>();
+        if (GameObject.Find("Grid").GetComponent<Grid>() != null &&
+            GameObject.Find("Grid").transform.Find("Ground") != null)
+        {
+            _grid = GameObject.Find("Grid").GetComponent<Grid>();
+            tilemap = GameObject.Find("Grid").transform.Find("Ground").GetComponent<Tilemap>();
+        }
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -122,7 +126,6 @@ public class PlayerController : MonoBehaviour
         if (ctx.performed && _lookingAt != null && _playerInRange)
         {
             InteractionHandler.Instance.OnInteract();
-            InteractionHandler.Instance.OnStartDialogue();
         }
     }
     

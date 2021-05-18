@@ -4,13 +4,13 @@ using Dialogue.Objects;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(InteractableSignScript))]
+[CustomEditor(typeof(InteractableScript))]
 public class SignEditor : Editor
 {
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-        InteractableSignScript signScript = (InteractableSignScript) target;
+        InteractableScript script = (InteractableScript) target;
         
         GUILayout.BeginVertical();
         GUILayout.BeginHorizontal();
@@ -19,7 +19,7 @@ public class SignEditor : Editor
             "Update Json",
             GUILayout.Width((Screen.width / 100) * 30)))
         {
-            signScript.UpdateJson();
+            script.UpdateJson();
         }
         
         GUILayout.EndHorizontal();

@@ -11,11 +11,12 @@ using Utilities;
 namespace GameSystems.Dialogue
 {
     
+    
     public class DialogueManager : Singleton<DialogueManager>
     {
         private TextAsset _json;
-        public DialogueClass Dialogue { get; private set; }
-        public Connections[] Connections => Dialogue.connections;
+        private DialogueClass Dialogue { get; set; }
+        private Connections[] Connections => Dialogue.connections;
         public List<Node> Nodes => Dialogue.nodes;
         private Node _currentNode;
         private Dictionary<string, Variables> _globalVariables = new Dictionary<string, Variables>();
@@ -69,7 +70,8 @@ namespace GameSystems.Dialogue
                             break;
                     }
                 }
-                DialogueUIManager.Instance.DisplayDialogue(_currentNode);
+
+                DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
                 GetNextNode();
             }
         }
@@ -78,7 +80,7 @@ namespace GameSystems.Dialogue
         {
             if (_endNode)
             {
-                DialogueUIManager.Instance.DisplayDialogue(_currentNode);
+                DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
                 _endNode = false;
                 return;
             }

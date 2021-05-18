@@ -23,9 +23,10 @@ namespace GameSystems.Dialogue
                 _dialogueBoxes.Add(gameObject.transform.GetChild(i).gameObject);
             }
             DialogueUIHandler.Instance.ExitDialogue += CloseDialogue;
+            DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
         }
-        
-        public void DisplayDialogue(Node currentNode)
+
+        private void DisplayDialogue(Node currentNode)
         {
             BranchedDialogueOrNot(currentNode, currentNode.choices != null);
         }
@@ -37,6 +38,10 @@ namespace GameSystems.Dialogue
 
         private IEnumerator HandleBox(Node currentNode, bool isBox, bool hasChoices)
         {
+            if (PreviousDialogueBox != null)
+            {
+                PreviousDialogueBox.transform.Find("Continue").gameObject.SetActive(false);
+            }
             if (PreviousDialogueBox != null && isBox)
             {
                 _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft").gameObject.SetActive(false);
@@ -58,7 +63,6 @@ namespace GameSystems.Dialogue
                     TurnDecisionPanelOff(dialogueBox);
                     yield return StartCoroutine(TypeWriter(currentNode.Text, dialogueBox, currentNode, hasChoices));
                     HasDecision(currentNode, hasChoices, dialogueBox, isBox);
-                    //var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                     break;
                 }
                 case false:
@@ -79,7 +83,6 @@ namespace GameSystems.Dialogue
                     TurnDecisionPanelOff(dialogueBox);
                     yield return StartCoroutine(TypeWriter(currentNode.Text, dialogueBox, currentNode, hasChoices));
                     HasDecision(currentNode,hasChoices, dialogueBox, isBox);
-                    //var dialogue = dialogueBox.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                     break;
                 }
             }

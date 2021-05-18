@@ -1,6 +1,7 @@
 using System;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue;
+using NonPlayerObjects;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -8,13 +9,19 @@ using Utilities;
 
 namespace Dialogue.Objects
 {
+    public enum InteractableDirection{
+        Up,
+        Down,
+        Left,
+        Right
+    }
+    
     [RequireComponent(typeof(ArcCollider2D))]
     [RequireComponent(typeof(BoxCollider2D))]
-    public class InteractableSignScript : MonoBehaviour
+    public class InteractableScript : MonoBehaviour
     {
         public TextAsset json;
-
-        public bool playerInRange = false;
+        public InteractableDirection direction;
 
         private TextAsset _previousJson;
     
@@ -28,10 +35,9 @@ namespace Dialogue.Objects
 
     
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             Setup();
-            _playerActionControls.Land.Interact.performed += Interact;
         }
         
         private void OnValidate()
@@ -39,24 +45,6 @@ namespace Dialogue.Objects
             UpdateJson();
         }
         
-        private void Interact(InputAction.CallbackContext ctx)
-        {
-            if (ctx.performed && playerInRange)
-            {
-                try
-                {
-                    var topDialogue = _dialogueCanvas.transform.Find("DialogueBox Top");
-                    topDialogue.gameObject.SetActive(true);
-                    var topDialogueText = topDialogue.transform.Find("Text");
-                    topDialogueText.GetComponent<Text>().text = DialogueManager.Instance.Nodes[0].Text;
-                }
-                catch (Exception e)
-                {
-                    Debug.Log($"{e.Message}");
-                    throw;
-                }
-            }
-        }
 
         public void UpdateJson()
         {
@@ -96,9 +84,22 @@ namespace Dialogue.Objects
 
             //modify
             _arcCollider2D.PizzaSlice = true;
-            _arcCollider2D.Radius = (float) 1.5;
-            _arcCollider2D.OffsetRotation = 190;
-            _arcCollider2D.TotalAngle = 160;
+            switch (direction)
+            {
+                case InteractableDirection.Up:
+                    SetDirection(1.5f, 10, 160);
+                    break;
+                case InteractableDirection.Down:
+                    SetDirection(1.5f, 190, 160);
+                    break;
+                case InteractableDirection.Left:
+                    SetDirection(1.5f, 100, 160);
+                    break;
+                case InteractableDirection.Right:
+                    SetDirection(1.5f, 280, 160);
+                    break;
+            }
+            
             _polygonCollider.isTrigger = true;
 
             if (_spriteRenderer.sprite.name == "outside_4")
@@ -107,7 +108,13 @@ namespace Dialogue.Objects
                 _boxCollider.size = new Vector2((float) 0.9312592, (float) 0.3999817);
             }
         }
-    
+
+        private void SetDirection(float radius, int offset, int angle)
+        {
+            _arcCollider2D.Radius = radius;
+            _arcCollider2D.OffsetRotation = offset;
+            _arcCollider2D.TotalAngle = angle;
+        }
     }
 }
 

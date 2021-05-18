@@ -207,6 +207,13 @@ namespace GameSystems.Dialogue
             PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
             var sb = new StringBuilder();
             textObject.text = sb.ToString();
+            var textFromCh = new StringBuilder();
+            foreach (char ch in text.ToCharArray())
+            {
+                textFromCh.Append(ch);
+            }
+
+            Debug.Log(textFromCh.ToString());
             foreach (var ch in text.ToCharArray())
             {
                 textObject.text += ch;

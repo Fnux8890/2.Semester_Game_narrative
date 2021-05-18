@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using PlayerControl;
@@ -136,35 +138,52 @@ namespace GameSystems.Dialogue
 
         private IEnumerator HandleNodeExecute()
         {
-            try
+            var type = GetType();
+            var inMethodParam = false;
+            var method = new StringBuilder();
+            var methodPram = new StringBuilder();
+            var methodParamEncounter = 0;
+            char? previousCh = null;
+            foreach (var ch in _currentNode.Text)
             {
-                var variableName = _currentNode.Text.Substring(
-                    _currentNode.Text.IndexOf("\\", StringComparison.Ordinal),
-                    _currentNode.Text.LastIndexOf("\\", StringComparison.Ordinal) 
-                    - _currentNode.Text.IndexOf("\\", StringComparison.Ordinal)).Trim('\"', '\\');
-                var variable = _currentNode.Text.Substring(
-                    _currentNode.Text.LastIndexOf(",", StringComparison.Ordinal),
-                    _currentNode.Text.Length 
-                    - _currentNode.Text.IndexOf(",", StringComparison.Ordinal));
-                Debug.Log($"{variableName} = {variable}");
-                var type = _currentVariable.variables[variableName].VariableData.GetType();
-                dynamic variableWithType = type switch
+                if (previousCh != null)
                 {
-                    bool b => bool.Parse(variable),
-                    string s => variable,
-                    int i => int.Parse(variable),
-                    _ => null
-                };
-                if (_currentVariable.variables[variableName].VariableData != variableWithType)
-                {
-                    _currentVariable.variables[variableName].VariableData = variableWithType;
+                    if (ch == '"' && previousCh == '\\')
+                    {
+                        methodParamEncounter++;
+                    }
+
+                    inMethodParam = methodParamEncounter % 2 != 0;
+
+                    if (inMethodParam)
+                    {
+                        methodPram.Append(ch);
+                    }
+                    else
+                    {
+                        method.Append(ch);
+                    }
                 }
+                previousCh = ch;
             }
-            catch (Exception e)
+
+            var methodTrim = string.Empty;
+            foreach (var ch in method.ToString())
             {
-                Debug.LogWarning("No such variable available");
-                Debug.Log(e);
-                throw;
+                if (ch == '\"' || ch == '\\')
+                {
+                    continue;
+                }
+                methodTrim += ch;
+            }
+            var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
+
+            var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
+            if (afterExecution.to != null)
+            {
+                _currentNode = Nodes.Find(x => x.node_name == afterExecution.to);
+                DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
+                yield break;
             }
             
             GetNextNode();

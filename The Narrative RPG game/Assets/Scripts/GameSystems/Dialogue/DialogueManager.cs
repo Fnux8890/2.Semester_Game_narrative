@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
@@ -26,7 +27,6 @@ namespace GameSystems.Dialogue
         private Node _lastNode;
         private bool _endNodeRan = false;
         private bool _isCutscene = false;
-        private int showdialogCounter = 0;
 
         private void Start()
         {
@@ -79,6 +79,15 @@ namespace GameSystems.Dialogue
                         case NodeTypes.Start:
                             StartCoroutine(GetNextNode());
                             break;
+                        case NodeTypes.ChanceBranch:
+                            StartCoroutine(HandleChance());
+                            break;
+                        case NodeTypes.RandomBranch:
+                            StartCoroutine(HandleRandom());
+                            break;
+                        case NodeTypes.Repeat:
+                            StartCoroutine(HandleRepeat());
+                            break;
                         default:
                             StartCoroutine(GetNextNode());
                             break;
@@ -86,6 +95,39 @@ namespace GameSystems.Dialogue
                 }
                 yield return StartCoroutine(GetNextNode());
             }
+        }
+
+        
+        private IEnumerator HandleRepeat()
+        {
+            Debug.Log(_currentNode.value);
+            if (_currentNode.value == 0)
+            {
+                _currentNode = Nodes.Find(x => x.node_name == _currentNode.next_done);
+                yield break;
+            }
+            else
+            {
+                int nodeValue = _currentNode.value;
+                nodeValue--;
+                _currentNode.value = nodeValue;
+                _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
+                yield break;
+            }
+        }
+
+        
+        private IEnumerator HandleRandom()
+        {
+            StartCoroutine(GetNextNode());
+            yield break;
+        }
+
+        
+        private IEnumerator HandleChance()
+        {
+            StartCoroutine(GetNextNode());
+            yield break;
         }
 
         private IEnumerator GetNextNode()
@@ -98,7 +140,6 @@ namespace GameSystems.Dialogue
             if (!currentNodeIsLast ||  _currentNode.branches!=null || _currentNode.choices != null)
             {
                 _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
-                showdialogCounter = 0;
                 yield break;
             }
             if (_endNodeRan)
@@ -141,19 +182,18 @@ namespace GameSystems.Dialogue
         {
             PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
             yield return new WaitForSeconds(currentNode.time);
-            GetNextNode();
+            StartCoroutine(GetNextNode());
             PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
         }
 
         private IEnumerator SetVariable()
         {
             yield return _currentVariable.variables[_currentNode.var_name].VariableData = _currentNode.value;
-            GetNextNode();
+            StartCoroutine(GetNextNode());
         }
 
         private IEnumerator HandleNodeExecute()
         {
-            var type = GetType();
             var inMethodParam = false;
             var method = new StringBuilder();
             var methodPram = new StringBuilder();
@@ -185,24 +225,41 @@ namespace GameSystems.Dialogue
             var methodTrim = string.Empty;
             foreach (var ch in method.ToString())
             {
-                if (ch == '\"' || ch == '\\')
+                if (ch == '\"' || ch == '\\' || ch == '(' ||  ch == ')')
                 {
                     continue;
                 }
                 methodTrim += ch;
             }
             var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
+            ExecutedMethod(methodTrim.Trim(' '), methodParamTrim);
 
             var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
             if (afterExecution.to != null)
             {
                 _currentNode = Nodes.Find(x => x.node_name == afterExecution.to);
-                DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
                 yield break;
             }
-            
-            GetNextNode();
+
+            StartCoroutine(GetNextNode());
             yield break;
+        }
+
+        private void ExecutedMethod(string method, string param)
+        {
+            var type = GetType();
+            var theMethod = type.GetMethod(method);
+            if (theMethod == null)
+            {
+                Debug.LogWarning("Method specified in dialogue designer not available");
+                return;
+            }
+            theMethod?.Invoke(this, null);
+        }
+
+        public void PlaySound()
+        {
+            Debug.Log("You played a sound");
         }
 
         private IEnumerator HandleNodeConditions()

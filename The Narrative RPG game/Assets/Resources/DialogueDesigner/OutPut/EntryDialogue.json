@@ -7,18 +7,6 @@
     ],
     "connections": [
       {
-        "from": "START",
-        "from_port": 0,
-        "to": "642015",
-        "to_port": 0
-      },
-      {
-        "from": "642015",
-        "from_port": 0,
-        "to": "2909223",
-        "to_port": 0
-      },
-      {
         "from": "7180395",
         "from_port": 0,
         "to": "9737446",
@@ -41,6 +29,30 @@
         "from_port": 0,
         "to": "3085208",
         "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "642015",
+        "to_port": 0
+      },
+      {
+        "from": "642015",
+        "from_port": 0,
+        "to": "9798959",
+        "to_port": 0
+      },
+      {
+        "from": "9798959",
+        "from_port": 0,
+        "to": "642015",
+        "to_port": 0
+      },
+      {
+        "from": "9798959",
+        "from_port": 1,
+        "to": "2909223",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -59,62 +71,6 @@
           180
         ],
         "title": ""
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "2909223",
-        "node_name": "642015",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          3,
-          47.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "What a great day to be the protagonist of an RPG. "
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "903446",
-        "node_name": "2909223",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          451,
-          47.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "I suppose nothing today could be better, than to spend my precious speedrunning time on playing \"Doki Doki Origami Club.\""
-        },
-        "title": "Show Message"
       },
       {
         "filename": "res://Nodes/Set Local Variable.tscn",
@@ -167,7 +123,7 @@
           888,
           49
         ],
-        "rect_size_x": 329,
+        "rect_size_x": 329.000488,
         "rect_size_y": 89,
         "text": "PlaySound(\"Knocking\")",
         "title": "Execute"
@@ -199,6 +155,75 @@
           "ENG": "* Knock Knock *"
         },
         "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9798959",
+        "node_name": "642015",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          35,
+          41.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a great day to be the protagonist of an RPG. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "903446",
+        "node_name": "2909223",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          881,
+          -406.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I suppose nothing today could be better, than to spend my precious speedrunning time on playing \"Doki Doki Origami Club.\""
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Repeat.tscn",
+        "next": "642015",
+        "next_done": "2909223",
+        "node_name": "9798959",
+        "node_type": "repeat",
+        "offset": [
+          183.52002,
+          -230.494995
+        ],
+        "title": "Repeat",
+        "value": 2
       }
     ],
     "selected_language": "ENG",

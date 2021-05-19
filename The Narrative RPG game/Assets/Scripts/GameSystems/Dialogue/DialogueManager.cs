@@ -10,6 +10,7 @@ using PlayerControl;
 using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
 using UnityEngine;
 using Utilities;
+using Random = System.Random;
 
 namespace GameSystems.Dialogue
 {
@@ -100,7 +101,6 @@ namespace GameSystems.Dialogue
         
         private IEnumerator HandleRepeat()
         {
-            Debug.Log(_currentNode.value);
             if (_currentNode.value == 0)
             {
                 _currentNode = Nodes.Find(x => x.node_name == _currentNode.next_done);
@@ -119,7 +119,10 @@ namespace GameSystems.Dialogue
         
         private IEnumerator HandleRandom()
         {
-            StartCoroutine(GetNextNode());
+            var rnd = new Random();
+            var result = rnd.Next(1,_currentNode.possibilities+1);
+            var branch = _currentNode.branches[result.ToString()];
+            _currentNode = Nodes.Find(x => x.node_name == branch);
             yield break;
         }
 

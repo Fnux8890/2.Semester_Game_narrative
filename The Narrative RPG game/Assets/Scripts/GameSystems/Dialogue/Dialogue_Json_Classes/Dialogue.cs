@@ -104,6 +104,7 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
         public string var_name;
         public bool slide_camera;
         public int speaker_type;
+        public int possibilities;
         public NodeText text;
         public NodeTypes nodeType;
         

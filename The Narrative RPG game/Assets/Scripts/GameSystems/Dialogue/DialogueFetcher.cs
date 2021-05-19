@@ -428,7 +428,10 @@ namespace GameSystems.Dialogue
                     {
                         var key = readLine
                             .Substring(0, readLine.IndexOf(":", StringComparison.Ordinal)).Trim(' ', '\"');
-                        Debug.Log(readLine);
+                        if(readLine.Contains("null"))
+                        {
+                            continue;
+                        }
                         var value = readLine
                             .Substring(
                                 readLine.IndexOf(":", StringComparison.Ordinal), 

@@ -39,19 +39,19 @@
       {
         "from": "642015",
         "from_port": 0,
-        "to": "9798959",
+        "to": "3021708",
         "to_port": 0
       },
       {
-        "from": "9798959",
+        "from": "3021708",
         "from_port": 0,
-        "to": "642015",
+        "to": "2909223",
         "to_port": 0
       },
       {
-        "from": "9798959",
+        "from": "3021708",
         "from_port": 1,
-        "to": "2909223",
+        "to": "3085208",
         "to_port": 0
       }
     ],
@@ -169,34 +169,6 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "9798959",
-        "node_name": "642015",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          35,
-          41.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "What a great day to be the protagonist of an RPG. "
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
         "next": "903446",
         "node_name": "2909223",
         "node_type": "show_message",
@@ -213,17 +185,55 @@
         "title": "Show Message"
       },
       {
-        "filename": "res://Nodes/Repeat.tscn",
-        "next": "642015",
-        "next_done": "2909223",
-        "node_name": "9798959",
-        "node_type": "repeat",
-        "offset": [
-          183.52002,
-          -230.494995
+        "character": [
+          "Player",
+          0
         ],
-        "title": "Repeat",
-        "value": 2
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3021708",
+        "node_name": "642015",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          59,
+          37.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a great day to be the protagonist of an RPG. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "1": "2909223",
+          "2": "3085208",
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null,
+          "10": null
+        },
+        "filename": "res://Nodes/Random Branch.tscn",
+        "node_name": "3021708",
+        "node_type": "random_branch",
+        "offset": [
+          571.52002,
+          65.505005
+        ],
+        "possibilities": 2,
+        "title": "Random Branch"
       }
     ],
     "selected_language": "ENG",

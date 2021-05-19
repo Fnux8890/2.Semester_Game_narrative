@@ -129,7 +129,12 @@ namespace GameSystems.Dialogue
         
         private IEnumerator HandleChance()
         {
-            StartCoroutine(GetNextNode());
+            var chance = 100 - _currentNode.chance_1;
+            var rnd = new Random();
+            var result = rnd.Next(100+1);
+            _currentNode = result<=chance 
+                ? Nodes.Find(x => x.node_name == _currentNode.branches["1"]) 
+                : Nodes.Find(x => x.node_name == _currentNode.branches["2"]);
             yield break;
         }
 

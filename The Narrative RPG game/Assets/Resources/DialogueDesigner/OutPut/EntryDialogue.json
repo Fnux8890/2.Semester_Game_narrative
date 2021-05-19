@@ -39,17 +39,17 @@
       {
         "from": "642015",
         "from_port": 0,
-        "to": "3021708",
+        "to": "2433374",
         "to_port": 0
       },
       {
-        "from": "3021708",
+        "from": "2433374",
         "from_port": 0,
         "to": "2909223",
         "to_port": 0
       },
       {
-        "from": "3021708",
+        "from": "2433374",
         "from_port": 1,
         "to": "3085208",
         "to_port": 0
@@ -197,7 +197,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "3021708",
+        "next": "2433374",
         "node_name": "642015",
         "node_type": "show_message",
         "object_path": "",
@@ -215,25 +215,18 @@
       {
         "branches": {
           "1": "2909223",
-          "2": "3085208",
-          "3": null,
-          "4": null,
-          "5": null,
-          "6": null,
-          "7": null,
-          "8": null,
-          "9": null,
-          "10": null
+          "2": "3085208"
         },
-        "filename": "res://Nodes/Random Branch.tscn",
-        "node_name": "3021708",
-        "node_type": "random_branch",
+        "chance_1": 50,
+        "chance_2": 50,
+        "filename": "res://Nodes/Chance Branch.tscn",
+        "node_name": "2433374",
+        "node_type": "chance_branch",
         "offset": [
-          571.52002,
-          65.505005
+          491.52002,
+          -250.494995
         ],
-        "possibilities": 2,
-        "title": "Random Branch"
+        "title": "Chance Branch"
       }
     ],
     "selected_language": "ENG",

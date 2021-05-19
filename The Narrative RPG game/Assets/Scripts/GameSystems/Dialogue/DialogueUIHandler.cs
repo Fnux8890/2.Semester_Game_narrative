@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using UnityEngine;
 using Utilities;
@@ -7,7 +8,7 @@ namespace GameSystems.Dialogue
 {
     public class DialogueUIHandler : Singleton<DialogueUIHandler>
     {
-        public event Action<Node> ShowDialogue;
+        public event Func<Node, IEnumerator> ShowDialogue;
         public event Action ExitDialogue;
 
         public void OnExitDialogue()
@@ -15,9 +16,9 @@ namespace GameSystems.Dialogue
             ExitDialogue?.Invoke();
         }
 
-        public void OnShowDialogue(Node obj)
+        public IEnumerator OnShowDialogue(Node obj)
         {
-            ShowDialogue?.Invoke(obj);
+            yield return ShowDialogue?.Invoke(obj);
         }
     }
 }

@@ -26,14 +26,14 @@ namespace GameSystems.Dialogue
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
         }
 
-        private void DisplayDialogue(Node currentNode)
+        private IEnumerator DisplayDialogue(Node currentNode)
         {
-            BranchedDialogueOrNot(currentNode, currentNode.choices != null);
+            yield return BranchedDialogueOrNot(currentNode, currentNode.choices != null);
         }
 
-        private void BranchedDialogueOrNot(Node currentNode, bool hasChoices)
+        private IEnumerator BranchedDialogueOrNot(Node currentNode, bool hasChoices)
         {
-           StartCoroutine(HandleBox(currentNode,currentNode.is_box,hasChoices));
+           yield return StartCoroutine(HandleBox(currentNode,currentNode.is_box,hasChoices));
         }
 
         private IEnumerator HandleBox(Node currentNode, bool isBox, bool hasChoices)
@@ -207,13 +207,6 @@ namespace GameSystems.Dialogue
             PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
             var sb = new StringBuilder();
             textObject.text = sb.ToString();
-            var textFromCh = new StringBuilder();
-            foreach (char ch in text.ToCharArray())
-            {
-                textFromCh.Append(ch);
-            }
-
-            Debug.Log(textFromCh.ToString());
             foreach (var ch in text.ToCharArray())
             {
                 textObject.text += ch;

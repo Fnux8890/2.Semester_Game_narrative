@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using GameSystems.Dialogue;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using UnityEngine;
 using Utilities;
@@ -12,9 +11,8 @@ namespace GameSystems.CustomEventSystems.Interaction
         public event Action Interact;
         public event Action<GameObject, bool> LookingAt;
         public event Action<Node> UpdateNode;
-        public event Action<TextAsset> StartCutscene;
-        public event Action EndCutscene;
-        
+        public event Action StartDialogue;
+
         public  void OnInteract()
         {
             Interact?.Invoke();
@@ -30,15 +28,9 @@ namespace GameSystems.CustomEventSystems.Interaction
             UpdateNode?.Invoke(obj);
         }
 
-
-        public void OnStartCutscene(TextAsset json)
+        public void OnStartDialogue()
         {
-            StartCutscene?.Invoke(json);
-        }
-
-        public void OnEndCutscene()
-        {
-            EndCutscene?.Invoke();
+            StartDialogue?.Invoke();
         }
     }
 }

@@ -184,6 +184,16 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(LoadLevel(9));
         }
+        
+        if (other.CompareTag("Leave") && "MeetingCatDog" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(9));
+        }
+        
+        if (other.CompareTag("Leave") && "MiniBossBattle" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(9));
+        }
     }
 
     IEnumerator LoadLevel(int levelIndex)

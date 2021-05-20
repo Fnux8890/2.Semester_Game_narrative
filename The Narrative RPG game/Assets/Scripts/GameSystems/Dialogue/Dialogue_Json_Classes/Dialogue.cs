@@ -16,9 +16,6 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
         Start,
         SetLocalVariable,
         Wait,
-        ChanceBranch,
-        RandomBranch,
-        Repeat,
         None
     }
 
@@ -93,18 +90,16 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
         public string next;
         public int next_index;
         public string node_name;
-        public string next_done;
         public int node_index;
         public string node_type;
         public string object_path;
         public int[] offset;
         public int time;
         public bool toggle;
-        public dynamic value;
+        public bool value;
         public string var_name;
         public bool slide_camera;
         public int speaker_type;
-        public int possibilities;
         public NodeText text;
         public NodeTypes nodeType;
         
@@ -123,9 +118,6 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
                     "set_local_variable" => NodeTypes.SetLocalVariable,
                     "start" => NodeTypes.Start,
                     "wait" => NodeTypes.Wait,
-                    "chance_branch" => NodeTypes.ChanceBranch,
-                    "random_branch" => NodeTypes.RandomBranch,
-                    "repeat" => NodeTypes.Repeat,
                     _ => NodeTypes.None
                 };
             }
@@ -204,7 +196,6 @@ namespace GameSystems.Dialogue.Dialogue_Json_Classes
             return sb.ToString();
         }
     }
-    
 
     public class NodeCompare : IComparer<Node>
     {

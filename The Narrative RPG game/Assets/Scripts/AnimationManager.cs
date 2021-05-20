@@ -13,6 +13,10 @@ public class AnimationManager : MonoBehaviour
     public Animator goblin;
     public Animator redknight;
 
+    public Animator earthElemental;
+
+    public Animator explosion;
+
     public void Start()
     {
         Invoke(nameof(LateStart), 1);
@@ -36,6 +40,27 @@ public class AnimationManager : MonoBehaviour
         
     }
 
+    public void EarthElementalAttack()
+    {
+        earthElemental.Play("Earth_Elemental");
+        //earthElemental.Play("EarthElemental_Attack");
+    }
+
+    public void EarthElementalIdle()
+    {
+        earthElemental.Play("EarthElemental_Idle");
+    }
+
+    public void Explosion()
+    {
+        explosion.Play("Explosion_Attack");
+    }
+
+    public void ExplosionIdle()
+    {
+        explosion.Play("Explosion_Idle");
+    }
+
     public void SwordguyAttack()
     {
         GameObject Goblin = GameObject.FindGameObjectWithTag("Goblin");
@@ -50,6 +75,14 @@ public class AnimationManager : MonoBehaviour
     {
         swordguy.Play("Swordguy_Idle");
     }
-    
-    
+
+    public void SupportgirlIdle()
+    {
+        supportgirl.Play("Supportgirl_Idle");
+    }
+
+    public void SupportgirlAttack()
+    {
+        supportgirl.Play("Supportgirl_Attack");
+    }
 }

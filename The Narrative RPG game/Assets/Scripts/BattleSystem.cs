@@ -179,6 +179,9 @@ public class BattleSystem : MonoBehaviour
 
     void SupportgirlTurn()
     {
+        animationManager.SupportgirlIdle();
+        
+        animationManager.EarthElementalIdle();
 
         combatText.fontSize = 12;
         combatText.text = "Choose an action for support girl";
@@ -263,6 +266,27 @@ public class BattleSystem : MonoBehaviour
         }
         if (swordguyturn == false && supportgirlturn == false && edgelordturn == true && supportgirlActive == true && _supportgirlUnit.Dead() == false)
         {
+            animationManager.SupportgirlAttack();
+            
+            soundManager.PlayMagic();
+
+            yield return new WaitForSeconds(1);
+            
+            animationManager.EarthElementalAttack();
+            Debug.Log("Earth elemental attacks");
+
+            yield return new WaitForSeconds(5);
+            
+            animationManager.EarthElementalIdle();
+            
+            animationManager.Explosion();
+            
+            soundManager.PlayExplosion();
+
+            yield return new WaitForSeconds(1);
+            
+            animationManager.ExplosionIdle();
+            
             Debug.Log("Supportgirl attacks");
             for (int i = 0; i < _button.Length; i++)
             {
@@ -277,14 +301,14 @@ public class BattleSystem : MonoBehaviour
             Vector2 v = new Vector2(-2, -14);
 
             combatText.rectTransform.anchoredPosition = v;
-
-            combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _supportgirlUnit.damage + " damage!";
-
+            
             swordguyturn = false;
 
             edgelordturn = false;
 
             yield return new WaitForSeconds(2);
+            
+            combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _supportgirlUnit.damage + " damage!";
 
             Vector2 ve = new Vector2(-2, -22);
             combatText.rectTransform.anchoredPosition = ve;
@@ -335,7 +359,6 @@ public class BattleSystem : MonoBehaviour
         {
             animationManager.SwordguyAttack();
 
-            
             
             Debug.Log("Swordguy attacks");
             

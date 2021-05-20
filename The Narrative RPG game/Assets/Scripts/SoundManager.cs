@@ -7,6 +7,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource hurt;
     public AudioSource attack;
     public AudioSource heal;
+    public AudioSource magic;
+    public AudioSource explosion;
 
     public void PlayHurt()
     {
@@ -21,6 +23,16 @@ public class SoundManager : MonoBehaviour
     public void PlayAttack()
     {
         attack.Play();
+    }
+
+    public void PlayMagic()
+    {
+        magic.Play();
+    }
+
+    public void PlayExplosion()
+    {
+        explosion.Play();
     }
     
 }

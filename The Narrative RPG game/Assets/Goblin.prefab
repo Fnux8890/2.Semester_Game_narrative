@@ -130,8 +130,8 @@ MonoBehaviour:
   unitName: Goblin
   unitLevel: 1
   damage: 5
-  maxHP: 30
-  currentHP: 30
+  maxHP: 50
+  currentHP: 50
 --- !u!95 &-1627881023299186750
 Animator:
   serializedVersion: 3

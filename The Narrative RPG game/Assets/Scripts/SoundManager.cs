@@ -9,6 +9,10 @@ public class SoundManager : MonoBehaviour
     public AudioSource heal;
     public AudioSource magic;
     public AudioSource explosion;
+    public AudioSource teleport;
+    public AudioSource animepunch;
+
+    public AudioSource shield;
 
     public void PlayHurt()
     {
@@ -33,6 +37,21 @@ public class SoundManager : MonoBehaviour
     public void PlayExplosion()
     {
         explosion.Play();
+    }
+
+    public void PlayTeleport()
+    {
+        teleport.Play();
+    }
+
+    public void PlayAnimePunch()
+    {
+        animepunch.Play();
+    }
+
+    public void PlayShield()
+    {
+        shield.Play();
     }
     
 }

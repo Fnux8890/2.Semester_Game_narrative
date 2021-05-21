@@ -209,6 +209,7 @@ public class BattleSystem : MonoBehaviour
     }
     void EdgelordTurn()
     {
+        animationManager.EdgelordIdle();
         combatText.fontSize = 12;
         combatText.text = "Choose an action for Edgelord";
         for (int i = 0; i < _button.Length; i++)
@@ -235,6 +236,12 @@ public class BattleSystem : MonoBehaviour
         }
         if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
         {
+            
+            animationManager.EdgelordAttack();
+            soundManager.PlayTeleport();
+
+            yield return new WaitForSeconds(1);
+            soundManager.PlayAnimePunch();
             Debug.Log("Edgelord attacks");
             for (int i = 0; i < _button.Length; i++)
             {
@@ -258,8 +265,10 @@ public class BattleSystem : MonoBehaviour
 
             yield return new WaitForSeconds(2);
 
-            
+            animationManager.EdgelordIdle();
+            soundManager.PlayTeleport();
 
+            yield return new WaitForSeconds(2);
             Vector2 ve = new Vector2(-2, -22);
             combatText.rectTransform.anchoredPosition = ve;
             StartCoroutine(EnemyTurn());
@@ -292,7 +301,7 @@ public class BattleSystem : MonoBehaviour
             {
                 _button[i].SetActive(false);
             }
-            combatText.fontSize = 25;
+            
 
             isDead = _enemyUnit.TakeDamage(_supportgirlUnit.damage);
 
@@ -305,10 +314,17 @@ public class BattleSystem : MonoBehaviour
             swordguyturn = false;
 
             edgelordturn = false;
+            
+            combatText.fontSize = 25;
+            
+            combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _supportgirlUnit.damage + " damage!";
 
             yield return new WaitForSeconds(2);
             
-            combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _supportgirlUnit.damage + " damage!";
+            
+            animationManager.SupportgirlIdle();
+            
+            
 
             Vector2 ve = new Vector2(-2, -22);
             combatText.rectTransform.anchoredPosition = ve;

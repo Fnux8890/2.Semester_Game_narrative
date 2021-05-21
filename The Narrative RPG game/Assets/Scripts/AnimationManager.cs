@@ -85,4 +85,14 @@ public class AnimationManager : MonoBehaviour
     {
         supportgirl.Play("Supportgirl_Attack");
     }
+
+    public void EdgelordAttack()
+    {
+        edgelord.Play("Edgelord_Attack");
+    }
+
+    public void EdgelordIdle()
+    {
+        edgelord.Play("Edgelord_Idle");
+    }
 }

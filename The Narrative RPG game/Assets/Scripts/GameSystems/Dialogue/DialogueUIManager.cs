@@ -26,14 +26,14 @@ namespace GameSystems.Dialogue
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
         }
 
-        private void DisplayDialogue(Node currentNode)
+        private IEnumerator DisplayDialogue(Node currentNode)
         {
-            BranchedDialogueOrNot(currentNode, currentNode.choices != null);
+            yield return BranchedDialogueOrNot(currentNode, currentNode.choices != null);
         }
 
-        private void BranchedDialogueOrNot(Node currentNode, bool hasChoices)
+        private IEnumerator BranchedDialogueOrNot(Node currentNode, bool hasChoices)
         {
-           StartCoroutine(HandleBox(currentNode,currentNode.is_box,hasChoices));
+           yield return StartCoroutine(HandleBox(currentNode,currentNode.is_box,hasChoices));
         }
 
         private IEnumerator HandleBox(Node currentNode, bool isBox, bool hasChoices)
@@ -103,17 +103,50 @@ namespace GameSystems.Dialogue
                 if (hasChoices)
                 {
                     dialogueBox.gameObject.SetActive(true);
+                    RunTween(dialogueBox);
                     for (var i = 0; i < decision.childCount; i++)
                     { 
                         var currentChild = decision.GetChild(i);
                         var textButtonText = currentChild.GetComponentInChildren<Text>();
-                        textButtonText.text = currentNode.choices[i].Text ;
-                        var rect = currentChild.GetComponent<RectTransform>().rect;
-                        rect.width = textButtonText.gameObject.GetComponent<RectTransform>().rect.width;
+                        textButtonText.text = currentNode.choices[i].Text;
+                        var rect = currentChild.GetComponent<RectTransform>();
+                        rect.anchorMax = new Vector2(100f, 30f);
+                        rect.anchorMin = new Vector2(50f, 19f);
+                        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, CalculateLengthOfMessage(currentNode.choices[i].Text, textButtonText) + 20);
+                        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 30f);
                         currentChild.GetComponent<Button>().onClick.AddListener(delegate { Choice(currentChild.gameObject, currentNode, isBox, dialogueBox); });
                     }
                     PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
                 }
+            }
+        }
+        
+        private int CalculateLengthOfMessage(string message, Text text)
+        {
+            var totalLength = 0;
+ 
+            var myFont = text.font;  //chatText is my Text component
+            var characterInfo = new CharacterInfo();
+ 
+            var arr = message.ToCharArray();
+ 
+            foreach(var c in arr)
+            {
+                myFont.GetCharacterInfo(c, out characterInfo, text.fontSize);  
+ 
+                totalLength += characterInfo.advance;
+            }
+ 
+            return totalLength;
+        }
+        
+
+        private void RunTween(GameObject target)
+        {
+            if (target.transform.parent.name == "DialogueBox Top")
+            {
+                var position = target.transform.position;
+                LeanTween.move(target, new Vector2(position.x, position.y - 160), 1f);
             }
         }
 

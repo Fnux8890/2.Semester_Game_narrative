@@ -7,6 +7,16 @@ TagManager:
   - Sign
   - Leave
   - Enter
+  - Swordguy
+  - Supportgirl
+  - Edgelord
+  - Catdog
+  - Goblin
+  - Redknight
+  - Button
+  - PlayerBattlestation
+  - EnemyBattlestation
+  - Hurt
   layers:
   - Default
   - TransparentFX

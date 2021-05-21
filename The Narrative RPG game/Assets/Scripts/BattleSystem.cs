@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ public class BattleSystem : MonoBehaviour
     Unit _catdogUnit;
     Unit _enemyUnit;
 
-    public SoundManager soundManager;
+    //public SoundManager soundManager;
     public AnimationManager animationManager;
 
 
@@ -70,6 +71,7 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
+        
         if (isDead == true)
             StartCoroutine(EndBattle());
 
@@ -99,6 +101,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SetupBattle()
     {
+        
         
         GameObject swordguy = Instantiate(swordguyPrefab, playerBattleStation);
         swordguy.GetComponent<Unit>();
@@ -238,10 +241,11 @@ public class BattleSystem : MonoBehaviour
         {
             
             animationManager.EdgelordAttack();
-            soundManager.PlayTeleport();
+            SoundManager.Instance.PlayTeleport();
+            
 
             yield return new WaitForSeconds(1);
-            soundManager.PlayAnimePunch();
+            SoundManager.Instance.PlayAnimePunch();
             Debug.Log("Edgelord attacks");
             for (int i = 0; i < _button.Length; i++)
             {
@@ -266,7 +270,7 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(2);
 
             animationManager.EdgelordIdle();
-            soundManager.PlayTeleport();
+            SoundManager.Instance.PlayTeleport();
 
             yield return new WaitForSeconds(2);
             Vector2 ve = new Vector2(-2, -22);
@@ -277,7 +281,7 @@ public class BattleSystem : MonoBehaviour
         {
             animationManager.SupportgirlAttack();
             
-            soundManager.PlayMagic();
+            SoundManager.Instance.PlayMagic();
 
             yield return new WaitForSeconds(1);
             
@@ -290,7 +294,7 @@ public class BattleSystem : MonoBehaviour
             
             animationManager.Explosion();
             
-            soundManager.PlayExplosion();
+            SoundManager.Instance.PlayExplosion();
 
             yield return new WaitForSeconds(1);
             
@@ -374,6 +378,8 @@ public class BattleSystem : MonoBehaviour
         if (swordguyturn == true && _playerUnit.Dead() == false && supportgirlturn == true && catdogturn == true)
         {
             animationManager.SwordguyAttack();
+            
+            
 
             
             Debug.Log("Swordguy attacks");
@@ -396,7 +402,7 @@ public class BattleSystem : MonoBehaviour
 
             swordguyturn = false;
             
-            soundManager.PlayAttack();
+            SoundManager.Instance.PlayAttack();
             
             yield return new WaitForSeconds(2);
             
@@ -876,8 +882,10 @@ public class BattleSystem : MonoBehaviour
             combatText.text = "You gained 0 exp!";
             isDead = false;
 
-            yield return new WaitForSeconds(2);
-            
+            yield return new WaitForSeconds(3);
+
+            SceneManager.LoadScene(Encounter.LastSceneName);
+
 
         }
         else if (state == BattleState.LOST)

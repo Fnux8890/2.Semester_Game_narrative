@@ -12,6 +12,7 @@ namespace PlayerControl
 {
 public class PlayerController : MonoBehaviour
 {
+    
     // Public unity stuff
     public Animator animator;
     public Animator transition;
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        
         if (_lPos != _grid.WorldToCell(transform.position))
         {
             _lPos = _grid.WorldToCell(transform.position);

@@ -48,104 +48,10 @@ namespace GameSystems.Dialogue
                 Task.Run(() => GETVariablesAsync(filePath)),
                 Task.Run(() => GETBranchesAsync(filePath)),
                 Task.Run(() => GETCharacterNameAsync(filePath)),
-                Task.Run(() => GETTextAsync(filePath)),
-                Task.Run(() => GETValueAsync(filePath))
+                Task.Run(() => GETTextAsync(filePath))
             };
 
             await Task.WhenAll(tasks);
-        }
-
-        private void GETValueAsync(string filePath)
-        {
-            if (Dialogue == null)
-            {
-                return;
-            }
-
-            var file = new StreamReader(filePath);
-            string readLine;
-            var insideNodes = false;
-            var nodeNumber = 0;
-            var insideArray = 0;
-            var insideNodeObject = 0;
-            var lineNum = 0;
-            while ((readLine = file.ReadLine()) != null)
-            {
-                lineNum++;
-                if (readLine.Contains("nodes") && readLine.Contains("["))
-                {
-                    insideNodes = true;
-                    insideArray++;
-                }
-
-                if (insideNodes)
-                {
-                    if (readLine.Contains("[") && !readLine.Contains("]")) insideArray++;
-                    if (readLine.Contains("]") && !readLine.Contains("[")) insideArray--;
-                    if (insideArray == 1 && readLine.Contains("],"))
-                    {
-                        insideNodes = false;
-                    }
-                    if (readLine.Contains("{") && !readLine.Contains("}"))
-                    {
-                        insideNodeObject++;
-                    }
-
-                    if (readLine.Contains("}") && !readLine.Contains("{"))
-                    {
-                        insideNodeObject--;
-                    }
-
-                    if (readLine.Contains("}") && !readLine.Contains("{") &&
-                        insideNodeObject == 0)
-                    {
-                        nodeNumber++;
-                    }
-                }
-                
-                if (readLine.Contains("value") && insideNodeObject == 0)
-                {
-                    continue;
-                }
-                
-                if (readLine.Contains("value") &&  !readLine.Contains("{"))
-                {
-                    var trimmed = readLine.Trim(' ', '"');
-                    var value = new StringBuilder();
-                    if (trimmed.IndexOf(",", StringComparison.Ordinal) == -1)
-                    {
-                        value.Append(trimmed.Substring(
-                            startIndex: trimmed.IndexOf(":", StringComparison.Ordinal) + 1,
-                            length: trimmed.Length - 1 -
-                                    (trimmed.IndexOf(":", StringComparison.Ordinal))
-                        ));
-                    }
-                    else
-                    {
-                        value.Append(trimmed.Substring(
-                            startIndex: trimmed.IndexOf(":", StringComparison.Ordinal) + 1,
-                            length: trimmed.IndexOf(",", StringComparison.Ordinal) - 1 -
-                                    (trimmed.IndexOf(":", StringComparison.Ordinal))
-                        ));
-                    }
-                    var boolCouldPass = bool.TryParse(value.ToString(), out var isBool);
-                    var intCouldPass = int.TryParse(value.ToString(), out var isInt);
-                    if (boolCouldPass)
-                    {
-                        Dialogue.nodes[nodeNumber].value = isBool;
-                    }
-                    if (intCouldPass)
-                    {
-                        Dialogue.nodes[nodeNumber].value= isInt;
-                    }
-
-                    if (!boolCouldPass && !intCouldPass)
-                    {
-                        Dialogue.nodes[nodeNumber].value= value;
-                    }
-                }
-            }
-            file.Close();
         }
 
         private void GETTextAsync(string filePath)
@@ -428,10 +334,6 @@ namespace GameSystems.Dialogue
                     {
                         var key = readLine
                             .Substring(0, readLine.IndexOf(":", StringComparison.Ordinal)).Trim(' ', '\"');
-                        if(readLine.Contains("null"))
-                        {
-                            continue;
-                        }
                         var value = readLine
                             .Substring(
                                 readLine.IndexOf(":", StringComparison.Ordinal), 

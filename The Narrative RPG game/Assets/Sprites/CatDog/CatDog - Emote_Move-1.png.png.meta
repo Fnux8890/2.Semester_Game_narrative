@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: ec8500de0e2ebcd4db5be0655930b6cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 634396844959479477
+    second: CatDog - Emote_Move-1.png_0
+  - first:
+      213: 8085242306311161640
+    second: CatDog - Emote_Move-1.png_1
+  - first:
+      213: 6263899157398061565
+    second: CatDog - Emote_Move-1.png_2
+  - first:
+      213: 6846819880353116693
+    second: CatDog - Emote_Move-1.png_3
+  - first:
+      213: 1830247510292457249
+    second: CatDog - Emote_Move-1.png_4
+  - first:
+      213: -7129718902072435259
+    second: CatDog - Emote_Move-1.png_5
+  - first:
+      213: 837816843636353174
+    second: CatDog - Emote_Move-1.png_6
+  - first:
+      213: -5868770557586459669
+    second: CatDog - Emote_Move-1.png_7
+  - first:
+      213: 4248757795581857098
+    second: CatDog - Emote_Move-1.png_8
+  - first:
+      213: 4574928685496582839
+    second: CatDog - Emote_Move-1.png_9
+  - first:
+      213: -1724904907193348290
+    second: CatDog - Emote_Move-1.png_10
+  - first:
+      213: 358173970183593140
+    second: CatDog - Emote_Move-1.png_11
+  - first:
+      213: -9132803583939274363
+    second: CatDog - Emote_Move-1.png_12
+  - first:
+      213: -6223523417754646761
+    second: CatDog - Emote_Move-1.png_13
+  - first:
+      213: -3488658228186667502
+    second: CatDog - Emote_Move-1.png_14
+  - first:
+      213: 497757499471259944
+    second: CatDog - Emote_Move-1.png_15
+  - first:
+      213: -272744500265676550
+    second: CatDog - Emote_Move-1.png_16
+  - first:
+      213: -8570555986705831786
+    second: CatDog - Emote_Move-1.png_17
+  - first:
+      213: 2257730403752493410
+    second: CatDog - Emote_Move-1.png_18
+  - first:
+      213: 6342576330309395149
+    second: CatDog - Emote_Move-1.png_19
+  - first:
+      213: 8138316195133974096
+    second: CatDog - Emote_Move-1.png_20
+  - first:
+      213: -12102972038768570
+    second: CatDog - Emote_Move-1.png_21
+  - first:
+      213: -2483431293590944486
+    second: CatDog - Emote_Move-1.png_22
+  - first:
+      213: -4279494377202494102
+    second: CatDog - Emote_Move-1.png_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6307eb194ddc800800000000000000
+      internalID: 634396844959479477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82703a64a0d843070800000000000000
+      internalID: 8085242306311161640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df184999817dde650800000000000000
+      internalID: 6263899157398061565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512b789b76ac40f50800000000000000
+      internalID: 6846819880353116693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127660ed968566910800000000000000
+      internalID: 1830247510292457249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 112.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd9595fe662e0d90800000000000000
+      internalID: -7129718902072435259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698a8c7faf580ab00800000000000000
+      internalID: 837816843636353174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3b9ce9540fd8ea0800000000000000
+      internalID: -5868770557586459669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d045644be96fa30800000000000000
+      internalID: 4248757795581857098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2c4c386696d7f30800000000000000
+      internalID: 4574928685496582839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f89673028ef08e0800000000000000
+      internalID: -1724904907193348290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 75.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc9594045d78f400800000000000000
+      internalID: 358173970183593140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58992ef2783c14180800000000000000
+      internalID: -9132803583939274363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717c869dc6a91a9a0800000000000000
+      internalID: -6223523417754646761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_14
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216a03e33dbc59fc0800000000000000
+      internalID: -3488658228186667502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829654cfec368e600800000000000000
+      internalID: 497757499471259944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af019337254073cf0800000000000000
+      internalID: -272744500265676550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 38.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6982dc42db44f0980800000000000000
+      internalID: -8570555986705831786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261444a17d1155f10800000000000000
+      internalID: 2257730403752493410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc264e8619b550850800000000000000
+      internalID: 6342576330309395149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056e4c8f57b11f070800000000000000
+      internalID: 8138316195133974096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64817ea396005dff0800000000000000
+      internalID: -12102972038768570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a154c617564198dd0800000000000000
+      internalID: -2483431293590944486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatDog - Emote_Move-1.png_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1.5
+        width: 25
+        height: 37.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a655094a98e2c94c0800000000000000
+      internalID: -4279494377202494102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a0a33e70a3abbab4fa849a81bc9b42fe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

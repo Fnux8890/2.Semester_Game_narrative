@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sign
-  - Leave
-  - Enter
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UnityEditor.Tilemaps
 {
-    static internal partial class AssetCreation
+    internal static partial class AssetCreation
     {
         [MenuItem("Assets/Create/2D/Brushes/Prefab Brush", priority = (int) EBrushMenuItemOrder.PrefabBrush)]
         static void CreatePrefabBrush()

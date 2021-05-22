@@ -28,8 +28,8 @@ namespace GameSystems.Dialogue
         private Node _lastNode;
         private bool _endNodeRan = false;
         private bool _isCutscene = false;
-
-        private void Start()
+        
+        private void OnEnable()
         {
             InteractionHandler.Instance.Interact += () => StartCoroutine(ShowDialogue());
             InteractionHandler.Instance.UpdateNode += ChoiceUpdateNode;
@@ -58,6 +58,7 @@ namespace GameSystems.Dialogue
             {
                 while (_currentNode.NodeType != NodeTypes.ShowMessage)
                 {
+                    if (_endNodeRan) yield break;
                     if (_currentNode==null) yield break;
                     switch (_currentNode.NodeType)
                     {
@@ -97,6 +98,8 @@ namespace GameSystems.Dialogue
                 yield return StartCoroutine(GetNextNode());
             }
         }
+        
+        
 
         
         private IEnumerator HandleRepeat()
@@ -106,14 +109,11 @@ namespace GameSystems.Dialogue
                 _currentNode = Nodes.Find(x => x.node_name == _currentNode.next_done);
                 yield break;
             }
-            else
-            {
-                int nodeValue = _currentNode.value;
-                nodeValue--;
-                _currentNode.value = nodeValue;
-                _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
-                yield break;
-            }
+
+            int nodeValue = _currentNode.value;
+            nodeValue--;
+            _currentNode.value = nodeValue;
+            _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
         }
 
         
@@ -140,7 +140,7 @@ namespace GameSystems.Dialogue
 
         private IEnumerator GetNextNode()
         {
-            var currentNodeIsLast = Nodes.Find(x => x.node_name == _currentNode.next).node_name == _lastNode.node_name;
+            bool currentNodeIsLast = _currentNode.node_name == _lastNode.node_name;
             if (_currentNode.NodeType == NodeTypes.ShowMessage && !currentNodeIsLast)
             {
                 yield return DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
@@ -152,20 +152,51 @@ namespace GameSystems.Dialogue
             }
             if (_endNodeRan)
             {
-                CloseDialogue();
+                yield return CloseDialogue();
                 yield break;
             }
             if (currentNodeIsLast)
             {
-                yield return DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
-                _endNodeRan = true;
-                yield break;
+                StartCoroutine(HandleEndNodeType());
             }
-            
-            
+        }
+        
+        private IEnumerator HandleEndNodeType()
+        {
+            _endNodeRan = true;
+            switch (_currentNode.NodeType)
+            {
+                case NodeTypes.ShowMessage:
+                    yield return DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
+                    break;
+                case NodeTypes.Execute:
+                    yield return StartCoroutine(HandleNodeExecute());
+                    break;
+                case NodeTypes.ConditionBranch:
+                    yield return StartCoroutine(HandleNodeConditions());
+                    break;
+                case NodeTypes.Start:
+                    StartCoroutine(GetNextNode());
+                    break;
+                case NodeTypes.SetLocalVariable:
+                    yield return StartCoroutine(SetVariable());
+                    break;
+                case NodeTypes.Wait:
+                    yield return StartCoroutine(Wait(_currentNode));
+                    break;
+                case NodeTypes.ChanceBranch:
+                    StartCoroutine(HandleChance());
+                    break;
+                case NodeTypes.RandomBranch:
+                    StartCoroutine(HandleRandom());
+                    break;
+                case NodeTypes.Repeat:
+                    StartCoroutine(HandleRepeat());
+                    break;
+            }
         }
 
-        private void CloseDialogue()
+        private IEnumerator CloseDialogue()
         {
             _currentNode = null;
             DialogueUIHandler.Instance.OnExitDialogue();
@@ -184,6 +215,7 @@ namespace GameSystems.Dialogue
             }
 
             _endNodeRan = false;
+            yield break;
         }
 
         private IEnumerator Wait(Node currentNode)

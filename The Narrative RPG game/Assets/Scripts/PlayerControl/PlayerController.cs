@@ -138,7 +138,14 @@ public class PlayerController : MonoBehaviour
     private void SetSpeed(int onPath, int offPath)
     {
         _moveSpeed = Array.Exists(path,
-            element => element.name == _tile.name)
+            element =>
+            {
+                if (_tile!=null)
+                {
+                 return element.name == _tile.name;
+                }
+                return false;
+            })
             ? onPath
             : offPath;
     }

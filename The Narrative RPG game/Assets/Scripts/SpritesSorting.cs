@@ -6,9 +6,10 @@ namespace NonPlayerObjects
 {
     public class SpritesSorting : MonoBehaviour
     {
-        [SerializeField]
-        private int sortingOrderBase = 100;
-        
+        [SerializeField] private int sortingOrderBase = 5000;
+        [SerializeField] private int offset = 0;
+        [SerializeField] private bool runOnlyOnce = false;
+
         private Renderer _renderer;
         private GameObject _player;
 
@@ -19,21 +20,42 @@ namespace NonPlayerObjects
         }
 
         private void LateUpdate()
-        {
-            CalculateOrder();
+        { 
+            switch (gameObject.name)
+            {
+                case "UpperPart":
+                    CalculateOrder(50);
+                    break;
+                case "TreeMisc":
+                    CalculateOrder(51);
+                    break;
+                case "TestSign":
+                    CalculateOrder(0);
+                    break;
+                case "StartingLevelMisc":
+                    CalculateOrder(0);
+                    break; 
+                default:
+                    CalculateOrder(0);
+                    break;
+            }
+            if (runOnlyOnce)
+            {
+                Destroy(this);
+            }
         }
 
-        private void CalculateOrder()
+        private void CalculateOrder(int addition)
         {
-            if (!(Math.Abs(_player.transform.position.y - transform.position.y) < 0.5f) ||
-                gameObject.name == "Player") return;
-            if (_player.transform.position.y < transform.position.y)
+            var container = transform.parent.transform.parent;
+            if (_renderer.sortingOrder == _player.GetComponent<SpriteRenderer>().sortingOrder && container.gameObject.name == "Signs")
             {
-                _renderer.sortingOrder = _player.GetComponent<SpriteRenderer>().sortingOrder - 5;
+                _renderer.sortingLayerName = "Sign";
             }
-            else
+            if (gameObject.name != "Player")
             {
-                _renderer.sortingOrder = _player.GetComponent<SpriteRenderer>().sortingOrder + 5;
+                _renderer.sortingOrder = (int) (sortingOrderBase - _player.transform.position.y - offset) + addition;
+                return;
             }
         }
     }

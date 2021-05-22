@@ -20,8 +20,11 @@ namespace Dialogue.Objects
     [RequireComponent(typeof(BoxCollider2D))]
     public class InteractableScript : MonoBehaviour
     {
-        public TextAsset json;
         public InteractableDirection direction;
+        public Vector2 offset;
+        public Vector2 size;
+        public TextAsset json;
+        
 
         private TextAsset _previousJson;
     
@@ -102,10 +105,10 @@ namespace Dialogue.Objects
             
             _polygonCollider.isTrigger = true;
 
-            if (_spriteRenderer.sprite.name == "outside_4")
+            if (_spriteRenderer.sprite.name == "outside copy_0")
             {
-                _boxCollider.offset = new Vector2((float) 0.001211166, (float) 0.2278429);
-                _boxCollider.size = new Vector2((float) 0.9312592, (float) 0.3999817);
+                _boxCollider.offset = offset;
+                _boxCollider.size = size;
             }
         }
 

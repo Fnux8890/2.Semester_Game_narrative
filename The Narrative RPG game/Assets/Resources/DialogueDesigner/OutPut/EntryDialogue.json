@@ -39,19 +39,7 @@
       {
         "from": "642015",
         "from_port": 0,
-        "to": "2433374",
-        "to_port": 0
-      },
-      {
-        "from": "2433374",
-        "from_port": 0,
         "to": "2909223",
-        "to_port": 0
-      },
-      {
-        "from": "2433374",
-        "from_port": 1,
-        "to": "3085208",
         "to_port": 0
       }
     ],
@@ -73,19 +61,32 @@
         "title": ""
       },
       {
-        "filename": "res://Nodes/Set Local Variable.tscn",
-        "next": null,
-        "node_name": "9737446",
-        "node_type": "set_local_variable",
-        "offset": [
-          2112,
-          93
+        "character": [
+          "Player",
+          0
         ],
-        "operation_type": null,
-        "title": "Set Local Variable",
-        "toggle": false,
-        "value": true,
-        "var_name": "IntroIsOver"
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2909223",
+        "node_name": "642015",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          59,
+          37.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a great day to be the protagonist of an RPG. "
+        },
+        "title": "Show Message"
       },
       {
         "character": [
@@ -105,8 +106,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1664,
-          30.5
+          1725,
+          20.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -114,19 +115,6 @@
           "ENG": "WOAH! It sounds as if someone is trying to break the door off of it's hinges."
         },
         "title": "Show Message"
-      },
-      {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "903446",
-        "node_type": "execute",
-        "offset": [
-          888,
-          49
-        ],
-        "rect_size_x": 329.000488,
-        "rect_size_y": 89,
-        "text": "PlaySound(\"Knocking\")",
-        "title": "Execute"
       },
       {
         "character": [
@@ -146,8 +134,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1232,
-          25
+          1283,
+          17
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -174,8 +162,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          881,
-          -406.5
+          509,
+          33.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -185,48 +173,32 @@
         "title": "Show Message"
       },
       {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "2433374",
-        "node_name": "642015",
-        "node_type": "show_message",
-        "object_path": "",
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "903446",
+        "node_type": "execute",
         "offset": [
-          59,
-          37.5
+          938,
+          47
         ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "What a great day to be the protagonist of an RPG. "
-        },
-        "title": "Show Message"
+        "rect_size_x": 329.000488,
+        "rect_size_y": 89,
+        "text": "PlaySound(\"Knocking\")",
+        "title": "Execute"
       },
       {
-        "branches": {
-          "1": "2909223",
-          "2": "3085208"
-        },
-        "chance_1": 50,
-        "chance_2": 50,
-        "filename": "res://Nodes/Chance Branch.tscn",
-        "node_name": "2433374",
-        "node_type": "chance_branch",
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "9737446",
+        "node_type": "set_local_variable",
         "offset": [
-          491.52002,
-          -250.494995
+          2256,
+          77
         ],
-        "title": "Chance Branch"
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "IntroIsOver"
       }
     ],
     "selected_language": "ENG",

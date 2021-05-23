@@ -1,10 +1,12 @@
 using System;
+using System.Collections;
 using System.Linq;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.CustomEventSystems.Tutorial;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 namespace PlayerControl
 {
@@ -12,6 +14,7 @@ public class PlayerController : MonoBehaviour
 {
     // Public unity stuff
     public Animator animator;
+    public Animator transition;
     public Tilemap tilemap;
     public Sprite[] path;
     
@@ -149,12 +152,68 @@ public class PlayerController : MonoBehaviour
             ? onPath
             : offPath;
     }
-    
-    
-}
-    
-}
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Leave") && "InsideHerosHome" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(1));
+        }
+        
+        if (other.CompareTag("Leave") && "OpeningCutscene" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(2));
+        }
 
+        if (other.CompareTag("Leave") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        } 
+        
+        if (other.CompareTag("Leave") && "MeetingEnemyCutscene" == SceneManager.GetActiveScene().name)
+        {
+            //første encounter i byen
+        }
+        
+        if (other.CompareTag("Enter") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(0));
+        }
+        
+        if (other.CompareTag("Leave") && "StartingArea" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        }
+        
+        if (other.CompareTag("Leave") && "KingsCastle" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        }
+        
+        if (other.CompareTag("Leave") && "SaveThePrincessForrest" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        }
+        
+        if (other.CompareTag("Leave") && "MeetingCatDog" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        }
+        
+        if (other.CompareTag("Leave") && "MiniBossBattle" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(10));
+        }
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(levelIndex);
+    }
+}
+    
+}
 
 
 

@@ -20,7 +20,6 @@ namespace GameSystems.Timeline
         private void Awake()
         {
             _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
-            _playerActionControls.Land.Interact.performed += Interact;
             InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
         }
 
@@ -33,6 +32,7 @@ namespace GameSystems.Timeline
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             _director.stopped += director =>
             {
+                _playerActionControls.Land.Interact.performed += Interact;
                 InteractionHandler.Instance.OnStartCutscene(json);
             };
         }

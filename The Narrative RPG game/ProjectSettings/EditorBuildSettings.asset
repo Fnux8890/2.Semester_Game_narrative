@@ -18,8 +18,23 @@ EditorBuildSettings:
     path: Assets/Scenes/SaveThePrincessForrest.unity
     guid: 2cf83fd83b58c2b4da23d312d6c97add
   - enabled: 1
-    path: Assets/Scenes/StartingArea.unity
+    path: Assets/Scenes/StartingArea/EnteringTown.unity
     guid: 48cf7848157835d4e904a334e81de434
+  - enabled: 1
+    path: Assets/Scenes/InsideHerosHome/OpeningCutscene.unity
+    guid: 01b34b115a4edc24aa1a5654fb1c48b2
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/OutsideHerosHome 1.unity
+    guid: e490f0b958effa14bb4bf471844c4690
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 4e09b4ff15af1c4438a8ffeb49736189
+  - enabled: 1
+    path: Assets/Scenes/MeetingCatDog.unity
+    guid: 50c1cab7017959d4d8a2906cf0e643a2
+  - enabled: 1
+    path: Assets/Scenes/MiniBossBattle.unity
+    guid: b23a6f845eec7c240bc1ccb374c31d49
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 7b3c146f86d697f4196bdecc5d628cb5

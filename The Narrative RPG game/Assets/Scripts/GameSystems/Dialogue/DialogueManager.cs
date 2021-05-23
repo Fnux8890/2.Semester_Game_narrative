@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
@@ -10,7 +9,6 @@ using PlayerControl;
 using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
 using UnityEngine;
 using Utilities;
-using Object = UnityEngine.Object;
 using Random = System.Random;
 
 namespace GameSystems.Dialogue
@@ -26,7 +24,7 @@ namespace GameSystems.Dialogue
         private Node _currentNode;
         private Dictionary<string, Variables> _globalVariables = new Dictionary<string, Variables>();
         private Variables _currentVariable;
-        private Node _lastNode;
+        private List<Node> _lastNode = new List<Node>();
         private bool _endNodeRan = false;
         private bool _isCutscene = false;
         
@@ -141,7 +139,7 @@ namespace GameSystems.Dialogue
 
         private IEnumerator GetNextNode()
         {
-            bool currentNodeIsLast = _currentNode.node_name == _lastNode.node_name;
+            bool currentNodeIsLast = _lastNode.Exists(x => x.node_name == _currentNode.node_name);
             if (_currentNode.NodeType == NodeTypes.ShowMessage && !currentNodeIsLast)
             {
                 yield return DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
@@ -274,7 +272,7 @@ namespace GameSystems.Dialogue
             }
             var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
             ExecutedMethod(methodTrim.Trim(' '), methodParamTrim);
-            if(_currentNode.node_name != _lastNode.node_name) {
+            if(_lastNode.Exists(x => x.node_name == _currentNode.node_name)) {
                 var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
                 if (afterExecution.to != null)
                 {
@@ -340,10 +338,11 @@ namespace GameSystems.Dialogue
         {
             foreach (var connection in Connections)
             {
-                if (Connections.ToList().Find(x => x.@from == connection.to) == null)
+                var exists = Connections.ToList().Exists(x => x.@from == connection.to);
+                if (!exists)
                 {
-                    _lastNode = Nodes.Find(x => x.node_name == connection.to);
-                };
+                    _lastNode.Add(Nodes.Find(y=> y.node_name == connection.to));
+                }
             }
         }
 

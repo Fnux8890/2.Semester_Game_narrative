@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -428,7 +428,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2.0003052}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &80039931
@@ -6749,7 +6749,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2.0003052}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &601454691
@@ -82910,7 +82910,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2.0003052}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1011670685
@@ -83037,16 +83037,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1106892585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23d6b99113fd00f40b639c2289784490, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cc5dec2f6dcb4b0e9d2be4b6a430f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homeText: {fileID: 0}
-  castleText: {fileID: 0}
-  townText: {fileID: 531246339}
-  forrestText: {fileID: 0}
-  catDog: {fileID: 0}
-  enemy: {fileID: 0}
-  transition: {fileID: 1609408995}
 --- !u!61 &1106892587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83064,8 +83057,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2.0003052}
-    newSize: {x: 2, y: 2.0003052}
+    oldSize: {x: 1, y: 1.0001526}
+    newSize: {x: 1, y: 1.0001526}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -83081,8 +83074,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106892585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.07, y: 11.18, z: -4.689728}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.49, y: 12.59, z: -4.689728}
+  m_LocalScale: {x: 3.25, y: 2.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -83127,12 +83120,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -441553288210921148, guid: e631866d27cade44992c8fa19f6f8661, type: 3}
+  m_Sprite: {fileID: -441553288210921148, guid: a00b0b20651ebc342b9e9706539bdd65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2, y: 2.0003052}
+  m_Size: {x: 1, y: 1.0001526}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -83153,7 +83146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173929531
 Transform:
   m_ObjectHideFlags: 0
@@ -83759,7 +83752,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2.0003052}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1783467747
@@ -83888,7 +83881,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2.0003052}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1801320242

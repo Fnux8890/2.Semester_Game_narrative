@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
         
         if (other.CompareTag("Leave") && "OpeningCutscene" == SceneManager.GetActiveScene().name)
         {
-            StartCoroutine(LoadLevel(5));
+            StartCoroutine(LoadLevel(2));
         }
 
         if (other.CompareTag("Leave") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)

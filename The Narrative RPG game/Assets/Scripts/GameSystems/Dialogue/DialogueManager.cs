@@ -10,6 +10,7 @@ using PlayerControl;
 using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
 using UnityEngine;
 using Utilities;
+using Object = UnityEngine.Object;
 using Random = System.Random;
 
 namespace GameSystems.Dialogue
@@ -273,14 +274,15 @@ namespace GameSystems.Dialogue
             }
             var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
             ExecutedMethod(methodTrim.Trim(' '), methodParamTrim);
-
-            var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
-            if (afterExecution.to != null)
-            {
-                _currentNode = Nodes.Find(x => x.node_name == afterExecution.to);
-                yield break;
+            if(_currentNode.node_name != _lastNode.node_name) {
+                var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
+                if (afterExecution.to != null)
+                {
+                    _currentNode = Nodes.Find(x => x.node_name == afterExecution.to);
+                    yield break;
+                }
             }
-
+            _endNodeRan = true;
             StartCoroutine(GetNextNode());
             yield break;
         }
@@ -300,6 +302,11 @@ namespace GameSystems.Dialogue
         public void PlaySound()
         {
             Debug.Log("You played a sound");
+        }
+
+        public void RemoveVillian()
+        {
+            Destroy(GameObject.Find("Villain"));
         }
 
         private IEnumerator HandleNodeConditions()

@@ -24,6 +24,9 @@ public class AnimationManager : MonoBehaviour
 
     private void LateStart()
     {
+        GameObject Goblin = GameObject.FindGameObjectWithTag("Goblin");
+        goblin = Goblin.GetComponent<Animator>();
+        
         GameObject Swordguy = GameObject.FindGameObjectWithTag("Swordguy");
         swordguy = Swordguy.GetComponent<Animator>();
         GameObject Supportgirl = GameObject.FindGameObjectWithTag("Supportgirl");
@@ -37,8 +40,11 @@ public class AnimationManager : MonoBehaviour
         redknight = Redknight.GetComponent<Animator>();
         
         
+
         
     }
+
+    
 
     public void EarthElementalAttack()
     {
@@ -63,8 +69,6 @@ public class AnimationManager : MonoBehaviour
 
     public void SwordguyAttack()
     {
-        GameObject Goblin = GameObject.FindGameObjectWithTag("Goblin");
-        goblin = Goblin.GetComponent<Animator>();
         
         swordguy.Play("Swordguy_Attack");
         
@@ -94,5 +98,23 @@ public class AnimationManager : MonoBehaviour
     public void EdgelordIdle()
     {
         edgelord.Play("Edgelord_Idle");
+    }
+
+    public void GoblinIdle()
+    {
+        goblin.Play("Goblin_Idle");
+    }
+
+    public void GoblinAttack1()
+    {
+        goblin.Play("Goblin_attack1");
+    }
+    public void GoblinAttack2()
+    {
+        goblin.Play("Goblin_Attack2");
+    }
+    public void GoblinAttack3()
+    {
+        goblin.Play("Goblin_Attack3");
     }
 }

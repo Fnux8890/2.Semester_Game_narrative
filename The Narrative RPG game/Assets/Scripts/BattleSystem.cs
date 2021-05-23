@@ -157,6 +157,8 @@ public class BattleSystem : MonoBehaviour
                 supportgirlHUD.disable();
                 break;
         }
+        
+       
 
         yield return new WaitForSeconds(2);
 
@@ -182,6 +184,10 @@ public class BattleSystem : MonoBehaviour
 
     void SupportgirlTurn()
     {
+        if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+        {
+            animationManager.GoblinIdle();
+        }
         animationManager.SupportgirlIdle();
         
         animationManager.EarthElementalIdle();
@@ -212,6 +218,7 @@ public class BattleSystem : MonoBehaviour
     }
     void EdgelordTurn()
     {
+        
         animationManager.EdgelordIdle();
         combatText.fontSize = 12;
         combatText.text = "Choose an action for Edgelord";
@@ -239,6 +246,8 @@ public class BattleSystem : MonoBehaviour
         }
         if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
         {
+            
+            
             
             animationManager.EdgelordAttack();
             SoundManager.Instance.PlayTeleport();
@@ -719,6 +728,11 @@ public class BattleSystem : MonoBehaviour
 
         if (rollRandom == 1 && _playerUnit.Dead() == false)
         {
+            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+            {
+                animationManager.GoblinAttack1();
+            }
+                
             if (swordgBlocking == false)
             {
 
@@ -742,6 +756,10 @@ public class BattleSystem : MonoBehaviour
 
         if (rollRandom == 2 && supportgirlActive == true && _supportgirlUnit.Dead() == false)
         {
+            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+            {
+                animationManager.GoblinAttack2();
+            }
             if (sgblocking == false)
             {
 
@@ -765,6 +783,10 @@ public class BattleSystem : MonoBehaviour
         }
         if (rollRandom == 2 && supportgirlActive == false && _catdogUnit.Dead() == false)
         {
+            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+            {
+                animationManager.GoblinAttack2();
+            }
             if (cdblocking == false)
             {
 
@@ -787,6 +809,10 @@ public class BattleSystem : MonoBehaviour
         }
         if (rollRandom == 3 && _edgelordUnit.Dead() == false)
         {
+            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+            {
+                animationManager.GoblinAttack3();
+            }
             if (elblocking == false)
             {
 
@@ -812,6 +838,11 @@ public class BattleSystem : MonoBehaviour
 
         //bool isDead = playerUnit.currentHP == 0
         yield return new WaitForSeconds(2);
+        
+        if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
+        {
+            animationManager.GoblinIdle();
+        }
 
         swordguyturn = true;
         catdogturn = true;

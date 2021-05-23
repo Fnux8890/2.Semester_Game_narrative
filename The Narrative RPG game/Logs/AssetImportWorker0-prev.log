@@ -15,11 +15,11 @@ C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51118
+51225
 Successfully changed project path to: C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 192.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 187.91 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -37,49 +37,283 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000884 seconds.
+Registered in 0.001150 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 177.34 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 184.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.287 seconds
+- Completed reload, in  1.289 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002944 seconds.
+Registered in 0.003008 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 179.96 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 190.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.166 seconds
+- Completed reload, in  1.247 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 4.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 3.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.6 MB.
 System memory in use after: 85.7 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2121.
-Total: 2.512287 ms (FindLiveObjects: 0.412856 ms CreateObjectMapping: 0.190134 ms MarkObjects: 1.846945 ms  DeleteObjects: 0.060299 ms)
+Total: 2.454554 ms (FindLiveObjects: 0.254026 ms CreateObjectMapping: 0.070306 ms MarkObjects: 2.065818 ms  DeleteObjects: 0.062865 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Supernovacut6.webm
-  artifactKey: Guid(8647608d42068c64497a87c5fa115483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Supernovacut6.webm using Guid(8647608d42068c64497a87c5fa115483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b34f634b2a456d934965c9a23d15c18') in 0.074964 seconds
-  Import took 0.080078 seconds .
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6d545e12f8db825bd174d4436f90e7') in 0.053410 seconds
+  Import took 0.058208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.490846 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef395f1423278bb6f7d43f86365c699') in 0.005315 seconds
+  Import took 0.010422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 270.162256 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa041760e730ab3f635620db3bbbebc') in 0.004293 seconds
+  Import took 0.008152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 200.042963 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6287dd3ae7d312003791934afe3d9fc') in 0.005237 seconds
+  Import took 0.008680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018137 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6287dd3ae7d312003791934afe3d9fc') in 0.002956 seconds
+  Import took 0.007651 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.4 MB.
+System memory in use after: 84.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2124.
+Total: 3.299253 ms (FindLiveObjects: 0.438258 ms CreateObjectMapping: 0.209122 ms MarkObjects: 2.626213 ms  DeleteObjects: 0.023863 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.565354 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09435d1739abb8202e1cd453f6828d65') in 0.018566 seconds
+  Import took 0.022943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013889 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09435d1739abb8202e1cd453f6828d65') in 0.003197 seconds
+  Import took 0.008124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 207.543609 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dfaf42f08d26608f79760d8726bee8') in 0.003706 seconds
+  Import took 0.007684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019487 seconds.
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(62a531c42010fda4c8276332472d6546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dfaf42f08d26608f79760d8726bee8') in 0.003372 seconds
+  Import took 0.007851 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003135 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.902 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 2.101741 ms (FindLiveObjects: 0.245045 ms CreateObjectMapping: 0.134197 ms MarkObjects: 1.706333 ms  DeleteObjects: 0.014626 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.438784 seconds.
+  path: Assets/Supernovacut2.mp4
+  artifactKey: Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut2.mp4 using Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b18b7502313e7296208987626022cc3') in 0.017353 seconds
+  Import took 0.021193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.113121 seconds.
+  path: Assets/Supernovacut2.mp4
+  artifactKey: Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut2.mp4 using Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0e5eb4002f235864751945cc1e1015') in 0.003912 seconds
+  Import took 0.007427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007888 seconds.
+  path: Assets/Supernovacut2.mp4
+  artifactKey: Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut2.mp4 using Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0e5eb4002f235864751945cc1e1015') in 0.003216 seconds
+  Import took 0.006925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.046450 seconds.
+  path: Assets/Supernovacut2.mp4
+  artifactKey: Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut2.mp4 using Guid(e1b17fb8e73513a4b9a3004fec8e0176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c687b7191aadcddb34884c98b9863df') in 0.004141 seconds
+  Import took 0.008142 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003385 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2130.
+Total: 3.062162 ms (FindLiveObjects: 0.271217 ms CreateObjectMapping: 0.092630 ms MarkObjects: 2.666755 ms  DeleteObjects: 0.029251 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2133.
+Total: 2.204890 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.059786 ms MarkObjects: 1.901599 ms  DeleteObjects: 0.016422 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003415 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2136.
+Total: 3.209189 ms (FindLiveObjects: 0.277889 ms CreateObjectMapping: 0.070306 ms MarkObjects: 2.833796 ms  DeleteObjects: 0.025403 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003525 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1651 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2139.
+Total: 4.139333 ms (FindLiveObjects: 0.508308 ms CreateObjectMapping: 0.228880 ms MarkObjects: 3.379823 ms  DeleteObjects: 0.020014 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -252,7 +252,6 @@ MonoBehaviour:
   offset: {x: 0.001211166, y: 0.1676104}
   size: {x: 0.9312592, y: 0.2326731}
   json: {fileID: 4900000, guid: a29fc0896643a4049812bfe5c1ba1258, type: 3}
-  _dialogueCanvas: {fileID: 5414443072958506625, guid: 52aa9532c1f1441aab4c254d4952d439, type: 3}
 --- !u!212 &165329574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81399,7 +81398,7 @@ GameObject:
   - component: {fileID: 438539302}
   - component: {fileID: 438539304}
   m_Layer: 0
-  m_Name: Test thing
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81413,7 +81412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438539300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 1, z: 0}
+  m_LocalPosition: {x: 0.01, y: 1.59, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 165329572}
@@ -81467,7 +81466,7 @@ SpriteRenderer:
   m_Size: {x: 1.6, y: 1.6003908}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &438539303
@@ -126009,7 +126008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1347251001
 Transform:
   m_ObjectHideFlags: 0

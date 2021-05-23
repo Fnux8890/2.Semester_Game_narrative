@@ -69,6 +69,7 @@ namespace Dialogue.Objects
         {
             if (other.CompareTag("Player"))
             {
+                InteractionHandler.Instance.OnShowBubble();
                 DialogueHandleUpdate.Instance.OnUpdateJson(json);
                 InteractionHandler.Instance.OnLookingAt(gameObject, true);
             }
@@ -76,6 +77,7 @@ namespace Dialogue.Objects
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            InteractionHandler.Instance.OnHideBubble();
             DialogueHandleUpdate.Instance.OnUnloadJson();
             InteractionHandler.Instance.OnLookingAt(null, false);
             DialogueUIHandler.Instance.OnExitDialogue();

@@ -14,6 +14,9 @@ namespace GameSystems.CustomEventSystems.Interaction
         public event Action<Node> UpdateNode;
         public event Action<TextAsset> StartCutscene;
         public event Action EndCutscene;
+        public event Action ShowBubble;
+        
+        public event Action HideBubble;
         
         public  void OnInteract()
         {
@@ -39,6 +42,16 @@ namespace GameSystems.CustomEventSystems.Interaction
         public void OnEndCutscene()
         {
             EndCutscene?.Invoke();
+        }
+
+        public void OnShowBubble()
+        {
+            ShowBubble?.Invoke();
+        }
+
+        public void OnHideBubble()
+        {
+            HideBubble?.Invoke();
         }
     }
 }

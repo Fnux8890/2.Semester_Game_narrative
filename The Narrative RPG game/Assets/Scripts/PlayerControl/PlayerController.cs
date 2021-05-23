@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
         
         if (other.CompareTag("Leave") && "MeetingEnemyCutscene" == SceneManager.GetActiveScene().name)
         {
-            //første encounter i byen
+            StartCoroutine(LoadLevel(4));
         }
         
         if (other.CompareTag("Enter") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)
@@ -202,6 +202,11 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Leave") && "MiniBossBattle" == SceneManager.GetActiveScene().name)
         {
             StartCoroutine(LoadLevel(10));
+        }
+        
+        if (other.CompareTag("Leave") && "Library" == SceneManager.GetActiveScene().name)
+        {
+            StartCoroutine(LoadLevel(11));
         }
     }
 

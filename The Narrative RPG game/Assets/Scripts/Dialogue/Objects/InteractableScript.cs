@@ -33,6 +33,9 @@ namespace Dialogue.Objects
         private BoxCollider2D _boxCollider;
         private SpriteRenderer _spriteRenderer;
         private GameObject _dialogueCanvas;
+        private DialogueUIManager _dialogueUIManager;
+        private DialogueManager _dialogueManager;
+
         //Input system
         private PlayerActionControls _playerActionControls;
 
@@ -40,6 +43,9 @@ namespace Dialogue.Objects
         // Start is called before the first frame update
         private void Start()
         {
+            _dialogueUIManager = DialogueUIManager.Instance;
+            _dialogueManager = DialogueManager.Instance;
+            DialogueHandleUpdate.Instance.OnUpdateCanvas();
             Setup();
         }
         
@@ -63,14 +69,14 @@ namespace Dialogue.Objects
         {
             if (other.CompareTag("Player"))
             {
-                DialogueManager.Instance.LoadJson(json);
+                DialogueHandleUpdate.Instance.OnUpdateJson(json);
                 InteractionHandler.Instance.OnLookingAt(gameObject, true);
             }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            DialogueManager.Instance.UnloadJson();
+            DialogueHandleUpdate.Instance.OnUnloadJson();
             InteractionHandler.Instance.OnLookingAt(null, false);
             DialogueUIHandler.Instance.OnExitDialogue();
         }
@@ -118,6 +124,7 @@ namespace Dialogue.Objects
             _arcCollider2D.OffsetRotation = offset;
             _arcCollider2D.TotalAngle = angle;
         }
+        
     }
 }
 

@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 7b3c146f86d697f4196bdecc5d628cb5
+  - enabled: 1
+    path: Assets/Scenes/StartingArea.unity
+    guid: ede448bde1cb440d5b6ca12f1255c553
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 77c3775b362304222b74af193e487621, type: 2}

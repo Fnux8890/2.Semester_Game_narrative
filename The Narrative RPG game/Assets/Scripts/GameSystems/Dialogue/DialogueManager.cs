@@ -13,28 +13,43 @@ using Random = System.Random;
 
 namespace GameSystems.Dialogue
 {
-    
-    
     public class DialogueManager : Singleton<DialogueManager>
     {
         private TextAsset _json;
         private DialogueClass Dialogue { get; set; }
-        private Connections[] Connections => Dialogue.connections;
-        public List<Node> Nodes => Dialogue.nodes;
+        private Connections[] Connections => Dialogue?.connections;
+        private List<Node> Nodes
+        {
+            get
+            {
+                return Dialogue?.nodes;
+            }
+        }
+
         private Node _currentNode;
-        private Dictionary<string, Variables> _globalVariables = new Dictionary<string, Variables>();
+        private Dictionary<string, Variables> _globalVariables;
         private Variables _currentVariable;
-        private List<Node> _lastNode = new List<Node>();
+        private List<Node> _lastNode;
         private bool _endNodeRan = false;
         private bool _isCutscene = false;
-        
-        private void OnEnable()
+
+
+        private void Awake()
         {
+            _globalVariables = new Dictionary<string, Variables>();
             InteractionHandler.Instance.Interact += () => StartCoroutine(ShowDialogue());
             InteractionHandler.Instance.UpdateNode += ChoiceUpdateNode;
             InteractionHandler.Instance.StartCutscene += StartCutscene;
+            DialogueHandleUpdate.Instance.UpdateJson += LoadJson;
+            DialogueHandleUpdate.Instance.UnloadJson += UnloadJson;
+            DialogueUIHandler.Instance.GETNodes += SendNodes;
         }
 
+        private List<Node> SendNodes()
+        {
+            return Nodes;
+        }
+        
         private void StartCutscene(TextAsset json)
         {
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
@@ -55,11 +70,11 @@ namespace GameSystems.Dialogue
             _currentNode ??= Nodes.Find(x => x.node_name == "START");
             if (_currentNode!=null)
             {
-                while (_currentNode.NodeType != NodeTypes.ShowMessage)
+                while (_currentNode?.NodeType != NodeTypes.ShowMessage)
                 {
                     if (_endNodeRan) yield break;
                     if (_currentNode==null) yield break;
-                    switch (_currentNode.NodeType)
+                    switch (_currentNode?.NodeType)
                     {
                         case NodeTypes.Execute:
                             yield return StartCoroutine(HandleNodeExecute());
@@ -78,23 +93,24 @@ namespace GameSystems.Dialogue
                             if (_currentNode!=null) continue;
                             yield break;
                         case NodeTypes.Start:
-                            StartCoroutine(GetNextNode());
+                            yield return StartCoroutine(GetNextNode());
                             break;
                         case NodeTypes.ChanceBranch:
-                            StartCoroutine(HandleChance());
+                            yield return StartCoroutine(HandleChance());
                             break;
                         case NodeTypes.RandomBranch:
-                            StartCoroutine(HandleRandom());
+                            yield return StartCoroutine(HandleRandom());
                             break;
                         case NodeTypes.Repeat:
-                            StartCoroutine(HandleRepeat());
+                            yield return StartCoroutine(HandleRepeat());
                             break;
                         default:
-                            StartCoroutine(GetNextNode());
+                            yield return StartCoroutine(GetNextNode());
                             break;
                     }
                 }
                 yield return StartCoroutine(GetNextNode());
+                yield break;
             }
         }
         
@@ -105,14 +121,14 @@ namespace GameSystems.Dialogue
         {
             if (_currentNode.value == 0)
             {
-                _currentNode = Nodes.Find(x => x.node_name == _currentNode.next_done);
+                _currentNode = Nodes.Find(x => x.node_name == _currentNode?.next_done);
                 yield break;
             }
 
             int nodeValue = _currentNode.value;
             nodeValue--;
             _currentNode.value = nodeValue;
-            _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
+            _currentNode = Nodes.Find(x => x.node_name == _currentNode?.next);
         }
 
         
@@ -120,7 +136,7 @@ namespace GameSystems.Dialogue
         {
             var rnd = new Random();
             var result = rnd.Next(1,_currentNode.possibilities+1);
-            var branch = _currentNode.branches[result.ToString()];
+            var branch = _currentNode?.branches[result.ToString()];
             _currentNode = Nodes.Find(x => x.node_name == branch);
             yield break;
         }
@@ -128,19 +144,30 @@ namespace GameSystems.Dialogue
         
         private IEnumerator HandleChance()
         {
-            var chance = 100 - _currentNode.chance_1;
+            var chance = 100 - _currentNode?.chance_1;
             var rnd = new Random();
             var result = rnd.Next(100+1);
             _currentNode = result<=chance 
-                ? Nodes.Find(x => x.node_name == _currentNode.branches["1"]) 
-                : Nodes.Find(x => x.node_name == _currentNode.branches["2"]);
+                ? Nodes.Find(x => x.node_name == _currentNode?.branches["1"]) 
+                : Nodes.Find(x => x.node_name == _currentNode?.branches["2"]);
             yield break;
         }
 
         private IEnumerator GetNextNode()
         {
-            bool currentNodeIsLast = _lastNode.Exists(x => x.node_name == _currentNode.node_name);
-            if (_currentNode.NodeType == NodeTypes.ShowMessage && !currentNodeIsLast)
+            bool currentNodeIsLast = _lastNode.Contains(_currentNode);
+            if (_endNodeRan)
+            {
+                yield return CloseDialogue();
+                _endNodeRan = false;
+                _currentNode = null;
+                yield break;
+            }
+            if (currentNodeIsLast)
+            {
+                StartCoroutine(HandleEndNodeType());
+            }
+            if (_currentNode?.NodeType == NodeTypes.ShowMessage && !currentNodeIsLast)
             {
                 yield return DialogueUIHandler.Instance.OnShowDialogue(_currentNode);
             }
@@ -148,15 +175,6 @@ namespace GameSystems.Dialogue
             {
                 _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
                 yield break;
-            }
-            if (_endNodeRan)
-            {
-                yield return CloseDialogue();
-                yield break;
-            }
-            if (currentNodeIsLast)
-            {
-                StartCoroutine(HandleEndNodeType());
             }
         }
         
@@ -272,7 +290,7 @@ namespace GameSystems.Dialogue
             }
             var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
             ExecutedMethod(methodTrim.Trim(' '), methodParamTrim);
-            if(_lastNode.Exists(x => x.node_name == _currentNode.node_name)) {
+            if(!_lastNode.Exists(x => x.node_name == _currentNode.node_name)) {
                 var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
                 if (afterExecution.to != null)
                 {
@@ -280,7 +298,11 @@ namespace GameSystems.Dialogue
                     yield break;
                 }
             }
-            _endNodeRan = true;
+
+            if (_lastNode.Exists(x => x.node_name == _currentNode.node_name))
+            {
+                _endNodeRan = true;
+            }
             StartCoroutine(GetNextNode());
             yield break;
         }
@@ -320,7 +342,7 @@ namespace GameSystems.Dialogue
         }
 
 
-        public void LoadJson(TextAsset json)
+        private void LoadJson(TextAsset json)
         {
             _json = json;
             var df = new DialogueFetcher(_json);
@@ -336,6 +358,8 @@ namespace GameSystems.Dialogue
 
         private void SetLastConnectionNode()
         {
+            _endNodeRan = false;
+            _lastNode = new List<Node>();
             foreach (var connection in Connections)
             {
                 var exists = Connections.ToList().Exists(x => x.@from == connection.to);
@@ -346,7 +370,7 @@ namespace GameSystems.Dialogue
             }
         }
 
-        public void UnloadJson()
+        private void UnloadJson()
         {
             _json = null;
             Dialogue = null;

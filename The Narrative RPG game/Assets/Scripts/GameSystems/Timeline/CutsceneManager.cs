@@ -11,7 +11,7 @@ namespace GameSystems.Timeline
 {
     public class CutsceneManager : MonoBehaviour
     {
-        public bool isStartOfGame;
+        public bool isStartOfGame, playOnAwake;
         public PlayableDirector _director;
         public TextAsset json;
         private TextAsset _previousJson;
@@ -21,14 +21,27 @@ namespace GameSystems.Timeline
         {
             _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
             InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
+            TriggerCutSceneHandler.Instance.TriggerCutScene += PlayCutscene;
+        }
+        
+
+        private void OnEnable()
+        {
+            if (playOnAwake || isStartOfGame)
+            {
+                PlayCutscene();
+            }
         }
 
-        private void Start()
+        private void PlayCutscene()
         {
+            _director.Play();
+            PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             if (GameObject.Find("TutorialCanvas") != null && GameObject.Find("TutorialCanvas").activeSelf)
             {
-                GameObject.Find("TutorialCanvas").gameObject.SetActive (false);
+                GameObject.Find("TutorialCanvas").gameObject.SetActive(false);
             }
+
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             _director.stopped += director =>
             {
@@ -37,12 +50,6 @@ namespace GameSystems.Timeline
             };
         }
 
-        private void OnEnable()
-        {
-            _director.Play();
-            PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
-        }
-        
         private void OnValidate()
         {
             UpdateJson();

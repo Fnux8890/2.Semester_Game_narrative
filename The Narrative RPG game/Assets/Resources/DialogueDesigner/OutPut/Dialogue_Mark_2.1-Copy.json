@@ -89,6 +89,12 @@
         "from_port": 0,
         "to": "1487456",
         "to_port": 0
+      },
+      {
+        "from": "2672192",
+        "from_port": 0,
+        "to": "8119912",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -272,7 +278,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": null,
+        "next": "8119912",
         "node_name": "2672192",
         "node_type": "show_message",
         "object_path": "",
@@ -483,6 +489,34 @@
         "rect_size_y": 84.000061,
         "text": "Messages, choices and condition branches.",
         "title": "SIMPLE DIALOGUE"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": null,
+        "node_name": "8119912",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          568,
+          309
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Another dialouge"
+        },
+        "title": "Show Message"
       }
     ],
     "selected_language": "ENG",

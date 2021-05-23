@@ -15,11 +15,11 @@ C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49418
+51118
 Successfully changed project path to: C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative RPG game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 169.15 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 192.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -37,345 +37,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000840 seconds.
+Registered in 0.000884 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 169.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 177.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.147 seconds
+- Completed reload, in  1.287 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002866 seconds.
+Registered in 0.002944 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 204.17 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 179.96 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.077 seconds
+- Completed reload, in  1.166 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 3.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 4.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1672 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.6 MB.
 System memory in use after: 85.7 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2120.
-Total: 1.958306 ms (FindLiveObjects: 0.240683 ms CreateObjectMapping: 0.074668 ms MarkObjects: 1.585222 ms  DeleteObjects: 0.055937 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2121.
+Total: 2.512287 ms (FindLiveObjects: 0.412856 ms CreateObjectMapping: 0.190134 ms MarkObjects: 1.846945 ms  DeleteObjects: 0.060299 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Earth Elemental 3.prefab
-  artifactKey: Guid(6f18c761c817e314a9af0fad2e8f0938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Earth Elemental 3.prefab using Guid(6f18c761c817e314a9af0fad2e8f0938) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Earth Elemental 3': Transition 'EarthElemental_Idle -> Earth_Elemental' in state 'EarthElemental_Idle' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
-Asset 'Earth Elemental 3': Transition 'Earth_Elemental -> EarthElemental_Idle' in state 'Earth_Elemental' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'c5d48df54b6d9029e87d3ddb9c3f0063') in 0.144357 seconds
-  Import took 0.150015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001483 seconds.
-  path: Assets/Explosion.prefab
-  artifactKey: Guid(7f412308d5aee99419c17821ae2b238c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Explosion.prefab using Guid(7f412308d5aee99419c17821ae2b238c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'Explosion-1_png': Transition 'Explosion_Idle -> Explosion_Attack' in state 'Explosion_Idle' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
-Asset 'Explosion-1_png': Transition 'Explosion_Attack -> Explosion_Idle' in state 'Explosion_Attack' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '47c8b61e5b3e53437d736e9ce89cfc7c') in 0.056608 seconds
-  Import took 0.064149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000497 seconds.
-  path: Assets/Edgelord.prefab
-  artifactKey: Guid(e7347db7b277b3b40966660e685e6597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Edgelord.prefab using Guid(e7347db7b277b3b40966660e685e6597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c328e58044ebad631f2f8d822bcc01d9') in 0.021670 seconds
-  Import took 0.027121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008626 seconds.
-  path: Assets/CatDog.prefab
-  artifactKey: Guid(c933258ef8d5fdb4eb4b84516341fc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatDog.prefab using Guid(c933258ef8d5fdb4eb4b84516341fc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0743595306bc5cd15504bd91b64ac87a') in 0.024899 seconds
-  Import took 0.029559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000617 seconds.
-  path: Assets/Red Knight.prefab
-  artifactKey: Guid(0d1ef56f66aeb7d4c96456003d26c9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight.prefab using Guid(0d1ef56f66aeb7d4c96456003d26c9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36245117497579fea83acea3cd127f4d') in 0.021052 seconds
-  Import took 0.025902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/InputSystem.inputsettings.asset
-  artifactKey: Guid(77c3775b362304222b74af193e487621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem.inputsettings.asset using Guid(77c3775b362304222b74af193e487621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42b7e998251b5257f844ff226ef04ab') in 0.011717 seconds
-  Import took 0.016553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Goblin.prefab
-  artifactKey: Guid(da090feae53731847ae25e6cafb28b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Goblin.prefab using Guid(da090feae53731847ae25e6cafb28b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee575abce4e63fd1ee8521f94c9185c') in 0.025091 seconds
-  Import took 0.030979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 344.499489 seconds.
-  path: Assets/Support Girl - Emote_Move.png
-  artifactKey: Guid(1518aaa0c3fb9d741b4e58ec44d23795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Support Girl - Emote_Move.png using Guid(1518aaa0c3fb9d741b4e58ec44d23795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a28fb6f5519778af122f6ccbeafbc1') in 0.099085 seconds
-  Import took 0.103766 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/SupportGirl.prefab
-  artifactKey: Guid(9366d914aab25a349b19e77129c50f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SupportGirl.prefab using Guid(9366d914aab25a349b19e77129c50f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'SupportGirl': Transition 'Supportgirl_Idle -> Supportgirl_Attack' in state 'Supportgirl_Idle' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
-Asset 'SupportGirl': Transition 'Supportgirl_Attack -> Supportgirl_Idle' in state 'Supportgirl_Attack' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'c2aa6291aa2159a2008e9e7c7a76d60c') in 0.020761 seconds
-  Import took 0.024603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/SwordGuy.prefab
-  artifactKey: Guid(700229979454cdd44ad211865b836faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SwordGuy.prefab using Guid(700229979454cdd44ad211865b836faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Controller 'SwordGuy': Transition '' in state 'Swordguy_Attack' uses parameter 'Back' which does not exist in controller.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules\Animation\AnimatorController.cpp line 871]
-
- -> (artifact id: 'e029394b0a40f221a2299321571049c4') in 0.013677 seconds
-  Import took 0.017786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/SupportGirl.prefab
-  artifactKey: Guid(9366d914aab25a349b19e77129c50f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SupportGirl.prefab using Guid(9366d914aab25a349b19e77129c50f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'SupportGirl': Transition 'Supportgirl_Idle -> Supportgirl_Attack' in state 'Supportgirl_Idle' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
-Asset 'SupportGirl': Transition 'Supportgirl_Attack -> Supportgirl_Idle' in state 'Supportgirl_Attack' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'c2aa6291aa2159a2008e9e7c7a76d60c') in 0.018260 seconds
-  Import took 0.022116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/SwordGuy.prefab
-  artifactKey: Guid(700229979454cdd44ad211865b836faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SwordGuy.prefab using Guid(700229979454cdd44ad211865b836faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Controller 'SwordGuy': Transition '' in state 'Swordguy_Attack' uses parameter 'Back' which does not exist in controller.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules\Animation\AnimatorController.cpp line 871]
-
- -> (artifact id: 'e029394b0a40f221a2299321571049c4') in 0.016561 seconds
-  Import took 0.020392 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002601 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.837 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1650 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.7 MB.
-System memory in use after: 87.8 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2140.
-Total: 1.744822 ms (FindLiveObjects: 0.209122 ms CreateObjectMapping: 0.057476 ms MarkObjects: 1.460005 ms  DeleteObjects: 0.016935 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 316.934295 seconds.
-  path: Assets/Music/Clement Panchout - Fantasy RPG - Hopeful Fight v3.wav
-  artifactKey: Guid(956243c3f0cb3f2489cfba5787ad516f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music/Clement Panchout - Fantasy RPG - Hopeful Fight v3.wav using Guid(956243c3f0cb3f2489cfba5787ad516f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec768e0eeb2e96dadd8186f791b2b92') in 0.051728 seconds
-  Import took 0.056383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Music/ME_-_Victory_01.ogg
-  artifactKey: Guid(b88309a4de4ae9e41867df07cf065681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Music/ME_-_Victory_01.ogg using Guid(b88309a4de4ae9e41867df07cf065681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b244434b9361a4c506828bce9f1192') in 0.009328 seconds
-  Import took 0.015925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.627978 seconds.
-  path: Assets/Scenes/CombatScene.unity
-  artifactKey: Guid(d4f67e3ca1ceaef46a300a9dd2bda48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CombatScene.unity using Guid(d4f67e3ca1ceaef46a300a9dd2bda48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ccaea622a392f5103bdeaa9d01389b') in 0.008141 seconds
-  Import took 0.012189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.585434 seconds.
-  path: Assets/Scenes/InsideHerosHome/OpeningCutscene.unity
-  artifactKey: Guid(01b34b115a4edc24aa1a5654fb1c48b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/InsideHerosHome/OpeningCutscene.unity using Guid(01b34b115a4edc24aa1a5654fb1c48b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f7a5b325b021fdb72c64226f867b6e') in 0.002741 seconds
-  Import took 0.006770 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003567 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.07 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.826 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.20 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1650 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.8 MB.
-System memory in use after: 88.0 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2146.
-Total: 1.655015 ms (FindLiveObjects: 0.174226 ms CreateObjectMapping: 0.056194 ms MarkObjects: 1.410227 ms  DeleteObjects: 0.013086 ms)
+  path: Assets/Supernovacut6.webm
+  artifactKey: Guid(8647608d42068c64497a87c5fa115483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Supernovacut6.webm using Guid(8647608d42068c64497a87c5fa115483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b34f634b2a456d934965c9a23d15c18') in 0.074964 seconds
+  Import took 0.080078 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

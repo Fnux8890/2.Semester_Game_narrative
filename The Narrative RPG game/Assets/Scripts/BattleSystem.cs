@@ -279,6 +279,10 @@ public class BattleSystem : MonoBehaviour
         }
         if (swordguyturn == false && supportgirlturn == false && edgelordturn == true && supportgirlActive == true && _supportgirlUnit.Dead() == false)
         {
+            for (int i = 0; i < _button.Length; i++)
+            {
+                _button[i].SetActive(false);
+            }
             animationManager.SupportgirlAttack();
             
             SoundManager.Instance.PlayMagic();
@@ -301,10 +305,7 @@ public class BattleSystem : MonoBehaviour
             animationManager.ExplosionIdle();
             
             Debug.Log("Supportgirl attacks");
-            for (int i = 0; i < _button.Length; i++)
-            {
-                _button[i].SetActive(false);
-            }
+            
             
 
             isDead = _enemyUnit.TakeDamage(_supportgirlUnit.damage);

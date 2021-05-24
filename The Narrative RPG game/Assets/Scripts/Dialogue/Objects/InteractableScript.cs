@@ -113,11 +113,8 @@ namespace Dialogue.Objects
             
             _polygonCollider.isTrigger = true;
 
-            if (_spriteRenderer.sprite.name == "outside copy_0")
-            {
-                _boxCollider.offset = offset;
-                _boxCollider.size = size;
-            }
+            _boxCollider.offset = offset;
+            _boxCollider.size = size;
         }
 
         private void SetDirection(float radius, int offset, int angle)

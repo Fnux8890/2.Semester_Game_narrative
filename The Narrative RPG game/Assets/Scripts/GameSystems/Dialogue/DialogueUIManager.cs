@@ -23,7 +23,6 @@ namespace GameSystems.Dialogue
             DialogueUIHandler.Instance.ExitDialogue += CloseDialogue;
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
             DialogueHandleUpdate.Instance.UpdateCanvas += UpdateCanvasRef;
-            _dialogueBoxes = new List<GameObject>();
         }
 
         private void OnEnable()
@@ -57,7 +56,7 @@ namespace GameSystems.Dialogue
         {
             if (PreviousDialogueBox != null)
             {
-                PreviousDialogueBox.transform.Find("Continue").gameObject.SetActive(false);
+                PreviousDialogueBox.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
             }
             if (PreviousDialogueBox != null && isBox)
             {
@@ -88,12 +87,16 @@ namespace GameSystems.Dialogue
                     if (currentNode.character == "Player")
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
+                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                        dialogueBox.transform.Find("Name").GetComponent<RectTransform>().position = new Vector3(67.3f, 130.8f);
                     }
                     else
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
+                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                        dialogueBox.transform.Find("Name").position = new Vector3(1870.3f, 128.7f);
                     }
                     PreviousDialogueBox = dialogueBox;
                     dialogueBox.gameObject.SetActive(true);
@@ -223,7 +226,7 @@ namespace GameSystems.Dialogue
             if (TypeWriterRunning == false)
             {
                 TypeWriterRunning = true;
-                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
+                objectToSet.transform.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
                 var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
                 var sb = new StringBuilder();
@@ -231,10 +234,19 @@ namespace GameSystems.Dialogue
                 foreach (var ch in text.ToCharArray()) 
                 {
                     textObject.text += ch;
+                    if (textObject.IsOverflowingVerticle())
+                    {
+                        var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
+                        var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
+                        var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
+                        nameRt.position = new Vector2(nameRt.position.x, nameRt.position.y + 1f);
+                        parentRt.sizeDelta = new Vector2(parentRt.sizeDelta.x ,  parentRt.sizeDelta.y + 0.5f);
+                        childRt.sizeDelta = new Vector2(parentRt.sizeDelta.x - 1f, parentRt.sizeDelta.y - 1f);
+                    }
                     yield return new WaitForSeconds(1f/30);
                 }
                 yield return new WaitForSeconds(0.5f);
-                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
+                objectToSet.transform.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(currentNode.choices == null);
                 if (!hasChoices)
                 {
                     PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();

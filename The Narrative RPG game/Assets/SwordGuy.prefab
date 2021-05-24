@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2707423887710392753}
   - component: {fileID: 5283775914760227850}
   m_Layer: 0
-  m_Name: Sword guy
+  m_Name: SwordGuy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2817050501771645985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 57.1, z: 0}
-  m_LocalScale: {x: 0.9132246, y: 0.9842966, z: 8.1824255}
+  m_LocalPosition: {x: -14.3909, y: 33.6, z: 0}
+  m_LocalScale: {x: 0.4436292, y: 0.691063, z: 3.0803697}
   m_Children: []
   m_Father: {fileID: 6054792575330238612}
   m_RootOrder: 0
@@ -109,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 6054792575330238613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.2, y: 18.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_LocalScale: {x: 1.7302318, y: 1.7302318, z: 0.8651159}
   m_Children:
   - {fileID: 2707423887710392753}
   m_Father: {fileID: 0}
@@ -127,11 +127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b42388c56e30764fa422797d5f7f603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Sword guy
+  unitName: Swordguy
   unitLevel: 1
   damage: 7
-  maxHP: 40
-  currentHP: 40
+  maxHP: 50
+  currentHP: 50
 --- !u!95 &2130346993
 Animator:
   serializedVersion: 3

@@ -10,39 +10,57 @@ public class AnimationManager : MonoBehaviour
     public Animator edgelord;
     public Animator catdog;
 
-    public Animator goblin;
-    public Animator redknight;
+    public Animator enemy;
+    
 
     public Animator earthElemental;
 
     public Animator explosion;
+    
+    public Transform playerBattlestation;
 
     public void Start()
     {
-        Invoke(nameof(LateStart), 1);
-    }
-
-    private void LateStart()
-    {
-        GameObject Goblin = GameObject.FindGameObjectWithTag("Goblin");
-        goblin = Goblin.GetComponent<Animator>();
+        
         
         GameObject Swordguy = GameObject.FindGameObjectWithTag("Swordguy");
         swordguy = Swordguy.GetComponent<Animator>();
-        GameObject Supportgirl = GameObject.FindGameObjectWithTag("Supportgirl");
-        supportgirl = Supportgirl.GetComponent<Animator>();
+        
         GameObject Edgelord = GameObject.FindGameObjectWithTag("Edgelord");
         edgelord = Edgelord.GetComponent<Animator>();
-        GameObject Catdog = GameObject.FindGameObjectWithTag("Catdog");
-        catdog = Catdog.GetComponent<Animator>();
-        
-        GameObject Redknight = GameObject.FindGameObjectWithTag("Redknight");
-        redknight = Redknight.GetComponent<Animator>();
-        
-        
 
+        enemy = GameObject.FindGameObjectWithTag("EnemyBattlestation").GetComponentInChildren<Animator>();
+        
+        
+        GameObject Supportgirl = GameObject.FindGameObjectWithTag("Supportgirl");
+        if (Supportgirl == isActiveAndEnabled)
+        supportgirl = Supportgirl.GetComponent<Animator>();
+        
+        
+        
+            
+            GameObject Catdog = GameObject.FindGameObjectWithTag("Catdog");
+            if (Catdog == isActiveAndEnabled)
+            catdog = Catdog.GetComponent<Animator>();
+        
+        
+        
+        
+        
+        
         
     }
+
+    /*private void LateStart()
+    {
+        
+       
+        
+        
+        
+        
+        
+    }*/
 
     
 
@@ -100,21 +118,55 @@ public class AnimationManager : MonoBehaviour
         edgelord.Play("Edgelord_Idle");
     }
 
+    public void CatdogIdle()
+    {
+        catdog.Play("Catdog_Idle");
+    }
+
+    public void CatdogAttack()
+    {
+        catdog.Play("Catdog_Attack");
+    }
+    
+    
+    
+    
+
     public void GoblinIdle()
     {
-        goblin.Play("Goblin_Idle");
+        enemy.Play("Goblin_Idle");
     }
 
     public void GoblinAttack1()
     {
-        goblin.Play("Goblin_attack1");
+        enemy.Play("Goblin_attack1");
     }
     public void GoblinAttack2()
     {
-        goblin.Play("Goblin_Attack2");
+        enemy.Play("Goblin_Attack2");
     }
     public void GoblinAttack3()
     {
-        goblin.Play("Goblin_Attack3");
+        enemy.Play("Goblin_Attack3");
+    }
+    
+    
+    
+    public void RedknightIdle()
+    {
+        enemy.Play("Redknight_Idle");
+    }
+
+    public void RedknightAttack1()
+    {
+        enemy.Play("Redknight_Attack1(2)");
+    }
+    public void RedknightAttack2()
+    {
+        enemy.Play("Redknight_Attack2");
+    }
+    public void RedknightAttack3()
+    {
+        enemy.Play("Redknight_Attack3");
     }
 }

@@ -123,6 +123,8 @@ public class BattleSystem : MonoBehaviour
         var enemyGO = Instantiate(enemyPrefab, enemyBattlestation);
         enemyGO.GetComponent<Unit>();
         _enemyUnit = enemyGO.GetComponent<Unit>();
+        
+        
 
 
         //add buttons
@@ -184,10 +186,12 @@ public class BattleSystem : MonoBehaviour
 
     void SupportgirlTurn()
     {
-        if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-        {
-            animationManager.GoblinIdle();
-        }
+       
+        
+        animationManager.GoblinIdle();
+       
+        animationManager.RedknightIdle();
+        
         animationManager.SupportgirlIdle();
         
         animationManager.EarthElementalIdle();
@@ -205,6 +209,14 @@ public class BattleSystem : MonoBehaviour
 
     private void CatdogTurn()
     {
+        animationManager.GoblinIdle();
+       
+        animationManager.RedknightIdle();
+        
+        animationManager.CatdogIdle();
+        
+        animationManager.EarthElementalIdle();
+        
         combatText.fontSize = 12;
         combatText.text = "Choose an action for CatDog";
         for (int i = 0; i < _button.Length; i++)
@@ -357,6 +369,11 @@ public class BattleSystem : MonoBehaviour
             {
                 _button[i].SetActive(false);
             }
+            
+            animationManager.CatdogAttack();
+            
+            SoundManager.Instance.PlayPew();
+            
             combatText.fontSize = 25;
 
             isDead = _enemyUnit.TakeDamage(_catdogUnit.damage);
@@ -465,6 +482,8 @@ public class BattleSystem : MonoBehaviour
             _button[i].SetActive(false);
         }
         combatText.fontSize = 25;
+        
+        SoundManager.Instance.PlayHeal();
 
 
         if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
@@ -570,6 +589,8 @@ public class BattleSystem : MonoBehaviour
             _button[i].SetActive(false);
         }
         combatText.fontSize = 25;
+        
+        SoundManager.Instance.PlayShield();
 
 
         if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
@@ -696,6 +717,8 @@ public class BattleSystem : MonoBehaviour
 
         combatText.text = "You have escaped!";
         yield return new WaitForSeconds(3);
+        
+        SceneManager.LoadScene(Encounter.LastSceneName);
 
     }
 
@@ -728,10 +751,13 @@ public class BattleSystem : MonoBehaviour
 
         if (rollRandom == 1 && _playerUnit.Dead() == false)
         {
-            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-            {
+            
                 animationManager.GoblinAttack1();
-            }
+            
+            
+           
+                animationManager.RedknightAttack1();
+            
                 
             if (swordgBlocking == false)
             {
@@ -756,10 +782,13 @@ public class BattleSystem : MonoBehaviour
 
         if (rollRandom == 2 && supportgirlActive == true && _supportgirlUnit.Dead() == false)
         {
-            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-            {
+            
                 animationManager.GoblinAttack2();
-            }
+            
+            
+           
+                animationManager.RedknightAttack2();
+            
             if (sgblocking == false)
             {
 
@@ -783,10 +812,11 @@ public class BattleSystem : MonoBehaviour
         }
         if (rollRandom == 2 && supportgirlActive == false && _catdogUnit.Dead() == false)
         {
-            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-            {
+            
                 animationManager.GoblinAttack2();
-            }
+                
+                animationManager.RedknightAttack2();
+            
             if (cdblocking == false)
             {
 
@@ -809,10 +839,13 @@ public class BattleSystem : MonoBehaviour
         }
         if (rollRandom == 3 && _edgelordUnit.Dead() == false)
         {
-            if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-            {
+            
                 animationManager.GoblinAttack3();
-            }
+            
+            
+            
+                animationManager.RedknightAttack3();
+            
             if (elblocking == false)
             {
 
@@ -839,10 +872,13 @@ public class BattleSystem : MonoBehaviour
         //bool isDead = playerUnit.currentHP == 0
         yield return new WaitForSeconds(2);
         
-        if (GameObject.FindGameObjectWithTag("Goblin").activeInHierarchy == true)
-        {
+       
             animationManager.GoblinIdle();
-        }
+        
+    
+        
+            animationManager.RedknightIdle();
+        
 
         swordguyturn = true;
         catdogturn = true;
@@ -897,7 +933,8 @@ public class BattleSystem : MonoBehaviour
             {
                 _button[i].SetActive(false);
             }
-
+            
+            
 
 
             combatText.fontSize = 25;

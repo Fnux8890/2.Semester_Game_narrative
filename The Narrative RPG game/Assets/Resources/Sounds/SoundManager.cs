@@ -16,8 +16,11 @@ public class SoundManager : Singleton<SoundManager>
     private AudioClip explosion;
     private AudioClip teleport;
     private AudioClip animepunch;
+    private AudioClip enemydies;
 
     private AudioClip shield;
+
+    private AudioClip pew;
 
     private void Start()
     {
@@ -34,7 +37,9 @@ public class SoundManager : Singleton<SoundManager>
         teleport = Resources.Load<AudioClip>("Sounds/Teleport");
         animepunch = Resources.Load<AudioClip>("Sounds/strongpunch");
         shield = Resources.Load<AudioClip>("Sounds/Shield");
-        
+        enemydies = Resources.Load<AudioClip>("Sounds/Enemy_Dies");
+        pew = Resources.Load<AudioClip>("Sounds/Pew");
+
     }
 
     public void PlayHurt()
@@ -81,6 +86,19 @@ public class SoundManager : Singleton<SoundManager>
     public void PlayShield()
     {
         component.clip = shield;
+        component.Play();
+    }
+
+    public void PlayEnemydies()
+    {
+        component.clip = enemydies;
+        component.Play();
+    }
+
+    public void PlayPew()
+    {
+        component.clip = pew;
+        component.loop = true;
         component.Play();
     }
     

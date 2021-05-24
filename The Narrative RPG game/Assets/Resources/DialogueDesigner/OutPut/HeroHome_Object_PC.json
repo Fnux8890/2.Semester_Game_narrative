@@ -24,7 +24,7 @@
         "to_port": 0
       }
     ],
-    "editor_version": "3.2.3",
+    "editor_version": "3.2.2",
     "file_name": "HeroHome_Object_PC",
     "languages": [
       "ENG"
@@ -127,6 +127,11 @@
       }
     ],
     "selected_language": "ENG",
-    "variables": {}
+    "variables": {
+      "yeet": {
+        "type": 0,
+        "value": "wtf"
+      }
+    }
   }
 ]

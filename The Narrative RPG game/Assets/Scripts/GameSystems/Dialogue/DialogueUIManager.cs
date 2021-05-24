@@ -23,7 +23,6 @@ namespace GameSystems.Dialogue
             DialogueUIHandler.Instance.ExitDialogue += CloseDialogue;
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
             DialogueHandleUpdate.Instance.UpdateCanvas += UpdateCanvasRef;
-            _dialogueBoxes = new List<GameObject>();
         }
 
         private void OnEnable()
@@ -213,6 +212,7 @@ namespace GameSystems.Dialogue
         {
             foreach (var box in _dialogueBoxes.Where(box => box.activeSelf))
             {
+                if(box.gameObject.name == "EventSystem") continue;
                 box.transform.Find("Dialogue").GetChild(0).GetComponent<Text>().text = string.Empty;
                 box.SetActive(false);
             }

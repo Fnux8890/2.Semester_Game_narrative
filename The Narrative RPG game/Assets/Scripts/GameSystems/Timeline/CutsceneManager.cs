@@ -16,12 +16,16 @@ namespace GameSystems.Timeline
         public TextAsset json;
         private TextAsset _previousJson;
         private PlayerActionControls _playerActionControls;
+        private DialogueUIManager yeet;
+        private DialogueManager yeet2;
 
         private void Awake()
         {
             _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
             InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
             TriggerCutSceneHandler.Instance.TriggerCutScene += PlayCutscene;
+            yeet = DialogueUIManager.Instance;
+            yeet2 = DialogueManager.Instance;
         }
         
 
@@ -35,6 +39,7 @@ namespace GameSystems.Timeline
 
         private void PlayCutscene()
         {
+            DialogueHandleUpdate.Instance.OnUpdateCanvas();
             _director.Play();
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             if (GameObject.Find("TutorialCanvas") != null && GameObject.Find("TutorialCanvas").activeSelf)
@@ -46,6 +51,7 @@ namespace GameSystems.Timeline
             _director.stopped += director =>
             {
                 _playerActionControls.Land.Interact.performed += Interact;
+                InteractionHandler.Instance.OnStartCutscene(json);
                 InteractionHandler.Instance.OnStartCutscene(json);
             };
         }

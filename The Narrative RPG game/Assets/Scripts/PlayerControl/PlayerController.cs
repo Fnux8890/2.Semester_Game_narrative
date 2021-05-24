@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
 {
     // Public unity stuff
     public Animator animator;
-    public Animator transition;
     public Tilemap tilemap;
     public Sprite[] path;
     
@@ -159,75 +158,34 @@ public class PlayerController : MonoBehaviour
             switch (SceneManager.GetActiveScene().name)
             {
                 case "InsideHerosHome":
-                    BackToOther(1);
+                    LoadLevel(1);
                     break;
                 case "OpeningCutscene":
-                    BackToOther(2);
+                    LoadLevel(2);
+                    break;
+                case "Library":
+                    LoadLevel(11);
                     break;
                 default:
-                    BackToOverworked();
+                    LoadLevel();
                     return;
             }
         }
-        
-        
-        if (other.CompareTag("Leave") && "MeetingEnemyCutscene" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(4));
-        }
-        
+
         if (other.CompareTag("Enter") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)
         {
-            StartCoroutine(LoadLevel(0));
+            LoadLevel(0);
         }
         
-        if (other.CompareTag("Leave") && "StartingArea" == SceneManager.GetActiveScene().name)
+        if (other.CompareTag("Enter") && "StartingArea" == SceneManager.GetActiveScene().name)
         {
-            StartCoroutine(LoadLevel(10));
-        }
-        
-        if (other.CompareTag("Leave") && "KingsCastle" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(10));
-        }
-        
-        if (other.CompareTag("Leave") && "SaveThePrincessForrest" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(10));
-        }
-        
-        if (other.CompareTag("Leave") && "MeetingCatDog" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(10));
-        }
-        
-        if (other.CompareTag("Leave") && "MiniBossBattle" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(10));
-        }
-        
-        if (other.CompareTag("Leave") && "Library" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(11));
+            LoadLevel(7);
         }
     }
 
-    private void BackToOverworked()
+    private void LoadLevel(int levelIndex = 10)
     {
-        StartCoroutine(LoadLevel(10));
-    }
-
-    private void BackToOther(int index)
-    {
-        StartCoroutine(LoadLevel(index));
-    }
-    
-
-    private IEnumerator LoadLevel(int levelIndex)
-    {
-        transition.SetTrigger("Start");
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(levelIndex);
+        InteractionHandler.Instance.OnLevelAnim(levelIndex);
     }
 }
     

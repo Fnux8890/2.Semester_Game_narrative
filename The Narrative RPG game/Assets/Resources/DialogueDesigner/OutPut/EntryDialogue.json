@@ -191,8 +191,8 @@
         "node_name": "9737446",
         "node_type": "set_local_variable",
         "offset": [
-          2256,
-          77
+          2228,
+          330
         ],
         "operation_type": null,
         "title": "Set Local Variable",

@@ -22,8 +22,8 @@ namespace Utilities
             {
                 if (_shuttingDown)
                 {
-                    // Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
-                    //                  "' already destroyed. Returning null.");
+                    Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
+                                     "' already destroyed. Returning null.");
                     return null;
                 }
 
@@ -50,6 +50,17 @@ namespace Utilities
                     return _instance;
                 }
             }
+        }
+
+        public void ReInstantiate()
+        {
+            // Need to create a new GameObject to attach the singleton to.
+            var singletonObject = new GameObject();
+            _instance = singletonObject.AddComponent<T>();
+            singletonObject.name = typeof(T).ToString() + " (Singleton)";
+
+            // Make instance persistent.
+            DontDestroyOnLoad(singletonObject);
         }
 
 

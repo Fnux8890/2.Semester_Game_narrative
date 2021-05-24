@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Linq;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.CustomEventSystems.Tutorial;
 using UnityEngine;
@@ -23,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector3Int _lPos;
     private Tile _tile;
+    private Scene? previousScene;
     
     // private variables
     [SerializeField]
@@ -154,20 +154,22 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Leave") && "InsideHerosHome" == SceneManager.GetActiveScene().name)
+        if (other.CompareTag("Leave"))
         {
-            StartCoroutine(LoadLevel(1));
+            switch (SceneManager.GetActiveScene().name)
+            {
+                case "InsideHerosHome":
+                    BackToOther(1);
+                    break;
+                case "OpeningCutscene":
+                    BackToOther(2);
+                    break;
+                default:
+                    BackToOverworked();
+                    return;
+            }
         }
         
-        if (other.CompareTag("Leave") && "OpeningCutscene" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(2));
-        }
-
-        if (other.CompareTag("Leave") && "OutsideHerosHome 1" == SceneManager.GetActiveScene().name)
-        {
-            StartCoroutine(LoadLevel(10));
-        } 
         
         if (other.CompareTag("Leave") && "MeetingEnemyCutscene" == SceneManager.GetActiveScene().name)
         {
@@ -210,7 +212,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    private void BackToOverworked()
+    {
+        StartCoroutine(LoadLevel(10));
+    }
+
+    private void BackToOther(int index)
+    {
+        StartCoroutine(LoadLevel(index));
+    }
+    
+
+    private IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(1f);

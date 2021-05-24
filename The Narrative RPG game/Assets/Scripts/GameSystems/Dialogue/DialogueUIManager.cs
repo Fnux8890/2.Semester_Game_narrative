@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,17 +14,33 @@ namespace GameSystems.Dialogue
 {
     public class DialogueUIManager : Singleton<DialogueUIManager>
     {
-        private List<GameObject> _dialogueBoxes = new List<GameObject>();
+        private List<GameObject> _dialogueBoxes;
         private GameObject PreviousDialogueBox;
+        private bool TypeWriterRunning;
 
         private void Awake()
         {
-            for (var i = 0; i < gameObject.transform.childCount; i++)
-            {
-                _dialogueBoxes.Add(gameObject.transform.GetChild(i).gameObject);
-            }
             DialogueUIHandler.Instance.ExitDialogue += CloseDialogue;
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
+            DialogueHandleUpdate.Instance.UpdateCanvas += UpdateCanvasRef;
+            _dialogueBoxes = new List<GameObject>();
+        }
+
+        private void OnEnable()
+        {
+            UpdateCanvasRef();
+        }
+        
+
+        private void UpdateCanvasRef()
+        {
+            _dialogueBoxes = null;
+            _dialogueBoxes = new List<GameObject>();
+            var dialogueCanvas = GameObject.Find("DialogueCanvas");
+            for (var i = 0; i < dialogueCanvas.transform.childCount; i++)
+            {
+                _dialogueBoxes.Add(dialogueCanvas.transform.GetChild(i).gameObject);
+            }
         }
 
         private IEnumerator DisplayDialogue(Node currentNode)
@@ -166,18 +183,19 @@ namespace GameSystems.Dialogue
             switch (currentChild.gameObject.name)
             {
                 case "Option 1":
-                    NewMethod(0,currentChild, currentNode, isBox, currentParent);
+                    HandleChoice(0,currentChild, currentNode, isBox, currentParent);
                     break;
                 case "Option 2":
-                    NewMethod(1,currentChild, currentNode, isBox, currentParent);
+                    HandleChoice(1,currentChild, currentNode, isBox, currentParent);
                     break;
             }
             
         }
 
-        private void NewMethod(int choice,GameObject currentChild, Node currentNode, bool isBox, GameObject currentParent)
+        private void HandleChoice(int choice,GameObject currentChild, Node currentNode, bool isBox, GameObject currentParent)
         {
-            var nextNode = DialogueManager.Instance.Nodes.Find(node => node.node_name == currentNode.choices[choice].next);
+            var nodes = DialogueUIHandler.Instance.OnGetNodes();
+            var nextNode = nodes.Find(node => node.node_name == currentNode.choices[choice].next);
             if (isBox)
             {
                 currentParent.transform.parent.gameObject.SetActive(false);
@@ -202,21 +220,26 @@ namespace GameSystems.Dialogue
 
         private IEnumerator TypeWriter(string text, GameObject objectToSet, Node currentNode, bool hasChoices)
         {
-            objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
-            var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
-            PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
-            var sb = new StringBuilder();
-            textObject.text = sb.ToString();
-            foreach (var ch in text.ToCharArray())
+            if (TypeWriterRunning == false)
             {
-                textObject.text += ch;
-                yield return new WaitForSeconds(1f/30);
-            }
-            yield return new WaitForSeconds(0.5f);
-            objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
-            if (!hasChoices)
-            {
-                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+                TypeWriterRunning = true;
+                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
+                var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
+                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
+                var sb = new StringBuilder();
+                textObject.text = sb.ToString();
+                foreach (var ch in text.ToCharArray()) 
+                {
+                    textObject.text += ch;
+                    yield return new WaitForSeconds(1f/30);
+                }
+                yield return new WaitForSeconds(0.5f);
+                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
+                if (!hasChoices)
+                {
+                    PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+                }
+                TypeWriterRunning = false;
             }
         }
         

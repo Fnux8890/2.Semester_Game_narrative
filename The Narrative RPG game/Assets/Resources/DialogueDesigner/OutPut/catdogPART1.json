@@ -1,0 +1,185 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Cat-Dog",
+      "Edgelord"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "584735",
+        "to_port": 0
+      },
+      {
+        "from": "6272262",
+        "from_port": 0,
+        "to": "7744267",
+        "to_port": 0
+      },
+      {
+        "from": "584735",
+        "from_port": 0,
+        "to": "1124297",
+        "to_port": 0
+      },
+      {
+        "from": "1124297",
+        "from_port": 0,
+        "to": "6272262",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "catdogPART1",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "584735",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1124297",
+        "node_name": "584735",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          130,
+          -281.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You have been following us around the entire Game, and it is starting to creep me out a little bit."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Edgelord",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7744267",
+        "node_name": "6272262",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1055,
+          -286.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Show yourself, I was never perturbed by thine presence. Twas aware of thine skulking since it was started!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6272262",
+        "node_name": "1124297",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          612,
+          -471.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "wtf"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": null,
+        "node_name": "7744267",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          565,
+          27.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Dial it down a little Eric."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "7140987",
+        "node_type": "execute",
+        "offset": [
+          1096,
+          141.5
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "TriggerNewCutscene()",
+        "title": "Execute"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "yeet": {
+        "type": 0,
+        "value": "wtf"
+      }
+    }
+  }
+]

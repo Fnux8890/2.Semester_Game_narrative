@@ -70,6 +70,12 @@
         "from_port": 0,
         "to": "7171861",
         "to_port": 0
+      },
+      {
+        "from": "7171861",
+        "from_port": 0,
+        "to": "4311173",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -382,7 +388,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
-        "next": null,
+        "next": "4311173",
         "node_name": "7171861",
         "node_type": "show_message",
         "object_path": "",
@@ -396,6 +402,19 @@
           "ENG": "The old man throws a melon at the hero."
         },
         "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "4311173",
+        "node_type": "execute",
+        "offset": [
+          377,
+          2151.75
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "ChangeScene(\"11\")",
+        "title": "Execute"
       }
     ],
     "selected_language": "ENG",

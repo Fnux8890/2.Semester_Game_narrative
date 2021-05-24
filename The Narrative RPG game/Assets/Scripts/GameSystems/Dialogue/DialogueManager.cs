@@ -10,6 +10,7 @@ using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
 using UnityEngine;
 using Utilities;
 using Random = System.Random;
+using UnityEngine.SceneManagement;
 
 namespace GameSystems.Dialogue
 {
@@ -173,7 +174,7 @@ namespace GameSystems.Dialogue
             }
             if (!currentNodeIsLast ||  _currentNode.branches!=null || _currentNode.choices != null)
             {
-                _currentNode = Nodes.Find(x => x.node_name == _currentNode.next);
+                _currentNode = Nodes?.Find(x => x.node_name == _currentNode?.next);
                 yield break;
             }
         }
@@ -215,6 +216,7 @@ namespace GameSystems.Dialogue
 
         private IEnumerator CloseDialogue()
         {
+            StopAllCoroutines();
             _currentNode = null;
             DialogueUIHandler.Instance.OnExitDialogue();
             if (_isCutscene)
@@ -231,6 +233,10 @@ namespace GameSystems.Dialogue
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Enable();
             }
 
+            if (!PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.enabled)
+            {
+                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+            }
             _endNodeRan = false;
             yield break;
         }
@@ -309,6 +315,8 @@ namespace GameSystems.Dialogue
 
         private void ExecutedMethod(string method, string param)
         {
+            bool isBool = bool.TryParse(param, out var boolResult);
+            bool isInt = int.TryParse(param, out var intResult);
             var type = GetType();
             var theMethod = type.GetMethod(method);
             if (theMethod == null)
@@ -316,10 +324,28 @@ namespace GameSystems.Dialogue
                 Debug.LogWarning("Method specified in dialogue designer not available");
                 return;
             }
+
+            if (isBool)
+            {
+                theMethod?.Invoke(this, new object[]{boolResult});
+                return;
+            } 
+            if (isInt)
+            {
+                theMethod?.Invoke(this, new object[]{intResult});
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(param))
+            {
+                theMethod?.Invoke(this, new object[]{param});
+                return;
+            }
             theMethod?.Invoke(this, null);
+            
         }
 
-        public void PlaySound()
+        public void PlaySound(string sound)
         {
             Debug.Log("You played a sound");
         }
@@ -327,6 +353,12 @@ namespace GameSystems.Dialogue
         public void RemoveVillian()
         {
             Destroy(GameObject.Find("Villain"));
+        }
+
+        public void ChangeScene(int levelIndex)
+        {
+            Debug.Log($"changing scenes...{levelIndex}");
+            InteractionHandler.Instance.OnLevelAnim(levelIndex);
         }
 
         private IEnumerator HandleNodeConditions()

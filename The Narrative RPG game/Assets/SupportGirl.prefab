@@ -175,7 +175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238613, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238613, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: m_TagString
@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: unitName
-      value: Support Girl
+      value: Princess Stacey
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: currentHP

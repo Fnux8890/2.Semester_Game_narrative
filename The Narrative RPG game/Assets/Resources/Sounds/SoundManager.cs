@@ -37,7 +37,7 @@ public class SoundManager : Singleton<SoundManager>
         teleport = Resources.Load<AudioClip>("Sounds/Teleport");
         animepunch = Resources.Load<AudioClip>("Sounds/strongpunch");
         shield = Resources.Load<AudioClip>("Sounds/Shield");
-        enemydies = Resources.Load<AudioClip>("Sounds/Enemy_Dies");
+        enemydies = Resources.Load<AudioClip>("Sounds/EnemyDies");
         pew = Resources.Load<AudioClip>("Sounds/Pew");
 
     }

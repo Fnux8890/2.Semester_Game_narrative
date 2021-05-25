@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637572207520000000
-    m_Hash: 451050474
+      ticks: 637574780800122888
+    m_Hash: 3064180567
   m_LockFileStatus:
     m_FilePath: /Users/bruger/Documents/Github/2.Semester_Game_narrative/The Narrative
       RPG game/Packages/packages-lock.json
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637575649840000000
+      ticks: 637574798295663576
     m_Hash: 3224597762
 m_EmbeddedPackageManifests:
   m_ManifestsStatus:
@@ -26,8 +26,8 @@ m_EmbeddedPackageManifests:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637572207520000000
-      m_Hash: 1044001610
+        ticks: 637574780798742809
+      m_Hash: 2350957545
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:

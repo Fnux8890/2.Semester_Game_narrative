@@ -1,50 +1,46 @@
 using System;
-using System.Collections.Generic;
-using GameSystems.CustomEventSystems;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue;
 using PlayerControl;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 using Utilities;
 
 namespace GameSystems.Timeline
 {
-    public class CutsceneManager : Singleton<CutsceneManager>
+    public class CutsceneManager : MonoBehaviour
     {
-        private List<TimelineAsset> _cutscenes = new List<TimelineAsset>();
+        public bool isStartOfGame, playOnAwake;
+        public PlayableDirector _director;
+        public TextAsset json;
+        private TextAsset _previousJson;
+        private PlayerActionControls _playerActionControls;
+        private DialogueUIManager yeet;
+        private DialogueManager yeet2;
+
+        private void Awake()
+        {
+            _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
+            InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
+            TriggerCutSceneHandler.Instance.TriggerCutScene += PlayCutscene;
+            yeet = DialogueUIManager.Instance;
+            yeet2 = DialogueManager.Instance;
+        }
         
+
         private void OnEnable()
         {
-            if (!(_cutscenes.Count > 0))
+            if (playOnAwake || isStartOfGame)
             {
-                var assets = Resources.LoadAll<TimelineAsset>("Cutscenes/Timeline");
-                _cutscenes.AddRange(assets);
-            }
-            CutsceneHandler.Instance.StartCutsceneWithDialogue += PlayCutsceneWithDialogue;
-            CutsceneHandler.Instance.StartCutsceneWithNoDialogue += PlayCutsceneWithNoDialogue;
-            TriggerCutSceneHandler.Instance.TriggerCutScene += PlayCutsceneWithDialogue;
-        }
-
-        private void OnDisable()
-        {
-            if (CutsceneHandler.Instance != null)
-            {
-                CutsceneHandler.Instance.StartCutsceneWithDialogue -= PlayCutsceneWithDialogue;
-                CutsceneHandler.Instance.StartCutsceneWithNoDialogue -= PlayCutsceneWithNoDialogue;
+                PlayCutscene();
             }
         }
 
-
-        private void PlayCutsceneWithDialogue(TextAsset json, string cutscene)
+        private void PlayCutscene()
         {
-            var director = GameObject.Find("GameManagers").transform.Find("TimelineManager")
-                .GetComponent<PlayableDirector>();
-            director.playableAsset = _cutscenes.Find(x => x.name == cutscene);
             DialogueHandleUpdate.Instance.OnUpdateCanvas();
-            director.Play();
+            _director.Play();
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             if (GameObject.Find("TutorialCanvas") != null && GameObject.Find("TutorialCanvas").activeSelf)
             {
@@ -52,30 +48,28 @@ namespace GameSystems.Timeline
             }
 
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
-            director.stopped += dir =>
+            _director.stopped += director =>
             {
-                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.performed += Interact;
+                _playerActionControls.Land.Interact.performed += Interact;
                 InteractionHandler.Instance.OnStartCutscene(json);
-                //InteractionHandler.Instance.OnStartCutscene(json);
+                InteractionHandler.Instance.OnStartCutscene(json);
             };
         }
 
-        private void PlayCutsceneWithNoDialogue(string cutscene)
+        private void OnValidate()
         {
-            var director = GameObject.Find("GameManagers").transform.Find("TimelineManager")
-                .GetComponent<PlayableDirector>();
-            director.playableAsset = _cutscenes.Find(x => x.name == cutscene);
-            DialogueHandleUpdate.Instance.OnUpdateCanvas();
-            director.Play();
-            PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
-            director.stopped += dir =>
-            {
-                PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Enable();
-            };
+            UpdateJson();
         }
         
-        
-        
+        public void UpdateJson()
+        {
+            if (_previousJson == null) _previousJson = new TextAsset();
+            if (json.GetType() != typeof(TextAsset))
+                throw new InvalidOperationException("File can only be Text Assets");
+            if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
+            _previousJson = json;
+            CustomUtils.PrettifyJson(json);
+        }
         
         private void Interact(InputAction.CallbackContext ctx)
         {

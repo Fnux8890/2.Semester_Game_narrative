@@ -1,88 +1,24 @@
 using System;
 using System.Collections;
-using GameSystems.Combat;
-using GameSystems.CustomEventSystems;
+using System.Collections.Generic;
 using GameSystems.CustomEventSystems.Interaction;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Utilities;
 
-public class SceneChangeAnim : Singleton<SceneChangeAnim>
+public class SceneChangeAnim : MonoBehaviour
 {
-    private Animator _transition;
-    private static readonly int StartAnimation = Animator.StringToHash("Start");
-    private SceneLoadManager _sceneManager;
-    private GameObject _levelLoader;
-    
-    private void OnEnable()
-    {
-        UpdateRef();
-        _sceneManager = SceneLoadManager.Instance;
-        InteractionHandler.Instance.LevelAnimInt += StartLevelLoadInt;
-        InteractionHandler.Instance.LevelAnimName += StartLevelLoadName;
-        InteractionHandler.Instance.LevelAnimPrevious += StartLevelLoadPrevious;
-    }
+    public Animator transition;
 
-    private void UpdateRef()
+    private void Start()
     {
-        _levelLoader = GameObject.Find("LevelLoader");
-        _transition = _levelLoader.transform.GetChild(0).GetComponent<Animator>();
+        InteractionHandler.Instance.levelAnim += (index) => StartCoroutine(LoadLevel(index));
     }
-
-    private void OnDisable()
-    {
-        if (InteractionHandler.Instance != null)
-        {
-            InteractionHandler.Instance.LevelAnimInt -= StartLevelLoadInt;
-            InteractionHandler.Instance.LevelAnimName -= StartLevelLoadName;
-            InteractionHandler.Instance.LevelAnimPrevious -= StartLevelLoadPrevious;
-        }
-        
-    }
-
-    private void StartLevelLoadInt(int index)
-    {
-        StartCoroutine(LoadLevel(index));
-    }
-
-    private void StartLevelLoadName(string levelName)
-    {
-        StartCoroutine(LoadLevel(levelName));
-    }
-
-    private void StartLevelLoadPrevious()
-    {
-        
-    }
-
 
     private IEnumerator LoadLevel(int levelIndex)
     {
-        UpdateRef();
-        SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
-        SceneLoadHandler.Instance.OnStoreLastSceneName(SceneManager.GetActiveScene().name);
-        _transition.SetTrigger(StartAnimation);
+        Debug.Log("stuff");
+        transition.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(levelIndex);
     }
-    
-    private IEnumerator LoadLevel(string levelName)
-    {
-        UpdateRef();
-        SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
-        SceneLoadHandler.Instance.OnStoreLastSceneName(SceneManager.GetActiveScene().name);
-        _transition.SetTrigger(StartAnimation);
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(levelName);
-    }
-
-    private IEnumerator LoadPreviousLevel()
-    {
-        UpdateRef();
-        var lastScene = SceneLoadHandler.Instance.OnGetLastSceneName();
-        _transition.SetTrigger(StartAnimation);
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(lastScene);
-    }
-    
 }

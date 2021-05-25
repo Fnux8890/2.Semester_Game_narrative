@@ -31,6 +31,12 @@
         "to_port": 0
       },
       {
+        "from": "5018231",
+        "from_port": 1,
+        "to": "2816887",
+        "to_port": 0
+      },
+      {
         "from": "9113526",
         "from_port": 0,
         "to": "1054713",
@@ -88,18 +94,6 @@
         "from": "2672192",
         "from_port": 0,
         "to": "8119912",
-        "to_port": 0
-      },
-      {
-        "from": "5018231",
-        "from_port": 1,
-        "to": "6264714",
-        "to_port": 0
-      },
-      {
-        "from": "6264714",
-        "from_port": 0,
-        "to": "2816887",
         "to_port": 0
       }
     ],
@@ -228,7 +222,7 @@
       },
       {
         "branches": {
-          "False": "6264714",
+          "False": "2816887",
           "True": "2672192"
         },
         "filename": "res://Nodes/Condition Branch.tscn",
@@ -240,6 +234,36 @@
         ],
         "text": "MSG.var(\"already_met\")",
         "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7164248",
+        "node_name": "2816887",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          120,
+          -100
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Hello!",
+          "FR": "Ceci est un exemple de texte en français.",
+          "RUS": "Это пример текста на русском языке."
+        },
+        "title": "Show Message"
       },
       {
         "character": [
@@ -462,7 +486,7 @@
           -40
         ],
         "rect_size_x": 367,
-        "rect_size_y": 84,
+        "rect_size_y": 84.000061,
         "text": "Messages, choices and condition branches.",
         "title": "SIMPLE DIALOGUE"
       },
@@ -493,49 +517,6 @@
           "ENG": "Another dialouge"
         },
         "title": "Show Message"
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "7164248",
-        "node_name": "2816887",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          314,
-          -428
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "Hello!",
-          "FR": "Ceci est un exemple de texte en français.",
-          "RUS": "Это пример текста на русском языке."
-        },
-        "title": "Show Message"
-      },
-      {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "6264714",
-        "node_type": "execute",
-        "offset": [
-          126.719971,
-          -66.579956
-        ],
-        "rect_size_x": 329,
-        "rect_size_y": 89,
-        "text": "StartCutscene(\"MeetingOldMan\")",
-        "title": "Execute"
       }
     ],
     "selected_language": "ENG",

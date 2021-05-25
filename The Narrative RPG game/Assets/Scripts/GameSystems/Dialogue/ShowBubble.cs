@@ -6,7 +6,6 @@ namespace GameSystems.Dialogue
     [RequireComponent(typeof(Animator))]
     public class ShowBubble : MonoBehaviour
     {
-        public int id;
         private Animator _animator;
         private static readonly int Showing = Animator.StringToHash("Showing");
         private static readonly int Exit = Animator.StringToHash("Exit");
@@ -20,21 +19,16 @@ namespace GameSystems.Dialogue
         }
         
 
-        private void Show(int id)
+        private void Show()
         {
-            if (this.id == id)
-            {
-                _animator.SetTrigger(Enter);
-                _animator.SetBool(Showing, true);
-            }
+            _animator.SetTrigger(Enter);
+            _animator.SetBool(Showing, true);
         }
 
-        private void Hide(int id)
+        private void Hide()
         {
-            if (this.id == id)
-            {
-                _animator.SetTrigger(Exit);
-            }
+            //_animator.SetBool(Showing, false);
+            _animator.SetTrigger(Exit);
         }
     }
 }

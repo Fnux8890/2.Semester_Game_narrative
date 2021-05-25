@@ -56,7 +56,7 @@ namespace GameSystems.Dialogue
         {
             if (PreviousDialogueBox != null)
             {
-                PreviousDialogueBox.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
+                PreviousDialogueBox.transform.Find("Continue").gameObject.SetActive(false);
             }
             if (PreviousDialogueBox != null && isBox)
             {
@@ -87,16 +87,12 @@ namespace GameSystems.Dialogue
                     if (currentNode.character == "Player")
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
-                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                        dialogueBox.transform.Find("Name").GetComponent<RectTransform>().position = new Vector3(67.3f, 130.8f);
                     }
                     else
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
-                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                        dialogueBox.transform.Find("Name").position = new Vector3(1755.0f, 230.2f);
                     }
                     PreviousDialogueBox = dialogueBox;
                     dialogueBox.gameObject.SetActive(true);
@@ -227,7 +223,7 @@ namespace GameSystems.Dialogue
             if (TypeWriterRunning == false)
             {
                 TypeWriterRunning = true;
-                objectToSet.transform.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
+                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
                 var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
 

@@ -400,12 +400,7 @@ namespace GameSystems.Dialogue
             GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
             SoundManager.Instance.PlayDead();
         }
-
-        public void DyingSoldier()
-        {
-            GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
-            SoundManager.Instance.PlayDead();
-        }
+        
         
 
         private IEnumerator HandleNodeConditions()

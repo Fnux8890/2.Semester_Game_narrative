@@ -6,12 +6,15 @@ using System.Text;
 using Dialogue.Objects;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
+using GameSystems.Timeline;
 using PlayerControl;
 using DialogueClass = GameSystems.Dialogue.Dialogue_Json_Classes.Dialogue;
 using UnityEngine;
+using UnityEngine.Playables;
 using Utilities;
 using Random = System.Random;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 namespace GameSystems.Dialogue
 {
@@ -39,7 +42,7 @@ namespace GameSystems.Dialogue
         private void Awake()
         {
             _globalVariables = new Dictionary<string, Variables>();
-            InteractionHandler.Instance.Interact += () => StartCoroutine(ShowDialogue());
+            InteractionHandler.Instance.Interact += StartShowDialogue;
             InteractionHandler.Instance.UpdateNode += ChoiceUpdateNode;
             InteractionHandler.Instance.StartCutscene += StartCutscene;
             DialogueHandleUpdate.Instance.UpdateJson += LoadJson;
@@ -47,9 +50,28 @@ namespace GameSystems.Dialogue
             DialogueUIHandler.Instance.GETNodes += SendNodes;
         }
 
+        private void OnDisable()
+        {
+            if (InteractionHandler.Instance != null)
+            {
+                InteractionHandler.Instance.Interact -= StartShowDialogue;
+                InteractionHandler.Instance.UpdateNode -= ChoiceUpdateNode;
+                InteractionHandler.Instance.StartCutscene -= StartCutscene;
+                DialogueHandleUpdate.Instance.UpdateJson -= LoadJson;
+                DialogueHandleUpdate.Instance.UnloadJson -= UnloadJson;
+                DialogueUIHandler.Instance.GETNodes -= SendNodes;
+                
+            }
+        }
+
         private List<Node> SendNodes()
         {
             return Nodes;
+        }
+
+        private void StartShowDialogue()
+        {
+            StartCoroutine(ShowDialogue());
         }
         
         private void StartCutscene(TextAsset json)
@@ -362,6 +384,12 @@ namespace GameSystems.Dialogue
             InteractionHandler.Instance.OnLevelAnimInt(levelIndex);
         }
 
+        public void StartCutscene(string cutScene)
+        {
+            Debug.Log("StartCutscene ran");
+            CutsceneHandler.Instance.OnStartCutsceneWithNoDialogue(cutScene);
+        }
+
         public void SavingThePrincess()
         {
             InteractionHandler.Instance.OnLevelAnimName("CombatScene");
@@ -383,6 +411,7 @@ namespace GameSystems.Dialogue
             var variableData = _currentVariable.variables[variable].VariableData;
             var nextBranch = _currentNode.branches[variableData.ToString()];
             _currentNode = _currentNode = Nodes.Find(x => x.node_name == nextBranch);
+            Debug.Log(_currentNode.nodeType);
             yield break;
         }
 

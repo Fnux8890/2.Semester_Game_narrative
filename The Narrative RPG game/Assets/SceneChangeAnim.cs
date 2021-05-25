@@ -18,9 +18,9 @@ public class SceneChangeAnim : Singleton<SceneChangeAnim>
     {
         UpdateRef();
         _sceneManager = SceneLoadManager.Instance;
-        InteractionHandler.Instance.LevelAnimInt += (index) => StartCoroutine(LoadLevel(index));
-        InteractionHandler.Instance.LevelAnimName += (levelName) => StartCoroutine(LoadLevel(levelName));
-        InteractionHandler.Instance.LevelAnimPrevious += () => StartCoroutine(LoadPreviousLevel());
+        InteractionHandler.Instance.LevelAnimInt += StartLevelLoadInt;
+        InteractionHandler.Instance.LevelAnimName += StartLevelLoadName;
+        InteractionHandler.Instance.LevelAnimPrevious += StartLevelLoadPrevious;
     }
 
     private void UpdateRef()
@@ -29,16 +29,31 @@ public class SceneChangeAnim : Singleton<SceneChangeAnim>
         _transition = _levelLoader.transform.GetChild(0).GetComponent<Animator>();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         if (InteractionHandler.Instance != null)
         {
-            InteractionHandler.Instance.LevelAnimInt -= (index) => StartCoroutine(LoadLevel(index));
-            InteractionHandler.Instance.LevelAnimName -= (levelName) => StartCoroutine(LoadLevel(levelName));
+            InteractionHandler.Instance.LevelAnimInt -= StartLevelLoadInt;
+            InteractionHandler.Instance.LevelAnimName -= StartLevelLoadName;
+            InteractionHandler.Instance.LevelAnimPrevious -= StartLevelLoadPrevious;
         }
         
     }
-    
+
+    private void StartLevelLoadInt(int index)
+    {
+        StartCoroutine(LoadLevel(index));
+    }
+
+    private void StartLevelLoadName(string levelName)
+    {
+        StartCoroutine(LoadLevel(levelName));
+    }
+
+    private void StartLevelLoadPrevious()
+    {
+        
+    }
 
 
     private IEnumerator LoadLevel(int levelIndex)

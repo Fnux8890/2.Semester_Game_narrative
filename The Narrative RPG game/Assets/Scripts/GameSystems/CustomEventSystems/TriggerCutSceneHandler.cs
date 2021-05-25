@@ -1,15 +1,16 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Utilities;
 
-public class TriggerCutSceneHandler : Singleton<TriggerCutSceneHandler>
+namespace GameSystems.CustomEventSystems
 {
-    public event Action TriggerCutScene;
-
-    public void OnTriggerCutScene()
+    public class TriggerCutSceneHandler : Singleton<TriggerCutSceneHandler>
     {
-        TriggerCutScene?.Invoke();
+        public event Action<TextAsset, string> TriggerCutScene;
+
+        public void OnTriggerCutScene(TextAsset json, string cutscene)
+        {
+            TriggerCutScene?.Invoke(json, cutscene);
+        }
     }
 }

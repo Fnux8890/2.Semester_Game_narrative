@@ -159,7 +159,12 @@ public class BattleSystem : MonoBehaviour
                 supportgirlHUD.disable();
                 break;
         }
-        
+
+        if (Encounter.LastSceneName == "SaveThePrincessForrest")
+        {
+            playerBattleStation.GetChild(1).gameObject.SetActive(false);
+            GameObject.FindGameObjectWithTag("EdgelordHUD").SetActive(false);
+        }
        
 
         yield return new WaitForSeconds(2);
@@ -175,7 +180,7 @@ public class BattleSystem : MonoBehaviour
         supportgirlturn = true;
         edgelordturn = true;
         combatText.fontSize = 12;
-        combatText.text = "Choose an action for sword guy";
+        combatText.text = "Choose an action for Player";
         for (int i = 0; i < _button.Length; i++)
         {
             _button[i].SetActive(true);
@@ -195,9 +200,11 @@ public class BattleSystem : MonoBehaviour
         animationManager.SupportgirlIdle();
         
         animationManager.EarthElementalIdle();
+        
+        animationManager.EvilsteveIdle();
 
         combatText.fontSize = 12;
-        combatText.text = "Choose an action for support girl";
+        combatText.text = "Choose an action for Stacey";
         for (int i = 0; i < _button.Length; i++)
         {
             _button[i].SetActive(true);
@@ -216,6 +223,8 @@ public class BattleSystem : MonoBehaviour
         animationManager.CatdogIdle();
         
         animationManager.EarthElementalIdle();
+        
+        animationManager.EvilsteveIdle();
         
         combatText.fontSize = 12;
         combatText.text = "Choose an action for CatDog";
@@ -354,7 +363,7 @@ public class BattleSystem : MonoBehaviour
 
             Vector2 ve = new Vector2(-2, -22);
             combatText.rectTransform.anchoredPosition = ve;
-            if (_edgelordUnit.Dead() == true)
+            if (_edgelordUnit.Dead() == true || playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
             {
                 StartCoroutine(EnemyTurn());
             }
@@ -373,6 +382,8 @@ public class BattleSystem : MonoBehaviour
             animationManager.CatdogAttack();
             
             SoundManager.Instance.PlayPew();
+            
+            animationManager.EvilsteveTakedamage();
             
             combatText.fontSize = 25;
 
@@ -405,9 +416,6 @@ public class BattleSystem : MonoBehaviour
         if (swordguyturn == true && _playerUnit.Dead() == false && supportgirlturn == true && catdogturn == true)
         {
             animationManager.SwordguyAttack();
-            
-            
-
             
             Debug.Log("Swordguy attacks");
             
@@ -741,7 +749,7 @@ public class BattleSystem : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(EnemyTurn());
         }
-        if (rollRandom == 3 && _edgelordUnit.Dead() == true)
+        if (rollRandom == 3 && _edgelordUnit.Dead() == true || rollRandom == 3 && playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
         {
             StopAllCoroutines();
             StartCoroutine(EnemyTurn());

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Dialogue.Objects;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using PlayerControl;
@@ -364,6 +365,12 @@ namespace GameSystems.Dialogue
         public void SavingThePrincess()
         {
             SceneManager.LoadScene("CombatScene");
+        }
+
+        public void DyingSoldier()
+        {
+            GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
+            SoundManager.Instance.PlayDead();
         }
         
 

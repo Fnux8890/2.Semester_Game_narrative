@@ -17,6 +17,9 @@ TagManager:
   - PlayerBattlestation
   - EnemyBattlestation
   - Hurt
+  - EdgelordHUD
+  - Evilsteve
+  - Deadsoldier
   layers:
   - Default
   - TransparentFX

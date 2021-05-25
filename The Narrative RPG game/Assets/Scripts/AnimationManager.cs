@@ -27,6 +27,7 @@ public class AnimationManager : MonoBehaviour
         swordguy = Swordguy.GetComponent<Animator>();
         
         GameObject Edgelord = GameObject.FindGameObjectWithTag("Edgelord");
+        if (Edgelord == isActiveAndEnabled)
         edgelord = Edgelord.GetComponent<Animator>();
 
         enemy = GameObject.FindGameObjectWithTag("EnemyBattlestation").GetComponentInChildren<Animator>();
@@ -168,5 +169,15 @@ public class AnimationManager : MonoBehaviour
     public void RedknightAttack3()
     {
         enemy.Play("Redknight_Attack3");
+    }
+
+    public void EvilsteveIdle()
+    {
+        enemy.Play("Evilsteve_Idle");
+    }
+
+    public void EvilsteveTakedamage()
+    {
+        enemy.Play("Evilsteve_Takedamage");
     }
 }

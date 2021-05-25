@@ -22,6 +22,8 @@ public class SoundManager : Singleton<SoundManager>
 
     private AudioClip pew;
 
+    private AudioClip dead;
+
     private void Start()
     {
         component = GetComponent<AudioSource>();
@@ -39,12 +41,19 @@ public class SoundManager : Singleton<SoundManager>
         shield = Resources.Load<AudioClip>("Sounds/Shield");
         enemydies = Resources.Load<AudioClip>("Sounds/EnemyDies");
         pew = Resources.Load<AudioClip>("Sounds/Pew");
+        dead = Resources.Load<AudioClip>("Sounds/Dead");
 
     }
 
     public void PlayHurt()
     {
         component.clip = hurt;
+        component.Play();
+    }
+
+    public void PlayDead()
+    {
+        component.clip = dead;
         component.Play();
     }
 

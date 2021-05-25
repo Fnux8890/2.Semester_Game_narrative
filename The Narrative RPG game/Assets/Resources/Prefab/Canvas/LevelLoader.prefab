@@ -217,7 +217,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 288968013812886131}
-  - component: {fileID: 9142841937128950141}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged

@@ -93,6 +93,7 @@ namespace GameSystems.Dialogue
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                        dialogueBox.transform.Find("Name").position = new Vector3(1755.0f, 230.2f);
                     }
                     PreviousDialogueBox = dialogueBox;
                     dialogueBox.gameObject.SetActive(true);
@@ -238,10 +239,10 @@ namespace GameSystems.Dialogue
                         var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
                         var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
                         var position = nameRt.position;
-                        position = new Vector2(position.x, position.y + 0.3f);
+                        position = new Vector2(position.x, position.y + 1f);
                         nameRt.position = position;
                         var sizeDelta = parentRt.sizeDelta;
-                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
+                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.5f);
                         parentRt.sizeDelta = sizeDelta;
                         childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
                     }

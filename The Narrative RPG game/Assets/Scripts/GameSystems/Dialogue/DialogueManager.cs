@@ -359,12 +359,12 @@ namespace GameSystems.Dialogue
         public void ChangeScene(int levelIndex)
         {
             Debug.Log($"changing scenes...{levelIndex}");
-            InteractionHandler.Instance.OnLevelAnim(levelIndex);
+            InteractionHandler.Instance.OnLevelAnimInt(levelIndex);
         }
 
         public void SavingThePrincess()
         {
-            SceneManager.LoadScene("CombatScene");
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
         }
 
         public void DyingSoldier()

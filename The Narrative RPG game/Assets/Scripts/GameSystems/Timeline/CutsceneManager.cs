@@ -1,4 +1,5 @@
 using System;
+using GameSystems.Combat;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue;
 using PlayerControl;
@@ -16,16 +17,18 @@ namespace GameSystems.Timeline
         public TextAsset json;
         private TextAsset _previousJson;
         private PlayerActionControls _playerActionControls;
-        private DialogueUIManager yeet;
-        private DialogueManager yeet2;
+        private DialogueUIManager _dialogueUIManager;
+        private DialogueManager _dialogueManager;
+        private SceneLoadManager _sceneManager;
 
         private void Awake()
         {
             _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
             InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
             TriggerCutSceneHandler.Instance.TriggerCutScene += PlayCutscene;
-            yeet = DialogueUIManager.Instance;
-            yeet2 = DialogueManager.Instance;
+            _dialogueUIManager = DialogueUIManager.Instance;
+            _dialogueManager = DialogueManager.Instance;
+            _sceneManager = SceneLoadManager.Instance;
         }
         
 

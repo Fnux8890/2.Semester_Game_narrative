@@ -47,12 +47,16 @@ namespace GameSystems.Timeline
         
         public void UpdateJson()
         {
-            if (_previousJson == null) _previousJson = new TextAsset();
-            if (json.GetType() != typeof(TextAsset))
-                throw new InvalidOperationException("File can only be Text Assets");
-            if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
-            _previousJson = json;
-            CustomUtils.PrettifyJson(json);
+            if (json != null)
+            {
+                if (_previousJson == null) _previousJson = new TextAsset();
+                if (json.GetType() != typeof(TextAsset))
+                    throw new InvalidOperationException("File can only be Text Assets");
+                if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
+                _previousJson = json;
+                CustomUtils.PrettifyJson(json);
+            }
+            
         }
         
         private void Interact(InputAction.CallbackContext ctx)

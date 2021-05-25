@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameSystems.CustomEventSystems;
+using GameSystems.CustomEventSystems.Interaction;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -714,7 +716,7 @@ namespace GameSystems.Combat
             combatText.text = "You have escaped!";
             yield return new WaitForSeconds(3);
         
-            SceneManager.LoadScene(Encounter.LastSceneName);
+            InteractionHandler.Instance.OnLevelAnimName(SceneLoadHandler.Instance.OnGetLastSceneName());
 
         }
 
@@ -949,7 +951,7 @@ namespace GameSystems.Combat
 
                 yield return new WaitForSeconds(3);
 
-                SceneManager.LoadScene(Encounter.LastSceneName);
+                InteractionHandler.Instance.OnLevelAnimName(SceneLoadHandler.Instance.OnGetLastSceneName());
 
 
             }

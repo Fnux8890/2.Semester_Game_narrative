@@ -3003,10 +3003,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
-    - target: {fileID: 288968013812886130, guid: 3721d0abea9dcee41932759cffee26e4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 288968013812886131, guid: 3721d0abea9dcee41932759cffee26e4, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3205,14 +3201,6 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.8125
       objectReference: {fileID: 0}
-    - target: {fileID: 2669949055806103735, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f01a8c3f9729cd5458b9281eb8f1a527, type: 2}
-    - target: {fileID: 2669949055806103736, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: id
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2669949055806103737, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3288,10 +3276,6 @@ PrefabInstance:
     - target: {fileID: 2669949055806103742, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
       propertyPath: m_Name
       value: RandomNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 2669949056017452597, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: id
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
@@ -4286,14 +4270,6 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.75
       objectReference: {fileID: 0}
-    - target: {fileID: 2669949055806103735, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f01a8c3f9729cd5458b9281eb8f1a527, type: 2}
-    - target: {fileID: 2669949055806103736, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: id
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2669949055806103736, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
       propertyPath: direction
       value: 2
@@ -4369,10 +4345,6 @@ PrefabInstance:
     - target: {fileID: 2669949055806103742, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
       propertyPath: m_Name
       value: Librarian
-      objectReference: {fileID: 0}
-    - target: {fileID: 2669949056017452597, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}
-      propertyPath: id
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ded848566102d04f8cf2c0f035ddef6, type: 3}

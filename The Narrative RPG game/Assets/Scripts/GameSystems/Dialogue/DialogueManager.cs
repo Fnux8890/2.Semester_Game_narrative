@@ -360,6 +360,11 @@ namespace GameSystems.Dialogue
             Debug.Log($"changing scenes...{levelIndex}");
             InteractionHandler.Instance.OnLevelAnim(levelIndex);
         }
+
+        public void SavingThePrincess()
+        {
+            SceneManager.LoadScene("CombatScene");
+        }
         
 
         private IEnumerator HandleNodeConditions()

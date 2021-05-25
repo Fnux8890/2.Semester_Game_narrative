@@ -13,21 +13,9 @@
         "to_port": 0
       },
       {
-        "from": "2909223",
-        "from_port": 0,
-        "to": "903446",
-        "to_port": 0
-      },
-      {
         "from": "3085208",
         "from_port": 0,
         "to": "7180395",
-        "to_port": 0
-      },
-      {
-        "from": "903446",
-        "from_port": 0,
-        "to": "3085208",
         "to_port": 0
       },
       {
@@ -40,6 +28,18 @@
         "from": "642015",
         "from_port": 0,
         "to": "2909223",
+        "to_port": 0
+      },
+      {
+        "from": "2909223",
+        "from_port": 0,
+        "to": "7131524",
+        "to_port": 0
+      },
+      {
+        "from": "7131524",
+        "from_port": 0,
+        "to": "3085208",
         "to_port": 0
       }
     ],
@@ -145,47 +145,6 @@
         "title": "Show Message"
       },
       {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "903446",
-        "node_name": "2909223",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          509,
-          33.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "I suppose nothing today could be better, than to spend my precious speedrunning time on playing \"Doki Doki Origami Club.\""
-        },
-        "title": "Show Message"
-      },
-      {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "903446",
-        "node_type": "execute",
-        "offset": [
-          938,
-          47
-        ],
-        "rect_size_x": 329.000488,
-        "rect_size_y": 89,
-        "text": "PlaySound(\"Knocking\")",
-        "title": "Execute"
-      },
-      {
         "filename": "res://Nodes/Set Local Variable.tscn",
         "next": null,
         "node_name": "9737446",
@@ -199,6 +158,60 @@
         "toggle": false,
         "value": true,
         "var_name": "IntroIsOver"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "903446",
+        "node_type": "execute",
+        "offset": [
+          956,
+          -331
+        ],
+        "rect_size_x": 329.000244,
+        "rect_size_y": 89,
+        "text": "PlaySound(\"Knocking\")",
+        "title": "Execute"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7131524",
+        "node_name": "2909223",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          483,
+          -42.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I suppose nothing today could be better, than to spend my precious speedrunning time on playing \"Doki Doki Origami Club.\""
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "7131524",
+        "node_type": "execute",
+        "offset": [
+          927.599976,
+          -61.190002
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "StartCutscene(\"OpeningCutscene\")",
+        "title": "Execute"
       }
     ],
     "selected_language": "ENG",

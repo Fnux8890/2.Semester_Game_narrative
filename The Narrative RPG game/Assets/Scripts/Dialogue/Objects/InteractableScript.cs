@@ -23,11 +23,12 @@ namespace Dialogue.Objects
         public InteractableDirection direction;
         public Vector2 offset;
         public Vector2 size;
+        public int id;
         public float radius;
         
         public TextAsset json;
-
         
+
 
         private TextAsset _previousJson;
     
@@ -72,7 +73,7 @@ namespace Dialogue.Objects
         {
             if (other.CompareTag("Player"))
             {
-                InteractionHandler.Instance.OnShowBubble();
+                InteractionHandler.Instance.OnShowBubble(id);
                 DialogueHandleUpdate.Instance.OnUpdateJson(json);
                 InteractionHandler.Instance.OnLookingAt(gameObject, true);
             }
@@ -80,7 +81,7 @@ namespace Dialogue.Objects
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractionHandler.Instance.OnHideBubble();
+            InteractionHandler.Instance.OnHideBubble(id);
             DialogueHandleUpdate.Instance.OnUnloadJson();
             InteractionHandler.Instance.OnLookingAt(null, false);
             DialogueUIHandler.Instance.OnExitDialogue();

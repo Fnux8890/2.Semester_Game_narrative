@@ -1,0 +1,285 @@
+[
+  {
+    "characters": [
+      "Player",
+      "NPC"
+    ],
+    "connections": [
+      {
+        "from": "5398081",
+        "from_port": 0,
+        "to": "1009915",
+        "to_port": 0
+      },
+      {
+        "from": "1009915",
+        "from_port": 0,
+        "to": "4405658",
+        "to_port": 0
+      },
+      {
+        "from": "4405658",
+        "from_port": 0,
+        "to": "7763582",
+        "to_port": 0
+      },
+      {
+        "from": "7763582",
+        "from_port": 0,
+        "to": "8150662",
+        "to_port": 0
+      },
+      {
+        "from": "8150662",
+        "from_port": 0,
+        "to": "7961532",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "140903",
+        "to_port": 0
+      },
+      {
+        "from": "140903",
+        "from_port": 1,
+        "to": "5398081",
+        "to_port": 0
+      },
+      {
+        "from": "140903",
+        "from_port": 0,
+        "to": "5582961",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "angryCitizenNPC",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1009915",
+        "node_name": "5398081",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          136,
+          50.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You wouldn't happen to know where i could find a weapon of some sort?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "NPC",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4405658",
+        "node_name": "1009915",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          590,
+          50.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Not here, the king has taken everything for himself"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "NPC",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7763582",
+        "node_name": "4405658",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          138,
+          388.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "*loudly swearing*"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8150662",
+        "node_name": "7763582",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          596,
+          388.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Calm down, is he really that much of an asshole?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "NPC",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7961532",
+        "node_name": "8150662",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          361,
+          742.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Why dont you go ask him yourself, he is in his castle"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7961532",
+        "node_type": "set_local_variable",
+        "offset": [
+          862,
+          805.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "talkedTo"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "140903",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -362,
+          62
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "NPC",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": null,
+        "node_name": "5582961",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -289,
+          678.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Get lost kid..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "5398081",
+          "True": "5582961"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "140903",
+        "node_type": "condition_branch",
+        "offset": [
+          -331,
+          337.25
+        ],
+        "text": "MSG.var(\"talkedTo\")",
+        "title": "Condition Branch"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "talkedTo": {
+        "type": 2,
+        "value": false
+      },
+      "wtf": {
+        "type": 0,
+        "value": "stuff"
+      }
+    }
+  }
+]

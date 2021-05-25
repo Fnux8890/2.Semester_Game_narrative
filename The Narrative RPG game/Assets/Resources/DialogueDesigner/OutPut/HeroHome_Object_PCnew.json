@@ -1,0 +1,137 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Narrator"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "5173963",
+        "to_port": 0
+      },
+      {
+        "from": "5173963",
+        "from_port": 0,
+        "to": "3213051",
+        "to_port": 0
+      },
+      {
+        "from": "3213051",
+        "from_port": 0,
+        "to": "8255939",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "HeroHome_Object_PCnew",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "5173963",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": "3213051",
+        "node_name": "5173963",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          154,
+          -130.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "It's a PC... \nTrust me, you want no further details."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8255939",
+        "node_name": "3213051",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          591,
+          -131.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Now I can continue my quest to woo the origami club girls!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": null,
+        "node_name": "8255939",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1036,
+          -131.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The young hero gushes over the intricate lives of four 2D girls in a fake origami club, all the while someone still attempts to beat down his door!"
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "yeet": {
+        "type": 0,
+        "value": "wtf"
+      }
+    }
+  }
+]

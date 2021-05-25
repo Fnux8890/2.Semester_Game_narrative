@@ -370,7 +370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &189890194
 Transform:
   m_ObjectHideFlags: 0
@@ -57195,6 +57195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f213f283c574beaa588f1d493e0a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  json: {fileID: 0}
+  cutscene: {fileID: 0}
 --- !u!61 &1856779025
 BoxCollider2D:
   m_ObjectHideFlags: 0

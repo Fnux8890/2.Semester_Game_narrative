@@ -4,13 +4,13 @@ using UnityEditor;
 using UnityEngine;
 
 
-    [CustomEditor(typeof(CutsceneManager))]
+    [CustomEditor(typeof(CutsceneController))]
     public class CutsceneEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            var script = (CutsceneManager) target;
+            var script = (CutsceneController) target;
         
             GUILayout.BeginVertical();
             GUILayout.BeginHorizontal();

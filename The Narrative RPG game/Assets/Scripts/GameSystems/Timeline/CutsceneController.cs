@@ -39,7 +39,6 @@ namespace GameSystems.Timeline
                 CutsceneHandler.Instance.OnStartCutsceneWithDialogue(json, _director.playableAsset.name);
             }
         }
-        
 
         private void OnValidate()
         {

@@ -18,7 +18,9 @@ namespace GameSystems.CustomEventSystems.Interaction
         
         public event Action<int> HideBubble;
 
-        public event Action<int> levelAnim;
+        public event Action<int> LevelAnimInt;
+        public event Action<string> LevelAnimName;
+        public event Action LevelAnimPrevious;
         
         public  void OnInteract()
         {
@@ -56,9 +58,19 @@ namespace GameSystems.CustomEventSystems.Interaction
             HideBubble?.Invoke(id);
         }
 
-        public void OnLevelAnim(int levelIndex)
+        public void OnLevelAnimInt(int levelIndex)
         {
-            levelAnim?.Invoke(levelIndex);
+            LevelAnimInt?.Invoke(levelIndex);
+        }
+        
+        public void OnLevelAnimName(string levelName)
+        {
+            LevelAnimName?.Invoke(levelName);
+        }
+
+        public void OnLevelAnimPrevious()
+        {
+            LevelAnimPrevious?.Invoke();
         }
     }
 }

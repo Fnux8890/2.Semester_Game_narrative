@@ -96,7 +96,7 @@ namespace GameSystems.Dialogue
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
                         dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                        dialogueBox.transform.Find("Name").position = new Vector3(1870.3f, 128.7f);
+                        dialogueBox.transform.Find("Name").position = new Vector3(1755.0f, 230.2f);
                     }
                     PreviousDialogueBox = dialogueBox;
                     dialogueBox.gameObject.SetActive(true);
@@ -240,9 +240,13 @@ namespace GameSystems.Dialogue
                         var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
                         var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
                         var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
-                        nameRt.position = new Vector2(nameRt.position.x, nameRt.position.y + 1f);
-                        parentRt.sizeDelta = new Vector2(parentRt.sizeDelta.x ,  parentRt.sizeDelta.y + 0.5f);
-                        childRt.sizeDelta = new Vector2(parentRt.sizeDelta.x - 1f, parentRt.sizeDelta.y - 1f);
+                        var position = nameRt.position;
+                        position = new Vector2(position.x, position.y + 1f);
+                        nameRt.position = position;
+                        var sizeDelta = parentRt.sizeDelta;
+                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.5f);
+                        parentRt.sizeDelta = sizeDelta;
+                        childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
                     }
                     yield return new WaitForSeconds(1f/30);
                 }

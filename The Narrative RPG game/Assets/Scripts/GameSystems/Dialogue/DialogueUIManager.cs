@@ -226,15 +226,30 @@ namespace GameSystems.Dialogue
                 objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
                 var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
-                var sb = new StringBuilder();
-                textObject.text = sb.ToString();
-                foreach (var ch in text.ToCharArray()) 
+
+                for (int i = 0; i < text.Length; i++)
                 {
-                    textObject.text += ch;
-                    yield return new WaitForSeconds(1f/30);
+                    var notInvisible= text.Substring(0, i);
+                    notInvisible += "<color=#00000000>" + text.Substring(0, i) + "</color>";
+                    textObject.text = notInvisible;
+                    if (textObject.IsOverflowingVerticle())
+                    {
+                        var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
+                        var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
+                        var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
+                        var position = nameRt.position;
+                        position = new Vector2(position.x, position.y + 0.3f);
+                        nameRt.position = position;
+                        var sizeDelta = parentRt.sizeDelta;
+                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
+                        parentRt.sizeDelta = sizeDelta;
+                        childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
+                    }
+                    yield return new WaitForSeconds(0.04f);
                 }
-                yield return new WaitForSeconds(0.5f);
-                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
+                
+                
+                objectToSet.transform.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(currentNode.choices == null);
                 if (!hasChoices)
                 {
                     PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
@@ -242,6 +257,8 @@ namespace GameSystems.Dialogue
                 TypeWriterRunning = false;
             }
         }
+        
+        
         
         
     }

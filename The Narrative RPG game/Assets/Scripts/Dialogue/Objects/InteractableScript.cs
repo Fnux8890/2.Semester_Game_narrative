@@ -24,6 +24,7 @@ namespace Dialogue.Objects
         public Vector2 offset;
         public Vector2 size;
         public int id;
+        public int radius;
         public TextAsset json;
 
 

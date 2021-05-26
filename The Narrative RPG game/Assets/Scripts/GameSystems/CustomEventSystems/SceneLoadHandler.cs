@@ -14,6 +14,10 @@ namespace GameSystems.CustomEventSystems
         public event Action<LeaveDirection> StoreLeaveDirection;
         public event Func<LeaveDirection?> GetLastLeaveDirection;
 
+        public event Action<Vector3> storeCamera;
+        
+        public event Func<Vector3?> getCamera; 
+
         public void OnStoreLastSceneName(string lastSceneName)
         {
             StoreLastSceneName?.Invoke(lastSceneName);
@@ -42,6 +46,16 @@ namespace GameSystems.CustomEventSystems
         public LeaveDirection? OnGetLastLeaveDirection()
         {
             return GetLastLeaveDirection?.Invoke();
+        }
+
+        public void OnStoreCamera(Vector3 obj)
+        {
+            storeCamera?.Invoke(obj);
+        }
+
+        public Vector3? OnGetCamera()
+        {
+            return getCamera?.Invoke();
         }
     }
 }

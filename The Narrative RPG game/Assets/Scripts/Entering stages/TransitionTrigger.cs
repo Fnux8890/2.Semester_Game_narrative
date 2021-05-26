@@ -20,7 +20,7 @@ public class TransitionTrigger : MonoBehaviour
     {
         if (gameObject.name == "StartingArea")
         {
-            StartCoroutine(LoadLevel(11));
+            StartCoroutine(LoadLevel(12));
         }
         
         if (gameObject.name == "KingsCastle")
@@ -45,7 +45,7 @@ public class TransitionTrigger : MonoBehaviour
 
         if (gameObject.name == "EnemyLair")
         {
-            StartCoroutine(LoadLevel(9));
+            StartCoroutine(LoadLevel(15));
         }
     }
 

@@ -178,12 +178,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 2
+        y: 114
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 28
+        y: 114
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_2
       rect:
         serializedVersion: 2
-        x: 52
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 54
+        y: 114
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 80
+        y: 114
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 106
+        y: 114
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_5
       rect:
         serializedVersion: 2
-        x: 130
-        y: 112.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 132
+        y: 114
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 2
+        y: 78
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_7
       rect:
         serializedVersion: 2
-        x: 26
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 28
+        y: 78
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_8
       rect:
         serializedVersion: 2
-        x: 52
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 54
+        y: 78
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_9
       rect:
         serializedVersion: 2
-        x: 78
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 83
+        y: 78
+        width: 19
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_10
       rect:
         serializedVersion: 2
-        x: 104
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 110
+        y: 78
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_11
       rect:
         serializedVersion: 2
-        x: 130
-        y: 75.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 135
+        y: 78
+        width: 19
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +430,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 2
+        y: 42
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +451,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_13
       rect:
         serializedVersion: 2
-        x: 26
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 28
+        y: 42
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,12 +472,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_14
       rect:
         serializedVersion: 2
-        x: 52
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 54
+        y: 42
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,12 +493,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_15
       rect:
         serializedVersion: 2
-        x: 78
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 81
+        y: 42
+        width: 19
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,12 +514,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_16
       rect:
         serializedVersion: 2
-        x: 104
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 106
+        y: 42
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,12 +535,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_17
       rect:
         serializedVersion: 2
-        x: 130
-        y: 38.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 133
+        y: 42
+        width: 19
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,12 +556,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 2
+        y: 6
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,12 +577,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_19
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 28
+        y: 6
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,12 +598,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_20
       rect:
         serializedVersion: 2
-        x: 52
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 54
+        y: 6
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,12 +619,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_21
       rect:
         serializedVersion: 2
-        x: 78
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 80
+        y: 6
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,12 +640,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_22
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 106
+        y: 6
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,12 +661,12 @@ TextureImporter:
       name: Support Girl - Emote_Move-1.png (1)_23
       rect:
         serializedVersion: 2
-        x: 130
-        y: 1.5
-        width: 26.166666
-        height: 37.5
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+        x: 132
+        y: 6
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

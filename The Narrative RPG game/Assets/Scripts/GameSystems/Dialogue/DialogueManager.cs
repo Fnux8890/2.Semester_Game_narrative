@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Dialogue.Objects;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using GameSystems.Timeline;
@@ -100,6 +101,12 @@ namespace GameSystems.Dialogue
                     switch (_currentNode?.NodeType)
                     {
                         case NodeTypes.Execute:
+                            if (_lastNode.Contains(_currentNode))
+                            {
+                                _currentNode = _lastNode.Find(x => x.node_name == _currentNode.node_name);
+                                yield return StartCoroutine(HandleEndNodeType());
+                                break;
+                            }
                             yield return StartCoroutine(HandleNodeExecute());
                             if (_currentNode!=null) continue;
                             yield break;
@@ -279,46 +286,69 @@ namespace GameSystems.Dialogue
 
         private IEnumerator HandleNodeExecute()
         {
-            var inMethodParam = false;
-            var method = new StringBuilder();
-            var methodPram = new StringBuilder();
-            var methodParamEncounter = 0;
-            char? previousCh = null;
-            foreach (var ch in _currentNode.Text)
+            var methodName = _currentNode.Text
+                .Substring(0,_currentNode.Text.IndexOf("(", StringComparison.Ordinal)).Trim('"',' ',':');
+            var parametersString = _currentNode.Text
+                .Substring(_currentNode.Text.IndexOf("(", StringComparison.Ordinal));
+            var parameters = new List<object>();
+            for (int i = 0; i < parametersString.Length; ++i)
             {
-                if (previousCh != null)
+                if (parametersString[i] == ')')
                 {
-                    if (ch == '"' && previousCh == '\\')
-                    {
-                        methodParamEncounter++;
-                    }
-
-                    inMethodParam = methodParamEncounter % 2 != 0;
-
-                    if (inMethodParam)
-                    {
-                        methodPram.Append(ch);
-                    }
-                    else
-                    {
-                        method.Append(ch);
-                    }
+                    break;
                 }
-                previousCh = ch;
-            }
 
-            var methodTrim = string.Empty;
-            foreach (var ch in method.ToString())
-            {
-                if (ch == '\"' || ch == '\\' || ch == '(' ||  ch == ')')
+                if (parametersString[i] == '(' && parametersString[i + 1] == ')')
                 {
+                    break;
+                }
+                if (parametersString[i] == '(' && !parametersString.Substring(i).Contains(','))
+                {
+                    parameters.Add(parametersString.Substring(i, parametersString.IndexOf(')')).Trim('(', ')'));
+                    break;
+                }
+                if (parametersString[i] == '(' && parametersString.Substring(i).Contains(','))
+                {
+                    parameters.Add(parametersString.Substring(i, parametersString.IndexOf(',') - 1).Trim('('));
+                    i = parametersString.IndexOf(',')-1;
                     continue;
                 }
-                methodTrim += ch;
+                if (parametersString[i] == ',' && parametersString.Substring(i + 1).Contains(','))
+                {
+                    parameters.Add(parametersString.Substring(i + 1, parametersString.Substring(i + 1).IndexOf(',')).Trim(' '));
+                    continue;
+                }
+                if (parametersString[i] == ',' && !parametersString.Substring(i + 1).Contains(','))
+                {
+                    parameters.Add(parametersString.Substring(i + 1, parametersString.Substring(i + 1).IndexOf(')')).Trim(' '));
+                    continue;
+                }
             }
-            var methodParamTrim = methodPram.ToString().Trim('\\', '\"');
-            ExecutedMethod(methodTrim.Trim(' '), methodParamTrim);
-            if(!_lastNode.Exists(x => x.node_name == _currentNode.node_name)) {
+
+            for (var i = 0; i < parameters.Count; ++i)
+            {
+                var isBool = bool.TryParse(parameters[i] as string, out var boolResult);
+                var isInt = int.TryParse(parameters[i] as string, out var intResult);
+                if (isBool)
+                {
+                    parameters[i] = boolResult;
+                    continue;
+                }
+
+                if (isInt)
+                {
+                    parameters[i] = intResult;
+                    continue;
+                }
+
+                if (parameters[i] is string)
+                {
+                    parameters[i] = parameters[i].ToString().Trim('\\','\"');
+                }
+            }
+            ExecutedMethod(methodName, parameters.ToArray());
+
+            if(!_lastNode.Contains(_currentNode)) {
                 var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
                 if (afterExecution.to != null)
                 {
@@ -335,10 +365,8 @@ namespace GameSystems.Dialogue
             yield break;
         }
 
-        private void ExecutedMethod(string method, string param)
+        private void ExecutedMethod(string method, object[] parameters)
         {
-            bool isBool = bool.TryParse(param, out var boolResult);
-            bool isInt = int.TryParse(param, out var intResult);
             var type = GetType();
             var theMethod = type.GetMethod(method);
             if (theMethod == null)
@@ -346,25 +374,8 @@ namespace GameSystems.Dialogue
                 Debug.LogWarning("Method specified in dialogue designer not available");
                 return;
             }
-
-            if (isBool)
-            {
-                theMethod?.Invoke(this, new object[]{boolResult});
-                return;
-            } 
-            if (isInt)
-            {
-                theMethod?.Invoke(this, new object[]{intResult});
-                return;
-            }
-
-            if (!string.IsNullOrEmpty(param))
-            {
-                theMethod?.Invoke(this, new object[]{param});
-                return;
-            }
-            theMethod?.Invoke(this, null);
             
+            theMethod?.Invoke(this, parameters);
         }
 
         public void PlaySound(string sound)
@@ -379,30 +390,49 @@ namespace GameSystems.Dialogue
 
         public void ChangeScene(int levelIndex)
         {
-            Debug.Log($"changing scenes...{levelIndex}");
+            StopAllCoroutines();
             InteractionHandler.Instance.OnLevelAnimInt(levelIndex);
         }
 
         public void StartCutscene(string cutScene)
         {
+            StopAllCoroutines();
             Debug.Log("StartCutscene ran");
             CutsceneHandler.Instance.OnStartCutsceneWithNoDialogue(cutScene);
         }
 
         public void StartCutsceneWithDialogue(string scene, string json)
         {
+            StopAllCoroutines();
             CutsceneHandler.Instance.OnStartCutsceneWithDialogueName(json, scene);
         }
 
         public void SavingThePrincess()
         {
+            StopAllCoroutines();
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
+        }
+
+        public void FightRedKnight()
+        {
+            StopAllCoroutines();
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
+        }
+
+        public void DisableTrigger()
+        {
+            Destroy(GameObject.Find("CutsceneTrigger"));
+        }
+
+        public void CatDogFight()
+        {
+            StopAllCoroutines();
             InteractionHandler.Instance.OnLevelAnimName("CombatScene");
         }
 
         public void DyingSoldier()
         {
-            GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
-            //SoundManager.Instance.PlayDead();
+            //GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
         }
         
         

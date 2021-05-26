@@ -1,7 +1,8 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using GameSystems.CustomEventSystems;
 using GameSystems.CustomEventSystems.Interaction;
+using PlayerControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -23,14 +24,14 @@ namespace GameSystems.Combat
         public Transform playerBattleStation;
         public Transform enemyBattlestation;
 
-        /*Unit _playerUnit;
+        Unit _playerUnit;
         Unit _edgelordUnit;
         Unit _supportgirlUnit;
         Unit _catdogUnit;
-        Unit _enemyUnit;*/
-
-        //public SoundManager soundManager;
-        /*public AnimationManager animationManager;
+        Unit _enemyUnit;
+        
+        public AnimationManager animationManager;
+        public SoundManager SoundManager;
 
 
         GameObject[] _button;
@@ -46,6 +47,7 @@ namespace GameSystems.Combat
         public BattleState state;
 
         private GameObject _supportGirl;
+        private SoundManager fx;
 
 
         public bool swordgBlocking = false;
@@ -67,10 +69,10 @@ namespace GameSystems.Combat
 
         void Start()
         {
-
+            SceneManager.sceneLoaded += (arg0, mode) =>
+                PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
             state = BattleState.Start;
             StartCoroutine(SetupBattle());
-
         }
 
         private void Update()
@@ -103,27 +105,44 @@ namespace GameSystems.Combat
             }
         }
 
-        private void SetUpCharacter(Unit target, GameObject prefab, Transform battleStation)
-        {
-            var swordguy = Instantiate(prefab, battleStation);
-            swordguy.GetComponent<Unit>();
-            target = swordguy.GetComponent<Unit>();
-        }
-
         private IEnumerator SetupBattle()
         {
-            SetUpCharacter(_edgelordUnit, edgelordPrefab, playerBattleStation);
+            
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "MiniBossBattlePart1")
+            {
+                enemyPrefab = Resources.Load<GameObject>("Red Knight");
+                GameObject.Find("DungeonBackground").SetActive(true);
+                GameObject.Find("GrassBackground").SetActive(false);
+            }
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "MeetingCatDog")
+            {
+                enemyPrefab = Resources.Load<GameObject>("Random");
+                GameObject.Find("DessertBackground").SetActive(true);
+                GameObject.Find("GrassBackground").SetActive(false);
+                GameObject.Find("DungeonBackground").SetActive(false);
+            }
+            
+            GameObject swordguy = Instantiate(swordguyPrefab, playerBattleStation);
+            swordguy.GetComponent<Unit>();
+            _playerUnit = swordguy.GetComponent<Unit>();
+
+            GameObject edgelord = Instantiate(edgelordPrefab, playerBattleStation);
+            swordguy.GetComponent<Unit>();
+            _edgelordUnit = edgelord.GetComponent<Unit>();
 
             _supportGirl = Instantiate(supportgirlPrefab, playerBattleStation);
             _supportGirl.GetComponent<Unit>();
             _supportgirlUnit = _supportGirl.GetComponent<Unit>();
-            
-            SetUpCharacter(_catdogUnit, catdogPrefab, playerBattleStation);
-            
-            SetUpCharacter(_catdogUnit, enemyPrefab, enemyBattlestation);
-        
-        
 
+            GameObject catDog = Instantiate(catdogPrefab, playerBattleStation);
+            catDog.GetComponent<Unit>();
+            _catdogUnit = catDog.GetComponent<Unit>();
+
+
+            var enemyGO = Instantiate(enemyPrefab, enemyBattlestation);
+            enemyGO.GetComponent<Unit>();
+            _enemyUnit = enemyGO.GetComponent<Unit>();
+            SoundManager = GameObject.FindWithTag("soundmanager").GetComponent<SoundManager>();
 
             //add buttons
             _button = GameObject.FindGameObjectsWithTag("Button");
@@ -157,8 +176,33 @@ namespace GameSystems.Combat
                     supportgirlHUD.disable();
                     break;
             }
-        
-       
+
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "SaveThePrincessForrestPart1")
+            {
+                playerBattleStation.GetChild(1).gameObject.SetActive(false);
+                GameObject.FindGameObjectWithTag("EdgelordHUD").SetActive(false);
+                GameObject.FindWithTag("Catdog").SetActive(false);
+            }
+
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "MeetingCatDog")
+            {
+                swordguy.SetActive(false);
+                edgelord.SetActive(false);
+                _supportGirl.SetActive(false);
+                catDog.SetActive(true);
+                edgelordHUD.disable();
+                playerHUD.disable();
+                supportgirlHUD.disable();
+            }
+            
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "MiniBossBattlePart1")
+            {
+                enemyPrefab = Resources.Load<GameObject>("Red Knight");
+                GameObject.Find("DungeonBackground").SetActive(true);
+                GameObject.Find("GrassBackground").SetActive(false);
+                GameObject.FindWithTag("Catdog").SetActive(false);
+                GameObject.FindWithTag("CatdogHUD").SetActive(false);
+            }
 
             yield return new WaitForSeconds(2);
 
@@ -168,7 +212,21 @@ namespace GameSystems.Combat
 
         private void PlayerTurn()
         {
-            animationManager.SwordguyIdle();
+            if (swordguyPrefab.activeInHierarchy == false)
+            {
+                catdogturn = true;
+                supportgirlturn = true;
+                edgelordturn = true;
+                swordguyturn = false;
+                //CatdogTurn();
+                return;
+            }
+
+            if (swordguyPrefab.activeInHierarchy == true)
+            {
+                animationManager.SwordguyIdle();
+            }
+            
             catdogturn = true;
             supportgirlturn = true;
             edgelordturn = true;
@@ -207,10 +265,6 @@ namespace GameSystems.Combat
 
         private void CatdogTurn()
         {
-            animationManager.GoblinIdle();
-       
-            animationManager.RedknightIdle();
-        
             animationManager.CatdogIdle();
         
             animationManager.EarthElementalIdle();
@@ -256,20 +310,19 @@ namespace GameSystems.Combat
             }
             if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
             {
-            
-            
-            
-                animationManager.EdgelordAttack();
-                SoundManager.Instance.PlayTeleport();
-            
-
-                yield return new WaitForSeconds(1);
-                SoundManager.Instance.PlayAnimePunch();
-                Debug.Log("Edgelord attacks");
                 for (int i = 0; i < _button.Length; i++)
                 {
                     _button[i].SetActive(false);
                 }
+            
+            
+                animationManager.EdgelordAttack();
+                SoundManager.PlayTeleport();
+            
+
+                yield return new WaitForSeconds(1);
+                SoundManager.PlayAnimePunch();
+                Debug.Log("Edgelord attacks");
                 combatText.fontSize = 25;
 
                 isDead = _enemyUnit.TakeDamage(_edgelordUnit.damage);
@@ -289,7 +342,7 @@ namespace GameSystems.Combat
                 yield return new WaitForSeconds(2);
 
                 animationManager.EdgelordIdle();
-                SoundManager.Instance.PlayTeleport();
+                SoundManager.PlayTeleport();
 
                 yield return new WaitForSeconds(2);
                 Vector2 ve = new Vector2(-2, -22);
@@ -304,7 +357,7 @@ namespace GameSystems.Combat
                 }
                 animationManager.SupportgirlAttack();
             
-                SoundManager.Instance.PlayMagic();
+                SoundManager.PlayMagic();
 
                 yield return new WaitForSeconds(1);
             
@@ -317,7 +370,7 @@ namespace GameSystems.Combat
             
                 animationManager.Explosion();
             
-                SoundManager.Instance.PlayExplosion();
+                SoundManager.PlayExplosion();
 
                 yield return new WaitForSeconds(1);
             
@@ -352,7 +405,7 @@ namespace GameSystems.Combat
 
                 Vector2 ve = new Vector2(-2, -22);
                 combatText.rectTransform.anchoredPosition = ve;
-                if (_edgelordUnit.Dead() == true)
+                if (_edgelordUnit.Dead() == true || playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
                 {
                     StartCoroutine(EnemyTurn());
                 }
@@ -370,11 +423,12 @@ namespace GameSystems.Combat
             
                 animationManager.CatdogAttack();
             
-                SoundManager.Instance.PlayPew();
+                SoundManager.PlayPew();
             
                 combatText.fontSize = 25;
 
                 isDead = _enemyUnit.TakeDamage(_catdogUnit.damage);
+                
 
                 enemyHUD.setHP(_enemyUnit.currentHP);
 
@@ -384,13 +438,24 @@ namespace GameSystems.Combat
 
                 combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _catdogUnit.damage + " damage!";
 
+                /*if (enemyPrefab.name == "Random")
+                {
+                    StopAllCoroutines();
+                    isDead = true;
+                    StartCoroutine(EndBattle());
+                }*/
+
                 swordguyturn = false;
 
                 yield return new WaitForSeconds(2);
 
                 Vector2 ve = new Vector2(-2, -22);
                 combatText.rectTransform.anchoredPosition = ve;
-
+                if (isDead == true)
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(EndBattle());
+                }
                 if (playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
                 {
                     StartCoroutine(EnemyTurn());
@@ -427,7 +492,7 @@ namespace GameSystems.Combat
 
                 swordguyturn = false;
             
-                SoundManager.Instance.PlayAttack();
+                SoundManager.PlayAttack();
             
                 yield return new WaitForSeconds(2);
             
@@ -481,7 +546,7 @@ namespace GameSystems.Combat
             }
             combatText.fontSize = 25;
         
-            SoundManager.Instance.PlayHeal();
+            SoundManager.PlayHeal();
 
 
             if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
@@ -588,7 +653,7 @@ namespace GameSystems.Combat
             }
             combatText.fontSize = 25;
         
-            SoundManager.Instance.PlayShield();
+            SoundManager.PlayShield();
 
 
             if (swordguyturn == false && edgelordturn == false && _edgelordUnit.Dead() == false)
@@ -722,12 +787,20 @@ namespace GameSystems.Combat
 
         IEnumerator EnemyTurn()
         {
+            if (enemyPrefab.name == "Random")
+            {
+                StartCoroutine(EndBattle());
+            }
             state = BattleState.EnemyTurn;
 
             combatText.text = _enemyUnit.unitName + " attacks!";
-
             var rollRandom = Random.Range(1, 4);
-        
+            if (enemyPrefab.name == "Random")
+            {
+                rollRandom = 2;
+            }
+
+
             Debug.Log(rollRandom);
             if (rollRandom == 1 && _playerUnit.Dead() == true)
             {
@@ -739,7 +812,7 @@ namespace GameSystems.Combat
                 StopAllCoroutines();
                 StartCoroutine(EnemyTurn());
             }
-            if (rollRandom == 3 && _edgelordUnit.Dead() == true)
+            if (rollRandom == 3 && _edgelordUnit.Dead() == true || rollRandom == 3 && playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
             {
                 StopAllCoroutines();
                 StartCoroutine(EnemyTurn());
@@ -781,11 +854,11 @@ namespace GameSystems.Combat
             if (rollRandom == 2 && supportgirlActive == true && _supportgirlUnit.Dead() == false)
             {
             
-                animationManager.GoblinAttack2();
-            
-            
-           
-                animationManager.RedknightAttack2();
+                if (enemyPrefab.name != "Random")
+                {
+                    animationManager.GoblinAttack1();
+                    animationManager.RedknightAttack1();
+                }
             
                 if (sgblocking == false)
                 {
@@ -810,10 +883,12 @@ namespace GameSystems.Combat
             }
             if (rollRandom == 2 && supportgirlActive == false && _catdogUnit.Dead() == false)
             {
-            
-                animationManager.GoblinAttack2();
+                if (enemyPrefab.name != "Random")
+                {
+                    animationManager.GoblinAttack2();
+                    animationManager.RedknightAttack2();
+                }
                 
-                animationManager.RedknightAttack2();
             
                 if (cdblocking == false)
                 {
@@ -869,13 +944,13 @@ namespace GameSystems.Combat
 
             //bool isDead = playerUnit.currentHP == 0
             yield return new WaitForSeconds(2);
-        
-       
-            animationManager.GoblinIdle();
-        
-    
-        
-            animationManager.RedknightIdle();
+
+            if (enemyPrefab.name != "Random")
+            {
+                animationManager.GoblinIdle();
+                animationManager.RedknightIdle();
+            }
+            
         
 
             swordguyturn = true;
@@ -950,9 +1025,23 @@ namespace GameSystems.Combat
                 isDead = false;
 
                 yield return new WaitForSeconds(3);
+                if (enemyPrefab.name == "Red Knight")
+                {
+                    StopAllCoroutines();
+                    levelload(9);
+                }
 
-                InteractionHandler.Instance.OnLevelAnimName(SceneLoadHandler.Instance.OnGetLastSceneName());
+                if (enemyPrefab.name == "Goblin")
+                {
+                    StopAllCoroutines();
+                    levelload(3);
+                }
 
+                if (enemyPrefab.name == "Random")
+                {
+                    StopAllCoroutines();
+                    levelload(8);
+                }
 
             }
             else if (state == BattleState.Lost)
@@ -964,7 +1053,17 @@ namespace GameSystems.Combat
 
                 combatText.fontSize = 25;
                 combatText.text = "You lost noob!";
+                yield return new WaitForSeconds(3);
+                StopAllCoroutines();
+                levelload(10);
             }
+        }
+
+        public void levelload(int load)
+        {
+            isDead = false;
+            PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+            InteractionHandler.Instance.OnLevelAnimInt(load);
         }
         public void OnAttackButton()
         {
@@ -1006,4 +1105,4 @@ namespace GameSystems.Combat
 
 
     }
-}*/
+}

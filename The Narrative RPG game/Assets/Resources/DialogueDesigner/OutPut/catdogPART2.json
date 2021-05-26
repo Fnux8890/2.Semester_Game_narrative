@@ -13,12 +13,6 @@
         "to_port": 0
       },
       {
-        "from": "4941128",
-        "from_port": 0,
-        "to": "5417376",
-        "to_port": 0
-      },
-      {
         "from": "5417376",
         "from_port": 0,
         "to": "2767526",
@@ -40,6 +34,18 @@
         "from": "6050248",
         "from_port": 0,
         "to": "1035565",
+        "to_port": 0
+      },
+      {
+        "from": "4941128",
+        "from_port": 0,
+        "to": "5417376",
+        "to_port": 0
+      },
+      {
+        "from": "1035565",
+        "from_port": 0,
+        "to": "4009892",
         "to_port": 0
       }
     ],
@@ -129,34 +135,6 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "2767526",
-        "node_name": "5417376",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          727,
-          -156.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "You’re not a cat, you’re very clearly a dog."
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
         "next": "6050248",
         "node_name": "5792696",
         "node_type": "show_message",
@@ -201,24 +179,67 @@
         "title": "Show Message"
       },
       {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2767526",
+        "node_name": "5417376",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          744,
+          -188.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You’re not a cat, you’re very clearly a dog."
+        },
+        "title": "Show Message"
+      },
+      {
         "filename": "res://Nodes/Execute.tscn",
         "node_name": "1035565",
         "node_type": "execute",
         "offset": [
-          749,
-          743.25
+          762,
+          781.25
         ],
         "rect_size_x": 329,
         "rect_size_y": 89,
         "text": "CatDogFight()",
         "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "4009892",
+        "node_type": "set_local_variable",
+        "offset": [
+          1223,
+          857
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
       }
     ],
     "selected_language": "ENG",
     "variables": {
-      "yeet": {
-        "type": 0,
-        "value": "wtf"
+      "done": {
+        "type": 2,
+        "value": false
       }
     }
   }

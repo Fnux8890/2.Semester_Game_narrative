@@ -358,7 +358,7 @@ MonoBehaviour:
   isStartOfGame: 0
   playOnAwake: 1
   _director: {fileID: 661116063}
-  json: {fileID: 4900000, guid: 7927c8930985ca341ace082fbec03342, type: 3}
+  json: {fileID: 4900000, guid: f2cc241ae32168c4790bae68a8f13ad5, type: 3}
 --- !u!320 &661116063
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -455,7 +455,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9142841937128950141, guid: 3721d0abea9dcee41932759cffee26e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3721d0abea9dcee41932759cffee26e4, type: 3}
 --- !u!1 &677602289
 GameObject:

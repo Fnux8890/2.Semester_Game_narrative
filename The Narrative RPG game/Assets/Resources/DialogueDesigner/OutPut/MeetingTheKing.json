@@ -103,21 +103,15 @@
         "to_port": 0
       },
       {
-        "from": "2026424",
-        "from_port": 0,
-        "to": "3596697",
-        "to_port": 0
-      },
-      {
-        "from": "3596697",
-        "from_port": 0,
-        "to": "4587243",
-        "to_port": 0
-      },
-      {
         "from": "4587243",
         "from_port": 0,
         "to": "3477780",
+        "to_port": 0
+      },
+      {
+        "from": "2026424",
+        "from_port": 0,
+        "to": "4587243",
         "to_port": 0
       }
     ],
@@ -506,34 +500,6 @@
       },
       {
         "character": [
-          "King",
-          1
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "3596697",
-        "node_name": "2026424",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          100,
-          -28.75
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "Who enters my court and disturbs my council?"
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
           "Guard",
           2
         ],
@@ -562,34 +528,6 @@
       },
       {
         "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "4587243",
-        "node_name": "3596697",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          566.647461,
-          -110.452026
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "yeet"
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
           "King",
           1
         ],
@@ -601,18 +539,18 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "4975350",
-        "node_name": "3477780",
+        "next": "4587243",
+        "node_name": "2026424",
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1495.647461,
-          -41.452026
+          140,
+          -70.75
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "..."
+          "ENG": "Who enters my court and disturbs my council?"
         },
         "title": "Show Message"
       },
@@ -634,13 +572,41 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1035.647461,
-          -346.452026
+          678.647461,
+          -67.452026
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
           "ENG": "Asslord, hero of absolutely nothing."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4975350",
+        "node_name": "3477780",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1174.647461,
+          -96.452026
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "..."
         },
         "title": "Show Message"
       }

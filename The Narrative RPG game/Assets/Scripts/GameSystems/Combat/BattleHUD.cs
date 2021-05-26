@@ -9,13 +9,13 @@ namespace GameSystems.Combat
         public Text levelText;
         public Slider hpSlider;
 
-        /*public void SetHUD(Unit unit)
+        public void SetHUD(Unit unit)
         {
             nameText.text = unit.unitName;
             levelText.text = "Lvl " + unit.unitLevel;
             hpSlider.maxValue = unit.maxHP;
             hpSlider.value = unit.currentHP;
-        }*/
+        }
 
         public void setHP(int hp)
         {

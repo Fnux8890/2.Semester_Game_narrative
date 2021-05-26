@@ -13,6 +13,7 @@ namespace PlayerControl
 {
 public class PlayerController : MonoBehaviour
 {
+    
     // Public unity stuff
     public Animator animator;
     public Tilemap tilemap;
@@ -82,6 +83,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        
         if (_lPos != _grid.WorldToCell(transform.position))
         {
             _lPos = _grid.WorldToCell(transform.position);
@@ -152,7 +154,15 @@ public class PlayerController : MonoBehaviour
     private void SetPlayerPosition(Scene arg0, LoadSceneMode loadSceneMode)
     {
         UpdateRef();
+        
         var lastSceneName = SceneLoadHandler.Instance.OnGetLastSceneName();
+        if (lastSceneName == "CombatScene" && SceneManager.GetActiveScene().name == "SaveThePrincessForrest")
+        {
+            Debug.Log(GameObject.Find("CutsceneTrigger"));
+            Debug.Log(GameObject.Find("Goblin"));
+            GameObject.Find("CutsceneTrigger").SetActive(false);
+            GameObject.Find("Goblin").SetActive(false);
+        }
         var lastPosition = SceneLoadHandler.Instance.OnGetLastPosition();
         if (arg0.name == lastSceneName)
         {
@@ -190,7 +200,11 @@ public class PlayerController : MonoBehaviour
 
     private void SetCamera(Vector3 position)
     {
-        GameObject.Find("Main Camera").transform.position = new Vector3(position.x, position.y, -1.5f);
+        var camerapos = SceneLoadHandler.Instance.OnGetCamera();
+        if (camerapos != null)
+        {
+            GameObject.Find("Main Camera").transform.position = new Vector3(position.x, position.y, camerapos.Value.z);
+        }
     }
     
     
@@ -222,6 +236,9 @@ public class PlayerController : MonoBehaviour
                     break;
                 case "Library":
                     LoadPrevious();
+                    break;
+                case "MiniBossBattlePart2": 
+                    LoadLevel(8);
                     break;
                 default:
                     LoadLevel();

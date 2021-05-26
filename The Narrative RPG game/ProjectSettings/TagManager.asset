@@ -7,6 +7,23 @@ TagManager:
   - Sign
   - Leave
   - Enter
+  - Swordguy
+  - Supportgirl
+  - Edgelord
+  - Catdog
+  - Goblin
+  - Redknight
+  - Button
+  - PlayerBattlestation
+  - EnemyBattlestation
+  - Hurt
+  - EdgelordHUD
+  - Evilsteve
+  - Deadsoldier
+  - soundmanager
+  - SwordguyHUD
+  - SupportHUD
+  - CatdogHUD
   layers:
   - Default
   - TransparentFX
@@ -14,9 +31,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Grass
+  - Dungeon
+  - Dessert
   - 
   - 
   - 

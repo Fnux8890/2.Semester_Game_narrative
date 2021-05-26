@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 1518aaa0c3fb9d741b4e58ec44d23795
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5190382052933551568
+    second: Support Girl - Emote_Move_0
+  - first:
+      213: -8132406959684127657
+    second: Support Girl - Emote_Move_1
+  - first:
+      213: -727640394257972976
+    second: Support Girl - Emote_Move_2
+  - first:
+      213: -8727968742341665000
+    second: Support Girl - Emote_Move_3
+  - first:
+      213: 164354893315421385
+    second: Support Girl - Emote_Move_4
+  - first:
+      213: 6674405775352030466
+    second: Support Girl - Emote_Move_5
+  - first:
+      213: -2387982413240257575
+    second: Support Girl - Emote_Move_6
+  - first:
+      213: -8846349618834138063
+    second: Support Girl - Emote_Move_7
+  - first:
+      213: -9051173348263819508
+    second: Support Girl - Emote_Move_8
+  - first:
+      213: -5159502524406210220
+    second: Support Girl - Emote_Move_9
+  - first:
+      213: -1114112290920894703
+    second: Support Girl - Emote_Move_10
+  - first:
+      213: -4593399626443599293
+    second: Support Girl - Emote_Move_11
+  - first:
+      213: -5950071527557684744
+    second: Support Girl - Emote_Move_12
+  - first:
+      213: -7646899340111516212
+    second: Support Girl - Emote_Move_13
+  - first:
+      213: -1419053252778361185
+    second: Support Girl - Emote_Move_14
+  - first:
+      213: 8308321237532457430
+    second: Support Girl - Emote_Move_15
+  - first:
+      213: 2786364735694414740
+    second: Support Girl - Emote_Move_16
+  - first:
+      213: 8831894685324741318
+    second: Support Girl - Emote_Move_17
+  - first:
+      213: -6771701903381260518
+    second: Support Girl - Emote_Move_18
+  - first:
+      213: -8174354098762667970
+    second: Support Girl - Emote_Move_19
+  - first:
+      213: -4161610174286569901
+    second: Support Girl - Emote_Move_20
+  - first:
+      213: 7027569571644108573
+    second: Support Girl - Emote_Move_21
+  - first:
+      213: 1720069615759222405
+    second: Support Girl - Emote_Move_22
+  - first:
+      213: 6639921870597778072
+    second: Support Girl - Emote_Move_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1150
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a355ec50f08f7b0800000000000000
+      internalID: -5190382052933551568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1150
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754fc1f15f2e32f80800000000000000
+      internalID: -8132406959684127657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1150
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0114708aae6e6e5f0800000000000000
+      internalID: -727640394257972976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_3
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1150
+        width: 230
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f130eeba600e680800000000000000
+      internalID: -8727968742341665000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_4
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1150
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4b92997e7e74200800000000000000
+      internalID: 164354893315421385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1150
+        width: 230
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2056caea0b040ac50800000000000000
+      internalID: 6674405775352030466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 790
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d33fe0b5ae2cded0800000000000000
+      internalID: -2387982413240257575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 790
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c9a7244e37b3580800000000000000
+      internalID: -8846349618834138063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 790
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0780408bc5c36280800000000000000
+      internalID: -9051173348263819508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_9
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 790
+        width: 190
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451690f4ac3c568b0800000000000000
+      internalID: -5159502524406210220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_10
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 790
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f63c336c0e980f0800000000000000
+      internalID: -1114112290920894703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_11
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 790
+        width: 190
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342da6a6067f040c0800000000000000
+      internalID: -4593399626443599293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 430
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f122c378791d6da0800000000000000
+      internalID: -5950071527557684744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 430
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdeb7fa091c0e590800000000000000
+      internalID: -7646899340111516212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 430
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e78c6c5928e4ce0800000000000000
+      internalID: -1419053252778361185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 430
+        width: 190
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9b4fa65261d4370800000000000000
+      internalID: 8308321237532457430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_16
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 430
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493adbdd6f72ba620800000000000000
+      internalID: 2786364735694414740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_17
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 430
+        width: 190
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca01744c61319a70800000000000000
+      internalID: 8831894685324741318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 70
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a179f143ff41602a0800000000000000
+      internalID: -6771701903381260518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 70
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e382efab14cde8e80800000000000000
+      internalID: -8174354098762667970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_20
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 70
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e5ffb789dfe36c0800000000000000
+      internalID: -4161610174286569901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_21
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 70
+        width: 230
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fe030ba41f68160800000000000000
+      internalID: 7027569571644108573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_22
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 70
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5866544c33aeed710800000000000000
+      internalID: 1720069615759222405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Support Girl - Emote_Move_23
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 70
+        width: 230
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ae351f2cdb52c50800000000000000
+      internalID: 6639921870597778072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

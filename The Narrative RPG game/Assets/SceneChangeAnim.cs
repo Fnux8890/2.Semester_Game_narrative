@@ -52,14 +52,18 @@ public class SceneChangeAnim : Singleton<SceneChangeAnim>
 
     private void StartLevelLoadPrevious()
     {
-        
+        StartCoroutine(LoadPreviousLevel());
     }
 
 
     private IEnumerator LoadLevel(int levelIndex)
     {
         UpdateRef();
-        SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
+        if (GameObject.Find("Player"))
+        {
+            SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
+            SceneLoadHandler.Instance.OnStoreCamera(GameObject.Find("Main Camera").transform.position);
+        }
         SceneLoadHandler.Instance.OnStoreLastSceneName(SceneManager.GetActiveScene().name);
         _transition.SetTrigger(StartAnimation);
         yield return new WaitForSeconds(1f);
@@ -69,7 +73,11 @@ public class SceneChangeAnim : Singleton<SceneChangeAnim>
     private IEnumerator LoadLevel(string levelName)
     {
         UpdateRef();
-        SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
+        if (GameObject.Find("Player"))
+        {
+            SceneLoadHandler.Instance.OnStoreLastPosition(GameObject.Find("Player").transform.position);
+            SceneLoadHandler.Instance.OnStoreCamera(GameObject.Find("Main Camera").transform.position);
+        }
         SceneLoadHandler.Instance.OnStoreLastSceneName(SceneManager.GetActiveScene().name);
         _transition.SetTrigger(StartAnimation);
         yield return new WaitForSeconds(1f);

@@ -529,12 +529,12 @@
         "node_name": "6264714",
         "node_type": "execute",
         "offset": [
-          126.719971,
-          -66.579956
+          61.905163,
+          -70.052177
         ],
-        "rect_size_x": 329,
-        "rect_size_y": 89,
-        "text": "StartCutscene(\"MeetingOldMan\")",
+        "rect_size_x": 344.625366,
+        "rect_size_y": 156.708374,
+        "text": "Test(\"MeetingOldMan\", \"This also works\")",
         "title": "Execute"
       }
     ],

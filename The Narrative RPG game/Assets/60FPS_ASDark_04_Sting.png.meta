@@ -1,0 +1,6876 @@
+fileFormatVersion: 2
+guid: f12908396ffd469429b2997f72714cf9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1079784543228265146
+    second: 60FPS_ASDark_04_Sting_0
+  - first:
+      213: -2513685554136345608
+    second: 60FPS_ASDark_04_Sting_1
+  - first:
+      213: -7413831993442524418
+    second: 60FPS_ASDark_04_Sting_2
+  - first:
+      213: 4616182755555576243
+    second: 60FPS_ASDark_04_Sting_3
+  - first:
+      213: -6620793814428096318
+    second: 60FPS_ASDark_04_Sting_4
+  - first:
+      213: 513063140045073898
+    second: 60FPS_ASDark_04_Sting_5
+  - first:
+      213: -6146959650606885687
+    second: 60FPS_ASDark_04_Sting_6
+  - first:
+      213: -997736045116844757
+    second: 60FPS_ASDark_04_Sting_7
+  - first:
+      213: 5724993834408239273
+    second: 60FPS_ASDark_04_Sting_8
+  - first:
+      213: 2647684204222695970
+    second: 60FPS_ASDark_04_Sting_9
+  - first:
+      213: 772678829624390549
+    second: 60FPS_ASDark_04_Sting_10
+  - first:
+      213: -5828010901715541782
+    second: 60FPS_ASDark_04_Sting_11
+  - first:
+      213: -8759895952663064750
+    second: 60FPS_ASDark_04_Sting_12
+  - first:
+      213: -2132433347114509390
+    second: 60FPS_ASDark_04_Sting_13
+  - first:
+      213: 1104512701869838915
+    second: 60FPS_ASDark_04_Sting_14
+  - first:
+      213: 1957204051399640023
+    second: 60FPS_ASDark_04_Sting_15
+  - first:
+      213: -6183884251003050703
+    second: 60FPS_ASDark_04_Sting_16
+  - first:
+      213: 3089054668330756756
+    second: 60FPS_ASDark_04_Sting_17
+  - first:
+      213: -7639276852939571581
+    second: 60FPS_ASDark_04_Sting_18
+  - first:
+      213: 6455261938170678522
+    second: 60FPS_ASDark_04_Sting_19
+  - first:
+      213: -5885676653352895717
+    second: 60FPS_ASDark_04_Sting_20
+  - first:
+      213: 5049796731045690135
+    second: 60FPS_ASDark_04_Sting_21
+  - first:
+      213: -649416130141695370
+    second: 60FPS_ASDark_04_Sting_22
+  - first:
+      213: -6819910456005435893
+    second: 60FPS_ASDark_04_Sting_23
+  - first:
+      213: 8877149111555918589
+    second: 60FPS_ASDark_04_Sting_24
+  - first:
+      213: 8863446721580368161
+    second: 60FPS_ASDark_04_Sting_25
+  - first:
+      213: 2972246389926788828
+    second: 60FPS_ASDark_04_Sting_26
+  - first:
+      213: -1115683608482649157
+    second: 60FPS_ASDark_04_Sting_27
+  - first:
+      213: 8354229413192454559
+    second: 60FPS_ASDark_04_Sting_28
+  - first:
+      213: 4053416282011617893
+    second: 60FPS_ASDark_04_Sting_29
+  - first:
+      213: -8313529094789716343
+    second: 60FPS_ASDark_04_Sting_30
+  - first:
+      213: -4690630910121885777
+    second: 60FPS_ASDark_04_Sting_31
+  - first:
+      213: -5564639161037134550
+    second: 60FPS_ASDark_04_Sting_32
+  - first:
+      213: 1304481940396598536
+    second: 60FPS_ASDark_04_Sting_33
+  - first:
+      213: 6906436438451040001
+    second: 60FPS_ASDark_04_Sting_34
+  - first:
+      213: 8283990308302930154
+    second: 60FPS_ASDark_04_Sting_35
+  - first:
+      213: 4055778648883625586
+    second: 60FPS_ASDark_04_Sting_36
+  - first:
+      213: 1704757163759325764
+    second: 60FPS_ASDark_04_Sting_37
+  - first:
+      213: -9072813579962375438
+    second: 60FPS_ASDark_04_Sting_38
+  - first:
+      213: 1441671549156584332
+    second: 60FPS_ASDark_04_Sting_39
+  - first:
+      213: -105436476966559164
+    second: 60FPS_ASDark_04_Sting_40
+  - first:
+      213: 2605612344679239101
+    second: 60FPS_ASDark_04_Sting_41
+  - first:
+      213: -3688613713263797417
+    second: 60FPS_ASDark_04_Sting_42
+  - first:
+      213: 6881641341838333916
+    second: 60FPS_ASDark_04_Sting_43
+  - first:
+      213: 8697079818230623147
+    second: 60FPS_ASDark_04_Sting_44
+  - first:
+      213: -8216200161225394768
+    second: 60FPS_ASDark_04_Sting_45
+  - first:
+      213: 6198211353192213046
+    second: 60FPS_ASDark_04_Sting_46
+  - first:
+      213: -3003653834110993005
+    second: 60FPS_ASDark_04_Sting_47
+  - first:
+      213: -5019675873775909504
+    second: 60FPS_ASDark_04_Sting_48
+  - first:
+      213: 9157556472877404222
+    second: 60FPS_ASDark_04_Sting_49
+  - first:
+      213: -371165495381691291
+    second: 60FPS_ASDark_04_Sting_50
+  - first:
+      213: -7521198515460408821
+    second: 60FPS_ASDark_04_Sting_51
+  - first:
+      213: 4588467498730526577
+    second: 60FPS_ASDark_04_Sting_52
+  - first:
+      213: -6430144982333838707
+    second: 60FPS_ASDark_04_Sting_53
+  - first:
+      213: -2514508824231526209
+    second: 60FPS_ASDark_04_Sting_54
+  - first:
+      213: 7521478451728558051
+    second: 60FPS_ASDark_04_Sting_55
+  - first:
+      213: -1319340986485098446
+    second: 60FPS_ASDark_04_Sting_56
+  - first:
+      213: -7422434113637676317
+    second: 60FPS_ASDark_04_Sting_57
+  - first:
+      213: 697045378739601037
+    second: 60FPS_ASDark_04_Sting_58
+  - first:
+      213: 177338568613787181
+    second: 60FPS_ASDark_04_Sting_59
+  - first:
+      213: 7378895449442186269
+    second: 60FPS_ASDark_04_Sting_60
+  - first:
+      213: -454359497802339642
+    second: 60FPS_ASDark_04_Sting_61
+  - first:
+      213: -7590545591751813454
+    second: 60FPS_ASDark_04_Sting_62
+  - first:
+      213: -3128391999604799297
+    second: 60FPS_ASDark_04_Sting_63
+  - first:
+      213: -944286796814107219
+    second: 60FPS_ASDark_04_Sting_64
+  - first:
+      213: 1944946297059085975
+    second: 60FPS_ASDark_04_Sting_65
+  - first:
+      213: -4363494578169579961
+    second: 60FPS_ASDark_04_Sting_66
+  - first:
+      213: 7066240251183106349
+    second: 60FPS_ASDark_04_Sting_67
+  - first:
+      213: -7677651475711728991
+    second: 60FPS_ASDark_04_Sting_68
+  - first:
+      213: -7106537547276403475
+    second: 60FPS_ASDark_04_Sting_69
+  - first:
+      213: -8285462511826624386
+    second: 60FPS_ASDark_04_Sting_70
+  - first:
+      213: -6371748940417707453
+    second: 60FPS_ASDark_04_Sting_71
+  - first:
+      213: -7520401954066488859
+    second: 60FPS_ASDark_04_Sting_72
+  - first:
+      213: -6395023574752889156
+    second: 60FPS_ASDark_04_Sting_73
+  - first:
+      213: 4433957937796252951
+    second: 60FPS_ASDark_04_Sting_74
+  - first:
+      213: 3632559241360685541
+    second: 60FPS_ASDark_04_Sting_75
+  - first:
+      213: -2544352116477264584
+    second: 60FPS_ASDark_04_Sting_76
+  - first:
+      213: 7915890718679555393
+    second: 60FPS_ASDark_04_Sting_77
+  - first:
+      213: 4888858725923404258
+    second: 60FPS_ASDark_04_Sting_78
+  - first:
+      213: 8688379011234528077
+    second: 60FPS_ASDark_04_Sting_79
+  - first:
+      213: 8343043748101885010
+    second: 60FPS_ASDark_04_Sting_80
+  - first:
+      213: -735112121328535744
+    second: 60FPS_ASDark_04_Sting_81
+  - first:
+      213: 7845166034376628224
+    second: 60FPS_ASDark_04_Sting_82
+  - first:
+      213: -657390627550776005
+    second: 60FPS_ASDark_04_Sting_83
+  - first:
+      213: -2995137380143161508
+    second: 60FPS_ASDark_04_Sting_84
+  - first:
+      213: 1318086231855649815
+    second: 60FPS_ASDark_04_Sting_85
+  - first:
+      213: -9039593957670361225
+    second: 60FPS_ASDark_04_Sting_86
+  - first:
+      213: -6009812455343749533
+    second: 60FPS_ASDark_04_Sting_87
+  - first:
+      213: 4163164622427956622
+    second: 60FPS_ASDark_04_Sting_88
+  - first:
+      213: 5886753674985680160
+    second: 60FPS_ASDark_04_Sting_89
+  - first:
+      213: -7371953688503137430
+    second: 60FPS_ASDark_04_Sting_90
+  - first:
+      213: 8828444175837673430
+    second: 60FPS_ASDark_04_Sting_91
+  - first:
+      213: 343398732279839853
+    second: 60FPS_ASDark_04_Sting_92
+  - first:
+      213: 2548930077527229841
+    second: 60FPS_ASDark_04_Sting_93
+  - first:
+      213: 4047584204303396277
+    second: 60FPS_ASDark_04_Sting_94
+  - first:
+      213: 6124945602572494452
+    second: 60FPS_ASDark_04_Sting_95
+  - first:
+      213: 2663129737747510987
+    second: 60FPS_ASDark_04_Sting_96
+  - first:
+      213: 1659881787322978267
+    second: 60FPS_ASDark_04_Sting_97
+  - first:
+      213: 4268798313633125756
+    second: 60FPS_ASDark_04_Sting_98
+  - first:
+      213: 5542787936898827273
+    second: 60FPS_ASDark_04_Sting_99
+  - first:
+      213: -6597896688516276186
+    second: 60FPS_ASDark_04_Sting_100
+  - first:
+      213: -8367097549715519645
+    second: 60FPS_ASDark_04_Sting_101
+  - first:
+      213: -6737917437451686886
+    second: 60FPS_ASDark_04_Sting_102
+  - first:
+      213: 498123205053675497
+    second: 60FPS_ASDark_04_Sting_103
+  - first:
+      213: -5920146174847086907
+    second: 60FPS_ASDark_04_Sting_104
+  - first:
+      213: -5673313642556631494
+    second: 60FPS_ASDark_04_Sting_105
+  - first:
+      213: 4036818927342032916
+    second: 60FPS_ASDark_04_Sting_106
+  - first:
+      213: 2149064653504761721
+    second: 60FPS_ASDark_04_Sting_107
+  - first:
+      213: -3774280040463892451
+    second: 60FPS_ASDark_04_Sting_108
+  - first:
+      213: 5412347350040195146
+    second: 60FPS_ASDark_04_Sting_109
+  - first:
+      213: -2057785844253731344
+    second: 60FPS_ASDark_04_Sting_110
+  - first:
+      213: 1442949703213877006
+    second: 60FPS_ASDark_04_Sting_111
+  - first:
+      213: 6338622430711900170
+    second: 60FPS_ASDark_04_Sting_112
+  - first:
+      213: 2263994006675650907
+    second: 60FPS_ASDark_04_Sting_113
+  - first:
+      213: -3704847650964062130
+    second: 60FPS_ASDark_04_Sting_114
+  - first:
+      213: -2272255339859312147
+    second: 60FPS_ASDark_04_Sting_115
+  - first:
+      213: -8541147851456360847
+    second: 60FPS_ASDark_04_Sting_116
+  - first:
+      213: -1867110640852058475
+    second: 60FPS_ASDark_04_Sting_117
+  - first:
+      213: 8830569049656025362
+    second: 60FPS_ASDark_04_Sting_118
+  - first:
+      213: -5140832642821631440
+    second: 60FPS_ASDark_04_Sting_119
+  - first:
+      213: -8274181738723599392
+    second: 60FPS_ASDark_04_Sting_120
+  - first:
+      213: 4028027562216553128
+    second: 60FPS_ASDark_04_Sting_121
+  - first:
+      213: 4755957331316295164
+    second: 60FPS_ASDark_04_Sting_122
+  - first:
+      213: -1638634931834654284
+    second: 60FPS_ASDark_04_Sting_123
+  - first:
+      213: -8574807311649815634
+    second: 60FPS_ASDark_04_Sting_124
+  - first:
+      213: 5202977074782308600
+    second: 60FPS_ASDark_04_Sting_125
+  - first:
+      213: 1346316461691300288
+    second: 60FPS_ASDark_04_Sting_126
+  - first:
+      213: -7748580971355327362
+    second: 60FPS_ASDark_04_Sting_127
+  - first:
+      213: -7276741705689546078
+    second: 60FPS_ASDark_04_Sting_128
+  - first:
+      213: -4112949317222835549
+    second: 60FPS_ASDark_04_Sting_129
+  - first:
+      213: -4132938057009796202
+    second: 60FPS_ASDark_04_Sting_130
+  - first:
+      213: 2506372168554233614
+    second: 60FPS_ASDark_04_Sting_131
+  - first:
+      213: -3409685981923197064
+    second: 60FPS_ASDark_04_Sting_132
+  - first:
+      213: 6341256100104622509
+    second: 60FPS_ASDark_04_Sting_133
+  - first:
+      213: 2134884170967820721
+    second: 60FPS_ASDark_04_Sting_134
+  - first:
+      213: -3217775620577110101
+    second: 60FPS_ASDark_04_Sting_135
+  - first:
+      213: 3734171881551421577
+    second: 60FPS_ASDark_04_Sting_136
+  - first:
+      213: -5691955490608082981
+    second: 60FPS_ASDark_04_Sting_137
+  - first:
+      213: 3671978313324628660
+    second: 60FPS_ASDark_04_Sting_138
+  - first:
+      213: 3650482452256701081
+    second: 60FPS_ASDark_04_Sting_139
+  - first:
+      213: -2933158789558386088
+    second: 60FPS_ASDark_04_Sting_140
+  - first:
+      213: -314893829820416950
+    second: 60FPS_ASDark_04_Sting_141
+  - first:
+      213: 4787199993001281653
+    second: 60FPS_ASDark_04_Sting_142
+  - first:
+      213: 7411181477703146668
+    second: 60FPS_ASDark_04_Sting_143
+  - first:
+      213: -7812431907601376550
+    second: 60FPS_ASDark_04_Sting_144
+  - first:
+      213: 7511525345113491624
+    second: 60FPS_ASDark_04_Sting_145
+  - first:
+      213: 2583367916495180630
+    second: 60FPS_ASDark_04_Sting_146
+  - first:
+      213: 5254561974680879273
+    second: 60FPS_ASDark_04_Sting_147
+  - first:
+      213: -2025540753385856164
+    second: 60FPS_ASDark_04_Sting_148
+  - first:
+      213: 2952670273720832244
+    second: 60FPS_ASDark_04_Sting_149
+  - first:
+      213: -3852090410360207537
+    second: 60FPS_ASDark_04_Sting_150
+  - first:
+      213: -8121520205089397528
+    second: 60FPS_ASDark_04_Sting_151
+  - first:
+      213: 3972082455762033121
+    second: 60FPS_ASDark_04_Sting_152
+  - first:
+      213: -8584230322420322993
+    second: 60FPS_ASDark_04_Sting_153
+  - first:
+      213: -5331653839309019435
+    second: 60FPS_ASDark_04_Sting_154
+  - first:
+      213: 3566772481447993010
+    second: 60FPS_ASDark_04_Sting_155
+  - first:
+      213: -7409522058010634660
+    second: 60FPS_ASDark_04_Sting_156
+  - first:
+      213: 5493786736317900303
+    second: 60FPS_ASDark_04_Sting_157
+  - first:
+      213: -2088766789286316887
+    second: 60FPS_ASDark_04_Sting_158
+  - first:
+      213: 5945277690790159722
+    second: 60FPS_ASDark_04_Sting_159
+  - first:
+      213: 8375447660572042005
+    second: 60FPS_ASDark_04_Sting_160
+  - first:
+      213: 3051854075408461921
+    second: 60FPS_ASDark_04_Sting_161
+  - first:
+      213: -1220577969446331199
+    second: 60FPS_ASDark_04_Sting_162
+  - first:
+      213: -2264960324326884730
+    second: 60FPS_ASDark_04_Sting_163
+  - first:
+      213: -8462035281009522132
+    second: 60FPS_ASDark_04_Sting_164
+  - first:
+      213: -2849135126842242860
+    second: 60FPS_ASDark_04_Sting_165
+  - first:
+      213: -305601849869912447
+    second: 60FPS_ASDark_04_Sting_166
+  - first:
+      213: 8631047148199013973
+    second: 60FPS_ASDark_04_Sting_167
+  - first:
+      213: 3855480976157791296
+    second: 60FPS_ASDark_04_Sting_168
+  - first:
+      213: 9197639794586398427
+    second: 60FPS_ASDark_04_Sting_169
+  - first:
+      213: 3589707291996343551
+    second: 60FPS_ASDark_04_Sting_170
+  - first:
+      213: -3753460296446954050
+    second: 60FPS_ASDark_04_Sting_171
+  - first:
+      213: 634828296089301816
+    second: 60FPS_ASDark_04_Sting_172
+  - first:
+      213: 201922500758010068
+    second: 60FPS_ASDark_04_Sting_173
+  - first:
+      213: -808043920737215389
+    second: 60FPS_ASDark_04_Sting_174
+  - first:
+      213: 224263731475883817
+    second: 60FPS_ASDark_04_Sting_175
+  - first:
+      213: -8653800492440997290
+    second: 60FPS_ASDark_04_Sting_176
+  - first:
+      213: 6276748631617942002
+    second: 60FPS_ASDark_04_Sting_177
+  - first:
+      213: -5584885969533788407
+    second: 60FPS_ASDark_04_Sting_178
+  - first:
+      213: 984951250427048047
+    second: 60FPS_ASDark_04_Sting_179
+  - first:
+      213: -2757587763884032982
+    second: 60FPS_ASDark_04_Sting_180
+  - first:
+      213: 2517846411678577604
+    second: 60FPS_ASDark_04_Sting_181
+  - first:
+      213: 6904123275312297565
+    second: 60FPS_ASDark_04_Sting_182
+  - first:
+      213: 7111602392725027208
+    second: 60FPS_ASDark_04_Sting_183
+  - first:
+      213: 6114379521318048182
+    second: 60FPS_ASDark_04_Sting_184
+  - first:
+      213: -4707754753241585222
+    second: 60FPS_ASDark_04_Sting_185
+  - first:
+      213: 8209738740461025071
+    second: 60FPS_ASDark_04_Sting_186
+  - first:
+      213: 3064992275680374352
+    second: 60FPS_ASDark_04_Sting_187
+  - first:
+      213: -2450503723830087341
+    second: 60FPS_ASDark_04_Sting_188
+  - first:
+      213: -7726040263536869707
+    second: 60FPS_ASDark_04_Sting_189
+  - first:
+      213: -5431206717201123159
+    second: 60FPS_ASDark_04_Sting_190
+  - first:
+      213: 1545710768034548665
+    second: 60FPS_ASDark_04_Sting_191
+  - first:
+      213: 5436227788011676861
+    second: 60FPS_ASDark_04_Sting_192
+  - first:
+      213: -8552269889231628789
+    second: 60FPS_ASDark_04_Sting_193
+  - first:
+      213: 7583018083888749895
+    second: 60FPS_ASDark_04_Sting_194
+  - first:
+      213: 8164506007804185858
+    second: 60FPS_ASDark_04_Sting_195
+  - first:
+      213: 412145441395390921
+    second: 60FPS_ASDark_04_Sting_196
+  - first:
+      213: 1584304770124966190
+    second: 60FPS_ASDark_04_Sting_197
+  - first:
+      213: -8252787568234501645
+    second: 60FPS_ASDark_04_Sting_198
+  - first:
+      213: -6429171435935864170
+    second: 60FPS_ASDark_04_Sting_199
+  - first:
+      213: 7626377830733910103
+    second: 60FPS_ASDark_04_Sting_200
+  - first:
+      213: -6431286405595997770
+    second: 60FPS_ASDark_04_Sting_201
+  - first:
+      213: 8738618889783195794
+    second: 60FPS_ASDark_04_Sting_202
+  - first:
+      213: 4591891745605654754
+    second: 60FPS_ASDark_04_Sting_203
+  - first:
+      213: -7668035748623897406
+    second: 60FPS_ASDark_04_Sting_204
+  - first:
+      213: 6975738907572266764
+    second: 60FPS_ASDark_04_Sting_205
+  - first:
+      213: 6448049432225798622
+    second: 60FPS_ASDark_04_Sting_206
+  - first:
+      213: -7322168258567346518
+    second: 60FPS_ASDark_04_Sting_207
+  - first:
+      213: 3300576763618472808
+    second: 60FPS_ASDark_04_Sting_208
+  - first:
+      213: 8866104467294332849
+    second: 60FPS_ASDark_04_Sting_209
+  - first:
+      213: 1203578118563125114
+    second: 60FPS_ASDark_04_Sting_210
+  - first:
+      213: 5868874093116672433
+    second: 60FPS_ASDark_04_Sting_211
+  - first:
+      213: 7720602886815181101
+    second: 60FPS_ASDark_04_Sting_212
+  - first:
+      213: 9219204910024897684
+    second: 60FPS_ASDark_04_Sting_213
+  - first:
+      213: 8485014498055231130
+    second: 60FPS_ASDark_04_Sting_214
+  - first:
+      213: 8637810327022104017
+    second: 60FPS_ASDark_04_Sting_215
+  - first:
+      213: 2907947690708683041
+    second: 60FPS_ASDark_04_Sting_216
+  - first:
+      213: -578385699182576805
+    second: 60FPS_ASDark_04_Sting_217
+  - first:
+      213: 4822480997727013076
+    second: 60FPS_ASDark_04_Sting_218
+  - first:
+      213: -8471542514605435892
+    second: 60FPS_ASDark_04_Sting_219
+  - first:
+      213: 8475801547237231031
+    second: 60FPS_ASDark_04_Sting_220
+  - first:
+      213: -534191907443148725
+    second: 60FPS_ASDark_04_Sting_221
+  - first:
+      213: -767180975955258515
+    second: 60FPS_ASDark_04_Sting_222
+  - first:
+      213: -1289686721577746476
+    second: 60FPS_ASDark_04_Sting_223
+  - first:
+      213: 7060911231840494257
+    second: 60FPS_ASDark_04_Sting_224
+  - first:
+      213: 7560019590470060082
+    second: 60FPS_ASDark_04_Sting_225
+  - first:
+      213: -4494990523019223055
+    second: 60FPS_ASDark_04_Sting_226
+  - first:
+      213: 1428396122462045735
+    second: 60FPS_ASDark_04_Sting_227
+  - first:
+      213: 8983218504082398928
+    second: 60FPS_ASDark_04_Sting_228
+  - first:
+      213: -6540585172193765696
+    second: 60FPS_ASDark_04_Sting_229
+  - first:
+      213: 2497014079728747270
+    second: 60FPS_ASDark_04_Sting_230
+  - first:
+      213: 8900047956892552965
+    second: 60FPS_ASDark_04_Sting_231
+  - first:
+      213: -8431532609449161530
+    second: 60FPS_ASDark_04_Sting_232
+  - first:
+      213: -2361990289728070829
+    second: 60FPS_ASDark_04_Sting_233
+  - first:
+      213: -7216713898890041308
+    second: 60FPS_ASDark_04_Sting_234
+  - first:
+      213: -2188997269850630622
+    second: 60FPS_ASDark_04_Sting_235
+  - first:
+      213: -8247362852680078923
+    second: 60FPS_ASDark_04_Sting_236
+  - first:
+      213: -2926594292257739113
+    second: 60FPS_ASDark_04_Sting_237
+  - first:
+      213: -4788269385077315304
+    second: 60FPS_ASDark_04_Sting_238
+  - first:
+      213: -1985769366172794928
+    second: 60FPS_ASDark_04_Sting_239
+  - first:
+      213: 6365370221331819021
+    second: 60FPS_ASDark_04_Sting_240
+  - first:
+      213: 988036384815544840
+    second: 60FPS_ASDark_04_Sting_241
+  - first:
+      213: 6292069982376592735
+    second: 60FPS_ASDark_04_Sting_242
+  - first:
+      213: 8774935558800492778
+    second: 60FPS_ASDark_04_Sting_243
+  - first:
+      213: -8496542096077408627
+    second: 60FPS_ASDark_04_Sting_244
+  - first:
+      213: 8520005720723934189
+    second: 60FPS_ASDark_04_Sting_245
+  - first:
+      213: 4268739132644268538
+    second: 60FPS_ASDark_04_Sting_246
+  - first:
+      213: -6592239810505596149
+    second: 60FPS_ASDark_04_Sting_247
+  - first:
+      213: 5996812551743927852
+    second: 60FPS_ASDark_04_Sting_248
+  - first:
+      213: -2571317175522573741
+    second: 60FPS_ASDark_04_Sting_249
+  - first:
+      213: 8110366730200979669
+    second: 60FPS_ASDark_04_Sting_250
+  - first:
+      213: -5200551105750945413
+    second: 60FPS_ASDark_04_Sting_251
+  - first:
+      213: 735813717455551945
+    second: 60FPS_ASDark_04_Sting_252
+  - first:
+      213: 8250389405510217689
+    second: 60FPS_ASDark_04_Sting_253
+  - first:
+      213: -4642647381279907953
+    second: 60FPS_ASDark_04_Sting_254
+  - first:
+      213: 571021105964009801
+    second: 60FPS_ASDark_04_Sting_255
+  - first:
+      213: 2951841748391152952
+    second: 60FPS_ASDark_04_Sting_256
+  - first:
+      213: 2683887855151564335
+    second: 60FPS_ASDark_04_Sting_257
+  - first:
+      213: 1713889465288947081
+    second: 60FPS_ASDark_04_Sting_258
+  - first:
+      213: -6258949962663208521
+    second: 60FPS_ASDark_04_Sting_259
+  - first:
+      213: -1117930514049196148
+    second: 60FPS_ASDark_04_Sting_260
+  - first:
+      213: -7364842272895057253
+    second: 60FPS_ASDark_04_Sting_261
+  - first:
+      213: -4416538002158208416
+    second: 60FPS_ASDark_04_Sting_262
+  - first:
+      213: 9079076752101874091
+    second: 60FPS_ASDark_04_Sting_263
+  - first:
+      213: -6035228628382770148
+    second: 60FPS_ASDark_04_Sting_264
+  - first:
+      213: -2324811058265611184
+    second: 60FPS_ASDark_04_Sting_265
+  - first:
+      213: 5023203396146924054
+    second: 60FPS_ASDark_04_Sting_266
+  - first:
+      213: -4846543240478152963
+    second: 60FPS_ASDark_04_Sting_267
+  - first:
+      213: -3884689523652877115
+    second: 60FPS_ASDark_04_Sting_268
+  - first:
+      213: 1227757988533339355
+    second: 60FPS_ASDark_04_Sting_269
+  - first:
+      213: -3617902975565674690
+    second: 60FPS_ASDark_04_Sting_270
+  - first:
+      213: -3949153916814463008
+    second: 60FPS_ASDark_04_Sting_271
+  - first:
+      213: -3508906052253487847
+    second: 60FPS_ASDark_04_Sting_272
+  - first:
+      213: 7870481358047531457
+    second: 60FPS_ASDark_04_Sting_273
+  - first:
+      213: 4394052186384552234
+    second: 60FPS_ASDark_04_Sting_274
+  - first:
+      213: 1404354433414415783
+    second: 60FPS_ASDark_04_Sting_275
+  - first:
+      213: 7430666264315361752
+    second: 60FPS_ASDark_04_Sting_276
+  - first:
+      213: -4615465839136739250
+    second: 60FPS_ASDark_04_Sting_277
+  - first:
+      213: -3988129264836892287
+    second: 60FPS_ASDark_04_Sting_278
+  - first:
+      213: -9182321778251423937
+    second: 60FPS_ASDark_04_Sting_279
+  - first:
+      213: 2212228473168523211
+    second: 60FPS_ASDark_04_Sting_280
+  - first:
+      213: -4038176001616856406
+    second: 60FPS_ASDark_04_Sting_281
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1080
+        width: 92
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab20415325a2cfe00800000000000000
+      internalID: 1079784543228265146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1080
+        width: 74
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f31cac7e489d1dd0800000000000000
+      internalID: -2513685554136345608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1071
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2ae660517cc1990800000000000000
+      internalID: -7413831993442524418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1079
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b98c2332c9ff0040800000000000000
+      internalID: 4616182755555576243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_4
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1071
+        width: 61
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8e8efaa173e14a0800000000000000
+      internalID: -6620793814428096318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1057
+        width: 82
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedabb12534ce1700800000000000000
+      internalID: 513063140045073898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_6
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1036
+        width: 79
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4dae804cc91baa0800000000000000
+      internalID: -6146959650606885687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_7
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1028
+        width: 83
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25153b6a545722f0800000000000000
+      internalID: -997736045116844757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1025
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a064316f83437f40800000000000000
+      internalID: 5724993834408239273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1026
+        width: 62
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a4b1671c67eb420800000000000000
+      internalID: 2647684204222695970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_10
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1027
+        width: 48
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593f93d3d4b19ba00800000000000000
+      internalID: 772678829624390549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 883
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0242886febe1fa0800000000000000
+      internalID: -5828010901715541782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 878
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fc2200b099e6680800000000000000
+      internalID: -8759895952663064750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 882
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbda0e3b231862e0800000000000000
+      internalID: -2132433347114509390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 877
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342dbdc4374045f00800000000000000
+      internalID: 1104512701869838915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_15
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 881
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d381ac07b2692b10800000000000000
+      internalID: 1957204051399640023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 860
+        width: 106
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135a4de890e6e2aa0800000000000000
+      internalID: -6183884251003050703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_17
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 822
+        width: 116
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aed95bad68eda20800000000000000
+      internalID: 3089054668330756756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_18
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 881
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e3ca74d26dbf590800000000000000
+      internalID: -7639276852939571581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_19
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 880
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc43c40882b59950800000000000000
+      internalID: 6455261938170678522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_20
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 823
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b37167440e15ea0800000000000000
+      internalID: -5885676653352895717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 865
+        width: 67
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b38e53f5b741640800000000000000
+      internalID: 5049796731045690135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 861
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672de7b687fccf6f0800000000000000
+      internalID: -649416130141695370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_23
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 865
+        width: 53
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ed2ddd29fca51a0800000000000000
+      internalID: -6819910456005435893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_24
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 835
+        width: 107
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa07747518f13b70800000000000000
+      internalID: 8877149111555918589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_25
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 834
+        width: 83
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121066d25d9410b70800000000000000
+      internalID: 8863446721580368161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_26
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 831
+        width: 82
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdef580185a8f3920800000000000000
+      internalID: 2972246389926788828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_27
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 842
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb6aa25bab4480f0800000000000000
+      internalID: -1115683608482649157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_28
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 819
+        width: 69
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91d471836f20f370800000000000000
+      internalID: 8354229413192454559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_29
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 821
+        width: 58
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a4610f1a0a04830800000000000000
+      internalID: 4053416282011617893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_30
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 804
+        width: 100
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9862f23d55960ac80800000000000000
+      internalID: -8313529094789716343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_31
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 719
+        width: 88
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafb7bd0a0887eeb0800000000000000
+      internalID: -4690630910121885777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_32
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 622
+        width: 123
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25672f6a2e66c2b0800000000000000
+      internalID: -5564639161037134550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_33
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 667
+        width: 116
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8056041d9637a1210800000000000000
+      internalID: 1304481940396598536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_34
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 615
+        width: 115
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f20b1595798df50800000000000000
+      internalID: 6906436438451040001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_35
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 618
+        width: 126
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0cc218b45a6f270800000000000000
+      internalID: 8283990308302930154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_36
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 712
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e72565135094830800000000000000
+      internalID: 4055778648883625586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_37
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 621
+        width: 104
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4425d26bb9388a710800000000000000
+      internalID: 1704757163759325764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_38
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 714
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2a00d6e14e61280800000000000000
+      internalID: -9072813579962375438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_39
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 648
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8be34ab2a8d10410800000000000000
+      internalID: 1441671549156584332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_40
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 619
+        width: 93
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4422a04351a698ef0800000000000000
+      internalID: -105436476966559164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_41
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 623
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd8af25f9ef82420800000000000000
+      internalID: 2605612344679239101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_42
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 475
+        width: 98
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bd643fe596fccc0800000000000000
+      internalID: -3688613713263797417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_43
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 495
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd79ae30750808f50800000000000000
+      internalID: 6881641341838333916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_44
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 455
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babeadcf30c32b870800000000000000
+      internalID: 8697079818230623147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_45
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 474
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b537a21c713afd80800000000000000
+      internalID: -8216200161225394768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_46
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 425
+        width: 95
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aa0ddd268740650800000000000000
+      internalID: 6198211353192213046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_47
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 494
+        width: 14
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39df29d70c0e056d0800000000000000
+      internalID: -3003653834110993005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_48
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 455
+        width: 68
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0850dff5367865ab0800000000000000
+      internalID: -5019675873775909504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_49
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 502
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30df60e71d261f70800000000000000
+      internalID: 9157556472877404222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_50
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 475
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56474eec2fa59daf0800000000000000
+      internalID: -371165495381691291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_51
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 471
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a79c89cc55f9790800000000000000
+      internalID: -7521198515460408821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_52
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 113
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177124d11e28daf30800000000000000
+      internalID: 4588467498730526577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_53
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 481
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a2bb9f43983c6a0800000000000000
+      internalID: -6430144982333838707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_54
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 482
+        width: 23
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0481bfb8baa1dd0800000000000000
+      internalID: -2514508824231526209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_55
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 456
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e729052dc8a16860800000000000000
+      internalID: 7521478451728558051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_56
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 423
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23831faec52c0bde0800000000000000
+      internalID: -1319340986485098446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_57
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 425
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea82e7df773ef890800000000000000
+      internalID: -7422434113637676317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_58
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 448
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ef91034176ca900800000000000000
+      internalID: 697045378739601037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_59
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 455
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2673331d78067200800000000000000
+      internalID: 177338568613787181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_60
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 424
+        width: 61
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d147fb2f05a176660800000000000000
+      internalID: 7378895449442186269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_61
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 457
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caaa2da17ac1b9f0800000000000000
+      internalID: -454359497802339642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_62
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 448
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6d9303007f8a690800000000000000
+      internalID: -7590545591751813454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_63
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 430
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8c1612d08b594d0800000000000000
+      internalID: -3128391999604799297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_64
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 432
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadbdcd492835e2f0800000000000000
+      internalID: -944286796814107219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_65
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 431
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e0b673a56ddfa10800000000000000
+      internalID: 1944946297059085975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_66
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 431
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746fbd8ccc0c173c0800000000000000
+      internalID: -4363494578169579961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_67
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 438
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d290655e114501260800000000000000
+      internalID: 7066240251183106349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_68
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 430
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2e2f829a0837590800000000000000
+      internalID: -7677651475711728991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_69
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 435
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec3d97b0c1806d90800000000000000
+      internalID: -7106537547276403475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_70
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 442
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7022c66ebf140d80800000000000000
+      internalID: -8285462511826624386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_71
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 423
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3425e6009100397a0800000000000000
+      internalID: -6371748940417707453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_72
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 421
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1a6bf744a22a790800000000000000
+      internalID: -7520401954066488859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_73
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 421
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6fa98e0ff4047a0800000000000000
+      internalID: -6395023574752889156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_74
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 419
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158e579045988d30800000000000000
+      internalID: 4433957937796252951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_75
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 419
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9bdd64261796230800000000000000
+      internalID: 3632559241360685541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_76
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 417
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dfbd90b35a0bcd0800000000000000
+      internalID: -2544352116477264584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_77
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 418
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dd4bf1ba4eadd60800000000000000
+      internalID: 7915890718679555393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_78
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 289
+        width: 62
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9bbb3eb17b8d340800000000000000
+      internalID: 4888858725923404258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_79
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 350
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bf79e7da2539870800000000000000
+      internalID: 8688379011234528077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_80
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 330
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c0827e51278c370800000000000000
+      internalID: 8343043748101885010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_81
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 357
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047f022ab6b5cc5f0800000000000000
+      internalID: -735112121328535744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_82
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 354
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0089afa51f0afdc60800000000000000
+      internalID: 7845166034376628224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_83
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 360
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b353a2e05ba70e6f0800000000000000
+      internalID: -657390627550776005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_84
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 335
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f9213fb622f66d0800000000000000
+      internalID: -2995137380143161508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_85
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 355
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714d611c178ca4210800000000000000
+      internalID: 1318086231855649815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_86
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 310
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7776a477039ec8280800000000000000
+      internalID: -9039593957670361225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_87
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 310
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3668488c96bd89ca0800000000000000
+      internalID: -6009812455343749533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_88
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 292
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85aa4daa2886c930800000000000000
+      internalID: 4163164622427956622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_89
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 310
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d2fbd2743f1b150800000000000000
+      internalID: 5886753674985680160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_90
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 291
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bc328bd2f81b990800000000000000
+      internalID: -7371953688503137430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_91
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 309
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7bb2ce33fe48a70800000000000000
+      internalID: 8828444175837673430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_92
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 330
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cfbddd35ff3c400800000000000000
+      internalID: 343398732279839853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_93
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 303
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195c154966e9f5320800000000000000
+      internalID: 2548930077527229841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_94
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 309
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd6cf78368eb2830800000000000000
+      internalID: 4047584204303396277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_95
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 330
+        width: 25
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476acedf29d200550800000000000000
+      internalID: 6124945602572494452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_96
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 323
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc63839f26655f420800000000000000
+      internalID: 2663129737747510987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_97
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 325
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfc68ee0b5190710800000000000000
+      internalID: 1659881787322978267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_98
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 324
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7593edf271dd3b30800000000000000
+      internalID: 4268798313633125756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_99
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 321
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904cc2cf240fbec40800000000000000
+      internalID: 5542787936898827273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_100
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 296
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620e2404bef8f64a0800000000000000
+      internalID: -6597896688516276186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_101
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 304
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3674a2cfb1912eb80800000000000000
+      internalID: -8367097549715519645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_102
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 321
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c28c62acb1e72a0800000000000000
+      internalID: -6737917437451686886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_103
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 304
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e77a937a60b9e600800000000000000
+      internalID: 498123205053675497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_104
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 320
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce0ad59b6a67dda0800000000000000
+      internalID: -5920146174847086907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_105
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 319
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d804fc475441b0800000000000000
+      internalID: -5673313642556631494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_106
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 302
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4189bca2d69a50830800000000000000
+      internalID: 4036818927342032916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_107
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 282
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fcf778ae203dd10800000000000000
+      internalID: 2149064653504761721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_108
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 309
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d108d49dc401f9bc0800000000000000
+      internalID: -3774280040463892451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_109
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 277
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a403c203d358c1b40800000000000000
+      internalID: 5412347350040195146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_110
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 299
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5dd616da64173e0800000000000000
+      internalID: -2057785844253731344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_111
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 291
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0781d82c13660410800000000000000
+      internalID: 1442949703213877006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_112
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 278
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08e7eb648f47f750800000000000000
+      internalID: 6338622430711900170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_113
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 301
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59f38dcd825b6f10800000000000000
+      internalID: 2263994006675650907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_114
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 291
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40c859c0bcb59cc0800000000000000
+      internalID: -3704847650964062130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_115
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 277
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de183bcaec35770e0800000000000000
+      internalID: -2272255339859312147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_116
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 282
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e4ad3384fb77980800000000000000
+      internalID: -8541147851456360847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_117
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 276
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e39a7b3c0b616e0800000000000000
+      internalID: -1867110640852058475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_118
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 289
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2116e49a3cb7c8a70800000000000000
+      internalID: 8830569049656025362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_119
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 282
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03252ead2f718a8b0800000000000000
+      internalID: -5140832642821631440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_120
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 281
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb1b501c833c2d80800000000000000
+      internalID: -8274181738723599392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_121
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 275
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa7667f9bd66e730800000000000000
+      internalID: 4028027562216553128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_122
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 294
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5c504aefd800240800000000000000
+      internalID: 4755957331316295164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_123
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 281
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1f27b16366249e0800000000000000
+      internalID: -1638634931834654284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_124
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 290
+        width: 21
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3c0bb6e2a200980800000000000000
+      internalID: -8574807311649815634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_125
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 285
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f886ec3510b43840800000000000000
+      internalID: 5202977074782308600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_126
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 286
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9ee5650b31fa210800000000000000
+      internalID: 1346316461691300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_127
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 289
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74b30909a2877490800000000000000
+      internalID: -7748580971355327362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_128
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 263
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2ca16f8f1d30b90800000000000000
+      internalID: -7276741705689546078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_129
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 264
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa5fb7236edbe6c0800000000000000
+      internalID: -4112949317222835549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_130
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 282
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bec310cbad4a6c0800000000000000
+      internalID: -4132938057009796202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_131
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 280
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fb99d353c68c220800000000000000
+      internalID: 2506372168554233614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_132
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 263
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fb6db2aac5ea0d0800000000000000
+      internalID: -3409685981923197064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_133
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 258
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1d38c53daa00850800000000000000
+      internalID: 6341256100104622509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_134
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 237
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b92427a7d1a0ad10800000000000000
+      internalID: 2134884170967820721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_135
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 277
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7d6902f1a2853d0800000000000000
+      internalID: -3217775620577110101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_136
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 278
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980ef12ba8172d330800000000000000
+      internalID: 3734171881551421577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_137
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 276
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf88f873ac1201b0800000000000000
+      internalID: -5691955490608082981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_138
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 278
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba07ac22dc75f230800000000000000
+      internalID: 3671978313324628660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_139
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 274
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99abe81037e19a230800000000000000
+      internalID: 3650482452256701081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_140
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 277
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852ce861f935b47d0800000000000000
+      internalID: -2933158789558386088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_141
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 267
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c779beab541abf0800000000000000
+      internalID: -314893829820416950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_142
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 220
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578089ba70d8f6240800000000000000
+      internalID: 4787199993001281653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_143
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 258
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac5370b94ec9d660800000000000000
+      internalID: 7411181477703146668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_144
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 263
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada1e73729aa49390800000000000000
+      internalID: -7812431907601376550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_145
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 270
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a845dce08c4e3860800000000000000
+      internalID: 7511525345113491624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_146
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 268
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65316dace67f9d320800000000000000
+      internalID: 2583367916495180630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_147
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 269
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0012fa644fbe840800000000000000
+      internalID: 5254561974680879273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_148
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 264
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53eb54aa65d3e3e0800000000000000
+      internalID: -2025540753385856164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_149
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 270
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f05cf358fdf9f820800000000000000
+      internalID: 2952670273720832244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_150
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 269
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f478ac75e20aa8ac0800000000000000
+      internalID: -3852090410360207537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_151
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 225
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e42d7337609a4f80800000000000000
+      internalID: -8121520205089397528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_152
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 264
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9d142d2fbaf1730800000000000000
+      internalID: 3972082455762033121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_153
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 256
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4deff1c000bed880800000000000000
+      internalID: -8584230322420322993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_154
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 229
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d663aad4192206b0800000000000000
+      internalID: -5331653839309019435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_155
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 258
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be985f9ca8bf7130800000000000000
+      internalID: 3566772481447993010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_156
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 263
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56dad012f61c2990800000000000000
+      internalID: -7409522058010634660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_157
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 260
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f062bf9ede9dd3c40800000000000000
+      internalID: 5493786736317900303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_158
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 258
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4b4f10ca53303e0800000000000000
+      internalID: -2088766789286316887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_159
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 235
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a652a927f8ed18250800000000000000
+      internalID: 5945277690790159722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_160
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 218
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513e543b5419b3470800000000000000
+      internalID: 8375447660572042005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_161
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 258
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160bc07bc1d5a5a20800000000000000
+      internalID: 3051854075408461921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_162
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 238
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccdb7ebdc2af0fe0800000000000000
+      internalID: -1220577969446331199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_163
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 247
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a7426d59e3190e0800000000000000
+      internalID: -2264960324326884730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_164
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 238
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2aca96eebfc09a80800000000000000
+      internalID: -8462035281009522132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_165
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 236
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d80b7f82b6d578d0800000000000000
+      internalID: -2849135126842242860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_166
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 219
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1863dc79cb842cbf0800000000000000
+      internalID: -305601849869912447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_167
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 246
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55eec0ce6a3a7c770800000000000000
+      internalID: 8631047148199013973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_168
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 236
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0445926458b618530800000000000000
+      internalID: 3855480976157791296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_169
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 223
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea15879a494af70800000000000000
+      internalID: 9197639794586398427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_170
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 223
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc421353c331d130800000000000000
+      internalID: 3589707291996343551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_171
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 226
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb53fbf3fb709ebc0800000000000000
+      internalID: -3753460296446954050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_172
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 222
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833f4c9c8fc5fc800800000000000000
+      internalID: 634828296089301816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_173
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 222
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8f6d1d17f5dc200800000000000000
+      internalID: 201922500758010068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_174
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 221
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c5b85d55049c4f0800000000000000
+      internalID: -808043920737215389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_175
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 167
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927af92fcaebc1300800000000000000
+      internalID: 224263731475883817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_176
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 168
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65234fa4d4687e780800000000000000
+      internalID: -8653800492440997290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_177
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 152
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1b104ff9d7b1750800000000000000
+      internalID: 6276748631617942002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_178
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 153
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f10eafccf7e72b0800000000000000
+      internalID: -5584885969533788407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_179
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 147
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60f7ca91ff3bad00800000000000000
+      internalID: 984951250427048047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_180
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 131
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c7ab00a841bb9d0800000000000000
+      internalID: -2757587763884032982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_181
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 143
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3f717a8ff21f220800000000000000
+      internalID: 2517846411678577604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_182
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 130
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56fe7e0a8f50df50800000000000000
+      internalID: 6904123275312297565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_183
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 137
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889713282bc71b260800000000000000
+      internalID: 7111602392725027208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_184
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 130
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1d51e77c3aad450800000000000000
+      internalID: 6114379521318048182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_185
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 140
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9e063aef1baaeb0800000000000000
+      internalID: -4707754753241585222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_186
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 130
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2731fb23e9dee170800000000000000
+      internalID: 8209738740461025071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_187
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 138
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eae375c3a098a20800000000000000
+      internalID: 3064992275680374352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_188
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 145
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351f554b8df0efdd0800000000000000
+      internalID: -2450503723830087341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_189
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 139
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bef48b805797c490800000000000000
+      internalID: -7726040263536869707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_190
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 138
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f287344a70a4b0800000000000000
+      internalID: -5431206717201123159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_191
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb023601c7737510800000000000000
+      internalID: 1545710768034548665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_192
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 129
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db42b8eee5c517b40800000000000000
+      internalID: 5436227788011676861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_193
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 137
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06541df8db305980800000000000000
+      internalID: -8552269889231628789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_194
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 139
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d5d8f45ca4c3960800000000000000
+      internalID: 7583018083888749895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_195
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 131
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d06b9e4f62e4170800000000000000
+      internalID: 8164506007804185858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_196
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 135
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c93b26681c38b500800000000000000
+      internalID: 412145441395390921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_197
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 132
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29614f5bc49cf510800000000000000
+      internalID: 1584304770124966190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_198
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 131
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f96f9c8e65387d80800000000000000
+      internalID: -8252787568234501645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_199
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 124
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a64f864aef6c6a0800000000000000
+      internalID: -6429171435935864170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_200
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 130
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7501fc31b3656d960800000000000000
+      internalID: 7626377830733910103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_201
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 130
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9d6a9a61b7fb6a0800000000000000
+      internalID: -6431286405595997770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_202
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 131
+        width: 19
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298bb01c49fc54970800000000000000
+      internalID: 8738618889783195794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_203
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 126
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e89fd7b63da9bf30800000000000000
+      internalID: 4591891745605654754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_204
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 132
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca6461d1aa59590800000000000000
+      internalID: -7668035748623897406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_205
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0767bfc39dcec060800000000000000
+      internalID: 6975738907572266764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_206
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 131
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed95afd9bc21c7950800000000000000
+      internalID: 6448049432225798622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_207
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 126
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6e37a63ce626a90800000000000000
+      internalID: -7322168258567346518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_208
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 117
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863336d44110ecd20800000000000000
+      internalID: 3300576763618472808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_209
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 126
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b72592d90bba0b70800000000000000
+      internalID: 8866104467294332849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_210
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 110
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7753680ce7f3b010800000000000000
+      internalID: 1203578118563125114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_211
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 125
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b946bf94ed627150800000000000000
+      internalID: 5868874093116672433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_212
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 121
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2969788b67152b60800000000000000
+      internalID: 7720602886815181101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_213
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 124
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494329d250231ff70800000000000000
+      internalID: 9219204910024897684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_214
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 121
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a961f9efab3d0c570800000000000000
+      internalID: 8485014498055231130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_215
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 125
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd6a533abaafd770800000000000000
+      internalID: 8637810327022104017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_216
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 126
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129cb1a840b1b5820800000000000000
+      internalID: 2907947690708683041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_217
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 79
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b7e01654929f7f0800000000000000
+      internalID: -578385699182576805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_218
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 110
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d80795bae4ece240800000000000000
+      internalID: 4822480997727013076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_219
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 110
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04d25597f80f6a80800000000000000
+      internalID: -8471542514605435892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_220
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 79
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b908c9b99810a570800000000000000
+      internalID: 8475801547237231031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_221
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 69
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4876fa5a4b2698f0800000000000000
+      internalID: -534191907443148725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_222
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 109
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63dfb197fc6a55f0800000000000000
+      internalID: -767180975955258515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_223
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 101
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dff1d082cc1a1ee0800000000000000
+      internalID: -1289686721577746476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_224
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 109
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b22b64ea556df160800000000000000
+      internalID: 7060911231840494257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_225
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 113
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23846f843c59ae860800000000000000
+      internalID: 7560019590470060082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_226
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 109
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff11be4fe59e91c0800000000000000
+      internalID: -4494990523019223055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_227
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 101
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72645e594bea2d310800000000000000
+      internalID: 1428396122462045735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_228
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 109
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de1c8362adcaac70800000000000000
+      internalID: 8983218504082398928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_229
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 113
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6143c707c2b35a0800000000000000
+      internalID: -6540585172193765696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_230
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 89
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6038165631d27a220800000000000000
+      internalID: 2497014079728747270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_231
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 78
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f858a5672538b70800000000000000
+      internalID: 8900047956892552965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_232
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 86
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc09ad83cd2dfa80800000000000000
+      internalID: -8431532609449161530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_233
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 71
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b16d98856883fd0800000000000000
+      internalID: -2361990289728070829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_234
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 88
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428e80bd1f419db90800000000000000
+      internalID: -7216713898890041308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_235
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 73
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226d044b49e1f91e0800000000000000
+      internalID: -2188997269850630622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_236
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 83
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b960409e2b7b8d80800000000000000
+      internalID: -8247362852680078923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_237
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eaa483ff5a267d0800000000000000
+      internalID: -2926594292257739113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_238
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 88
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819a6951d56ac8db0800000000000000
+      internalID: -4788269385077315304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_239
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 83
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dffa6358412174e0800000000000000
+      internalID: -1985769366172794928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_240
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a255abd76565850800000000000000
+      internalID: 6365370221331819021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_241
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 81
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a771e6bd536bd00800000000000000
+      internalID: 988036384815544840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_242
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 86
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558479ef4ce15750800000000000000
+      internalID: 6292069982376592735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_243
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 88
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae84f3d2665d6c970800000000000000
+      internalID: 8774935558800492778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_244
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 76
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d863720faf7361a80800000000000000
+      internalID: -8496542096077408627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_245
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 88
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debcb04ef042d3670800000000000000
+      internalID: 8520005720723934189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_246
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 82
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af91218df9b9d3b30800000000000000
+      internalID: 4268739132644268538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_247
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 81
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0320acc1d8a384a0800000000000000
+      internalID: -6592239810505596149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_248
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 88
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26fc4b4e35f83350800000000000000
+      internalID: 5996812551743927852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_249
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 81
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352cd1cf6a8d05cd0800000000000000
+      internalID: -2571317175522573741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_250
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 74
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d896cf029fcd8070800000000000000
+      internalID: 8110366730200979669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_251
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 77
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b713371b25ee3d7b0800000000000000
+      internalID: -5200551105750945413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_252
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 74
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd3cc17da2263a00800000000000000
+      internalID: 735813717455551945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_253
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 43
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df251ea3754f7270800000000000000
+      internalID: 8250389405510217689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_254
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 68
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fd965fdc0029fb0800000000000000
+      internalID: -4642647381279907953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_255
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9494c34abacace700800000000000000
+      internalID: 571021105964009801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_256
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 43
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dc50e3e6c07f820800000000000000
+      internalID: 2951841748391152952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_257
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 32
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f264b4fc8c51f3520800000000000000
+      internalID: 2683887855151564335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_258
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 69
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985f4da5365f8c710800000000000000
+      internalID: 1713889465288947081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_259
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 42
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9d3889b2eb329a0800000000000000
+      internalID: -6258949962663208521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_260
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 70
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f178ade105c70f0800000000000000
+      internalID: -1117930514049196148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_261
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 42
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b924f4139f2dac990800000000000000
+      internalID: -7364842272895057253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_262
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 39
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ab85c361e45b2c0800000000000000
+      internalID: -4416538002158208416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_263
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 42
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba91a89f33c5ffd70800000000000000
+      internalID: 9079076752101874091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_264
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 66
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c1afad98f8e3ca0800000000000000
+      internalID: -6035228628382770148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_265
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 25
+        width: 65
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054ad2ee8ac9cbfd0800000000000000
+      internalID: -2324811058265611184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_266
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 40
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a8fddefd006b540800000000000000
+      internalID: 5023203396146924054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_267
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 64
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6aab2d99e9dbcb0800000000000000
+      internalID: -4846543240478152963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_268
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 53
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c42dffc57fc61ac0800000000000000
+      internalID: -3884689523652877115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_269
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 64
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd48da8b26fd90110800000000000000
+      internalID: 1227757988533339355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_270
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 61
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3744958960aacdc0800000000000000
+      internalID: -3617902975565674690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_271
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 53
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef6ee8af69c139c0800000000000000
+      internalID: -3949153916814463008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_272
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 54
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d6635598cdd4fc0800000000000000
+      internalID: -3508906052253487847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_273
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 39
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1d1c57811993d60800000000000000
+      internalID: 7870481358047531457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_274
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 41
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21dafdce2fcafc30800000000000000
+      internalID: 4394052186384552234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_275
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a54966aae44d7310800000000000000
+      internalID: 1404354433414415783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_276
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9fef819970f1760800000000000000
+      internalID: 7430666264315361752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_277
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 24
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40fd49e54292ffb0800000000000000
+      internalID: -4615465839136739250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_278
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 23
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189ae0b409157a8c0800000000000000
+      internalID: -3988129264836892287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_279
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 22
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f9df12ef6d19080800000000000000
+      internalID: -9182321778251423937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_280
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 22
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfe631531a63be10800000000000000
+      internalID: 2212228473168523211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_ASDark_04_Sting_281
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 27
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaabe1b525485f7c0800000000000000
+      internalID: -4038176001616856406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 73af57470da9a9b46b56f4e8d25f181f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

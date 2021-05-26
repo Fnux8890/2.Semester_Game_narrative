@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldMap.unity
     guid: 7b3c146f86d697f4196bdecc5d628cb5
   - enabled: 1
+    path: Assets/Scenes/CombatScene.unity
+    guid: d4f67e3ca1ceaef46a300a9dd2bda48e
+  - enabled: 1
     path: Assets/Scenes/StartingArea/StartingArea.unity
     guid: 7cc95160a97543a4998fa2beb32c43e3
   m_configObjects:

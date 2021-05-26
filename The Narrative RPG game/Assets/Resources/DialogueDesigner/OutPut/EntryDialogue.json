@@ -33,11 +33,11 @@
       {
         "from": "2909223",
         "from_port": 0,
-        "to": "7131524",
+        "to": "903446",
         "to_port": 0
       },
       {
-        "from": "7131524",
+        "from": "903446",
         "from_port": 0,
         "to": "3085208",
         "to_port": 0
@@ -160,19 +160,6 @@
         "var_name": "IntroIsOver"
       },
       {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "903446",
-        "node_type": "execute",
-        "offset": [
-          956,
-          -331
-        ],
-        "rect_size_x": 329.000244,
-        "rect_size_y": 89,
-        "text": "PlaySound(\"Knocking\")",
-        "title": "Execute"
-      },
-      {
         "character": [
           "Player",
           0
@@ -185,7 +172,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "7131524",
+        "next": "903446",
         "node_name": "2909223",
         "node_type": "show_message",
         "object_path": "",
@@ -202,15 +189,15 @@
       },
       {
         "filename": "res://Nodes/Execute.tscn",
-        "node_name": "7131524",
+        "node_name": "903446",
         "node_type": "execute",
         "offset": [
-          927.599976,
-          -61.190002
+          930.537048,
+          57.888878
         ],
-        "rect_size_x": 329,
+        "rect_size_x": 329.000488,
         "rect_size_y": 89,
-        "text": "StartCutscene(\"OpeningCutscene\")",
+        "text": "PlaySound(\"Knocking\")",
         "title": "Execute"
       }
     ],

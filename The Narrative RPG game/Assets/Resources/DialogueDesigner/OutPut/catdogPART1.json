@@ -19,21 +19,15 @@
         "to_port": 0
       },
       {
-        "from": "584735",
-        "from_port": 0,
-        "to": "1124297",
-        "to_port": 0
-      },
-      {
-        "from": "1124297",
-        "from_port": 0,
-        "to": "6272262",
-        "to_port": 0
-      },
-      {
         "from": "7744267",
         "from_port": 0,
         "to": "7140987",
+        "to_port": 0
+      },
+      {
+        "from": "584735",
+        "from_port": 0,
+        "to": "6272262",
         "to_port": 0
       }
     ],
@@ -56,34 +50,6 @@
       },
       {
         "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "1124297",
-        "node_name": "584735",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          130,
-          -281.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "You have been following us around the entire Game, and it is starting to creep me out a little bit."
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
           "Edgelord",
           2
         ],
@@ -100,8 +66,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1055,
-          -286.5
+          649,
+          -303.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -124,17 +90,17 @@
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
         "next": "6272262",
-        "node_name": "1124297",
+        "node_name": "584735",
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          612,
-          -471.5
+          168,
+          -303.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "wtf"
+          "ENG": "You have been following us around the entire Game, and it is starting to creep me out a little bit."
         },
         "title": "Show Message"
       },
@@ -156,8 +122,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          565,
-          27.5
+          553,
+          46.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -171,10 +137,10 @@
         "node_name": "7140987",
         "node_type": "execute",
         "offset": [
-          1096,
-          141.5
+          1094,
+          137.5
         ],
-        "rect_size_x": 579,
+        "rect_size_x": 578.999756,
         "rect_size_y": 193,
         "text": "StartCutsceneWithDialogue(\"MeetingCatDogPART2\", \"catdogPART2\")",
         "title": "Execute"

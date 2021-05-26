@@ -24,6 +24,7 @@ namespace Dialogue.Objects
         public Vector2 offset;
         public Vector2 size;
         public int id;
+        public int radius;
         public TextAsset json;
 
 
@@ -58,12 +59,15 @@ namespace Dialogue.Objects
 
         public void UpdateJson()
         {
-            if (_previousJson == null) _previousJson = new TextAsset();
-            if (json.GetType() != typeof(TextAsset))
-                throw new InvalidOperationException("File can only be Text Assets");
-            if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
-            _previousJson = json;
-            CustomUtils.PrettifyJson(json);
+            if (json!=null)
+            {
+                if (_previousJson == null) _previousJson = new TextAsset();
+                if (json.GetType() != typeof(TextAsset))
+                    throw new InvalidOperationException("File can only be Text Assets");
+                if (_previousJson.ToString().Equals(json.ToString()) ^ _previousJson.name == json.name) return;
+                _previousJson = json;
+                CustomUtils.PrettifyJson(json);
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -99,16 +103,16 @@ namespace Dialogue.Objects
             switch (direction)
             {
                 case InteractableDirection.Up:
-                    SetDirection(1.5f, 10, 160);
+                    SetDirection(radius, 10, 160);
                     break;
                 case InteractableDirection.Down:
-                    SetDirection(1.5f, 190, 160);
+                    SetDirection(radius, 190, 160);
                     break;
                 case InteractableDirection.Left:
-                    SetDirection(1.5f, 100, 160);
+                    SetDirection(radius, 100, 160);
                     break;
                 case InteractableDirection.Right:
-                    SetDirection(1.5f, 280, 160);
+                    SetDirection(radius, 280, 160);
                     break;
             }
             

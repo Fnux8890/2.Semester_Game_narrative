@@ -38,12 +38,6 @@
       {
         "from": "5453076",
         "from_port": 0,
-        "to": "1802036",
-        "to_port": 0
-      },
-      {
-        "from": "1802036",
-        "from_port": 0,
         "to": "7243919",
         "to_port": 0
       }
@@ -78,104 +72,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "7446922",
-        "node_name": "6713103",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          210,
-          208.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "So what?"
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "8419042",
-        "node_name": "7446922",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          673,
-          208.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "It’s level 5000. You are only level 4999 so by the rules of an RPG you will lose this battle."
-        },
-        "title": "Show Message"
-      },
-      {
-        "character": [
-          "Villian",
-          1
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "3147209",
-        "node_name": "8419042",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          209,
-          545.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "Oh crap…"
-        },
-        "title": "Show Message"
-      },
-      {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "3147209",
-        "node_type": "execute",
-        "offset": [
-          740,
-          636.75
-        ],
-        "rect_size_x": 329,
-        "rect_size_y": 89,
-        "text": "ExecuteFinalBattle()",
-        "title": "Execute"
-      },
-      {
-        "character": [
-          "Villian",
-          1
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "1802036",
+        "next": "7243919",
         "node_name": "5453076",
         "node_type": "show_message",
         "object_path": "",
@@ -208,13 +105,41 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          1039,
-          -290.5
+          626,
+          -316.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
           "ENG": "Not at all actually, but I now have a mentally ill dog with me that thinks it’s a cat."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Villian",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7446922",
+        "node_name": "6713103",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          115,
+          52.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "So what?"
         },
         "title": "Show Message"
       },
@@ -231,20 +156,61 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": "7243919",
-        "node_name": "1802036",
+        "next": "8419042",
+        "node_name": "7446922",
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          571,
-          -548.25
+          630,
+          52.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "asdadsad"
+          "ENG": "It’s level 5000. You are only level 4999 so by the rules of an RPG you will lose this battle."
         },
         "title": "Show Message"
+      },
+      {
+        "character": [
+          "Villian",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3147209",
+        "node_name": "8419042",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          106,
+          438.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh crap…"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "3147209",
+        "node_type": "execute",
+        "offset": [
+          600,
+          614.75
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "ExecuteFinalBattle()",
+        "title": "Execute"
       }
     ],
     "selected_language": "ENG",

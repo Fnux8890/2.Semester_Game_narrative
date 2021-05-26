@@ -13,6 +13,7 @@ namespace PlayerControl
 {
 public class PlayerController : MonoBehaviour
 {
+    
     // Public unity stuff
     public Animator animator;
     public Tilemap tilemap;
@@ -82,6 +83,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        
         if (_lPos != _grid.WorldToCell(transform.position))
         {
             _lPos = _grid.WorldToCell(transform.position);

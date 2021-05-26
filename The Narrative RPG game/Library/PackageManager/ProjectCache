@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637574780800122888
+      ticks: 637575702949282516
     m_Hash: 3064180567
   m_LockFileStatus:
     m_FilePath: C:/Users/Sebastian/Desktop/2.Semester_Game_narrative/The Narrative
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637574798295663576
+      ticks: 637575710804891831
     m_Hash: 3224597762
 m_EmbeddedPackageManifests:
   m_ManifestsStatus:
@@ -26,7 +26,7 @@ m_EmbeddedPackageManifests:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637574780798742809
+        ticks: 637575702948442468
       m_Hash: 2350957545
 m_PackageAssets:
   m_Packages:

@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using GameSystems.Combat;
+using GameSystems.CustomEventSystems;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.CustomEventSystems.Tutorial;
 using UnityEngine;
@@ -21,15 +23,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector3Int _lPos;
     private Tile _tile;
-    private Scene? previousScene;
-    
+
     // private variables
     [SerializeField]
     private float _moveSpeed = 5;
     private bool _isSprinting = false;
     private GameObject _lookingAt;
     private bool _playerInRange;
-    
+    private SceneLoadManager _sceneManager;
+    private SceneChangeAnim _sceneChangeAnim;
+    private GameObject _player;
+
     //Input system
     private PlayerActionControls _playerActionControls;
     
@@ -51,6 +55,9 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        UpdateRef();
+        _sceneManager = SceneLoadManager.Instance;
+        _sceneChangeAnim = SceneChangeAnim.Instance;
         _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
         _playerActionControls.Land.Sprint.performed += _ => SprintAction(true, 9);
         _playerActionControls.Land.Sprint.canceled += _ => SprintAction(false, 5);
@@ -64,7 +71,12 @@ public class PlayerController : MonoBehaviour
             TutorialHandler.Instance.OnTutorialButtonPressed(ctx);
         _playerActionControls.Land.Interact.performed += Interact;
         InteractionHandler.Instance.LookingAt += LookingAt;
-        
+        SceneManager.sceneLoaded += SetPlayerPosition;
+    }
+
+    private void UpdateRef()
+    {
+        _player = GameObject.Find("Player");
     }
     
 
@@ -136,6 +148,51 @@ public class PlayerController : MonoBehaviour
         _isSprinting = isSprinting;
         _moveSpeed = speed;
     }
+
+    private void SetPlayerPosition(Scene arg0, LoadSceneMode loadSceneMode)
+    {
+        UpdateRef();
+        var lastSceneName = SceneLoadHandler.Instance.OnGetLastSceneName();
+        var lastPosition = SceneLoadHandler.Instance.OnGetLastPosition();
+        if (arg0.name == lastSceneName)
+        {
+            if (lastPosition != null)
+            {
+                switch (SceneLoadHandler.Instance.OnGetLastLeaveDirection())
+                {
+                    case LeaveDirection.Up:
+                        var lastUp = new Vector3(lastPosition.Value.x, lastPosition.Value.y + 1,0);
+                        _player.transform.position = lastUp;
+                        SetCamera(lastUp);
+                        break;
+                    case LeaveDirection.Down:
+                        var lastDown = new Vector3(lastPosition.Value.x, lastPosition.Value.y- 1,0);
+                        _player.transform.position = lastDown;
+                        SetCamera(lastDown);
+                        break;
+                    case LeaveDirection.Left:
+                        var lastLeft = new Vector3(lastPosition.Value.x - 1, lastPosition.Value.y,0);
+                        _player.transform.position = lastLeft;
+                        SetCamera(lastLeft);
+                        break;
+                    case LeaveDirection.Right:
+                        var lastRight = new Vector3(lastPosition.Value.x - 1, lastPosition.Value.y,0);
+                        _player.transform.position = lastRight;
+                        SetCamera(lastRight);
+                        break;
+                    case null:
+                        return;
+                }
+                
+            }
+        }
+    }
+
+    private void SetCamera(Vector3 position)
+    {
+        GameObject.Find("Main Camera").transform.position = new Vector3(position.x, position.y, -1.5f);
+    }
+    
     
     private void SetSpeed(int onPath, int offPath)
     {
@@ -164,7 +221,7 @@ public class PlayerController : MonoBehaviour
                     LoadLevel(2);
                     break;
                 case "Library":
-                    LoadLevel(11);
+                    LoadPrevious();
                     break;
                 default:
                     LoadLevel();
@@ -185,7 +242,21 @@ public class PlayerController : MonoBehaviour
 
     private void LoadLevel(int levelIndex = 10)
     {
-        InteractionHandler.Instance.OnLevelAnim(levelIndex);
+        InteractionHandler.Instance.OnLevelAnimInt(levelIndex);
+    }
+    
+    private void LoadLevel(string levelName = "WorldMap")
+    {
+        InteractionHandler.Instance.OnLevelAnimName(levelName);
+    }
+    private void LoadLevel()
+    {
+        InteractionHandler.Instance.OnLevelAnimInt(10);
+    }
+
+    private void LoadPrevious()
+    {
+        InteractionHandler.Instance.OnLevelAnimPrevious();
     }
 }
     

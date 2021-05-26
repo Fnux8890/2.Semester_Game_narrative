@@ -1,0 +1,156 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Cat-Dog"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "6439269",
+        "to_port": 0
+      },
+      {
+        "from": "6439269",
+        "from_port": 0,
+        "to": "2096374",
+        "to_port": 0
+      },
+      {
+        "from": "2096374",
+        "from_port": 0,
+        "to": "5644302",
+        "to_port": 0
+      },
+      {
+        "from": "5644302",
+        "from_port": 0,
+        "to": "9441256",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "catdogPART3",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "6439269",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2096374",
+        "node_name": "6439269",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          269,
+          -146.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "That was easy, now lets go see what the king is doing at your home."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5644302",
+        "node_name": "2096374",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          725,
+          -146.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "*cough*"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9441256",
+        "node_name": "5644302",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          496,
+          215.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "i mean the vilian ofcourse."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "9441256",
+        "node_type": "execute",
+        "offset": [
+          1028,
+          317.5
+        ],
+        "rect_size_x": 596,
+        "rect_size_y": 189,
+        "text": "GoToFinalBossBattleScene()",
+        "title": "Execute"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "yeet": {
+        "type": 0,
+        "value": "wtf"
+      }
+    }
+  }
+]

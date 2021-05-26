@@ -1,0 +1,156 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Red Knight"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "9841310",
+        "to_port": 0
+      },
+      {
+        "from": "9841310",
+        "from_port": 0,
+        "to": "4528785",
+        "to_port": 0
+      },
+      {
+        "from": "4528785",
+        "from_port": 0,
+        "to": "7804515",
+        "to_port": 0
+      },
+      {
+        "from": "7804515",
+        "from_port": 0,
+        "to": "2881210",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "RedKnightConvo",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Red Knight",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4528785",
+        "node_name": "9841310",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          236,
+          -153.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Where do you think you're going?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "9841310",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -5,
+          107
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7804515",
+        "node_name": "4528785",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          748,
+          -153.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Please man, can i just get the powerfull weapon and be on my way?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Red Knight",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2881210",
+        "node_name": "7804515",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          459,
+          247.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Of course not."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "2881210",
+        "node_type": "execute",
+        "offset": [
+          1008,
+          338.5
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "ExecuteBattleScene()",
+        "title": "Execute"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "wtf": {
+        "type": 0,
+        "value": "yeet"
+      }
+    }
+  }
+]

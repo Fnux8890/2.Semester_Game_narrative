@@ -29,6 +29,12 @@
         "from_port": 0,
         "to": "6272262",
         "to_port": 0
+      },
+      {
+        "from": "7744267",
+        "from_port": 0,
+        "to": "7140987",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -145,7 +151,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": null,
+        "next": "7140987",
         "node_name": "7744267",
         "node_type": "show_message",
         "object_path": "",
@@ -168,9 +174,9 @@
           1096,
           141.5
         ],
-        "rect_size_x": 329,
-        "rect_size_y": 89,
-        "text": "TriggerNewCutscene()",
+        "rect_size_x": 579,
+        "rect_size_y": 193,
+        "text": "StartCutsceneWithDialogue(\"MeetingCatDogPART2\", \"catdogPART2\")",
         "title": "Execute"
       }
     ],

@@ -1,0 +1,566 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Princess",
+      "Lt. Bromfp"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "7879906",
+        "to_port": 0
+      },
+      {
+        "from": "7879906",
+        "from_port": 0,
+        "to": "7669374",
+        "to_port": 0
+      },
+      {
+        "from": "7669374",
+        "from_port": 0,
+        "to": "6456042",
+        "to_port": 0
+      },
+      {
+        "from": "6456042",
+        "from_port": 0,
+        "to": "7597280",
+        "to_port": 0
+      },
+      {
+        "from": "6439929",
+        "from_port": 0,
+        "to": "2115266",
+        "to_port": 0
+      },
+      {
+        "from": "7597280",
+        "from_port": 0,
+        "to": "6439929",
+        "to_port": 0
+      },
+      {
+        "from": "2115266",
+        "from_port": 0,
+        "to": "8242118",
+        "to_port": 0
+      },
+      {
+        "from": "8242118",
+        "from_port": 0,
+        "to": "8230534",
+        "to_port": 0
+      },
+      {
+        "from": "8230534",
+        "from_port": 0,
+        "to": "270108",
+        "to_port": 0
+      },
+      {
+        "from": "270108",
+        "from_port": 0,
+        "to": "4184358",
+        "to_port": 0
+      },
+      {
+        "from": "4184358",
+        "from_port": 0,
+        "to": "1544872",
+        "to_port": 0
+      },
+      {
+        "from": "1544872",
+        "from_port": 0,
+        "to": "1482891",
+        "to_port": 0
+      },
+      {
+        "from": "1482891",
+        "from_port": 0,
+        "to": "7683029",
+        "to_port": 0
+      },
+      {
+        "from": "7683029",
+        "from_port": 0,
+        "to": "9881039",
+        "to_port": 0
+      },
+      {
+        "from": "9881039",
+        "from_port": 0,
+        "to": "6943207",
+        "to_port": 0
+      },
+      {
+        "from": "6943207",
+        "from_port": 0,
+        "to": "8713560",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.3",
+    "file_name": "SavingThePrincessCutscene",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "7879906",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4184358",
+        "node_name": "270108",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          262,
+          173
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Then I will use this sword instead!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6456042",
+        "node_name": "7669374",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          797.791992,
+          -614.175781
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Help me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Lt. Bromfp",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7597280",
+        "node_name": "6456042",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1367.824097,
+          -616.543396
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Go home kid, you can’t measure up to the royal guard. Not in a thousand years do you stand a chance against me, Lt. Bromfp!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6439929",
+        "node_name": "7597280",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1886.223877,
+          -613.087402
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Help me! I’m a princess, you have to help me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2115266",
+        "node_name": "6439929",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          274.000702,
+          -215.647629
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You know what, 20 minutes ago you might have had a good point, Bromfp. But I was trained by a senile old guy who likes melons a bit too much."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8242118",
+        "node_name": "2115266",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          840.784424,
+          -212.19162
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Why are you just talking? Help me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Lt. Bromfp",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8230534",
+        "node_name": "8242118",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1405.840088,
+          -219.103622
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You will need more than courage and melons to defeat me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "270108",
+        "node_name": "8230534",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1915.599854,
+          -224.287613
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Please help me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1544872",
+        "node_name": "4184358",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          870.1604,
+          174.880173
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Please, help me!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Princess",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9881039",
+        "node_name": "7683029",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          249.808731,
+          582.687988
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "…."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6943207",
+        "node_name": "9881039",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          875.344421,
+          582.687988
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Let’s just start fighting."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7683029",
+        "node_name": "1482891",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1882.767944,
+          162.78418
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "SHUT UP!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7669374",
+        "node_name": "7879906",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          276.279999,
+          -585.335815
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Wow,  you killed a lot of people here!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Lt. Bromfp",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1482891",
+        "node_name": "1544872",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1387,
+          156
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "SHUT UP!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Lt. Bromfp",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8713560",
+        "node_name": "6943207",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1365.759766,
+          584.969604
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Sure"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "next": null,
+        "node_name": "8713560",
+        "node_type": "execute",
+        "offset": [
+          1877.759766,
+          668.469604
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "SavingThePrincess()",
+        "title": "Execute"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "text": {
+        "type": 0,
+        "value": "hablo"
+      }
+    }
+  }
+]

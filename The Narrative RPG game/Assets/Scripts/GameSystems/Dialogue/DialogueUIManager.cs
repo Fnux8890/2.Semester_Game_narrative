@@ -93,6 +93,7 @@ namespace GameSystems.Dialogue
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                        dialogueBox.transform.Find("Name").position = new Vector3(1755.0f, 230.2f);
                     }
                     PreviousDialogueBox = dialogueBox;
                     dialogueBox.gameObject.SetActive(true);

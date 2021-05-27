@@ -99,7 +99,7 @@ namespace GameSystems.Dialogue
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
                         dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
-                        dialogueBox.transform.Find("Name").GetComponent<RectTransform>().position = new Vector3(67.3f, 130.8f);
+                        dialogueBox.transform.Find("Name").GetComponent<RectTransform>().position = new Vector3(184.7f, 230.2f);
                     }
                     else
                     {
@@ -240,29 +240,27 @@ namespace GameSystems.Dialogue
                 objectToSet.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
                 var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
-
+                var textToString = new StringBuilder();
+                textObject.text = textToString.ToString();
                 for (int i = 0; i < text.Length; i++)
                 {
-                    var notInvisible= text.Substring(0, i);
-                    notInvisible += "<color=#00000000>" + text.Substring(0, i) + "</color>";
                     if (textObject != null)
                     {
-                        textObject.text = notInvisible;
-                    
-                    if (textObject.IsOverflowingVerticle())
-                    {
-                        var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
-                        var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
-                        var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
-                        var position = nameRt.position;
-                        position = new Vector2(position.x, position.y + 0.3f);
-                        nameRt.position = position;
-                        var sizeDelta = parentRt.sizeDelta;
-                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
-                        parentRt.sizeDelta = sizeDelta;
-                        childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
-                    }
-                    yield return new WaitForSeconds(0.04f);
+                        textObject.text += text[i];
+                        if (textObject.IsOverflowingVerticle())
+                        {
+                            var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
+                            var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
+                            var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
+                            var position = nameRt.position;
+                            position = new Vector2(position.x, position.y + 0.3f);
+                            nameRt.position = position;
+                            var sizeDelta = parentRt.sizeDelta;
+                            sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
+                            parentRt.sizeDelta = sizeDelta;
+                            childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
+                        }
+                        yield return new WaitForSeconds(0.04f);
                     }
                 }
 

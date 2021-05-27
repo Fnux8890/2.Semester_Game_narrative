@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Dialogue.Objects;
 using GameSystems.CustomEventSystems;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue;
@@ -46,7 +47,7 @@ namespace GameSystems.Timeline
         }
 
 
-        private void PlayCutsceneWithDialogue(TextAsset json, string cutscene)
+        private void PlayCutsceneWithDialogue(TextAsset json, string cutscene, InteractableDirection talkDirection)
         {
             var director = GameObject.Find("GameManagers").transform.Find("TimelineManager")
                 .GetComponent<PlayableDirector>();
@@ -62,6 +63,26 @@ namespace GameSystems.Timeline
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
             director.stopped += dir =>
             {
+                GameObject.Find("Player").GetComponent<Animator>().enabled = false;
+                switch (talkDirection)
+                {
+                    case InteractableDirection.Up:
+                        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = 
+                            GameObject.Find("Player").GetComponent<PlayerController>().idleSprites[0];
+                        break;
+                    case InteractableDirection.Down:
+                        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = 
+                            GameObject.Find("Player").GetComponent<PlayerController>().idleSprites[1];
+                        break;
+                    case InteractableDirection.Left:
+                        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = 
+                            GameObject.Find("Player").GetComponent<PlayerController>().idleSprites[2];
+                        break;
+                    case InteractableDirection.Right:
+                        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = 
+                            GameObject.Find("Player").GetComponent<PlayerController>().idleSprites[3];
+                        break;
+                }
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.performed += Interact;
                 InteractionHandler.Instance.OnStartCutscene(json);
                 //InteractionHandler.Instance.OnStartCutscene(json);

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Dialogue.Objects;
 using GameSystems.Combat;
 using GameSystems.CustomEventSystems;
 using GameSystems.Dialogue;
@@ -11,8 +12,9 @@ using Utilities;
 
 public class StartCutscene : MonoBehaviour
 {
-    public TextAsset json;
     public TimelineAsset cutscene;
+    public InteractableDirection talkDirection;
+    public TextAsset json;
     private CutsceneManager cutman;
     private DialogueManager diaman;
     private DialogueUIManager diamanbetter;
@@ -31,7 +33,7 @@ public class StartCutscene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneLoadHandler.Instance.OnStoreLeaveDirection(dir);
-            TriggerCutSceneHandler.Instance.OnTriggerCutScene(json, cutscene.name);
+            TriggerCutSceneHandler.Instance.OnTriggerCutScene(json, cutscene.name, talkDirection);
         }
     }
     

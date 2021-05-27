@@ -1,4 +1,5 @@
 using System;
+using Dialogue.Objects;
 using GameSystems.Combat;
 using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue;
@@ -13,6 +14,7 @@ namespace GameSystems.Timeline
     public class CutsceneController : MonoBehaviour
     {
         public bool isStartOfGame, playOnAwake;
+        public InteractableDirection talkDirection;
         public PlayableDirector _director;
         public TextAsset json;
         private TextAsset _previousJson;
@@ -36,7 +38,7 @@ namespace GameSystems.Timeline
         {
             if (playOnAwake || isStartOfGame)
             {
-                CutsceneHandler.Instance.OnStartCutsceneWithDialogue(json, _director.playableAsset.name);
+                CutsceneHandler.Instance.OnStartCutsceneWithDialogue(json, _director.playableAsset.name, talkDirection);
             }
         }
 

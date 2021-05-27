@@ -24,7 +24,7 @@ namespace Dialogue.Objects
         public Vector2 offset;
         public Vector2 size;
         public int id;
-        public int radius;
+        public float radius;
         public TextAsset json;
 
 
@@ -55,7 +55,11 @@ namespace Dialogue.Objects
         {
             UpdateJson();
         }
-        
+
+        public InteractableDirection GetInteractionDirection()
+        {
+            return direction;
+        }
 
         public void UpdateJson()
         {

@@ -71,7 +71,10 @@ namespace GameSystems.Dialogue
 
         private void StartShowDialogue()
         {
-            StartCoroutine(ShowDialogue());
+            if (Nodes != null)
+            {
+                StartCoroutine(ShowDialogue());
+            }
         }
         
         private void StartCutscene(TextAsset json)

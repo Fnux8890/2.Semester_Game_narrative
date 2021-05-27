@@ -224,10 +224,9 @@ namespace GameSystems.Dialogue
 
         private void CloseDialogue()
         {
+            DialogueHandleUpdate.Instance.OnUnloadJson();
             if (!GameObject.Find("Player").GetComponent<Animator>().enabled)
-            {
                 GameObject.Find("Player").GetComponent<Animator>().enabled = true;
-            }
             foreach (var box in _dialogueBoxes.Where(box => box.activeSelf))
             {
                 if(box.gameObject.name == "EventSystem") continue;

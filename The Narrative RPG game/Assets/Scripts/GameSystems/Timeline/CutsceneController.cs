@@ -27,7 +27,7 @@ namespace GameSystems.Timeline
         private void Awake()
         {
             _playerActionControls = PlayerActionControlsManager.Instance.PlayerControls;
-            InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
+            //InteractionHandler.Instance.EndCutscene += () => _playerActionControls.Land.Interact.performed -= Interact;
             _dialogueUIManager = DialogueUIManager.Instance;
             _dialogueManager = DialogueManager.Instance;
             _sceneManager = SceneLoadManager.Instance;

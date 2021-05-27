@@ -13,7 +13,8 @@ namespace Dialogue.Objects
         Up,
         Down,
         Left,
-        Right
+        Right,
+        AllAround
     }
     
     [RequireComponent(typeof(ArcCollider2D))]
@@ -118,6 +119,10 @@ namespace Dialogue.Objects
                 case InteractableDirection.Right:
                     SetDirection(radius, 280, 160);
                     break;
+                case InteractableDirection.AllAround:
+                    SetDirection(radius, 280, 360);
+                    break;
+                
             }
             
             _polygonCollider.isTrigger = true;

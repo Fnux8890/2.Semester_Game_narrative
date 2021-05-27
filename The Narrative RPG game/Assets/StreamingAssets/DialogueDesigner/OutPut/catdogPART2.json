@@ -1,0 +1,280 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Cat-Dog",
+      "Edgelord"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "4941128",
+        "to_port": 0
+      },
+      {
+        "from": "5417376",
+        "from_port": 0,
+        "to": "2767526",
+        "to_port": 0
+      },
+      {
+        "from": "2767526",
+        "from_port": 0,
+        "to": "5792696",
+        "to_port": 0
+      },
+      {
+        "from": "5792696",
+        "from_port": 0,
+        "to": "6050248",
+        "to_port": 0
+      },
+      {
+        "from": "6050248",
+        "from_port": 0,
+        "to": "1035565",
+        "to_port": 0
+      },
+      {
+        "from": "1035565",
+        "from_port": 0,
+        "to": "4009892",
+        "to_port": 0
+      },
+      {
+        "from": "4941128",
+        "from_port": 0,
+        "to": "2014304",
+        "to_port": 0
+      },
+      {
+        "from": "2014304",
+        "from_port": 0,
+        "to": "5417376",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "catdogPART2",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "4941128",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2014304",
+        "node_name": "4941128",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          218,
+          -155.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I am the one many people call CAT and I'm here to..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5792696",
+        "node_name": "2767526",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          211,
+          200.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Silence wench! I am no mere dog. Behold your eyes for... I… AM… CAT! "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6050248",
+        "node_name": "5792696",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          720,
+          200.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "...What?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Cat-Dog",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1035565",
+        "node_name": "6050248",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          204,
+          556.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Do not fret the details. I have something urgent to show you. Come along now HERO."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "1035565",
+        "node_type": "execute",
+        "offset": [
+          762,
+          781.25
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "CatDogFight()",
+        "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "4009892",
+        "node_type": "set_local_variable",
+        "offset": [
+          1223,
+          857
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2767526",
+        "node_name": "5417376",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1204,
+          -159.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You’re not a cat, you’re very clearly a dog."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5417376",
+        "node_name": "2014304",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          684,
+          -235.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ""
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "done": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

@@ -50,11 +50,11 @@ namespace Utilities
             var root = String.Empty;
             if (windows)
             {
-               root = Application.dataPath + "/Resources/DialogueDesigner";
+               root = Application.streamingAssetsPath + "/DialogueDesigner/OutPut/";
             }
             else
             {
-                root = Application.dataPath + "/Resources/DialogueDesigner";
+                root = Application.streamingAssetsPath + "/DialogueDesigner/OutPut/";
             }
             var files = Directory.GetFiles(root, "*.json*", SearchOption.AllDirectories);
 

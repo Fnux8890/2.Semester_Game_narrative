@@ -185,6 +185,10 @@ namespace GameSystems.Dialogue
                 yield return CloseDialogue();
                 _endNodeRan = false;
                 _currentNode = null;
+                if (!GameObject.Find("Player").GetComponent<Animator>().enabled)
+                {
+                    GameObject.Find("Player").GetComponent<Animator>().enabled = true;
+                }
                 yield break;
             }
             if (currentNodeIsLast)

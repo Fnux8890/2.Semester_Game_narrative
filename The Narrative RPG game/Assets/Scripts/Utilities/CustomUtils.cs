@@ -50,7 +50,7 @@ namespace Utilities
             var root = String.Empty;
             if (windows)
             {
-               root = Application.streamingAssetsPath + "/DialogueDesigner/OutPut/";
+               root = Application.streamingAssetsPath + "\\DialogueDesigner\\OutPut\\";
             }
             else
             {

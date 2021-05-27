@@ -1,0 +1,643 @@
+[
+  {
+    "characters": [
+      "Player",
+      "King",
+      "Guard"
+    ],
+    "connections": [
+      {
+        "from": "4975350",
+        "from_port": 0,
+        "to": "5431658",
+        "to_port": 0
+      },
+      {
+        "from": "5431658",
+        "from_port": 0,
+        "to": "6670839",
+        "to_port": 0
+      },
+      {
+        "from": "6670839",
+        "from_port": 0,
+        "to": "7312758",
+        "to_port": 0
+      },
+      {
+        "from": "7312758",
+        "from_port": 0,
+        "to": "5328202",
+        "to_port": 0
+      },
+      {
+        "from": "5328202",
+        "from_port": 0,
+        "to": "7506631",
+        "to_port": 0
+      },
+      {
+        "from": "7506631",
+        "from_port": 0,
+        "to": "1517424",
+        "to_port": 0
+      },
+      {
+        "from": "1517424",
+        "from_port": 0,
+        "to": "1456214",
+        "to_port": 0
+      },
+      {
+        "from": "1456214",
+        "from_port": 0,
+        "to": "3469472",
+        "to_port": 0
+      },
+      {
+        "from": "3469472",
+        "from_port": 0,
+        "to": "3830856",
+        "to_port": 0
+      },
+      {
+        "from": "3830856",
+        "from_port": 0,
+        "to": "6820683",
+        "to_port": 0
+      },
+      {
+        "from": "6820683",
+        "from_port": 0,
+        "to": "5299053",
+        "to_port": 0
+      },
+      {
+        "from": "5299053",
+        "from_port": 0,
+        "to": "216606",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "124241",
+        "to_port": 0
+      },
+      {
+        "from": "124241",
+        "from_port": 1,
+        "to": "2026424",
+        "to_port": 0
+      },
+      {
+        "from": "124241",
+        "from_port": 0,
+        "to": "1091169",
+        "to_port": 0
+      },
+      {
+        "from": "3477780",
+        "from_port": 0,
+        "to": "4975350",
+        "to_port": 0
+      },
+      {
+        "from": "4587243",
+        "from_port": 0,
+        "to": "3477780",
+        "to_port": 0
+      },
+      {
+        "from": "2026424",
+        "from_port": 0,
+        "to": "4587243",
+        "to_port": 0
+      },
+      {
+        "from": "1091169",
+        "from_port": 0,
+        "to": "7365539",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "MeetingTheKing",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7312758",
+        "node_name": "6670839",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1067.999756,
+          316.250031
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Sure, what troubles you, your highness?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5328202",
+        "node_name": "7312758",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          101.999817,
+          661.25
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "My beautiful young daughter Stacey, the princess of our kingdom, has been kidnapped by the goons of that triangular evildoer who plagues our lands."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7506631",
+        "node_name": "5328202",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          593.999817,
+          653
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The entire castle town is in disarray. The streets are  filled with monsters, homes on fire, dead or injured people, but I didn’t see any royal guards out there."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1517424",
+        "node_name": "7506631",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1056.999756,
+          654
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Naturally they were guarding myself and the princess."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1456214",
+        "node_name": "1517424",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          106.999817,
+          1007
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Sure did a good job of that."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3469472",
+        "node_name": "1456214",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          593.999817,
+          1003
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Silence you, go do your job and you will be rewarded! The longer my daughter is away, the more time those goons have to do unspeakable acts with her! Like torture, or excessive small talk."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3830856",
+        "node_name": "3469472",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1044.999756,
+          1002
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I am not certain that is her biggest concern."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6820683",
+        "node_name": "3830856",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          87.999817,
+          1367
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I can only imagine her peril, being asked about the weather, or if she likes cats or dogs the best, the horror!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5299053",
+        "node_name": "6820683",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          573.999817,
+          1358
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I will be on my way now."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Guard",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": "216606",
+        "node_name": "5299053",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1038.999756,
+          1361
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Guard: We have a company of royal guards in pursuit of the evil doers. Last we heard they were moving into the forest to the west."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "124241",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -404,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "branches": {
+          "False": "2026424",
+          "True": "1091169"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "124241",
+        "node_type": "condition_branch",
+        "offset": [
+          -319.000183,
+          187.75
+        ],
+        "text": "MSG.var(\"isTalked\")",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7365539",
+        "node_name": "1091169",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -464.000244,
+          426
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Go forth and save my beautiful daughter!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6670839",
+        "node_name": "5431658",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          570.999817,
+          306.250031
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Well why didn’t you say so immediately. Come forth hero, and hear my plight!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Guard",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": "5431658",
+        "node_name": "4975350",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          100.999817,
+          319.250031
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Guard: My liege, this local man from the village to the east claims to be a hero, willing to provide aid."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4587243",
+        "node_name": "2026424",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          140,
+          -70.75
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Who enters my court and disturbs my council?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3477780",
+        "node_name": "4587243",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          678.647461,
+          -67.452026
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Asslord, hero of absolutely nothing."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "King",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4975350",
+        "node_name": "3477780",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1174.647461,
+          -96.452026
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "216606",
+        "node_type": "set_local_variable",
+        "offset": [
+          1515.999756,
+          1451.25
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "isTalked"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7365539",
+        "node_type": "set_local_variable",
+        "offset": [
+          -408,
+          800.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "isTalked"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "isTalked": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

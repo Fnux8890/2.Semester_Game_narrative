@@ -1,0 +1,233 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Narator",
+      "Villain"
+    ],
+    "connections": [
+      {
+        "from": "7180395",
+        "from_port": 0,
+        "to": "9737446",
+        "to_port": 0
+      },
+      {
+        "from": "3085208",
+        "from_port": 0,
+        "to": "7180395",
+        "to_port": 0
+      },
+      {
+        "from": "642015",
+        "from_port": 0,
+        "to": "2909223",
+        "to_port": 0
+      },
+      {
+        "from": "2909223",
+        "from_port": 0,
+        "to": "903446",
+        "to_port": 0
+      },
+      {
+        "from": "903446",
+        "from_port": 0,
+        "to": "3085208",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8162227",
+        "to_port": 0
+      },
+      {
+        "from": "8162227",
+        "from_port": 0,
+        "to": "642015",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "EntryDialogue",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "8162227",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -122,
+          180
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9737446",
+        "node_name": "7180395",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1725,
+          20.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "WOAH! It sounds as if someone is trying to break the door off of it's hinges."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": "7180395",
+        "node_name": "3085208",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1283,
+          17
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "* Knock Knock *"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "9737446",
+        "node_type": "set_local_variable",
+        "offset": [
+          2228,
+          330
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "IntroIsOver"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "903446",
+        "node_type": "execute",
+        "offset": [
+          930.537048,
+          57.888878
+        ],
+        "rect_size_x": 329.000488,
+        "rect_size_y": 89,
+        "text": "Knock()",
+        "title": "Execute"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "903446",
+        "node_name": "2909223",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          645.037048,
+          -358.472229
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I suppose nothing today could be better, than to spend my precious speedrunning time on playing \"Doki Doki Origami Club.\""
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2909223",
+        "node_name": "642015",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          174.740738,
+          -368.75
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a great day to be the protagonist of an RPG. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "642015",
+        "node_name": "8162227",
+        "node_type": "set_local_variable",
+        "offset": [
+          -146.194458,
+          -325.977356
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "IntroIsOver"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "IntroIsOver": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

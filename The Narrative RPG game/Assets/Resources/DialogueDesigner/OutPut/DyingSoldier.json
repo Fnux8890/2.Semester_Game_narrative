@@ -1,0 +1,338 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Dying Soldier"
+    ],
+    "connections": [
+      {
+        "from": "5739931",
+        "from_port": 0,
+        "to": "155846",
+        "to_port": 0
+      },
+      {
+        "from": "155846",
+        "from_port": 0,
+        "to": "323482",
+        "to_port": 0
+      },
+      {
+        "from": "323482",
+        "from_port": 0,
+        "to": "3266801",
+        "to_port": 0
+      },
+      {
+        "from": "3266801",
+        "from_port": 0,
+        "to": "6529512",
+        "to_port": 0
+      },
+      {
+        "from": "6529512",
+        "from_port": 0,
+        "to": "7974003",
+        "to_port": 0
+      },
+      {
+        "from": "7974003",
+        "from_port": 0,
+        "to": "525659",
+        "to_port": 0
+      },
+      {
+        "from": "525659",
+        "from_port": 0,
+        "to": "9660920",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "3209853",
+        "to_port": 0
+      },
+      {
+        "from": "3209853",
+        "from_port": 1,
+        "to": "5739931",
+        "to_port": 0
+      },
+      {
+        "from": "3209853",
+        "from_port": 0,
+        "to": "3644925",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "DyingSoldier",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Dying Soldier",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "155846",
+        "node_name": "5739931",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          168,
+          -146
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Please help... The princess... Is captured up ahead..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Dying Soldier",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3266801",
+        "node_name": "323482",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1091,
+          -144
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You get the chance to save another human beings life."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6529512",
+        "node_name": "3266801",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          167,
+          225
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "That's not really enough incentive for me."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Dying Soldier",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7974003",
+        "node_name": "6529512",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          656,
+          218
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Look, maybe you will get a reward or something."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "323482",
+        "node_name": "155846",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          628,
+          -136
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What do I get out of it?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "525659",
+        "node_name": "7974003",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1151,
+          245
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Now we're talking!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "525659",
+        "node_type": "execute",
+        "offset": [
+          1699,
+          289.5
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "DyingSoldier()",
+        "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "9660920",
+        "node_type": "set_local_variable",
+        "offset": [
+          2095,
+          407
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "soldierDED"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "3209853",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -389,
+          -161
+        ],
+        "title": ""
+      },
+      {
+        "branches": {
+          "False": "5739931",
+          "True": "3644925"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "3209853",
+        "node_type": "condition_branch",
+        "offset": [
+          -251,
+          5
+        ],
+        "text": "MSG.var(\"soldierDED\")",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": null,
+        "node_name": "3644925",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -394,
+          234
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "just a dead boii"
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "dead": {
+        "type": 0,
+        "value": "DEADSON"
+      },
+      "soldierDED": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

@@ -6,22 +6,67 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/InsideHerosHome/OpeningCutscene.unity
+    guid: 01b34b115a4edc24aa1a5654fb1c48b2
+  - enabled: 1
     path: Assets/Scenes/InsideHerosHome/InsideHerosHome.unity
     guid: e9a34a62db9a82d4283d98d324fd8501
   - enabled: 1
-    path: Assets/Scenes/KingsCastle.unity
+    path: Assets/Scenes/KingsCastle/KingsCastle.unity
     guid: d41c6d5c014e1c947ba46461712412e2
   - enabled: 1
     path: Assets/Scenes/OutsideHerosHome/MeetingEnemyCutscene.unity
     guid: 90fe820181081d74f987ef6ab4ec0ae7
   - enabled: 1
-    path: Assets/Scenes/SaveThePrincessForrest.unity
+    path: Assets/Scenes/SavingThePrincess/SaveThePrincessForrestPart2.unity
     guid: 2cf83fd83b58c2b4da23d312d6c97add
   - enabled: 1
-    path: Assets/Scenes/StartingArea.unity
+    path: Assets/Scenes/StartingArea/EnteringTown.unity
     guid: 48cf7848157835d4e904a334e81de434
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/OutsideHerosHome 1.unity
+    guid: e490f0b958effa14bb4bf471844c4690
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 4e09b4ff15af1c4438a8ffeb49736189
+  - enabled: 1
+    path: Assets/Scenes/MeetingCatDog/MeetingCatDogPart2.unity
+    guid: 50c1cab7017959d4d8a2906cf0e643a2
+  - enabled: 1
+    path: Assets/Scenes/EnemysLair/MiniBossBattlePart2.unity
+    guid: b23a6f845eec7c240bc1ccb374c31d49
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 7b3c146f86d697f4196bdecc5d628cb5
+  - enabled: 1
+    path: Assets/Scenes/CombatScene.unity
+    guid: d4f67e3ca1ceaef46a300a9dd2bda48e
+  - enabled: 1
+    path: Assets/Scenes/StartingArea/StartingArea.unity
+    guid: 7cc95160a97543a4998fa2beb32c43e3
+  - enabled: 1
+    path: Assets/Scenes/SavingThePrincess/SaveThePrincessForrestPart1.unity
+    guid: b87d1f8b10748ac4bae99bf1f908e5e6
+  - enabled: 1
+    path: Assets/Scenes/SavingThePrincess/SaveThePrincessForrestPart3.unity
+    guid: bbb15b097746627499f2e7882643e5ed
+  - enabled: 1
+    path: Assets/Scenes/EnemysLair/MiniBossBattlePart1.unity
+    guid: 6f5d47bd2c6e28a4891bce8db36daf5f
+  - enabled: 1
+    path: Assets/Scenes/MeetingCatDog/MeetingCatDog.unity
+    guid: 64bdd62075d411b498c5a55223a178f2
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/finalBoss.unity
+    guid: 2a96ebd493caccd41ad12d7af1f5cc1f
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/finalBossPart2.unity
+    guid: 8e3abb204365ac145888daf1c01ff8a7
+  - enabled: 1
+    path: Assets/Scenes/InsideHerosHome/LastScene.unity
+    guid: e762d99459fd8f643ab43715a787ccae
+  - enabled: 1
+    path: Assets/Scenes/KingsCastle/MeetingTheKing.unity
+    guid: 121cd3c83851c724ebad16975593449c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 77c3775b362304222b74af193e487621, type: 2}

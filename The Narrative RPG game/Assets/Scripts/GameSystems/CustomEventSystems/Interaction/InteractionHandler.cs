@@ -14,6 +14,13 @@ namespace GameSystems.CustomEventSystems.Interaction
         public event Action<Node> UpdateNode;
         public event Action<TextAsset> StartCutscene;
         public event Action EndCutscene;
+        public event Action<int> ShowBubble;
+        
+        public event Action<int> HideBubble;
+
+        public event Action<int> LevelAnimInt;
+        public event Action<string> LevelAnimName;
+        public event Action LevelAnimPrevious;
         
         public  void OnInteract()
         {
@@ -39,6 +46,31 @@ namespace GameSystems.CustomEventSystems.Interaction
         public void OnEndCutscene()
         {
             EndCutscene?.Invoke();
+        }
+
+        public void OnShowBubble(int id)
+        {
+            ShowBubble?.Invoke(id);
+        }
+
+        public void OnHideBubble(int id)
+        {
+            HideBubble?.Invoke(id);
+        }
+
+        public void OnLevelAnimInt(int levelIndex)
+        {
+            LevelAnimInt?.Invoke(levelIndex);
+        }
+        
+        public void OnLevelAnimName(string levelName)
+        {
+            LevelAnimName?.Invoke(levelName);
+        }
+
+        public void OnLevelAnimPrevious()
+        {
+            LevelAnimPrevious?.Invoke();
         }
     }
 }

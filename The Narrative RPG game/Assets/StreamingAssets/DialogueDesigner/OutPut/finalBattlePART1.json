@@ -1,0 +1,224 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Evil Steve"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "5453076",
+        "to_port": 0
+      },
+      {
+        "from": "7243919",
+        "from_port": 0,
+        "to": "6713103",
+        "to_port": 0
+      },
+      {
+        "from": "6713103",
+        "from_port": 0,
+        "to": "7446922",
+        "to_port": 0
+      },
+      {
+        "from": "7446922",
+        "from_port": 0,
+        "to": "8419042",
+        "to_port": 0
+      },
+      {
+        "from": "8419042",
+        "from_port": 0,
+        "to": "3147209",
+        "to_port": 0
+      },
+      {
+        "from": "5453076",
+        "from_port": 0,
+        "to": "7243919",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "finalBattlePART1",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "5453076",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6713103",
+        "node_name": "7243919",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          626,
+          -316.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Not at all actually, but I now have a mentally ill dog with me that thinks it’s a cat."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8419042",
+        "node_name": "7446922",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          630,
+          52.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "It’s level 5000. You are only level 4999 so by the rules of an RPG you will lose this battle."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3147209",
+        "node_name": "8419042",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          106,
+          438.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh crap…"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "3147209",
+        "node_type": "execute",
+        "offset": [
+          600,
+          614.75
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "ExecuteFinalBattle()",
+        "title": "Execute"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7446922",
+        "node_name": "6713103",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          115,
+          52.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "So what?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7243919",
+        "node_name": "5453076",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          119,
+          -317.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "So, did you finally get stronger, hero?"
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "yeet": {
+        "type": 0,
+        "value": "stuff"
+      }
+    }
+  }
+]

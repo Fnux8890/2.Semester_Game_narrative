@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 7d6b5825f5ef11e47a1b10c4cf30c451
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4013023097230333716
+    second: mil3_5_0
+  - first:
+      213: -2078019806979383093
+    second: mil3_5_1
+  - first:
+      213: 4692806269443446819
+    second: mil3_5_2
+  - first:
+      213: 1292738649747712635
+    second: mil3_5_3
+  - first:
+      213: 4521086990808773594
+    second: mil3_5_4
+  - first:
+      213: 1190997731797269757
+    second: mil3_5_5
+  - first:
+      213: 8344340537683618410
+    second: mil3_5_6
+  - first:
+      213: 3623457010560210774
+    second: mil3_5_7
+  - first:
+      213: -4186015701761679181
+    second: mil3_5_8
+  - first:
+      213: -386065722611747000
+    second: mil3_5_9
+  - first:
+      213: -6264495855234058666
+    second: mil3_5_10
+  - first:
+      213: -7075101304506244803
+    second: mil3_5_11
+  - first:
+      213: -4337286712164031210
+    second: mil3_5_12
+  - first:
+      213: -3961557409281314296
+    second: mil3_5_13
+  - first:
+      213: 449534662945351330
+    second: mil3_5_14
+  - first:
+      213: -7194900865498465131
+    second: mil3_5_15
+  - first:
+      213: 9139458906978131419
+    second: mil3_5_16
+  - first:
+      213: -234577282911584238
+    second: mil3_5_17
+  - first:
+      213: -4668133985739797633
+    second: mil3_5_18
+  - first:
+      213: 8661374295339417884
+    second: mil3_5_19
+  - first:
+      213: 7042701764867482638
+    second: mil3_5_20
+  - first:
+      213: 7974379937262611575
+    second: mil3_5_21
+  - first:
+      213: -160957781827849343
+    second: mil3_5_22
+  - first:
+      213: 364287885596832201
+    second: mil3_5_23
+  - first:
+      213: -6362647767723750029
+    second: mil3_5_24
+  - first:
+      213: 2808576001989938338
+    second: mil3_5_25
+  - first:
+      213: 2355458929019315100
+    second: mil3_5_26
+  - first:
+      213: -2971616913027626289
+    second: mil3_5_27
+  - first:
+      213: -1060686238069962707
+    second: mil3_5_28
+  - first:
+      213: 5136092012560171151
+    second: mil3_5_29
+  - first:
+      213: 5646745984120082167
+    second: mil3_5_30
+  - first:
+      213: -1831128247060853995
+    second: mil3_5_31
+  - first:
+      213: -288003807769674202
+    second: mil3_5_32
+  - first:
+      213: 5153423056764040174
+    second: mil3_5_33
+  - first:
+      213: -643106639067642020
+    second: mil3_5_34
+  - first:
+      213: -3639516796240221604
+    second: mil3_5_35
+  - first:
+      213: -3273123569916218392
+    second: mil3_5_36
+  - first:
+      213: 6216681488384742857
+    second: mil3_5_37
+  - first:
+      213: -1466230511465771409
+    second: mil3_5_38
+  - first:
+      213: 7783439057047879901
+    second: mil3_5_39
+  - first:
+      213: 1248079889640419941
+    second: mil3_5_40
+  - first:
+      213: 5495655752271203813
+    second: mil3_5_41
+  - first:
+      213: 3660715438234503168
+    second: mil3_5_42
+  - first:
+      213: 8119728204276357426
+    second: mil3_5_43
+  - first:
+      213: -5367396825330891992
+    second: mil3_5_44
+  - first:
+      213: -3370007412189373917
+    second: mil3_5_45
+  - first:
+      213: -1270679615299536424
+    second: mil3_5_46
+  - first:
+      213: -5070365725426112453
+    second: mil3_5_47
+  - first:
+      213: -538571331720662788
+    second: mil3_5_48
+  - first:
+      213: -7645277866846809587
+    second: mil3_5_49
+  - first:
+      213: -4013061619062332970
+    second: mil3_5_50
+  - first:
+      213: -5349096760476319205
+    second: mil3_5_51
+  - first:
+      213: -3439359426025283985
+    second: mil3_5_52
+  - first:
+      213: -5457379659887085991
+    second: mil3_5_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mil3_5_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 729
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8e52641c0ee48c0800000000000000
+      internalID: -4013023097230333716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 729
+        width: 57
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0a4c0def36923e0800000000000000
+      internalID: -2078019806979383093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 729
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32817e14072302140800000000000000
+      internalID: 4692806269443446819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 729
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a61a5e3fab0f110800000000000000
+      internalID: 1292738649747712635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 729
+        width: 75
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3fbc51aa02ebe30800000000000000
+      internalID: 4521086990808773594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_5
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 729
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc721c7026478010800000000000000
+      internalID: 1190997731797269757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_6
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 729
+        width: 45
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a2681428d0dc370800000000000000
+      internalID: 8344340537683618410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_7
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 729
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657175504fa194230800000000000000
+      internalID: 3623457010560210774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_8
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 729
+        width: 45
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0a940d5e848e5c0800000000000000
+      internalID: -4186015701761679181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 585
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847b5cf454b64aaf0800000000000000
+      internalID: -386065722611747000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_10
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 585
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fddbd53a0019a0800000000000000
+      internalID: -6264495855234058666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 585
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31a00b59d030dd90800000000000000
+      internalID: -7075101304506244803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_12
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 585
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615e07817bcdec3c0800000000000000
+      internalID: -4337286712164031210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 585
+        width: 78
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80278768688b509c0800000000000000
+      internalID: -3961557409281314296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 585
+        width: 60
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6251be4611d3600800000000000000
+      internalID: 449534662945351330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_15
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 585
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c30d578c3962c90800000000000000
+      internalID: -7194900865498465131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_16
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 585
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd16b5f371e5de70800000000000000
+      internalID: 9139458906978131419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 585
+        width: 51
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210cdab343d9ebcf0800000000000000
+      internalID: -234577282911584238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 441
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b0d007fd4773fb0800000000000000
+      internalID: -4668133985739797633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 441
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11c76c1802633870800000000000000
+      internalID: 8661374295339417884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 441
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0461f9f0f3bcb160800000000000000
+      internalID: 7042701764867482638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 441
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c2a888d40baae60800000000000000
+      internalID: 7974379937262611575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_22
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 441
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183f05e00c924cdf0800000000000000
+      internalID: -160957781827849343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_23
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 441
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c13af0e6e53e0500800000000000000
+      internalID: 364287885596832201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_24
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 441
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc4e5e09553b7a0800000000000000
+      internalID: -6362647767723750029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_25
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 441
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac0c4b4ef01af620800000000000000
+      internalID: 2808576001989938338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 441
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93e73b8a6540b020800000000000000
+      internalID: 2355458929019315100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_27
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 297
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca02727922b2c6d0800000000000000
+      internalID: -2971616913027626289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_28
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 297
+        width: 57
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28c1b97c7fa741f0800000000000000
+      internalID: -1060686238069962707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_29
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 297
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80ce562970174740800000000000000
+      internalID: 5136092012560171151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_30
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 297
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe47580e854d5e40800000000000000
+      internalID: 5646745984120082167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 297
+        width: 75
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b01cf9f868696e0800000000000000
+      internalID: -1831128247060853995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_32
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 297
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ebdef001ec00cf0800000000000000
+      internalID: -288003807769674202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_33
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 297
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee37ab357f2a48740800000000000000
+      internalID: 5153423056764040174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_34
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 297
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c578da94be93317f0800000000000000
+      internalID: -643106639067642020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_35
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 297
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5aa80eb1c6dd7dc0800000000000000
+      internalID: -3639516796240221604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 153
+        width: 57
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e37f2574778392d0800000000000000
+      internalID: -3273123569916218392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 153
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c55be450e6164650800000000000000
+      internalID: 6216681488384742857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_38
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 153
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e4e354e17e6abe0800000000000000
+      internalID: -1466230511465771409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 153
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd08d3e7594540c60800000000000000
+      internalID: 7783439057047879901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_40
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 153
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56273590c02125110800000000000000
+      internalID: 1248079889640419941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 153
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed05f91acd744c40800000000000000
+      internalID: 5495655752271203813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_42
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 153
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00881c7bb497dc230800000000000000
+      internalID: 3660715438234503168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_43
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 153
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239dc9818c11fa070800000000000000
+      internalID: 8119728204276357426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 153
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823c799660d2385b0800000000000000
+      internalID: -5367396825330891992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 9
+        width: 57
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ad40a1d145b31d0800000000000000
+      internalID: -3370007412189373917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9bdba4f93ad5ee0800000000000000
+      internalID: -1270679615299536424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_47
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 9
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3829a69c3172a9b0800000000000000
+      internalID: -5070365725426112453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_48
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 9
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0b49e2a3c9688f0800000000000000
+      internalID: -538571331720662788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_49
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 9
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d029079594486e590800000000000000
+      internalID: -7645277866846809587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 9
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1290638bdbe48c0800000000000000
+      internalID: -4013061619062332970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_51
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 3
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12cd9a46d034c5b0800000000000000
+      internalID: -5349096760476319205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_52
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 3
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e1fd413d0f440d0800000000000000
+      internalID: -3439359426025283985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mil3_5_53
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 3
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956fcff1d1e7344b0800000000000000
+      internalID: -5457379659887085991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

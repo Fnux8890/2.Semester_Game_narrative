@@ -1,0 +1,179 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Bob"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8434595",
+        "to_port": 0
+      },
+      {
+        "from": "9980764",
+        "from_port": 0,
+        "to": "6020858",
+        "to_port": 0
+      },
+      {
+        "from": "6020858",
+        "from_port": 0,
+        "to": "9989716",
+        "to_port": 0
+      },
+      {
+        "from": "863989",
+        "from_port": 0,
+        "to": "9980764",
+        "to_port": 0
+      },
+      {
+        "from": "8434595",
+        "from_port": 0,
+        "to": "863989",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "bobcastle",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "8434595",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -294,
+          320
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Bob",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9989716",
+        "node_name": "6020858",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          71,
+          521.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "One of these days im going to try my own luck against it and become the hero of the village"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "9989716",
+        "node_type": "set_local_variable",
+        "offset": [
+          618,
+          526.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
+      },
+      {
+        "character": [
+          "Bob",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6020858",
+        "node_name": "9980764",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          877,
+          124.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "It's been terrifying the village for decades now and the king wont do anything about it."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Bob",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "863989",
+        "node_name": "8434595",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          69,
+          -96.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "have you seen the giant triangle roaming around here?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "9980764",
+        "node_name": "863989",
+        "node_type": "set_local_variable",
+        "offset": [
+          530,
+          -95.25
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "done"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "done": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

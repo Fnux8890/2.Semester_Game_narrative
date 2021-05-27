@@ -1,0 +1,2532 @@
+fileFormatVersion: 2
+guid: 41aac20e94d35584eb46072397713713
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8593614370372964886
+    second: future_tileB_inside1_0
+  - first:
+      213: -210137570656646946
+    second: future_tileB_inside1_1
+  - first:
+      213: -3850744067351581712
+    second: future_tileB_inside1_2
+  - first:
+      213: 8315337867711853484
+    second: future_tileB_inside1_3
+  - first:
+      213: 540428265256917899
+    second: future_tileB_inside1_4
+  - first:
+      213: 2955999993677834086
+    second: future_tileB_inside1_5
+  - first:
+      213: 2376026679148767797
+    second: future_tileB_inside1_6
+  - first:
+      213: 2734001652768491482
+    second: future_tileB_inside1_7
+  - first:
+      213: -2520769753636176866
+    second: future_tileB_inside1_8
+  - first:
+      213: -8903574353111570527
+    second: future_tileB_inside1_9
+  - first:
+      213: -5677434211972539821
+    second: future_tileB_inside1_10
+  - first:
+      213: -7228146521929936041
+    second: future_tileB_inside1_11
+  - first:
+      213: -1230456392635662106
+    second: future_tileB_inside1_12
+  - first:
+      213: -3218615911251752731
+    second: future_tileB_inside1_13
+  - first:
+      213: 3947302127148594267
+    second: future_tileB_inside1_14
+  - first:
+      213: 4332925904034684547
+    second: future_tileB_inside1_15
+  - first:
+      213: -5701630377457218959
+    second: future_tileB_inside1_16
+  - first:
+      213: -8585610118062953403
+    second: future_tileB_inside1_17
+  - first:
+      213: 410896886478907393
+    second: future_tileB_inside1_18
+  - first:
+      213: -5434917007154436155
+    second: future_tileB_inside1_19
+  - first:
+      213: -8079749910387071863
+    second: future_tileB_inside1_20
+  - first:
+      213: 3459229961290319793
+    second: future_tileB_inside1_21
+  - first:
+      213: -7827637474000459802
+    second: future_tileB_inside1_22
+  - first:
+      213: -8750371674680318886
+    second: future_tileB_inside1_23
+  - first:
+      213: 5568963922662336192
+    second: future_tileB_inside1_24
+  - first:
+      213: -5715686227042672398
+    second: future_tileB_inside1_25
+  - first:
+      213: 2708159036909420419
+    second: future_tileB_inside1_26
+  - first:
+      213: -314358171925343788
+    second: future_tileB_inside1_27
+  - first:
+      213: -8240972640383533301
+    second: future_tileB_inside1_28
+  - first:
+      213: -7458006314346136118
+    second: future_tileB_inside1_29
+  - first:
+      213: -4633515994948560188
+    second: future_tileB_inside1_30
+  - first:
+      213: 3104762729956095686
+    second: future_tileB_inside1_31
+  - first:
+      213: -6049140653487043160
+    second: future_tileB_inside1_32
+  - first:
+      213: 5624089498604769416
+    second: future_tileB_inside1_33
+  - first:
+      213: 7407130984309977070
+    second: future_tileB_inside1_34
+  - first:
+      213: 6135313181670884094
+    second: future_tileB_inside1_35
+  - first:
+      213: 285791545223613193
+    second: future_tileB_inside1_36
+  - first:
+      213: 7617748378539442147
+    second: future_tileB_inside1_37
+  - first:
+      213: 5189980144944604784
+    second: future_tileB_inside1_38
+  - first:
+      213: -9214308918166023612
+    second: future_tileB_inside1_39
+  - first:
+      213: 6693562357376349608
+    second: future_tileB_inside1_40
+  - first:
+      213: 7547764931014613293
+    second: future_tileB_inside1_41
+  - first:
+      213: 3745408544796182901
+    second: future_tileB_inside1_42
+  - first:
+      213: -6597347615172175046
+    second: future_tileB_inside1_43
+  - first:
+      213: -4047165010829795980
+    second: future_tileB_inside1_44
+  - first:
+      213: 897275165042291585
+    second: future_tileB_inside1_45
+  - first:
+      213: -656105720376267705
+    second: future_tileB_inside1_46
+  - first:
+      213: -1147252669650712801
+    second: future_tileB_inside1_47
+  - first:
+      213: -7288524412339988625
+    second: future_tileB_inside1_48
+  - first:
+      213: -5513916030884576322
+    second: future_tileB_inside1_49
+  - first:
+      213: -5263722804802111562
+    second: future_tileB_inside1_50
+  - first:
+      213: 6386169830334913867
+    second: future_tileB_inside1_51
+  - first:
+      213: -5552785550458027362
+    second: future_tileB_inside1_52
+  - first:
+      213: -1379918131721971756
+    second: future_tileB_inside1_53
+  - first:
+      213: -3904210708596833322
+    second: future_tileB_inside1_54
+  - first:
+      213: 6812112314743519613
+    second: future_tileB_inside1_55
+  - first:
+      213: 6678877769615950680
+    second: future_tileB_inside1_56
+  - first:
+      213: -7861424862901197832
+    second: future_tileB_inside1_57
+  - first:
+      213: 4983663803935782536
+    second: future_tileB_inside1_58
+  - first:
+      213: 4579055637707232995
+    second: future_tileB_inside1_59
+  - first:
+      213: 3979816090819985426
+    second: future_tileB_inside1_60
+  - first:
+      213: 2433691929828458572
+    second: future_tileB_inside1_61
+  - first:
+      213: 2950099118077971916
+    second: future_tileB_inside1_62
+  - first:
+      213: -3078570761777128523
+    second: future_tileB_inside1_63
+  - first:
+      213: 1653436691195475918
+    second: future_tileB_inside1_64
+  - first:
+      213: -1779570574434204766
+    second: future_tileB_inside1_65
+  - first:
+      213: 1190050039170674645
+    second: future_tileB_inside1_66
+  - first:
+      213: 3847686110286874732
+    second: future_tileB_inside1_67
+  - first:
+      213: -3230575446580518945
+    second: future_tileB_inside1_68
+  - first:
+      213: 671371153087159640
+    second: future_tileB_inside1_69
+  - first:
+      213: 6598156791511395278
+    second: future_tileB_inside1_70
+  - first:
+      213: -6069772439460431408
+    second: future_tileB_inside1_71
+  - first:
+      213: 2227896399401567763
+    second: future_tileB_inside1_72
+  - first:
+      213: 936383282801205079
+    second: future_tileB_inside1_73
+  - first:
+      213: 834048307541637894
+    second: future_tileB_inside1_74
+  - first:
+      213: 3843970604884110185
+    second: future_tileB_inside1_75
+  - first:
+      213: 4818743686536206682
+    second: future_tileB_inside1_76
+  - first:
+      213: -1013392035743400758
+    second: future_tileB_inside1_77
+  - first:
+      213: 7965874122416786644
+    second: future_tileB_inside1_78
+  - first:
+      213: -2942530367320081030
+    second: future_tileB_inside1_79
+  - first:
+      213: 8691154108742993962
+    second: future_tileB_inside1_80
+  - first:
+      213: -5239995591610458140
+    second: future_tileB_inside1_81
+  - first:
+      213: -4282484165475349588
+    second: future_tileB_inside1_82
+  - first:
+      213: -2442456374525508874
+    second: future_tileB_inside1_83
+  - first:
+      213: 7690159777458430580
+    second: future_tileB_inside1_84
+  - first:
+      213: 263264966276875516
+    second: future_tileB_inside1_85
+  - first:
+      213: -6312234993147203041
+    second: future_tileB_inside1_86
+  - first:
+      213: -7458238677472179897
+    second: future_tileB_inside1_87
+  - first:
+      213: -2030744002227588787
+    second: future_tileB_inside1_88
+  - first:
+      213: -8670009890983289966
+    second: future_tileB_inside1_89
+  - first:
+      213: 5453058816827673301
+    second: future_tileB_inside1_90
+  - first:
+      213: -5896604576453957768
+    second: future_tileB_inside1_91
+  - first:
+      213: 1393075654921171173
+    second: future_tileB_inside1_92
+  - first:
+      213: -1440218854776722449
+    second: future_tileB_inside1_93
+  - first:
+      213: -8501716188726589915
+    second: future_tileB_inside1_94
+  - first:
+      213: -2699002047318958733
+    second: future_tileB_inside1_95
+  - first:
+      213: 7008166308488835340
+    second: future_tileB_inside1_96
+  - first:
+      213: 9106297715462799598
+    second: future_tileB_inside1_97
+  - first:
+      213: -2560594163626506772
+    second: future_tileB_inside1_98
+  - first:
+      213: 9173321355794098743
+    second: future_tileB_inside1_99
+  - first:
+      213: 1535374700995565492
+    second: future_tileB_inside1_100
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: future_tileB_inside1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612d5ca2db6a24770800000000000000
+      internalID: 8593614370372964886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 480
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed80c0b2ef0751df0800000000000000
+      internalID: -210137570656646946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 486
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbe0904ca86f8ac0800000000000000
+      internalID: -3850744067351581712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 486
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3b150fbb3066370800000000000000
+      internalID: 8315337867711853484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 486
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b1839d4acff7700800000000000000
+      internalID: 540428265256917899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 464
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667693b2552d50920800000000000000
+      internalID: 2955999993677834086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_6
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 450
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a638b0da759f020800000000000000
+      internalID: 2376026679148767797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 450
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7c890940021f520800000000000000
+      internalID: 2734001652768491482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_8
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 450
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c77f1c34d640dd0800000000000000
+      internalID: -2520769753636176866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_9
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 450
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7a18b8c46207480800000000000000
+      internalID: -8903574353111570527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_10
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 418
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a1abf1aa3b531b0800000000000000
+      internalID: -5677434211972539821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 454
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75314efd80770bb90800000000000000
+      internalID: -7228146521929936041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 454
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0c75d1e6a8ceee0800000000000000
+      internalID: -1230456392635662106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 454
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e84b65b1ed2553d0800000000000000
+      internalID: -3218615911251752731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 454
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54f5d5fe52a7c630800000000000000
+      internalID: 3947302127148594267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_15
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 450
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e53142725a12c30800000000000000
+      internalID: 4332925904034684547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 418
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a0617516dbfd0b0800000000000000
+      internalID: -5701630377457218959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 398
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cabdc0619c9d880800000000000000
+      internalID: -8585610118062953403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 386
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108a3ed8a8cc3b500800000000000000
+      internalID: 410896886478907393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 402
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7a4d407cb4394b0800000000000000
+      internalID: -5434917007154436155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 392
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984626dc346fedf80800000000000000
+      internalID: -8079749910387071863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 392
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7091f6257a10030800000000000000
+      internalID: 3459229961290319793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_22
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 390
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7aaa3a035ae5390800000000000000
+      internalID: -7827637474000459802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_23
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 398
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a542a06c25f609680800000000000000
+      internalID: -8750371674680318886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_24
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 398
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c621499e2fe84d40800000000000000
+      internalID: 5568963922662336192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_25
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 398
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f06785d8adcda0b0800000000000000
+      internalID: -5715686227042672398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_26
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 398
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fff3eab40559520800000000000000
+      internalID: 2708159036909420419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_27
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 398
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1162e78ec23abf0800000000000000
+      internalID: -314358171925343788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 386
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ff93ecb0f22ad80800000000000000
+      internalID: -8240972640383533301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_29
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 388
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd37c475c6df7890800000000000000
+      internalID: -7458006314346136118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_30
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 392
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca100480c172bfb0800000000000000
+      internalID: -4633515994948560188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 368
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6b7eec045561b20800000000000000
+      internalID: 3104762729956095686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 356
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adc78810a22d0ca0800000000000000
+      internalID: -6049140653487043160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 326
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880975de997cc0e40800000000000000
+      internalID: 5624089498604769416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 340
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefe594b26a6bc660800000000000000
+      internalID: 7407130984309977070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 328
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2c34b15d2052550800000000000000
+      internalID: 6135313181670884094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 332
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b0ddc65e557f300800000000000000
+      internalID: 285791545223613193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_37
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 336
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efb62b2acda7b960800000000000000
+      internalID: 7617748378539442147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_38
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 328
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076e0c2b173860840800000000000000
+      internalID: 5189980144944604784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_39
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 362
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4421002cbd2302080800000000000000
+      internalID: -9214308918166023612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_40
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 364
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5f751008f44ec50800000000000000
+      internalID: 6693562357376349608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_41
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 364
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29d649073c0fb860800000000000000
+      internalID: 7547764931014613293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_42
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 364
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5790a4b3a3d5af330800000000000000
+      internalID: 3745408544796182901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_43
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 364
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b54e95c438174a0800000000000000
+      internalID: -6597347615172175046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_44
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 362
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d991e8dd495d7c0800000000000000
+      internalID: -4047165010829795980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_45
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 356
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18330263203c37c00800000000000000
+      internalID: 897275165042291585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_46
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 320
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ceed1d25b05e6f0800000000000000
+      internalID: -656105720376267705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_47
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 298
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17c9dd76c32410f0800000000000000
+      internalID: -1147252669650712801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_48
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 298
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6756b9c9a5f9da90800000000000000
+      internalID: -7288524412339988625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_49
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 298
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb30bc97592aa73b0800000000000000
+      internalID: -5513916030884576322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_50
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 300
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7b5a75fff73f6b0800000000000000
+      internalID: -5263722804802111562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_51
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ddd6410ab30a850800000000000000
+      internalID: 6386169830334913867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_52
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 300
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92070736fa80f2b0800000000000000
+      internalID: -5552785550458027362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 292
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7579335cb89dce0800000000000000
+      internalID: -1379918131721971756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_54
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 294
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d34fc1cb0571d9c0800000000000000
+      internalID: -3904210708596833322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_55
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 274
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79f952ee0c798e50800000000000000
+      internalID: 6812112314743519613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_56
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 290
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853463cf1f320bc50800000000000000
+      internalID: 6678877769615950680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_57
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 272
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3a9522dbb96e290800000000000000
+      internalID: -7861424862901197832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 266
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886709933d7892540800000000000000
+      internalID: 4983663803935782536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_59
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 268
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e61a4477d21c8f30800000000000000
+      internalID: 4579055637707232995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_60
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 258
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21085bc06a52b3730800000000000000
+      internalID: 3979816090819985426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_61
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 258
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40092a7ae536c120800000000000000
+      internalID: 2433691929828458572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 160
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd0b31848bd0f820800000000000000
+      internalID: 2950099118077971916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_63
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 226
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbde500438b645d0800000000000000
+      internalID: -3078570761777128523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_64
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 226
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7bd4d09ef22f610800000000000000
+      internalID: 1653436691195475918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_65
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 226
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a38c1abdf1bd47e0800000000000000
+      internalID: -1779570574434204766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 92
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df25b99438e38010800000000000000
+      internalID: 1190050039170674645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_67
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 194
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c688ad2a12ab56530800000000000000
+      internalID: 3847686110286874732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_68
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 194
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf18766fb0ba23d0800000000000000
+      internalID: -3230575446580518945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_69
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 194
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d5434b180315900800000000000000
+      internalID: 671371153087159640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_70
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 194
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2e52b4ac519b50800000000000000
+      internalID: 6598156791511395278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_71
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 256
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d931861026d3cba0800000000000000
+      internalID: -6069772439460431408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_72
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 134
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316c3baa8f31bee10800000000000000
+      internalID: 2227896399401567763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 132
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fdaf072a3befc00800000000000000
+      internalID: 936383282801205079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 140
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bf8884482239b00800000000000000
+      internalID: 834048307541637894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_75
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 144
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b292f16e6885530800000000000000
+      internalID: 3843970604884110185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_76
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 144
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5995a32add9fd240800000000000000
+      internalID: 4818743686536206682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_77
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 144
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accfd4b0055bfe1f0800000000000000
+      internalID: -1013392035743400758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_78
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 148
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc01203f487c8e60800000000000000
+      internalID: 7965874122416786644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_79
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 70
+        width: 88
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d361b98380a27d0800000000000000
+      internalID: -2942530367320081030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 100
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a288dcb3d9e2d9870800000000000000
+      internalID: 8691154108742993962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_81
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 100
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef1279a5cbc747b0800000000000000
+      internalID: -5239995591610458140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_82
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 138
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab4b90575f8194c0800000000000000
+      internalID: -4282484165475349588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 96
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2c4093ed6aa1ed0800000000000000
+      internalID: -2442456374525508874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 96
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4722869c29fe8ba60800000000000000
+      internalID: 7690159777458430580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_85
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 60
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf40dbc871e47a300800000000000000
+      internalID: 263264966276875516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_86
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 86
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12bba6a7bf6668a0800000000000000
+      internalID: -6312234993147203041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_87
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 86
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749013330730f7890800000000000000
+      internalID: -7458238677472179897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_88
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 70
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41387dd61951d3e0800000000000000
+      internalID: -2030744002227588787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_89
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 86
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b51d890ffeda780800000000000000
+      internalID: -8670009890983289966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_90
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 72
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da43543a182dab40800000000000000
+      internalID: 5453058816827673301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_91
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 70
+        width: 80
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877e487116d0b2ea0800000000000000
+      internalID: -5896604576453957768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_92
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 18
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e032d46de2355310800000000000000
+      internalID: 1393075654921171173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_93
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feba63a0590530ce0800000000000000
+      internalID: -1440218854776722449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_94
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 8
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52683cd9b26d30a80800000000000000
+      internalID: -8501716188726589915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_95
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d508910f73b8ad0800000000000000
+      internalID: -2699002047318958733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_96
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0176507022024160800000000000000
+      internalID: 7008166308488835340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_97
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 8
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee08c156681106e70800000000000000
+      internalID: 9106297715462799598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_98
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 8
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce58a1fbc21f67cd0800000000000000
+      internalID: -2560594163626506772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_99
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 8
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aac96bb2f2e4f70800000000000000
+      internalID: 9173321355794098743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: future_tileB_inside1_100
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 8
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b756f1e72fbe4510800000000000000
+      internalID: 1535374700995565492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a8b5ffd983f4567428230f813978b6f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

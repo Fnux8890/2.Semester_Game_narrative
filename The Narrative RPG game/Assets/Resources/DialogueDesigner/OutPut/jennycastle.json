@@ -1,0 +1,179 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Jenny"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "2238952",
+        "to_port": 0
+      },
+      {
+        "from": "3616557",
+        "from_port": 0,
+        "to": "9518719",
+        "to_port": 0
+      },
+      {
+        "from": "9518719",
+        "from_port": 0,
+        "to": "3717000",
+        "to_port": 0
+      },
+      {
+        "from": "9791765",
+        "from_port": 0,
+        "to": "3616557",
+        "to_port": 0
+      },
+      {
+        "from": "2238952",
+        "from_port": 0,
+        "to": "9791765",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "jennycastle",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "2238952",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -322,
+          206
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9791765",
+        "node_name": "2238952",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -284,
+          376.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What are all the poeple doing here?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "3717000",
+        "node_type": "set_local_variable",
+        "offset": [
+          939,
+          284.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
+      },
+      {
+        "character": [
+          "Jenny",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9518719",
+        "node_name": "3616557",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          519,
+          16.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Protesting against the king, he is too greedy with the towns resources!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3717000",
+        "node_name": "9518719",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          491,
+          489.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Im so glad i dont live in this shithole of a town."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "3616557",
+        "node_name": "9791765",
+        "node_type": "set_local_variable",
+        "offset": [
+          134,
+          173.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "done"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "done": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Karen"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "4340918",
+        "to_port": 0
+      },
+      {
+        "from": "7770208",
+        "from_port": 0,
+        "to": "4070464",
+        "to_port": 0
+      },
+      {
+        "from": "4340918",
+        "from_port": 0,
+        "to": "6943240",
+        "to_port": 0
+      },
+      {
+        "from": "6943240",
+        "from_port": 0,
+        "to": "7770208",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "twilightchick",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Karen",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6943240",
+        "node_name": "4340918",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -21,
+          -95.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Twilight is my favorite book!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "4340918",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -322,
+          206
+        ],
+        "title": ""
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "4070464",
+        "node_type": "set_local_variable",
+        "offset": [
+          837,
+          455.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "daiojms"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4070464",
+        "node_name": "7770208",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          872,
+          -111.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Yikes..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7770208",
+        "node_name": "6943240",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          351,
+          -340.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ""
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "daiojms": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

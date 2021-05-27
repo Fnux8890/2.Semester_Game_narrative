@@ -3,7 +3,7 @@
     "characters": [
       "Player",
       "Cat-Dog",
-      "Edgelord"
+      "Carl"
     ],
     "connections": [
       {
@@ -56,7 +56,7 @@
       },
       {
         "character": [
-          "Edgelord",
+          "Carl",
           2
         ],
         "expand": null,

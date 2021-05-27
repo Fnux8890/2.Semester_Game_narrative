@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: unitName
-      value: Edgelord
+      value: Carl
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: currentHP

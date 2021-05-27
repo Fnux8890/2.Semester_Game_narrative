@@ -253,11 +253,19 @@ namespace GameSystems.Dialogue
                         if (textObject.IsOverflowingVerticle())
                         {
                             var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
-                            var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
+                            RectTransform nameRt = null;
+                            if (objectToSet.transform.Find("Name"))
+                            {
+                               nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>(); 
+                            }
                             var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
-                            var position = nameRt.position;
-                            position = new Vector2(position.x, position.y + 0.3f);
-                            nameRt.position = position;
+                            if (nameRt is { })
+                            {
+                                var position = nameRt.position;
+                                position = new Vector2(position.x, position.y + 0.3f);
+                                nameRt.position = position;
+                            }
+
                             var sizeDelta = parentRt.sizeDelta;
                             sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
                             parentRt.sizeDelta = sizeDelta;

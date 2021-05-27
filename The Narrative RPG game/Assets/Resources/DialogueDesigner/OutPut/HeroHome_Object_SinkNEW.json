@@ -10,6 +10,12 @@
         "from_port": 0,
         "to": "6209682",
         "to_port": 0
+      },
+      {
+        "from": "6209682",
+        "from_port": 0,
+        "to": "7652552",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -42,7 +48,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
-        "next": null,
+        "next": "7652552",
         "node_name": "6209682",
         "node_type": "show_message",
         "object_path": "",
@@ -56,10 +62,29 @@
           "ENG": "The sink is overflowing with plates, and forks that are inexplicably stuck together"
         },
         "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7652552",
+        "node_type": "set_local_variable",
+        "offset": [
+          726,
+          36.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "sda"
       }
     ],
     "selected_language": "ENG",
     "variables": {
+      "sda": {
+        "type": 2,
+        "value": false
+      },
       "wtf": {
         "type": 0,
         "value": "stuff"

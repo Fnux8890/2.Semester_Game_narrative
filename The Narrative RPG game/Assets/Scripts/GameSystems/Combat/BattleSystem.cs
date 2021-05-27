@@ -274,7 +274,7 @@ namespace GameSystems.Combat
             animationManager.EarthElementalIdle();
 
             combatText.fontSize = 12;
-            combatText.text = "Choose an action for support girl";
+            combatText.text = "Choose an action for Stacey";
             for (int i = 0; i < _button.Length; i++)
             {
                 _button[i].SetActive(true);
@@ -306,7 +306,7 @@ namespace GameSystems.Combat
         
             animationManager.EdgelordIdle();
             combatText.fontSize = 12;
-            combatText.text = "Choose an action for Edgelord";
+            combatText.text = "Choose an action for Carl";
             for (int i = 0; i < _button.Length; i++)
             {
                 _button[i].SetActive(true);
@@ -1043,7 +1043,7 @@ namespace GameSystems.Combat
                 if (enemyPrefab.name == "Goblin")
                 {
                     StopAllCoroutines();
-                    levelload(3);
+                    levelload(4);
                 }
 
                 if (enemyPrefab.name == "Random")

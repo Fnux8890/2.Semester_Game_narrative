@@ -25,7 +25,7 @@ public class TransitionTrigger : MonoBehaviour
         
         if (gameObject.name == "KingsCastle")
         {
-            StartCoroutine(LoadLevel(1));
+            StartCoroutine(LoadLevel(20));
         }
         
         if (gameObject.name == "SaveThePrincess")

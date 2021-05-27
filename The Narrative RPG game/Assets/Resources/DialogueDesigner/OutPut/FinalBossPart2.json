@@ -2,9 +2,9 @@
   {
     "characters": [
       "Player",
-      "Evil Steve the king",
       "Carl",
-      "Catdog"
+      "Catdog",
+      "The King"
     ],
     "connections": [
       {
@@ -81,8 +81,8 @@
       },
       {
         "character": [
-          "Evil Steve the king",
-          1
+          "The King",
+          3
         ],
         "expand": null,
         "expand_size": [
@@ -138,7 +138,7 @@
       {
         "character": [
           "Carl",
-          2
+          1
         ],
         "expand": null,
         "expand_size": [
@@ -194,7 +194,7 @@
       {
         "character": [
           "Catdog",
-          3
+          2
         ],
         "expand": null,
         "expand_size": [

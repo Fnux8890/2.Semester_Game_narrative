@@ -230,20 +230,29 @@ public class PlayerController : MonoBehaviour
         {
             switch (SceneManager.GetActiveScene().name)
             {
-                case "InsideHerosHome":
-                    LoadLevel(1);
-                    break;
                 case "OpeningCutscene":
-                    LoadLevel(2);
+                    LoadLevel(3);
                     break;
                 case "Library":
                     LoadPrevious();
                     break;
                 case "MiniBossBattlePart2": 
-                    LoadLevel(8);
+                    LoadLevel(16);
                     break;
                 case "MeetingCatDogPart2": 
                     LoadLevel(17);
+                    break;
+                case "MeetingEnemyCutscene":
+                    LoadLevel(5);
+                        break;
+                case "MeetingTheKing": 
+                    LoadLevel(13);
+                    break;
+                case "StartingArea": 
+                    LoadLevel(20);
+                    break;
+                case "SaveThePrincessForrestPart3":
+                    LoadLevel(15);
                     break;
                 default:
                     LoadLevel();

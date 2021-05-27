@@ -87,10 +87,13 @@ namespace Dialogue.Objects
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractionHandler.Instance.OnHideBubble(id);
-            DialogueHandleUpdate.Instance.OnUnloadJson();
-            InteractionHandler.Instance.OnLookingAt(null, false);
-            DialogueUIHandler.Instance.OnExitDialogue();
+            if (other.CompareTag("Player"))
+            {
+                InteractionHandler.Instance.OnHideBubble(id);
+                DialogueHandleUpdate.Instance.OnUnloadJson();
+                InteractionHandler.Instance.OnLookingAt(null, false);
+                DialogueUIHandler.Instance.OnExitDialogue();
+            }
         }
         
         private void Setup()

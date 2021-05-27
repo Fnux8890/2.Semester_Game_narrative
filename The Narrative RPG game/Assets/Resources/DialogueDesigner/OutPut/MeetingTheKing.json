@@ -113,6 +113,12 @@
         "from_port": 0,
         "to": "4587243",
         "to_port": 0
+      },
+      {
+        "from": "1091169",
+        "from_port": 0,
+        "to": "7365539",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -402,21 +408,6 @@
         "title": "Show Message"
       },
       {
-        "filename": "res://Nodes/Set Local Variable.tscn",
-        "next": null,
-        "node_name": "216606",
-        "node_type": "set_local_variable",
-        "offset": [
-          1480.999756,
-          1387.25
-        ],
-        "operation_type": null,
-        "title": "Set Local Variable",
-        "toggle": false,
-        "value": true,
-        "var_name": "isTalked"
-      },
-      {
         "filename": "res://Nodes/Start.tscn",
         "next": "124241",
         "node_name": "START",
@@ -455,7 +446,7 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": false,
-        "next": null,
+        "next": "7365539",
         "node_name": "1091169",
         "node_type": "show_message",
         "object_path": "",
@@ -609,6 +600,36 @@
           "ENG": "..."
         },
         "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "216606",
+        "node_type": "set_local_variable",
+        "offset": [
+          1515.999756,
+          1451.25
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "isTalked"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7365539",
+        "node_type": "set_local_variable",
+        "offset": [
+          -408,
+          800.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "isTalked"
       }
     ],
     "selected_language": "ENG",

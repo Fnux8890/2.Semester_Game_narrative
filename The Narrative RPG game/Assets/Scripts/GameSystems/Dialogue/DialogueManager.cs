@@ -385,9 +385,9 @@ namespace GameSystems.Dialogue
             theMethod?.Invoke(this, parameters);
         }
 
-        public void PlaySound(string sound)
+        public void Knock()
         {
-            Debug.Log("You played a sound");
+            GameObject.Find("knock").GetComponent<AudioSource>().Play();
         }
 
         public void RemoveVillian()

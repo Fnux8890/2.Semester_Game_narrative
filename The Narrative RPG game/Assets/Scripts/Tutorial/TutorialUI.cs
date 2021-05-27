@@ -7,7 +7,6 @@ using GameSystems.CustomEventSystems.Tutorial;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using File = UnityEngine.Windows.File;
 
 namespace Tutorial
 {

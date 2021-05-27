@@ -12,15 +12,27 @@
         "to_port": 0
       },
       {
-        "from": "5173963",
-        "from_port": 0,
-        "to": "3213051",
-        "to_port": 0
-      },
-      {
         "from": "3213051",
         "from_port": 0,
         "to": "8255939",
+        "to_port": 0
+      },
+      {
+        "from": "8255939",
+        "from_port": 0,
+        "to": "252849",
+        "to_port": 0
+      },
+      {
+        "from": "5173963",
+        "from_port": 0,
+        "to": "5265755",
+        "to_port": 0
+      },
+      {
+        "from": "5265755",
+        "from_port": 0,
+        "to": "3213051",
         "to_port": 0
       }
     ],
@@ -42,6 +54,21 @@
         "title": ""
       },
       {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "252849",
+        "node_type": "set_local_variable",
+        "offset": [
+          1560,
+          30.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "yeet2"
+      },
+      {
         "character": [
           "Narrator",
           1
@@ -54,18 +81,46 @@
         "file": "",
         "filename": "res://Nodes/Show Message.tscn",
         "is_box": true,
-        "next": "3213051",
+        "next": "5265755",
         "node_name": "5173963",
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          154,
-          -130.5
+          120,
+          -233.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "It's a PC... \nTrust me, you want no further details."
+          "ENG": "It's a PC... Trust me, you want no further details."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": true,
+        "next": "252849",
+        "node_name": "8255939",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1044,
+          -192.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The young hero gushes over the intricate lives of four 2D girls in a fake origami club, all the while someone still attempts to beat down his door!"
         },
         "title": "Show Message"
       },
@@ -87,8 +142,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          591,
-          -131.5
+          695,
+          257.5
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -98,32 +153,19 @@
         "title": "Show Message"
       },
       {
-        "character": [
-          "Narrator",
-          1
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": true,
-        "next": null,
-        "node_name": "8255939",
-        "node_type": "show_message",
-        "object_path": "",
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "3213051",
+        "node_name": "5265755",
+        "node_type": "set_local_variable",
         "offset": [
-          1036,
-          -131.5
+          380,
+          205.75
         ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "The young hero gushes over the intricate lives of four 2D girls in a fake origami club, all the while someone still attempts to beat down his door!"
-        },
-        "title": "Show Message"
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "yeet2"
       }
     ],
     "selected_language": "ENG",
@@ -131,6 +173,10 @@
       "yeet": {
         "type": 0,
         "value": "wtf"
+      },
+      "yeet2": {
+        "type": 2,
+        "value": false
       }
     }
   }

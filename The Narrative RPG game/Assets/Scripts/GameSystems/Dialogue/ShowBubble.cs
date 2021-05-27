@@ -1,5 +1,9 @@
+using System;
 using GameSystems.CustomEventSystems.Interaction;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 
 namespace GameSystems.Dialogue
 {
@@ -16,16 +20,36 @@ namespace GameSystems.Dialogue
 
         void Start()
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
-            _animator = GetComponent<Animator>();
-            _spriteRenderer.sortingOrder = 5;
             InteractionHandler.Instance.ShowBubble += Show;
             InteractionHandler.Instance.HideBubble += Hide;
         }
-        
+
+        private void OnEnable()
+        {
+            updareREF();
+        }
+
+        private void updareREF()
+        {
+            _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            _animator = gameObject.GetComponent<Animator>();
+            _spriteRenderer.sortingOrder = 5;
+        }
+
+        private void OnDestroy()
+        {
+            _spriteRenderer = null;
+            _animator = null;
+            if (InteractionHandler.Instance != null)
+            {
+                InteractionHandler.Instance.ShowBubble -= Show;
+                InteractionHandler.Instance.HideBubble -= Hide;
+            }
+        }
 
         private void Show(int id)
         {
+            updareREF();
             if (this.id == id)
             {
                 _animator.SetTrigger(Enter);
@@ -35,9 +59,11 @@ namespace GameSystems.Dialogue
 
         private void Hide(int id)
         {
+            updareREF();
             if (this.id == id)
             {
                 _animator.SetTrigger(Exit);
+                _animator.SetBool(Showing, false);
             }
         }
     }

@@ -19,12 +19,6 @@
         "to_port": 0
       },
       {
-        "from": "START",
-        "from_port": 0,
-        "to": "642015",
-        "to_port": 0
-      },
-      {
         "from": "642015",
         "from_port": 0,
         "to": "2909223",
@@ -41,6 +35,18 @@
         "from_port": 0,
         "to": "3085208",
         "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8162227",
+        "to_port": 0
+      },
+      {
+        "from": "8162227",
+        "from_port": 0,
+        "to": "642015",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -51,7 +57,7 @@
     "nodes": [
       {
         "filename": "res://Nodes/Start.tscn",
-        "next": "642015",
+        "next": "8162227",
         "node_name": "START",
         "node_type": "start",
         "offset": [
@@ -59,34 +65,6 @@
           180
         ],
         "title": ""
-      },
-      {
-        "character": [
-          "Player",
-          0
-        ],
-        "expand": null,
-        "expand_size": [
-          0,
-          0
-        ],
-        "file": "",
-        "filename": "res://Nodes/Show Message.tscn",
-        "is_box": false,
-        "next": "2909223",
-        "node_name": "642015",
-        "node_type": "show_message",
-        "object_path": "",
-        "offset": [
-          59,
-          37.5
-        ],
-        "slide_camera": true,
-        "speaker_type": 0,
-        "text": {
-          "ENG": "What a great day to be the protagonist of an RPG. "
-        },
-        "title": "Show Message"
       },
       {
         "character": [
@@ -160,6 +138,19 @@
         "var_name": "IntroIsOver"
       },
       {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "903446",
+        "node_type": "execute",
+        "offset": [
+          930.537048,
+          57.888878
+        ],
+        "rect_size_x": 329.000488,
+        "rect_size_y": 89,
+        "text": "Knock()",
+        "title": "Execute"
+      },
+      {
         "character": [
           "Player",
           0
@@ -177,8 +168,8 @@
         "node_type": "show_message",
         "object_path": "",
         "offset": [
-          483,
-          -42.5
+          645.037048,
+          -358.472229
         ],
         "slide_camera": true,
         "speaker_type": 0,
@@ -188,17 +179,47 @@
         "title": "Show Message"
       },
       {
-        "filename": "res://Nodes/Execute.tscn",
-        "node_name": "903446",
-        "node_type": "execute",
-        "offset": [
-          930.537048,
-          57.888878
+        "character": [
+          "Player",
+          0
         ],
-        "rect_size_x": 329.000549,
-        "rect_size_y": 89.000031,
-        "text": "Knock()",
-        "title": "Execute"
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2909223",
+        "node_name": "642015",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          174.740738,
+          -368.75
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a great day to be the protagonist of an RPG. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "642015",
+        "node_name": "8162227",
+        "node_type": "set_local_variable",
+        "offset": [
+          -146.194458,
+          -325.977356
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "IntroIsOver"
       }
     ],
     "selected_language": "ENG",

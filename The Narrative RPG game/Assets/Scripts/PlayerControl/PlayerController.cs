@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Dialogue.Objects;
 using GameSystems.Combat;
 using GameSystems.CustomEventSystems;
 using GameSystems.CustomEventSystems.Interaction;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Tilemap tilemap;
     public Sprite[] path;
+    public Sprite[] idleSprites;
     
     // Private unity stuff
     private Grid _grid;

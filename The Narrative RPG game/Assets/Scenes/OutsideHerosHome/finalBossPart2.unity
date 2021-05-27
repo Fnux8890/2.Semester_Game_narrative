@@ -370,6 +370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStartOfGame: 0
   playOnAwake: 1
+  talkDirection: 0
   _director: {fileID: 337486194}
   json: {fileID: 4900000, guid: 9cb78291dd3b3bb4298256662021f808, type: 3}
 --- !u!4 &337486196

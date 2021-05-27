@@ -4819,7 +4819,7 @@ MonoBehaviour:
   edgelordPrefab: {fileID: 3167914466111624577, guid: e7347db7b277b3b40966660e685e6597, type: 3}
   supportgirlPrefab: {fileID: 2658434014920438409, guid: 9366d914aab25a349b19e77129c50f60, type: 3}
   catdogPrefab: {fileID: 4403130711297598412, guid: c933258ef8d5fdb4eb4b84516341fc6b, type: 3}
-  enemyPrefab: {fileID: 7713983790705015395, guid: da090feae53731847ae25e6cafb28b6d, type: 3}
+  enemyPrefab: {fileID: 7071821192490515762, guid: 28cee5cc0b681be41b9e448d382354e1, type: 3}
   playerBattleStation: {fileID: 509153918}
   enemyBattlestation: {fileID: 1450750001}
   animationManager: {fileID: 1646688685}

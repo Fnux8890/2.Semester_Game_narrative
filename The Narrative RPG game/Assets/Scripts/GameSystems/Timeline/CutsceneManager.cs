@@ -7,6 +7,7 @@ using PlayerControl;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using Utilities;
 
@@ -75,6 +76,11 @@ namespace GameSystems.Timeline
             DialogueHandleUpdate.Instance.OnUpdateCanvas();
             director.Play();
             PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Disable();
+            if (director.playableAsset.name == "imouttahere")
+            {
+                director.stopped += director => SceneManager.LoadScene(19);
+                return;
+            }
             director.stopped += dir =>
             {
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Movement.Enable();

@@ -77,9 +77,13 @@ namespace GameSystems.Combat
 
         private void Update()
         {
-        
+
             if (isDead == true)
+            {
                 StartCoroutine(EndBattle());
+            }
+                
+            
 
             if (_supportgirlUnit.Dead() == true)
             {
@@ -120,6 +124,10 @@ namespace GameSystems.Combat
                 GameObject.Find("DessertBackground").SetActive(true);
                 GameObject.Find("GrassBackground").SetActive(false);
                 GameObject.Find("DungeonBackground").SetActive(false);
+            }
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "finalBoss")
+            {
+                enemyPrefab = Resources.Load<GameObject>("Evil Steve");
             }
             
             GameObject swordguy = Instantiate(swordguyPrefab, playerBattleStation);
@@ -170,7 +178,15 @@ namespace GameSystems.Combat
             switch (supportgirlActive)
             {
                 case true:
-                    catdogHUD.disable();
+                    if (enemyPrefab.name != "Evil Steve")
+                    {
+                        catdogHUD.disable();
+                    }
+                    else
+                    {
+                        catdogHUD.gameObject.SetActive(true);
+                    }
+                    
                     break;
                 case false:
                     supportgirlHUD.disable();
@@ -199,9 +215,14 @@ namespace GameSystems.Combat
             {
                 enemyPrefab = Resources.Load<GameObject>("Red Knight");
                 GameObject.Find("DungeonBackground").SetActive(true);
-                GameObject.Find("GrassBackground").SetActive(false);
                 GameObject.FindWithTag("Catdog").SetActive(false);
-                GameObject.FindWithTag("CatdogHUD").SetActive(false);
+                //GameObject.FindWithTag("CatdogHUD").SetActive(false);
+            }
+
+            if (SceneLoadHandler.Instance.OnGetLastSceneName() == "finalBoss")
+            {
+                _supportGirl.SetActive(false);
+                supportgirlHUD.disable();
             }
 
             yield return new WaitForSeconds(2);
@@ -212,13 +233,13 @@ namespace GameSystems.Combat
 
         private void PlayerTurn()
         {
-            if (swordguyPrefab.activeInHierarchy == false)
+            if (playerBattleStation.GetChild(0).gameObject.activeInHierarchy == false)
             {
                 catdogturn = true;
                 supportgirlturn = true;
                 edgelordturn = true;
                 swordguyturn = false;
-                //CatdogTurn();
+                CatdogTurn();
                 return;
             }
 
@@ -298,7 +319,6 @@ namespace GameSystems.Combat
         // ReSharper disable Unity.PerformanceAnalysis
         IEnumerator PlayerAtttack()
         {
-
             if (isDead == true)
             {
                 state = BattleState.Won;
@@ -437,13 +457,7 @@ namespace GameSystems.Combat
                 combatText.rectTransform.anchoredPosition = v;
 
                 combatText.text = "The attack is succesful! \n " + _enemyUnit.unitName + " took " + _catdogUnit.damage + " damage!";
-
-                /*if (enemyPrefab.name == "Random")
-                {
-                    StopAllCoroutines();
-                    isDead = true;
-                    StartCoroutine(EndBattle());
-                }*/
+                
 
                 swordguyturn = false;
 
@@ -451,11 +465,6 @@ namespace GameSystems.Combat
 
                 Vector2 ve = new Vector2(-2, -22);
                 combatText.rectTransform.anchoredPosition = ve;
-                if (isDead == true)
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(EndBattle());
-                }
                 if (playerBattleStation.GetChild(1).gameObject.activeInHierarchy == false)
                 {
                     StartCoroutine(EnemyTurn());
@@ -856,8 +865,8 @@ namespace GameSystems.Combat
             
                 if (enemyPrefab.name != "Random")
                 {
-                    animationManager.GoblinAttack1();
-                    animationManager.RedknightAttack1();
+                    animationManager.GoblinAttack2();
+                    animationManager.RedknightAttack2();
                 }
             
                 if (sgblocking == false)
@@ -1041,6 +1050,12 @@ namespace GameSystems.Combat
                 {
                     StopAllCoroutines();
                     levelload(8);
+                }
+
+                if (enemyPrefab.name == "Evil Steve")
+                {
+                    StopAllCoroutines();
+                    levelload(18);
                 }
 
             }

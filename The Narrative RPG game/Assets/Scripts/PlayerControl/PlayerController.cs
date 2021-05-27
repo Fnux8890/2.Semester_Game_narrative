@@ -240,6 +240,9 @@ public class PlayerController : MonoBehaviour
                 case "MiniBossBattlePart2": 
                     LoadLevel(8);
                     break;
+                case "MeetingCatDogPart2": 
+                    LoadLevel(17);
+                    break;
                 default:
                     LoadLevel();
                     return;

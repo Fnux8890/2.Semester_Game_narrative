@@ -24,6 +24,7 @@ TagManager:
   - SwordguyHUD
   - SupportHUD
   - CatdogHUD
+  - GrassBackground
   layers:
   - Default
   - TransparentFX

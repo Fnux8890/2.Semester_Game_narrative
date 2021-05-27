@@ -430,12 +430,42 @@ namespace GameSystems.Dialogue
             InteractionHandler.Instance.OnLevelAnimName("CombatScene");
         }
 
+        public void ExecuteFinalBattle()
+        {
+            StopAllCoroutines();
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
+        }
+        
+        public void Seinfeld()
+        {
+            GameObject.Find("Seinfeld").GetComponent<AudioSource>().Play();
+            StartCutscene("imouttahere");
+        }
+
+        public void Pew()
+        {
+            StartCoroutine(laserBeam());
+        }
+
         public void DyingSoldier()
         {
             //GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
         }
-        
-        
+
+        public IEnumerator laserBeam()
+        {
+            var sound = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+            sound.PlayPew();
+            sound.gameObject.GetComponent<AudioSource>().loop = false;
+            yield return new WaitForSeconds(1f);
+            playExplosion();
+        }
+
+        public void playExplosion()
+        {
+            var sound = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+            sound.PlayExplosion();
+        }
 
         private IEnumerator HandleNodeConditions()
         {

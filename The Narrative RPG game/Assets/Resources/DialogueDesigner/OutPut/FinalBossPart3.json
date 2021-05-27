@@ -1,0 +1,231 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Carl",
+      "Catdog"
+    ],
+    "connections": [
+      {
+        "from": "8315366",
+        "from_port": 0,
+        "to": "9587960",
+        "to_port": 0
+      },
+      {
+        "from": "9587960",
+        "from_port": 0,
+        "to": "8560896",
+        "to_port": 0
+      },
+      {
+        "from": "7649672",
+        "from_port": 0,
+        "to": "3566111",
+        "to_port": 0
+      },
+      {
+        "from": "3566111",
+        "from_port": 0,
+        "to": "6466158",
+        "to_port": 0
+      },
+      {
+        "from": "8560896",
+        "from_port": 0,
+        "to": "7649672",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "2752830",
+        "to_port": 0
+      },
+      {
+        "from": "2752830",
+        "from_port": 0,
+        "to": "8315366",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "FinalBossPart3",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9587960",
+        "node_name": "8315366",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          229,
+          -50
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Finally it’s over. Now I can go back to playing doki doki literature club."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Carl",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8560896",
+        "node_name": "9587960",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          758,
+          -16
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I can go back to make people cringe with my weirdness."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Catdog",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7649672",
+        "node_name": "8560896",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1220,
+          -6
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I can go back to pretending to be a cat."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3566111",
+        "node_name": "7649672",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          224,
+          327
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I guess at the end of the day, we learned nothing."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "3566111",
+        "node_type": "execute",
+        "offset": [
+          714,
+          450
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "Seinfeld()",
+        "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "2752830",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -191,
+          179
+        ],
+        "title": ""
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "2752830",
+        "node_type": "execute",
+        "offset": [
+          -224,
+          -47.5
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "playExplosion()",
+        "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "6466158",
+        "node_type": "set_local_variable",
+        "offset": [
+          1112,
+          417
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "Ending"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "Ending": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

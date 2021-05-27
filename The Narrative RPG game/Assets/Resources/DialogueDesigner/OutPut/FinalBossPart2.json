@@ -1,0 +1,287 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Evil Steve the king",
+      "Carl",
+      "Catdog"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "3242748",
+        "to_port": 0
+      },
+      {
+        "from": "3242748",
+        "from_port": 0,
+        "to": "8979471",
+        "to_port": 0
+      },
+      {
+        "from": "8979471",
+        "from_port": 0,
+        "to": "8718024",
+        "to_port": 0
+      },
+      {
+        "from": "8718024",
+        "from_port": 0,
+        "to": "5054322",
+        "to_port": 0
+      },
+      {
+        "from": "5054322",
+        "from_port": 0,
+        "to": "8761330",
+        "to_port": 0
+      },
+      {
+        "from": "4945739",
+        "from_port": 0,
+        "to": "5108941",
+        "to_port": 0
+      },
+      {
+        "from": "8761330",
+        "from_port": 0,
+        "to": "6188900",
+        "to_port": 0
+      },
+      {
+        "from": "6188900",
+        "from_port": 0,
+        "to": "1759265",
+        "to_port": 0
+      },
+      {
+        "from": "1759265",
+        "from_port": 0,
+        "to": "4945739",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "FinalBossPart2",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "3242748",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -5,
+          107
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Evil Steve the king",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8979471",
+        "node_name": "3242748",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          309,
+          -50
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh no, my disguise has been uncovered."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8718024",
+        "node_name": "8979471",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          752,
+          -40
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Wait, you were the king all along?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Carl",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5054322",
+        "node_name": "8718024",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1189,
+          -35
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You killed your own daughter?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8761330",
+        "node_name": "5054322",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          304,
+          291
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "This story doesn’t make any sense, get me out of this game."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Catdog",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6188900",
+        "node_name": "8761330",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          766,
+          307
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "My pleasure."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "4945739",
+        "node_name": "1759265",
+        "node_type": "set_local_variable",
+        "offset": [
+          1628,
+          269.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "Seinfeld"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "5108941",
+        "node_type": "set_local_variable",
+        "offset": [
+          2183,
+          408
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "Seinfeld"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "6188900",
+        "node_type": "execute",
+        "offset": [
+          1230,
+          481.5
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 89,
+        "text": "Pew()",
+        "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Execute.tscn",
+        "node_name": "4945739",
+        "node_type": "execute",
+        "offset": [
+          1571,
+          706
+        ],
+        "rect_size_x": 599,
+        "rect_size_y": 220,
+        "text": "StartCutsceneWithDialogue(\"FinalBossPart3\",\"FinalBossPart3\")",
+        "title": "Execute"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "Seinfeld": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

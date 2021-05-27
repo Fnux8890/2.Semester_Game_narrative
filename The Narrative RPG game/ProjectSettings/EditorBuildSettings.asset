@@ -56,5 +56,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MeetingCatDog/MeetingCatDog.unity
     guid: 64bdd62075d411b498c5a55223a178f2
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/finalBoss.unity
+    guid: 2a96ebd493caccd41ad12d7af1f5cc1f
+  - enabled: 1
+    path: Assets/Scenes/OutsideHerosHome/finalBossPart2.unity
+    guid: 8e3abb204365ac145888daf1c01ff8a7
+  - enabled: 1
+    path: Assets/Scenes/InsideHerosHome/LastScene.unity
+    guid: e762d99459fd8f643ab43715a787ccae
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 77c3775b362304222b74af193e487621, type: 2}

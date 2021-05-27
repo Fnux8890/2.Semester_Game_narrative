@@ -4729,7 +4729,7 @@ MonoBehaviour:
   isStartOfGame: 0
   playOnAwake: 0
   _director: {fileID: 407448750}
-  json: {fileID: 4900000, guid: ef055359bf8aef04997fe7e850708c70, type: 3}
+  json: {fileID: 4900000, guid: 3bfd38c0c4458fb4a9a3df72a222086b, type: 3}
 --- !u!320 &407448750
 PlayableDirector:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ namespace GameSystems.Combat
         private string _lastSceneName;
         private Vector3 _lastPlayerPosition;
         private LeaveDirection _leaveDirection;
+        private Vector3 lastcamerapos;
 
         private void Awake()
         {
@@ -27,6 +28,18 @@ namespace GameSystems.Combat
             SceneLoadHandler.Instance.GetLastSceneName += GetLastSceneName;
             SceneLoadHandler.Instance.StoreLeaveDirection += SetLeaveDirection;
             SceneLoadHandler.Instance.GetLastLeaveDirection += GetLeaveDirection;
+            SceneLoadHandler.Instance.storeCamera += setLastCamPos;
+            SceneLoadHandler.Instance.getCamera += getLastCamPos;
+        }
+
+        private void setLastCamPos(Vector3 pos)
+        {
+            lastcamerapos = pos;
+        }
+
+        private Vector3? getLastCamPos()
+        {
+            return new Vector3(_lastPlayerPosition.x, _lastPlayerPosition.y, lastcamerapos.z);
         }
 
         private void SetLastSceneName(string lastSceneName)

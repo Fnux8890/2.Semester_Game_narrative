@@ -570,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   json: {fileID: 4900000, guid: 819d477ff06707d43b1ac27d2cbf9035, type: 3}
   cutscene: {fileID: 11400000, guid: 0257ac63263647e4d864808fa0492f1e, type: 2}
+  dir: 0
 --- !u!95 &944322952 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 451319090078742757, guid: 63cc616586f36514eb46b5742a9b0e76, type: 3}

@@ -29,6 +29,12 @@
         "from_port": 0,
         "to": "6272262",
         "to_port": 0
+      },
+      {
+        "from": "7140987",
+        "from_port": 0,
+        "to": "8066698",
+        "to_port": 0
       }
     ],
     "editor_version": "3.2.2",
@@ -128,7 +134,7 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "Dial it down a little Eric."
+          "ENG": "Dial it down a little weirdo."
         },
         "title": "Show Message"
       },
@@ -137,20 +143,35 @@
         "node_name": "7140987",
         "node_type": "execute",
         "offset": [
-          1094,
-          137.5
+          1083,
+          251.5
         ],
         "rect_size_x": 578.999756,
         "rect_size_y": 193,
         "text": "StartCutsceneWithDialogue(\"MeetingCatDogPART2\", \"catdogPART2\")",
         "title": "Execute"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "8066698",
+        "node_type": "set_local_variable",
+        "offset": [
+          1758,
+          30
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
       }
     ],
     "selected_language": "ENG",
     "variables": {
-      "yeet": {
-        "type": 0,
-        "value": "wtf"
+      "done": {
+        "type": 2,
+        "value": false
       }
     }
   }

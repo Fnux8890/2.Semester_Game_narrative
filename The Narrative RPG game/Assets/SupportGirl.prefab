@@ -183,7 +183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: maxHP
-      value: 20
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: damage
@@ -195,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: currentHP
-      value: 20
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6054792575330238619, guid: 700229979454cdd44ad211865b836faa, type: 3}
       propertyPath: unitLevel

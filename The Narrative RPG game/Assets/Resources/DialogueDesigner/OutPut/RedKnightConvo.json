@@ -99,7 +99,7 @@
         "slide_camera": true,
         "speaker_type": 0,
         "text": {
-          "ENG": "Please man, can i just get the powerfull weapon and be on my way?"
+          "ENG": "Please man, can i just get the powerful weapon and be on my way?"
         },
         "title": "Show Message"
       },
@@ -141,7 +141,7 @@
         ],
         "rect_size_x": 329,
         "rect_size_y": 89,
-        "text": "ExecuteBattleScene()",
+        "text": "FightRedKnight()",
         "title": "Execute"
       }
     ],

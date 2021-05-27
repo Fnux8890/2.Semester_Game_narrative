@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b42388c56e30764fa422797d5f7f603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Goblin
+  unitName: Lt. Bromfp
   unitLevel: 1
   damage: 5
   maxHP: 50

@@ -20,6 +20,10 @@ TagManager:
   - EdgelordHUD
   - Evilsteve
   - Deadsoldier
+  - soundmanager
+  - SwordguyHUD
+  - SupportHUD
+  - CatdogHUD
   layers:
   - Default
   - TransparentFX
@@ -27,9 +31,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Grass
+  - Dungeon
+  - Dessert
   - 
   - 
   - 

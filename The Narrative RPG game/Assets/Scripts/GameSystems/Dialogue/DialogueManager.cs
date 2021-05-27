@@ -101,6 +101,12 @@ namespace GameSystems.Dialogue
                     switch (_currentNode?.NodeType)
                     {
                         case NodeTypes.Execute:
+                            if (_lastNode.Contains(_currentNode))
+                            {
+                                _currentNode = _lastNode.Find(x => x.node_name == _currentNode.node_name);
+                                yield return StartCoroutine(HandleEndNodeType());
+                                break;
+                            }
                             yield return StartCoroutine(HandleNodeExecute());
                             if (_currentNode!=null) continue;
                             yield break;
@@ -345,7 +351,8 @@ namespace GameSystems.Dialogue
                 }
             }
             ExecutedMethod(methodName, parameters.ToArray());
-            if(!_lastNode.Exists(x => x.node_name == _currentNode.node_name)) {
+
+            if(!_lastNode.Contains(_currentNode)) {
                 var afterExecution = Connections.ToList().Find(x=> x.@from == _currentNode.node_name);
                 if (afterExecution.to != null)
                 {
@@ -388,7 +395,6 @@ namespace GameSystems.Dialogue
         public void ChangeScene(int levelIndex)
         {
             StopAllCoroutines();
-            Debug.Log($"changing scenes...{levelIndex}");
             InteractionHandler.Instance.OnLevelAnimInt(levelIndex);
         }
 
@@ -411,15 +417,26 @@ namespace GameSystems.Dialogue
             InteractionHandler.Instance.OnLevelAnimName("CombatScene");
         }
 
-        public void Test(string testString, string TestInt)
+        public void FightRedKnight()
         {
-            Debug.Log($"{testString} + {TestInt}");
+            StopAllCoroutines();
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
+        }
+
+        public void DisableTrigger()
+        {
+            Destroy(GameObject.Find("CutsceneTrigger"));
+        }
+
+        public void CatDogFight()
+        {
+            StopAllCoroutines();
+            InteractionHandler.Instance.OnLevelAnimName("CombatScene");
         }
 
         public void DyingSoldier()
         {
-            GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
-            //SoundManager.Instance.PlayDead();
+            //GameObject.FindGameObjectWithTag("Deadsoldier").GetComponent<PolygonCollider2D>().enabled = false;
         }
         
         

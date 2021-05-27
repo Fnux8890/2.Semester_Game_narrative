@@ -7,6 +7,7 @@ using GameSystems.CustomEventSystems.Interaction;
 using GameSystems.Dialogue.Dialogue_Json_Classes;
 using PlayerControl;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Utilities;
 
@@ -17,12 +18,13 @@ namespace GameSystems.Dialogue
         private List<GameObject> _dialogueBoxes;
         private GameObject PreviousDialogueBox;
         private bool TypeWriterRunning;
-
+        private bool CanvasPresent;
         private void Awake()
         {
             DialogueUIHandler.Instance.ExitDialogue += CloseDialogue;
             DialogueUIHandler.Instance.ShowDialogue += DisplayDialogue;
             DialogueHandleUpdate.Instance.UpdateCanvas += UpdateCanvasRef;
+            SceneManager.sceneLoaded += (arg0, mode) => UpdateCanvasRef();
         }
 
         private void OnEnable()
@@ -33,6 +35,12 @@ namespace GameSystems.Dialogue
 
         private void UpdateCanvasRef()
         {
+            if (!GameObject.Find("DialogueCanvas"))
+            {
+                CanvasPresent = false;
+                return;
+            }
+            CanvasPresent = true;
             _dialogueBoxes = null;
             _dialogueBoxes = new List<GameObject>();
             var dialogueCanvas = GameObject.Find("DialogueCanvas");
@@ -40,11 +48,13 @@ namespace GameSystems.Dialogue
             {
                 _dialogueBoxes.Add(dialogueCanvas.transform.GetChild(i).gameObject);
             }
+
         }
 
         private IEnumerator DisplayDialogue(Node currentNode)
         {
-            yield return BranchedDialogueOrNot(currentNode, currentNode.choices != null);
+            if(CanvasPresent)
+                yield return BranchedDialogueOrNot(currentNode, currentNode.choices != null);
         }
 
         private IEnumerator BranchedDialogueOrNot(Node currentNode, bool hasChoices)
@@ -56,7 +66,7 @@ namespace GameSystems.Dialogue
         {
             if (PreviousDialogueBox != null)
             {
-                PreviousDialogueBox.transform.Find("Continue").gameObject.SetActive(false);
+                PreviousDialogueBox.transform.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
             }
             if (PreviousDialogueBox != null && isBox)
             {
@@ -87,11 +97,14 @@ namespace GameSystems.Dialogue
                     if (currentNode.character == "Player")
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxLeft");
+                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
+                        dialogueBox.transform.Find("Name").GetComponent<RectTransform>().position = new Vector3(67.3f, 130.8f);
                     }
                     else
                     {
                         dialogueBox = _dialogueBoxes.Find(box => box.name == "DialogueBoxRight");
+                        dialogueBox.transform.Find("Dialogue").GetComponent<RectTransform>().sizeDelta = new Vector2(219.52f,48.632f);
                         dialogueBox.transform.Find("Name").GetChild(0).GetComponent<Text>().text = currentNode.character;
                         dialogueBox.transform.Find("Name").position = new Vector3(1755.0f, 230.2f);
                     }
@@ -224,25 +237,49 @@ namespace GameSystems.Dialogue
             if (TypeWriterRunning == false)
             {
                 TypeWriterRunning = true;
-                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(false);
+                objectToSet.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(false);
                 var textObject = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<Text>();
                 PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Disable();
-                var sb = new StringBuilder();
-                textObject.text = sb.ToString();
-                foreach (var ch in text.ToCharArray()) 
+
+                for (int i = 0; i < text.Length; i++)
                 {
-                    textObject.text += ch;
-                    yield return new WaitForSeconds(1f/30);
+                    var notInvisible= text.Substring(0, i);
+                    notInvisible += "<color=#00000000>" + text.Substring(0, i) + "</color>";
+                    if (textObject != null)
+                    {
+                        textObject.text = notInvisible;
+                    
+                    if (textObject.IsOverflowingVerticle())
+                    {
+                        var parentRt = objectToSet.transform.Find("Dialogue").GetComponent<RectTransform>();
+                        var nameRt = objectToSet.transform.Find("Name").GetComponent<RectTransform>();
+                        var childRt = objectToSet.transform.Find("Dialogue").GetChild(0).GetComponent<RectTransform>();
+                        var position = nameRt.position;
+                        position = new Vector2(position.x, position.y + 0.3f);
+                        nameRt.position = position;
+                        var sizeDelta = parentRt.sizeDelta;
+                        sizeDelta = new Vector2(sizeDelta.x ,  sizeDelta.y + 0.1f);
+                        parentRt.sizeDelta = sizeDelta;
+                        childRt.sizeDelta = new Vector2(sizeDelta.x - 1f, sizeDelta.y - 1f);
+                    }
+                    yield return new WaitForSeconds(0.04f);
+                    }
                 }
-                yield return new WaitForSeconds(0.5f);
-                objectToSet.transform.transform.Find("Continue").gameObject.SetActive(currentNode.choices == null);
-                if (!hasChoices)
+
+                if (CanvasPresent)
                 {
-                    PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+                    objectToSet.transform.Find("Dialogue").Find("Continue").gameObject.SetActive(currentNode.choices == null);
+                    if (!hasChoices)
+                    {
+                        PlayerActionControlsManager.Instance.PlayerControls.Land.Interact.Enable();
+                    }
+                    TypeWriterRunning = false;
                 }
-                TypeWriterRunning = false;
+                
             }
         }
+        
+        
         
         
     }

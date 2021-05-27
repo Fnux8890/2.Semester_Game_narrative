@@ -6,7 +6,7 @@ using Utilities;
 
 [RequireComponent(typeof(AudioSource))]
 
-public class SoundManager : Singleton<SoundManager>
+public class SoundManager : MonoBehaviour
 {
     private AudioSource component;
     private AudioClip hurt;

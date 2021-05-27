@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b42388c56e30764fa422797d5f7f603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Swordguy
+  unitName: Player
   unitLevel: 1
   damage: 7
   maxHP: 50

@@ -23,10 +23,17 @@ namespace GameSystems.Combat
         
         
             GameObject Swordguy = GameObject.FindGameObjectWithTag("Swordguy");
-            swordguy = Swordguy.GetComponent<Animator>();
+            if (Swordguy == isActiveAndEnabled)
+            {
+                swordguy = Swordguy.GetComponent<Animator>();
+            }
+            
         
             GameObject Edgelord = GameObject.FindGameObjectWithTag("Edgelord");
-            edgelord = Edgelord.GetComponent<Animator>();
+            if (Edgelord == isActiveAndEnabled)
+            {
+                edgelord = Edgelord.GetComponent<Animator>();
+            }
 
             enemy = GameObject.FindGameObjectWithTag("EnemyBattlestation").GetComponentInChildren<Animator>();
         

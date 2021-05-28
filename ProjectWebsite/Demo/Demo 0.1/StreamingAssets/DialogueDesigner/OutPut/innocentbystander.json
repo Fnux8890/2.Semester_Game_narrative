@@ -1,0 +1,90 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Innocent Bystander"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "572070",
+        "to_port": 0
+      },
+      {
+        "from": "572070",
+        "from_port": 0,
+        "to": "1877642",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "innocentbystander",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "572070",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -5,
+          107
+        ],
+        "title": ""
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "1877642",
+        "node_type": "set_local_variable",
+        "offset": [
+          845,
+          181.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "talkedto"
+      },
+      {
+        "character": [
+          "Innocent Bystander",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1877642",
+        "node_name": "572070",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          338,
+          26.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What a lovely day."
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "talkedto": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

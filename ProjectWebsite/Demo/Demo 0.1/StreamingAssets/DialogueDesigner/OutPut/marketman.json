@@ -1,0 +1,90 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Marketman"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "3072083",
+        "to_port": 0
+      },
+      {
+        "from": "3072083",
+        "from_port": 0,
+        "to": "3654784",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "marketman",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "3072083",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Marketman",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3654784",
+        "node_name": "3072083",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          210,
+          -203.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Sorry boy. I just sold my last fruit for today. Comeback another time maybe."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "3654784",
+        "node_type": "set_local_variable",
+        "offset": [
+          710,
+          16.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "done": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

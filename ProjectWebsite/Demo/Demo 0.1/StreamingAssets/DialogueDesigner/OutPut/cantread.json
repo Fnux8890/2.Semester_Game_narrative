@@ -1,0 +1,158 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Librarian"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "4973935",
+        "to_port": 0
+      },
+      {
+        "from": "4563091",
+        "from_port": 0,
+        "to": "8463163",
+        "to_port": 0
+      },
+      {
+        "from": "4973935",
+        "from_port": 0,
+        "to": "8319275",
+        "to_port": 0
+      },
+      {
+        "from": "8319275",
+        "from_port": 0,
+        "to": "4563091",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "cantread",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "4973935",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -362,
+          62
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Librarian",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8319275",
+        "node_name": "4973935",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -167,
+          -96.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Welcome to the towns library, here we have many fine books."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "8463163",
+        "node_type": "set_local_variable",
+        "offset": [
+          811,
+          -69.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "done"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8463163",
+        "node_name": "4563091",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          348,
+          220.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "God i hate reading."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4563091",
+        "node_name": "8319275",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          322,
+          -198.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ""
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "done": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

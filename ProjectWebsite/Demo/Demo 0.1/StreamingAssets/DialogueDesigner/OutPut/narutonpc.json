@@ -1,0 +1,124 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Anime fan"
+    ],
+    "connections": [
+      {
+        "from": "8857588",
+        "from_port": 0,
+        "to": "8962075",
+        "to_port": 0
+      },
+      {
+        "from": "8962075",
+        "from_port": 0,
+        "to": "7172183",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8857588",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "narutonpc",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "8857588",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -362,
+          62
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Anime fan",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8962075",
+        "node_name": "8857588",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -159,
+          -146.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Did you know in episode 469 of naruto..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7172183",
+        "node_name": "8962075",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          313,
+          -43.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I better get moving before he goes on a ramble."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7172183",
+        "node_type": "set_local_variable",
+        "offset": [
+          831,
+          213.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "donezo"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "donezo": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

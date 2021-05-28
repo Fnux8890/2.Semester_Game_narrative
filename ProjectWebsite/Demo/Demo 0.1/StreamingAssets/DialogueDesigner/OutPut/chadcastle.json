@@ -1,0 +1,234 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Chad"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "6880788",
+        "to_port": 0
+      },
+      {
+        "from": "6880788",
+        "from_port": 1,
+        "to": "1837998",
+        "to_port": 0
+      },
+      {
+        "from": "6880788",
+        "from_port": 0,
+        "to": "2014112",
+        "to_port": 0
+      },
+      {
+        "from": "1837998",
+        "from_port": 0,
+        "to": "2975740",
+        "to_port": 0
+      },
+      {
+        "from": "2975740",
+        "from_port": 0,
+        "to": "7552520",
+        "to_port": 0
+      },
+      {
+        "from": "2014112",
+        "from_port": 0,
+        "to": "1405218",
+        "to_port": 0
+      },
+      {
+        "from": "1405218",
+        "from_port": 0,
+        "to": "6462480",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.2",
+    "file_name": "chadcastle",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "6880788",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -294,
+          320
+        ],
+        "title": ""
+      },
+      {
+        "branches": {
+          "False": "1837998",
+          "True": "2014112"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "6880788",
+        "node_type": "condition_branch",
+        "offset": [
+          -313,
+          481.5
+        ],
+        "text": "MSG.var(\"donexo\")",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Chad",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2975740",
+        "node_name": "1837998",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          176,
+          373.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Shhhhh! Im trying to hear the jester's joke."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Chad",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1405218",
+        "node_name": "2014112",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          85,
+          728.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Thanks a bunch, now i missed the joke dont ruin the next one please..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Chad",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7552520",
+        "node_name": "2975740",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          645,
+          279
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ""
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "7552520",
+        "node_type": "set_local_variable",
+        "offset": [
+          1110,
+          528.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "donexo"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "6462480",
+        "node_type": "set_local_variable",
+        "offset": [
+          1008,
+          932.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "donexo"
+      },
+      {
+        "character": [
+          "Chad",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6462480",
+        "node_name": "1405218",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          536,
+          769.75
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ""
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "donexo": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]

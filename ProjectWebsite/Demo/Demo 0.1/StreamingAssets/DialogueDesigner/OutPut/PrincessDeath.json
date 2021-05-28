@@ -1,0 +1,299 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Edgelord",
+      "Evil Steve"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8823809",
+        "to_port": 0
+      },
+      {
+        "from": "8823809",
+        "from_port": 0,
+        "to": "7922742",
+        "to_port": 0
+      },
+      {
+        "from": "7922742",
+        "from_port": 0,
+        "to": "5496123",
+        "to_port": 0
+      },
+      {
+        "from": "5496123",
+        "from_port": 0,
+        "to": "5952504",
+        "to_port": 0
+      },
+      {
+        "from": "5952504",
+        "from_port": 0,
+        "to": "4744247",
+        "to_port": 0
+      },
+      {
+        "from": "4744247",
+        "from_port": 0,
+        "to": "5475710",
+        "to_port": 0
+      },
+      {
+        "from": "5475710",
+        "from_port": 0,
+        "to": "3093194",
+        "to_port": 0
+      },
+      {
+        "from": "3093194",
+        "from_port": 0,
+        "to": "6011130",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.3",
+    "file_name": "PrincessDeath",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "8823809",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -5,
+          107
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7922742",
+        "node_name": "8823809",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          192,
+          -19
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "What the hell man, you just straight up killed her."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5496123",
+        "node_name": "7922742",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          665,
+          28
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Yes, this is the sad moment in the RPG where we try to make an emotional moment by killing a party member."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5952504",
+        "node_name": "5496123",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1121,
+          69
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I don't know about that, I'm not too sad about it, her attack animation were taking too long anyway. I'm happy I don't have to watch that again."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4744247",
+        "node_name": "5952504",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          197,
+          388
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Hmm, that wasn't expected. Let me try something else. There's also no all powerful weapon here to defeat me."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5475710",
+        "node_name": "4744247",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          686,
+          411.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh bollocks, how will I defeat you then? This game sucks!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Evil Steve",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3093194",
+        "node_name": "5475710",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1137,
+          429.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Look, maybe just leave the scene and things might work out for you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6011130",
+        "node_name": "3093194",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          297,
+          728.5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Okay, but if it doesn't I quit!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": null,
+        "node_name": "6011130",
+        "node_type": "set_local_variable",
+        "offset": [
+          840,
+          785.5
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "Done"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "Done": {
+        "type": 2,
+        "value": false
+      },
+      "SHEDED": {
+        "type": 0,
+        "value": "LUL"
+      }
+    }
+  }
+]
